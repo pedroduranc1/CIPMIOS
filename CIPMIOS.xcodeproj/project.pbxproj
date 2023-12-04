@@ -14,6 +14,13 @@
 		444E80362B1E3D1C004AC6BF /* CIPMIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80352B1E3D1C004AC6BF /* CIPMIOSTests.swift */; };
 		444E80402B1E3D1C004AC6BF /* CIPMIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E803F2B1E3D1C004AC6BF /* CIPMIOSUITests.swift */; };
 		444E80422B1E3D1C004AC6BF /* CIPMIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80412B1E3D1C004AC6BF /* CIPMIOSUITestsLaunchTests.swift */; };
+		444E80502B1E3D69004AC6BF /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E804F2B1E3D69004AC6BF /* Main.swift */; };
+		444E80542B1E3F97004AC6BF /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80532B1E3F97004AC6BF /* Routes.swift */; };
+		444E80562B1E3FBA004AC6BF /* NotchSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80552B1E3FBA004AC6BF /* NotchSpacing.swift */; };
+		444E80582B1E428C004AC6BF /* ButtonNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80572B1E428C004AC6BF /* ButtonNormal.swift */; };
+		444E805A2B1E43EC004AC6BF /* Separador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80592B1E43EC004AC6BF /* Separador.swift */; };
+		444E805C2B1E479B004AC6BF /* BottonImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E805B2B1E479B004AC6BF /* BottonImg.swift */; };
+		444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E805D2B1E5094004AC6BF /* BottonPeque.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		444E803B2B1E3D1C004AC6BF /* CIPMIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIPMIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		444E803F2B1E3D1C004AC6BF /* CIPMIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIPMIOSUITests.swift; sourceTree = "<group>"; };
 		444E80412B1E3D1C004AC6BF /* CIPMIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIPMIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		444E804F2B1E3D69004AC6BF /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		444E80532B1E3F97004AC6BF /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		444E80552B1E3FBA004AC6BF /* NotchSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchSpacing.swift; sourceTree = "<group>"; };
+		444E80572B1E428C004AC6BF /* ButtonNormal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNormal.swift; sourceTree = "<group>"; };
+		444E80592B1E43EC004AC6BF /* Separador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separador.swift; sourceTree = "<group>"; };
+		444E805B2B1E479B004AC6BF /* BottonImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonImg.swift; sourceTree = "<group>"; };
+		444E805D2B1E5094004AC6BF /* BottonPeque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonPeque.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,9 @@
 		444E80232B1E3D1B004AC6BF /* CIPMIOS */ = {
 			isa = PBXGroup;
 			children = (
+				444E80522B1E3F7F004AC6BF /* Routes */,
+				444E80512B1E3F72004AC6BF /* Components */,
+				444E804E2B1E3D58004AC6BF /* Views */,
 				444E80242B1E3D1B004AC6BF /* CIPMIOSApp.swift */,
 				444E80262B1E3D1B004AC6BF /* ContentView.swift */,
 				444E80282B1E3D1C004AC6BF /* Assets.xcassets */,
@@ -125,6 +142,34 @@
 				444E80412B1E3D1C004AC6BF /* CIPMIOSUITestsLaunchTests.swift */,
 			);
 			path = CIPMIOSUITests;
+			sourceTree = "<group>";
+		};
+		444E804E2B1E3D58004AC6BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				444E804F2B1E3D69004AC6BF /* Main.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		444E80512B1E3F72004AC6BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				444E80552B1E3FBA004AC6BF /* NotchSpacing.swift */,
+				444E80572B1E428C004AC6BF /* ButtonNormal.swift */,
+				444E80592B1E43EC004AC6BF /* Separador.swift */,
+				444E805B2B1E479B004AC6BF /* BottonImg.swift */,
+				444E805D2B1E5094004AC6BF /* BottonPeque.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		444E80522B1E3F7F004AC6BF /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				444E80532B1E3F97004AC6BF /* Routes.swift */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444E80502B1E3D69004AC6BF /* Main.swift in Sources */,
+				444E805A2B1E43EC004AC6BF /* Separador.swift in Sources */,
+				444E80542B1E3F97004AC6BF /* Routes.swift in Sources */,
+				444E80562B1E3FBA004AC6BF /* NotchSpacing.swift in Sources */,
 				444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */,
+				444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */,
+				444E805C2B1E479B004AC6BF /* BottonImg.swift in Sources */,
+				444E80582B1E428C004AC6BF /* ButtonNormal.swift in Sources */,
 				444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
