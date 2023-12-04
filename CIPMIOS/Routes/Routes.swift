@@ -15,6 +15,26 @@ struct Routes: View {
                     Image(systemName: "book.fill")
                     Text("Main")
                 }
+            Test()
+                .tabItem {
+                    Image(systemName: "doc.fill")
+                    Text("Test")
+                }
+            Premium()
+                .tabItem {
+                    Image(systemName: "diamond.inset.filled")
+                    Text("Hazte Premium")
+                }
+            Chat()
+                .tabItem {
+                    Image(systemName: "diamond.inset.filled")
+                    Text("Chat")
+                }
+            Perfil()
+                .tabItem {
+                    Image(systemName: "person.crop.square")
+                    Text("Perfil")
+                }
         }
     }
 }

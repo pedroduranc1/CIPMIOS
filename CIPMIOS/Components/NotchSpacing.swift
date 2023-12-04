@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct NotchSpacing: View {
+    var ColorNotch : String
     var body: some View {
         VStack{
-            Color("azul")
+            Color(ColorNotch)
         }
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:100)
         .frame(width: .infinity, height: 60.0)
     }
 }
 
-#Preview {
-    NotchSpacing()
-}
+//#Preview {
+//    NotchSpacing()
+//}

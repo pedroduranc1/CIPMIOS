@@ -12,7 +12,7 @@ struct Main: View {
         ScrollView{
             VStack(spacing:0){
                 //NOTCH
-                NotchSpacing()
+                NotchSpacing(ColorNotch: "azul")
                 
                 //BOTON SABER MI NIVEL
                 ButtonNormal(buttonText: "SABER MI NIVEL", backgroundColor: "amarillo", outsideColor: "azul", textColor: .black, action: {})
@@ -48,9 +48,56 @@ struct Main: View {
                     
                     BottonPeque(btnTexto: "Lectura", btnImage: "availa")
                     
-                    
                 }
                 .padding()
+                
+                VStack{
+                    Button(action:{}){
+                        HStack(alignment: .bottom){
+                            Text("Speaking (Dificil)")
+                                .padding(.horizontal,25)
+                            Spacer()
+                        }
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .background(
+                            Image("speakingDificil")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .clipped()
+                        )
+                        .padding(.horizontal,20)
+                        .foregroundColor(.black)
+                        .bold()
+                    }
+                }
+                .frame(width: .infinity, height: 150)
+                .background(Color("azul"))
+                
+                VStack{
+                    Button(action:{}){
+                        HStack(alignment: .bottom){
+                            Spacer()
+                            Text("Chatea con un maestro")
+                                .padding(.horizontal,25)
+                                .font(.system(size: 14))
+                            
+                        }
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .background(
+                            Image("chatMaestro")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .clipped()
+                        )
+                        .padding(.horizontal,20)
+                        .foregroundColor(.black)
+                        .bold()
+                    }
+                }
+                .frame(width: .infinity, height: 150)
+                .background(Color("blanco"))
                 
             }
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)

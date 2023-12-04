@@ -21,6 +21,12 @@
 		444E805A2B1E43EC004AC6BF /* Separador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80592B1E43EC004AC6BF /* Separador.swift */; };
 		444E805C2B1E479B004AC6BF /* BottonImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E805B2B1E479B004AC6BF /* BottonImg.swift */; };
 		444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E805D2B1E5094004AC6BF /* BottonPeque.swift */; };
+		444E80602B1E593D004AC6BF /* SpeakingFacil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E805F2B1E593D004AC6BF /* SpeakingFacil.swift */; };
+		444E80622B1E59B6004AC6BF /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80612B1E59B6004AC6BF /* Test.swift */; };
+		444E80642B1E5A3F004AC6BF /* Premium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80632B1E5A3F004AC6BF /* Premium.swift */; };
+		444E80662B1E5A7D004AC6BF /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80652B1E5A7D004AC6BF /* Chat.swift */; };
+		444E80682B1E5AAB004AC6BF /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80672B1E5AAB004AC6BF /* Perfil.swift */; };
+		444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80692B1E5DE5004AC6BF /* HeaderNav.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,12 @@
 		444E80592B1E43EC004AC6BF /* Separador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separador.swift; sourceTree = "<group>"; };
 		444E805B2B1E479B004AC6BF /* BottonImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonImg.swift; sourceTree = "<group>"; };
 		444E805D2B1E5094004AC6BF /* BottonPeque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonPeque.swift; sourceTree = "<group>"; };
+		444E805F2B1E593D004AC6BF /* SpeakingFacil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakingFacil.swift; sourceTree = "<group>"; };
+		444E80612B1E59B6004AC6BF /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		444E80632B1E5A3F004AC6BF /* Premium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Premium.swift; sourceTree = "<group>"; };
+		444E80652B1E5A7D004AC6BF /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		444E80672B1E5AAB004AC6BF /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
+		444E80692B1E5DE5004AC6BF /* HeaderNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderNav.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +160,11 @@
 			isa = PBXGroup;
 			children = (
 				444E804F2B1E3D69004AC6BF /* Main.swift */,
+				444E805F2B1E593D004AC6BF /* SpeakingFacil.swift */,
+				444E80612B1E59B6004AC6BF /* Test.swift */,
+				444E80632B1E5A3F004AC6BF /* Premium.swift */,
+				444E80652B1E5A7D004AC6BF /* Chat.swift */,
+				444E80672B1E5AAB004AC6BF /* Perfil.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +177,7 @@
 				444E80592B1E43EC004AC6BF /* Separador.swift */,
 				444E805B2B1E479B004AC6BF /* BottonImg.swift */,
 				444E805D2B1E5094004AC6BF /* BottonPeque.swift */,
+				444E80692B1E5DE5004AC6BF /* HeaderNav.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -302,13 +320,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444E80662B1E5A7D004AC6BF /* Chat.swift in Sources */,
+				444E80682B1E5AAB004AC6BF /* Perfil.swift in Sources */,
 				444E80502B1E3D69004AC6BF /* Main.swift in Sources */,
+				444E80602B1E593D004AC6BF /* SpeakingFacil.swift in Sources */,
 				444E805A2B1E43EC004AC6BF /* Separador.swift in Sources */,
+				444E80642B1E5A3F004AC6BF /* Premium.swift in Sources */,
 				444E80542B1E3F97004AC6BF /* Routes.swift in Sources */,
 				444E80562B1E3FBA004AC6BF /* NotchSpacing.swift in Sources */,
+				444E80622B1E59B6004AC6BF /* Test.swift in Sources */,
 				444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */,
 				444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */,
 				444E805C2B1E479B004AC6BF /* BottonImg.swift in Sources */,
+				444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */,
 				444E80582B1E428C004AC6BF /* ButtonNormal.swift in Sources */,
 				444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */,
 			);
