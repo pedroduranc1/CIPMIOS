@@ -27,6 +27,11 @@
 		444E80662B1E5A7D004AC6BF /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80652B1E5A7D004AC6BF /* Chat.swift */; };
 		444E80682B1E5AAB004AC6BF /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80672B1E5AAB004AC6BF /* Perfil.swift */; };
 		444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80692B1E5DE5004AC6BF /* HeaderNav.swift */; };
+		44F7D4FC2B1F790B00EAAC8B /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D4FB2B1F790B00EAAC8B /* ModalView.swift */; };
+		44F7D4FE2B1F7BB800EAAC8B /* PickerCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D4FD2B1F7BB800EAAC8B /* PickerCustom.swift */; };
+		44F7D5002B1F7DA200EAAC8B /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D4FF2B1F7DA200EAAC8B /* VideoPlayerView.swift */; };
+		44F7D5022B1F9DC500EAAC8B /* BtnEmpezar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D5012B1F9DC500EAAC8B /* BtnEmpezar.swift */; };
+		44F7D5042B1F9E3200EAAC8B /* SeparadorPequeno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D5032B1F9E3200EAAC8B /* SeparadorPequeno.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,11 @@
 		444E80652B1E5A7D004AC6BF /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		444E80672B1E5AAB004AC6BF /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		444E80692B1E5DE5004AC6BF /* HeaderNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderNav.swift; sourceTree = "<group>"; };
+		44F7D4FB2B1F790B00EAAC8B /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		44F7D4FD2B1F7BB800EAAC8B /* PickerCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCustom.swift; sourceTree = "<group>"; };
+		44F7D4FF2B1F7DA200EAAC8B /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		44F7D5012B1F9DC500EAAC8B /* BtnEmpezar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnEmpezar.swift; sourceTree = "<group>"; };
+		44F7D5032B1F9E3200EAAC8B /* SeparadorPequeno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparadorPequeno.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +188,11 @@
 				444E805B2B1E479B004AC6BF /* BottonImg.swift */,
 				444E805D2B1E5094004AC6BF /* BottonPeque.swift */,
 				444E80692B1E5DE5004AC6BF /* HeaderNav.swift */,
+				44F7D4FB2B1F790B00EAAC8B /* ModalView.swift */,
+				44F7D4FD2B1F7BB800EAAC8B /* PickerCustom.swift */,
+				44F7D4FF2B1F7DA200EAAC8B /* VideoPlayerView.swift */,
+				44F7D5012B1F9DC500EAAC8B /* BtnEmpezar.swift */,
+				44F7D5032B1F9E3200EAAC8B /* SeparadorPequeno.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -320,17 +335,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F7D5022B1F9DC500EAAC8B /* BtnEmpezar.swift in Sources */,
 				444E80662B1E5A7D004AC6BF /* Chat.swift in Sources */,
 				444E80682B1E5AAB004AC6BF /* Perfil.swift in Sources */,
+				44F7D4FC2B1F790B00EAAC8B /* ModalView.swift in Sources */,
 				444E80502B1E3D69004AC6BF /* Main.swift in Sources */,
 				444E80602B1E593D004AC6BF /* SpeakingFacil.swift in Sources */,
+				44F7D5002B1F7DA200EAAC8B /* VideoPlayerView.swift in Sources */,
 				444E805A2B1E43EC004AC6BF /* Separador.swift in Sources */,
+				44F7D4FE2B1F7BB800EAAC8B /* PickerCustom.swift in Sources */,
 				444E80642B1E5A3F004AC6BF /* Premium.swift in Sources */,
 				444E80542B1E3F97004AC6BF /* Routes.swift in Sources */,
 				444E80562B1E3FBA004AC6BF /* NotchSpacing.swift in Sources */,
 				444E80622B1E59B6004AC6BF /* Test.swift in Sources */,
 				444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */,
 				444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */,
+				44F7D5042B1F9E3200EAAC8B /* SeparadorPequeno.swift in Sources */,
 				444E805C2B1E479B004AC6BF /* BottonImg.swift in Sources */,
 				444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */,
 				444E80582B1E428C004AC6BF /* ButtonNormal.swift in Sources */,

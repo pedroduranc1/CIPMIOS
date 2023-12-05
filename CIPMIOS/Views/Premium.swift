@@ -13,7 +13,7 @@ struct Premium: View {
             VStack(spacing:0){
                 NotchSpacing(ColorNotch: "blanco")
                 
-                HeaderNav(location: "Hazte Premium")
+                HeaderNav(location: "Hazte Premium" )
             }
         }
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)

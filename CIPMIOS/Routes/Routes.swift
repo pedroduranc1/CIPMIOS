@@ -10,32 +10,42 @@ import SwiftUI
 struct Routes: View {
     var body: some View {
         TabView{
-            Main()
-                .tabItem {
-                    Image(systemName: "book.fill")
-                    Text("Main")
-                }
-            Test()
-                .tabItem {
-                    Image(systemName: "doc.fill")
-                    Text("Test")
-                }
+            
+            NavigationView(){
+                Main()
+            }
+            .tabItem {
+                Image(systemName: "book.fill")
+                Text("Main")
+            }
+            
+            NavigationView(){
+                Test()
+            }
+            .tabItem {
+                Image(systemName: "doc.fill")
+                Text("Test")
+            }
+            
+            
             Premium()
                 .tabItem {
                     Image(systemName: "diamond.inset.filled")
                     Text("Hazte Premium")
                 }
+            
             Chat()
                 .tabItem {
-                    Image(systemName: "diamond.inset.filled")
+                    Image(systemName: "message.fill")
                     Text("Chat")
                 }
+            
             Perfil()
                 .tabItem {
                     Image(systemName: "person.crop.square")
                     Text("Perfil")
                 }
-        }
+        }.background(Color.white)
     }
 }
 
