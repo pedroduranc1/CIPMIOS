@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Main: View {
+    @State private var isSpeakingFacil = false
+    @Binding var IndexSeleccionado: Int
     var body: some View {
         ScrollView{
             VStack(spacing:0){
@@ -26,11 +28,15 @@ struct Main: View {
                 //BOTONES ESTRUC Y VOCAB
                 HStack{
                     
-                    BottonImg(TextoButton: "Speaking (Facil)", ImagenButton: "img_estruc")
+                    BottonImg(TextoButton: "Speaking (Facil)", ImagenButton: "img_estruc",action: {
+                        self.IndexSeleccionado = 5
+                    })
+                    
                     
                     Spacer()
                     
-                    BottonImg(TextoButton: "Vocabulario", ImagenButton: "img_vocabu")
+                    BottonImg(TextoButton: "Vocabulario", ImagenButton: "img_vocabu", action: {}
+                    )
                 }
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:.infinity)
                 .padding(.horizontal,10)
@@ -104,8 +110,4 @@ struct Main: View {
         }
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
-}
-
-#Preview {
-    Main()
 }

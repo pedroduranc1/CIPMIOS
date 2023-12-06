@@ -9,24 +9,37 @@ import SwiftUI
 
 struct HeaderNav: View {
     var location: String
+    
+    @Binding var IndexSeleccionado: Int
 
     var body: some View {
-        HStack {
-            Spacer()
+        ZStack(alignment: .leading) {
+            VStack {
+                Spacer()
 
-            Text(location)
+                Text(location)
+                    .font(.system(size: 22))
+                    .bold()
 
-            Spacer()
+                Spacer()
+                
+                Color(.gray)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: 1)
+                    .padding(.top,10)
+            }
+            
+            Button(action: {
+                self.IndexSeleccionado = 0
+            }) {
+                Image(systemName: "arrow.backward.square")
+                    .font(.system(size: 25))
+                    .foregroundColor(.gray)
+            }
+            .frame(width: 30, height: .infinity)
+            .padding(.leading,20)
+            .padding(.bottom,10)
         }
-        .bold()
-        .font(.system(size: 22))
         .frame(maxWidth: .infinity, maxHeight: 200)
-        .padding(.horizontal, 20)
-
-        VStack {
-            Color(.gray)
-        }
-        .frame(maxWidth: .infinity, maxHeight: 1)
-        .padding(.top, 15)
     }
 }
+

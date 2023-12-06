@@ -8,47 +8,29 @@
 import SwiftUI
 
 struct Routes: View {
+    @Binding var IndexSeleccionado: Int
     var body: some View {
-        TabView{
+        VStack{
             
-            NavigationView(){
-                Main()
+            switch IndexSeleccionado {
+            case 0:
+                Main(IndexSeleccionado: $IndexSeleccionado)
+            case 1:
+                Test(IndexSeleccionado: $IndexSeleccionado)
+            case 2:
+                Premium(IndexSeleccionado: $IndexSeleccionado)
+            case 3:
+                Chat()
+            case 4:
+                Perfil()
+            case 5:
+                //Speaking FACIL
+                SpeakingFacil(IndexSeleccionado: $IndexSeleccionado)
+            default:
+                EmptyView()
             }
-            .tabItem {
-                Image(systemName: "book.fill")
-                Text("Main")
-            }
             
-            NavigationView(){
-                Test()
-            }
-            .tabItem {
-                Image(systemName: "doc.fill")
-                Text("Test")
-            }
-            
-            
-            Premium()
-                .tabItem {
-                    Image(systemName: "diamond.inset.filled")
-                    Text("Hazte Premium")
-                }
-            
-            Chat()
-                .tabItem {
-                    Image(systemName: "message.fill")
-                    Text("Chat")
-                }
-            
-            Perfil()
-                .tabItem {
-                    Image(systemName: "person.crop.square")
-                    Text("Perfil")
-                }
-        }.background(Color.white)
+        }
+        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
     }
-}
-
-#Preview {
-    Routes()
 }

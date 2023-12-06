@@ -11,9 +11,10 @@ struct BottonImg: View {
     
     var TextoButton : String
     var ImagenButton: String
+    var action: () -> Void
     
     var body: some View {
-        Button(action:{}){
+        Button(action:action){
             VStack{
                 Spacer()
                 Text(TextoButton)

@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct PickerCustom: View {
+    var defaultOption: String
     @State private var isModalPresented = false
-    @State private var selectedOption: String? = "Test"
-    var options : [String]
+    @State private var selectedOption: String?
+    var options: [String]
+
+    init(defaultOption: String, options: [String]) {
+        self.defaultOption = defaultOption
+        self.options = options
+        _selectedOption = State(initialValue: defaultOption)
+    }
+
     var body: some View {
         VStack {
-            Button(action:{
+            Button(action: {
                 isModalPresented.toggle()
-            }){
+            }) {
                 HStack {
                     if let selectedOption = selectedOption {
                         Text(" \(selectedOption)")
@@ -23,28 +31,24 @@ struct PickerCustom: View {
                             .font(.system(size: 18))
                             .foregroundColor(.black)
                     }
-                    
-                    
+
                     Spacer()
                     Button(action: {
                         isModalPresented.toggle()
                     }) {
                         Image(systemName: "arrow.down.app")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                            .font(.title)
                             .foregroundColor(.gray)
                     }
                     .sheet(isPresented: $isModalPresented) {
-                        ModalView(selectedOption: $selectedOption, isModalPresented: $isModalPresented,options: options)
+                        ModalView(selectedOption: $selectedOption, isModalPresented: $isModalPresented, options: options)
                     }
-                    
                 }
-                .padding(.vertical,10)
-                .padding(.horizontal,10)
-                
+                .padding(.vertical, 10)
+                .padding(.horizontal, 10)
             }
             .padding()
-            
-            
+
             Spacer()
         }
     }
