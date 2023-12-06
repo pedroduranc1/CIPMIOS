@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		443589D82B20E88200D5760D /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443589D72B20E88200D5760D /* SpeechRecognizer.swift */; };
+		443589DC2B20E95700D5760D /* ReconocerdorDeVoz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */; };
 		444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80242B1E3D1B004AC6BF /* CIPMIOSApp.swift */; };
 		444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80262B1E3D1B004AC6BF /* ContentView.swift */; };
 		444E80292B1E3D1C004AC6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444E80282B1E3D1C004AC6BF /* Assets.xcassets */; };
@@ -53,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		443589D32B20E25700D5760D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		443589D72B20E88200D5760D /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconocerdorDeVoz.swift; sourceTree = "<group>"; };
 		444E80212B1E3D1B004AC6BF /* CIPMIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIPMIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		444E80242B1E3D1B004AC6BF /* CIPMIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIPMIOSApp.swift; sourceTree = "<group>"; };
 		444E80262B1E3D1B004AC6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443589D62B20E86A00D5760D /* func */ = {
+			isa = PBXGroup;
+			children = (
+				443589D72B20E88200D5760D /* SpeechRecognizer.swift */,
+			);
+			path = func;
+			sourceTree = "<group>";
+		};
 		444E80182B1E3D1B004AC6BF = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,8 @@
 		444E80232B1E3D1B004AC6BF /* CIPMIOS */ = {
 			isa = PBXGroup;
 			children = (
+				443589D62B20E86A00D5760D /* func */,
+				443589D32B20E25700D5760D /* Info.plist */,
 				444E80522B1E3F7F004AC6BF /* Routes */,
 				444E80512B1E3F72004AC6BF /* Components */,
 				444E804E2B1E3D58004AC6BF /* Views */,
@@ -196,6 +211,7 @@
 				44F7D5012B1F9DC500EAAC8B /* BtnEmpezar.swift */,
 				44F7D5032B1F9E3200EAAC8B /* SeparadorPequeno.swift */,
 				44D9D9502B20B858004CCFFC /* BottomNav.swift */,
+				443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -351,8 +367,10 @@
 				444E80542B1E3F97004AC6BF /* Routes.swift in Sources */,
 				444E80562B1E3FBA004AC6BF /* NotchSpacing.swift in Sources */,
 				444E80622B1E59B6004AC6BF /* Test.swift in Sources */,
+				443589D82B20E88200D5760D /* SpeechRecognizer.swift in Sources */,
 				444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */,
 				444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */,
+				443589DC2B20E95700D5760D /* ReconocerdorDeVoz.swift in Sources */,
 				44F7D5042B1F9E3200EAAC8B /* SeparadorPequeno.swift in Sources */,
 				444E805C2B1E479B004AC6BF /* BottonImg.swift in Sources */,
 				444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */,
@@ -524,6 +542,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CIPMIOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CIPMIOS/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +573,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CIPMIOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CIPMIOS/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
