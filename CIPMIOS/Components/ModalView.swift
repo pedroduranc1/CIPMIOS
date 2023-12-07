@@ -1,16 +1,10 @@
-//
-//  ModalView.swift
-//  CIPMIOS
-//
-//  Created by Pedro Duran on 5/12/23.
-//
-
 import SwiftUI
 
 struct ModalView: View {
     @Binding var selectedOption: String?
     @Binding var isModalPresented: Bool
-    var options : [String]
+    var options: [String]
+    var onSelectedOptionChange: () -> Void
 
     var body: some View {
         VStack {
@@ -20,6 +14,7 @@ struct ModalView: View {
                 ForEach(options, id: \.self) { option in
                     Button(action: {
                         selectedOption = option
+                        onSelectedOptionChange() // Notifica que el valor ha cambiado
                         isModalPresented = false // Cierra el modal al seleccionar una opción
                     }) {
                         Text(option)

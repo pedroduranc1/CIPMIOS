@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct Test: View {
-    @State private var options = ["Test", "Test 2", "Test 3","Test", "Test 2", "Test 3"]
+    @State private var options = ["Test"]
+    @State private var selectedOption: String?
     @Binding var IndexSeleccionado: Int
+    @State private var videoURL: URL?
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
@@ -20,13 +23,16 @@ struct Test: View {
                 HeaderNav(location: "Vocabulary",IndexSeleccionado: $IndexSeleccionado)
                 
                 
-                //SELECT BOX
-                PickerCustom(defaultOption: "Test", options: options)
+                // SELECT BOX
+                PickerCustom(defaultOption: "Test", selectedOption: $selectedOption, options: options) {
+                    // Este bloque de cierre se ejecutará cuando selectedOption cambie
+                    handleSelectedOptionChange()
+                }
                 
-                //VIDEO VIEW
-                VideoPlayerView(videoURL: URL(string: "https://adrianlealcaldera.com/culttut.mp4")!)
-                            .frame(height: 220)
-                            .padding(.horizontal, 20)
+                // VIDEO VIEW
+                VideoPlayerView(videoURL: videoURL)
+                    .frame(height: 220)
+                    .padding(.horizontal, 20)
                 
                 //Separador PEQUENO
                 SeparadorPequeno()
@@ -34,11 +40,19 @@ struct Test: View {
                 //BTN EMPEZAR
                 BtnEmpezar(TextBtn: "Empezar", action: {})
                 
+            }.onAppear {
+                // Inicializa videoURL cuando la vista aparece
+                videoURL = getVideoURL(for: "Test", currentPage: "Test")
             }
             
         }
         .navigationBarBackButtonHidden(true)
         .edgesIgnoringSafeArea(.all)
         
+    }
+    
+    private func handleSelectedOptionChange() {
+        // Llamada a getVideoURL para actualizar videoURL
+        videoURL = getVideoURL(for: selectedOption ?? "Test", currentPage: "Test")
     }
 }

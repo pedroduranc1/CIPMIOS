@@ -1,16 +1,9 @@
-//
-//  VideoPlayerView.swift
-//  CIPMIOS
-//
-//  Created by Pedro Duran on 5/12/23.
-//
-
+// VideoPlayerView.swift
 import SwiftUI
 import AVKit
 
 struct VideoPlayerView: UIViewControllerRepresentable {
-    var videoURL: URL
-    @State private var isBuffering = false
+    var videoURL: URL?
 
     class Coordinator: NSObject {
         var parent: VideoPlayerView
@@ -19,10 +12,9 @@ struct VideoPlayerView: UIViewControllerRepresentable {
             self.parent = parent
         }
 
-        // Observa cambios en el estado del reproductor
         @objc func playerItemDidChange(notification: Notification) {
             if let playerItem = notification.object as? AVPlayerItem {
-                parent.isBuffering = playerItem.isPlaybackBufferEmpty
+                // Aquí puedes realizar acciones adicionales si es necesario
             }
         }
     }
@@ -31,32 +23,30 @@ struct VideoPlayerView: UIViewControllerRepresentable {
         Coordinator(parent: self)
     }
 
-    func makeUIViewController(context: Context) -> UIViewController {
-        let viewController = UIViewController()
-        let player = AVPlayer(url: videoURL)
+    func makeUIViewController(context: Context) -> AVPlayerViewController {
         let playerViewController = AVPlayerViewController()
-        playerViewController.player = player
-        playerViewController.showsPlaybackControls = true
-        playerViewController.videoGravity = .resize
 
-        // Observa cambios en el estado del reproductor
-        let coordinator = Coordinator(parent: self)
-        NotificationCenter.default.addObserver(
-            coordinator,
-            selector: #selector(coordinator.playerItemDidChange(notification:)),
-            name: .AVPlayerItemPlaybackStalled,
-            object: player.currentItem
-        )
+        if let videoURL = videoURL {
+            let player = AVPlayer(url: videoURL)
+            playerViewController.player = player
 
-        viewController.addChild(playerViewController)
-        viewController.view.addSubview(playerViewController.view)
-        playerViewController.view.frame = viewController.view.frame
-        playerViewController.didMove(toParent: viewController)
+            let coordinator = Coordinator(parent: self)
+            NotificationCenter.default.addObserver(
+                coordinator,
+                selector: #selector(coordinator.playerItemDidChange(notification:)),
+                name: .AVPlayerItemPlaybackStalled,
+                object: player.currentItem
+            )
+        }
 
-        return viewController
+        return playerViewController
     }
 
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-        // No es necesario actualizar la vista cuando cambia el URL del video
+    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
+        // Forzar la actualización recreando la vista cuando cambia el videoURL
+        if let videoURL = videoURL {
+            let player = AVPlayer(url: videoURL)
+            uiViewController.player = player
+        }
     }
 }

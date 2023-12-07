@@ -29,6 +29,7 @@
 		444E80662B1E5A7D004AC6BF /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80652B1E5A7D004AC6BF /* Chat.swift */; };
 		444E80682B1E5AAB004AC6BF /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80672B1E5AAB004AC6BF /* Perfil.swift */; };
 		444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80692B1E5DE5004AC6BF /* HeaderNav.swift */; };
+		4460C6B32B224F9A002F981E /* VideoUrlHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460C6B22B224F9A002F981E /* VideoUrlHandler.swift */; };
 		44D9D9512B20B858004CCFFC /* BottomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9D9502B20B858004CCFFC /* BottomNav.swift */; };
 		44F7D4FC2B1F790B00EAAC8B /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D4FB2B1F790B00EAAC8B /* ModalView.swift */; };
 		44F7D4FE2B1F7BB800EAAC8B /* PickerCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D4FD2B1F7BB800EAAC8B /* PickerCustom.swift */; };
@@ -81,6 +82,7 @@
 		444E80652B1E5A7D004AC6BF /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		444E80672B1E5AAB004AC6BF /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		444E80692B1E5DE5004AC6BF /* HeaderNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderNav.swift; sourceTree = "<group>"; };
+		4460C6B22B224F9A002F981E /* VideoUrlHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUrlHandler.swift; sourceTree = "<group>"; };
 		44D9D9502B20B858004CCFFC /* BottomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNav.swift; sourceTree = "<group>"; };
 		44F7D4FB2B1F790B00EAAC8B /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		44F7D4FD2B1F7BB800EAAC8B /* PickerCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCustom.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				443589D72B20E88200D5760D /* SpeechRecognizer.swift */,
+				4460C6B22B224F9A002F981E /* VideoUrlHandler.swift */,
 			);
 			path = func;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				444E80602B1E593D004AC6BF /* SpeakingFacil.swift in Sources */,
 				44F7D5002B1F7DA200EAAC8B /* VideoPlayerView.swift in Sources */,
 				444E805A2B1E43EC004AC6BF /* Separador.swift in Sources */,
+				4460C6B32B224F9A002F981E /* VideoUrlHandler.swift in Sources */,
 				44F7D4FE2B1F7BB800EAAC8B /* PickerCustom.swift in Sources */,
 				444E80642B1E5A3F004AC6BF /* Premium.swift in Sources */,
 				444E80542B1E3F97004AC6BF /* Routes.swift in Sources */,

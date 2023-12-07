@@ -1,23 +1,12 @@
-//
-//  PickerCustom.swift
-//  CIPMIOS
-//
-//  Created by Pedro Duran on 5/12/23.
-//
-
 import SwiftUI
 
 struct PickerCustom: View {
     var defaultOption: String
-    @State private var isModalPresented = false
-    @State private var selectedOption: String?
+    @Binding var selectedOption: String?
     var options: [String]
+    var onSelectedOptionChange: () -> Void
 
-    init(defaultOption: String, options: [String]) {
-        self.defaultOption = defaultOption
-        self.options = options
-        _selectedOption = State(initialValue: defaultOption)
-    }
+    @State private var isModalPresented = false
 
     var body: some View {
         VStack {
@@ -30,26 +19,28 @@ struct PickerCustom: View {
                             .bold()
                             .font(.system(size: 18))
                             .foregroundColor(.black)
+                    } else {
+                        Text(" \(defaultOption)")
+                            .bold()
+                            .font(.system(size: 18))
+                            .foregroundColor(.black)
                     }
 
                     Spacer()
-                    Button(action: {
-                        isModalPresented.toggle()
-                    }) {
-                        Image(systemName: "arrow.down.app")
-                            .font(.title)
-                            .foregroundColor(.gray)
-                    }
-                    .sheet(isPresented: $isModalPresented) {
-                        ModalView(selectedOption: $selectedOption, isModalPresented: $isModalPresented, options: options)
-                    }
+                    Image(systemName: "arrow.down.app")
+                        .font(.title)
+                        .foregroundColor(.gray)
                 }
                 .padding(.vertical, 10)
                 .padding(.horizontal, 10)
             }
             .padding()
+            .sheet(isPresented: $isModalPresented) {
+                ModalView(selectedOption: $selectedOption, isModalPresented: $isModalPresented, options: options, onSelectedOptionChange: onSelectedOptionChange)
+            }
 
             Spacer()
         }
     }
 }
+
