@@ -14,7 +14,7 @@ struct SeparadorPequeno: View {
                 Color("azul")
             }
             .frame(maxWidth: 100,maxHeight: 2)
-            .padding(.vertical,15)
+            .padding(.vertical,5)
             
             Spacer()
         }
