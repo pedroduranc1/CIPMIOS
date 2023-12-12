@@ -16,9 +16,11 @@ struct SpeakingFacil: View {
     //VARIABLES DE SPEAKING FACIL
     @State private var videoURL: URL?
     @State private var isEmpezarClicked = false
+    @State private var isCorrect = true
     @State private var userInput: String = ""
     @State private var TxtEng = ""
     @State private var TxtSpa = ""
+    @State private var TxtPalabraClave = ""
     @State private var StatusColor: String = "blanco"
     
     var body: some View {
@@ -50,7 +52,7 @@ struct SpeakingFacil: View {
                     VStack {
                         HStack(alignment:.top){
                             Text("Palabra clave: ")
-                            Text(TxtEng)
+                            Text(TxtPalabraClave)
                                 .underline(true,color: Color("azul"))
                                 .foregroundColor(Color("azul"))
                             
@@ -72,8 +74,62 @@ struct SpeakingFacil: View {
                         TextInput(userInput: $userInput, StatusColor: $StatusColor)
                         
                     }
-                    .padding(.bottom,50)
+                    
                 }
+                
+                //BTN OPTIONS
+                if isEmpezarClicked {
+                    HStack{
+                        Button(action:{}){
+                            VStack{
+                                Text("ORACION FACIL")
+                                    .padding(.vertical,5)
+                            }
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                            .background(Color("azul"))
+                            .bold()
+                            .cornerRadius(8)
+                            .foregroundColor(.white)
+                            
+                        }
+                        
+                        
+                        Button(action:{}){
+                            VStack{
+                                Text("MAS DIFICIL")
+                                    .padding(.vertical,5)
+                            }
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                            .border(Color.blue, width: 1.5)
+                            .bold()
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                        }
+                        
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .padding(.horizontal,20)
+                    .padding(.vertical,10)
+                }
+                
+                
+                if !isCorrect {
+                    HStack(alignment:.top){
+                        Text("Respuesta Correcta: ")
+                        Text(TxtEng)
+                            .underline(true,color: Color("azul"))
+                            .foregroundColor(Color("azul"))
+                        
+                        Spacer()
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:20)
+                    .padding(.horizontal,20)
+                }
+                VStack(alignment:.leading){
+                    
+                }
+                .padding(.bottom,25)
+                .padding(.horizontal,20)
+                
                 
                 if isEmpezarClicked {
                     //BTN EMPEZAR
@@ -85,7 +141,9 @@ struct SpeakingFacil: View {
                 if !isEmpezarClicked {
                     //BTN EMPEZAR
                     BtnEmpezar(TextBtn: "Empezar", action: {
-                        Dificultad1()
+                        
+                        isEmpezarClicked.toggle()
+                        SetDificultad()
                     })
                 }
                 
@@ -102,37 +160,33 @@ struct SpeakingFacil: View {
         // Llamada a getVideoURL para actualizar videoURL
         videoURL = getVideoURL(for: selectedOption ?? "Present Simple", currentPage: "Speaking Facil")
         
+        LimpiarDatos()
         isEmpezarClicked = false
     }
     
-    private func Dificultad1(){
-        isEmpezarClicked.toggle()
-        
-        //        print("Estructura: \(selectedOption ?? "Present Simple")")
-        //        print("Rango: \(selectedRango ?? "0 a 100")")
-        
-        switch selectedOption {
-        case "Present Simple":
-            switch selectedRango{
-            case "0 a 100":
-                TxtEng = "Hello"
-                TxtSpa = "Hola"
-                
-            default:
-                break
-            }
-        default:
-            break
-        }
+    private func LimpiarDatos(){
+        Limpiar(TxtEng: $TxtEng, TxtSpa: $TxtSpa, TxtPalabraClave: $TxtPalabraClave, StatusColor: $StatusColor, userInput: $userInput)
     }
     
-    private func ComprobarRespuesta(){
-        if TxtEng == userInput {
-            print("paso")
+    private func SetDificultad(){
+        
+        Dificultad1(selectedOption: selectedOption ?? "Present Simple", selectedRango: selectedRango ?? "0 a 100", TxtEng: &TxtEng, TxtSpa: &TxtSpa, TxtPalabraClave: &TxtPalabraClave)
+    }
+    
+    private func ComprobarRespuesta() {
+        let palabraCorrecta = TxtEng.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        let palabraIngresada = userInput.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+
+        if palabraCorrecta == palabraIngresada {
+            print("correcto")
             StatusColor = "success"
+            isCorrect = true
+            LimpiarDatos()
+            SetDificultad()
         } else {
-            print("incorrecto")
             StatusColor = "error"
+            isCorrect = false
         }
     }
+
 }

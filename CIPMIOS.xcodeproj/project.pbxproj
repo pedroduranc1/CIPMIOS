@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		443589D82B20E88200D5760D /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443589D72B20E88200D5760D /* SpeechRecognizer.swift */; };
 		443589DC2B20E95700D5760D /* ReconocerdorDeVoz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */; };
+		44476F8D2B28AFF300D57C6C /* Funcs_Estruc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */; };
 		444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80242B1E3D1B004AC6BF /* CIPMIOSApp.swift */; };
 		444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80262B1E3D1B004AC6BF /* ContentView.swift */; };
 		444E80292B1E3D1C004AC6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444E80282B1E3D1C004AC6BF /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		443589D32B20E25700D5760D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		443589D72B20E88200D5760D /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconocerdorDeVoz.swift; sourceTree = "<group>"; };
+		44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs_Estruc.swift; sourceTree = "<group>"; };
 		444E80212B1E3D1B004AC6BF /* CIPMIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIPMIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		444E80242B1E3D1B004AC6BF /* CIPMIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIPMIOSApp.swift; sourceTree = "<group>"; };
 		444E80262B1E3D1B004AC6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				443589D72B20E88200D5760D /* SpeechRecognizer.swift */,
 				4460C6B22B224F9A002F981E /* VideoUrlHandler.swift */,
+				44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */,
 			);
 			path = func;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */,
 				444E80582B1E428C004AC6BF /* ButtonNormal.swift in Sources */,
 				44D9D9512B20B858004CCFFC /* BottomNav.swift in Sources */,
+				44476F8D2B28AFF300D57C6C /* Funcs_Estruc.swift in Sources */,
 				444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */,
 				4475F8B52B237DD500307D02 /* Generator.swift in Sources */,
 			);

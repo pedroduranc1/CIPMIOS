@@ -20,6 +20,7 @@ struct TextInput: View {
                 .background(getColorForStatus())
                 .cornerRadius(8)
                 .textFieldStyle(PlainTextFieldStyle())
+                .autocapitalization(.none)
             
             // Imagen a la izquierda del TextField
             Button(action: {}) {
