@@ -11,7 +11,7 @@ import SwiftUI
 func extraerVerbo(oracionCompleta: String) -> String {
     let oracionCompletaTrimmed = oracionCompleta.trimmingCharacters(in: .whitespacesAndNewlines)
     let palabras = oracionCompletaTrimmed.components(separatedBy: " ")
-
+    
     if palabras.count > 0 {
         return palabras[palabras.count - 1]
     } else {
@@ -36,11 +36,11 @@ func Dificultad1(selectedOption: String?, selectedRango: String?, TxtEng: inout 
             let gen = Generator()
             // Estructura
             gen.GenPresSimp1()
-
+            
             TxtEng = gen.gene
             TxtSpa = gen.gens
             TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
-
+            
         default:
             break
         }
@@ -51,11 +51,255 @@ func Dificultad1(selectedOption: String?, selectedRango: String?, TxtEng: inout 
             let gen = Generator()
             // Estructura
             gen.GenPresCont1()
-
+            
             TxtEng = gen.gene
             TxtSpa = gen.gens
             TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Present Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresPerf1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Present Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresPerfCont1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    default:
+        break
+    }
+}
 
+func Dificultad2(selectedOption: String?, selectedRango: String?, TxtEng: inout String, TxtSpa: inout String, TxtPalabraClave: inout String) {
+    guard let selectedOption = selectedOption else { return }
+    
+    switch selectedOption {
+    case "Present Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresSimp2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Present Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresCont2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Present Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresPerf2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Present Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresPerfCont2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    default:
+        break
+    }
+}
+
+func Dificultad3(selectedOption: String?, selectedRango: String?, TxtEng: inout String, TxtSpa: inout String, TxtPalabraClave: inout String) {
+    guard let selectedOption = selectedOption else { return }
+    
+    switch selectedOption {
+    case "Present Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresSimp3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Present Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresCont3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Present Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresPerf3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Present Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresPerfCont3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    default:
+        break
+    }
+}
+
+func Dificultad4(selectedOption: String?, selectedRango: String?, TxtEng: inout String, TxtSpa: inout String, TxtPalabraClave: inout String) {
+    guard let selectedOption = selectedOption else { return }
+    
+    switch selectedOption {
+    case "Present Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresSimp4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Present Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresCont4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Present Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresPerf4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Present Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPresPerfCont4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
         default:
             break
         }
