@@ -33,6 +33,8 @@ func getVideoURL(for option: String?,currentPage: String) -> URL? {
         default:
             return URL(string: "https://adrianlealcaldera.com/examenexpl.mp4")
         }
+    case "Premium":
+        return URL(string: "https://adrianlealcaldera.com/premiumpromo.mp4")
     default:
         return nil
     }

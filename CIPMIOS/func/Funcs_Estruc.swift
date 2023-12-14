@@ -90,6 +90,67 @@ func Dificultad1(selectedOption: String?, selectedRango: String?, TxtEng: inout 
         default:
             break
         }
+    case "Past Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastSimp1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastCont1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastPerf1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Past Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastPerfCont1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
     default:
         break
     }
@@ -153,6 +214,67 @@ func Dificultad2(selectedOption: String?, selectedRango: String?, TxtEng: inout 
             let gen = Generator()
             // Estructura
             gen.GenPresPerfCont2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastSimp2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastCont2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastPerf2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Past Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastPerfCont2()
             
             TxtEng = gen.gene
             TxtSpa = gen.gens
@@ -232,6 +354,67 @@ func Dificultad3(selectedOption: String?, selectedRango: String?, TxtEng: inout 
         default:
             break
         }
+    case "Past Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastSimp3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastCont3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastPerf3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Past Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastPerfCont3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
     default:
         break
     }
@@ -295,6 +478,67 @@ func Dificultad4(selectedOption: String?, selectedRango: String?, TxtEng: inout 
             let gen = Generator()
             // Estructura
             gen.GenPresPerfCont4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastSimp4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastCont4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Past Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastPerf4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Past Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenPastPerfCont4()
             
             TxtEng = gen.gene
             TxtSpa = gen.gens

@@ -81,7 +81,9 @@ struct Main: View {
                 .background(Color("azul"))
                 
                 VStack{
-                    Button(action:{}){
+                    Button(action:{
+                        self.IndexSeleccionado = 3
+                    }){
                         HStack(alignment: .bottom){
                             Spacer()
                             Text("Chatea con un maestro")
@@ -105,6 +107,31 @@ struct Main: View {
                 .frame(width: .infinity, height: 150)
                 .background(Color("blanco"))
                 
+                VStack(){
+                    HStack(alignment:.center){
+                        Image("logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 80, height: 80)
+                            .clipped()
+                        
+                        Button(action:{}){
+                            VStack{
+                                Text("Clases en linea")
+                                    .bold()
+                                    .padding(.horizontal,20)
+                                    .padding(.vertical,5)
+                            }
+                            .background(Color("amarillo"))
+                            .foregroundColor(.black)
+                            .cornerRadius(8)
+                        }
+                    }
+                    .padding(.vertical,20)
+                    
+                }
+                .frame(maxWidth: .infinity)
+                .background(Color("azul"))
             }
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
         }
