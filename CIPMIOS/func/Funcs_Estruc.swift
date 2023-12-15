@@ -151,6 +151,128 @@ func Dificultad1(selectedOption: String?, selectedRango: String?, TxtEng: inout 
         default:
             break
         }
+    case "Future Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutSimp1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutCont1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutPerf1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Future Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutPerfCont1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldSimp1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldCont1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldPerf1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Would Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldPerfCont1()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
     default:
         break
     }
@@ -275,6 +397,128 @@ func Dificultad2(selectedOption: String?, selectedRango: String?, TxtEng: inout 
             let gen = Generator()
             // Estructura
             gen.GenPastPerfCont2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutSimp2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutCont2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutPerf2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Future Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutPerfCont2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldSimp2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldCont2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldPerf2()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Would Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldPerfCont2()
             
             TxtEng = gen.gene
             TxtSpa = gen.gens
@@ -415,6 +659,128 @@ func Dificultad3(selectedOption: String?, selectedRango: String?, TxtEng: inout 
         default:
             break
         }
+    case "Future Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutSimp3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutCont3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutPerf3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Future Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutPerfCont3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldSimp3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldCont3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldPerf3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Would Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldPerfCont3()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
     default:
         break
     }
@@ -539,6 +905,128 @@ func Dificultad4(selectedOption: String?, selectedRango: String?, TxtEng: inout 
             let gen = Generator()
             // Estructura
             gen.GenPastPerfCont4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutSimp4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutCont4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Future Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutPerf4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Future Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenFutPerfCont4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Simple":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldSimp4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldCont4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+    case "Would Perfect":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldPerf4()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+        default:
+            break
+        }
+        
+    case "Would Perfect Continuous":
+        switch selectedRango {
+        case "0 a 100":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenWouldPerfCont4()
             
             TxtEng = gen.gene
             TxtSpa = gen.gens

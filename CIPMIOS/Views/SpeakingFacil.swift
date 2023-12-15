@@ -10,7 +10,7 @@ struct SpeakingFacil: View {
     @State private var LevelOptionsFree = ["0 a 100"]
     
     //ARRAYS DE LAS STRUCTURAS Y RANGOS FREE
-    @State private var StructureOptionsPremium = ["Present Simple", "Present Continuous", "Present Perfect", "Present Perfect Continuous"]
+    @State private var StructureOptionsPremium = ["Present Simple", "Present Continuous", "Present Perfect", "Present Perfect Continuous","Past Simple", "Past Continuous", "Past Perfect", "Past Perfect Continuous","Future Simple", "Future Continuous", "Future Perfect", "Future Perfect Continuous","Would Simple", "Would Continuous", "Would Perfect", "Would Perfect Continuous"]
     @State private var LevelOptionsPremium = ["0 a 100","100 a 200","200 a 300"]
     
     //VARIABLES POR DEFECTO
@@ -28,7 +28,7 @@ struct SpeakingFacil: View {
     @State private var StatusColor: String = "blanco"
     
     //VARIABLES DE FUNCIONABILIDAD
-    @State private var IsPremium: Bool = false
+    @State private var IsPremium: Bool = true
     @State private var BtnSelected: Float = 0
     
     var body: some View {

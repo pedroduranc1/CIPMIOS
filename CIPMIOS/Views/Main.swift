@@ -35,7 +35,10 @@ struct Main: View {
                     
                     Spacer()
                     
-                    BottonImg(TextoButton: "Vocabulario", ImagenButton: "img_vocabu", action: {}
+                    BottonImg(TextoButton: "Vocabulario", ImagenButton: "img_vocabu", action: {
+                        //VIEW PARA HACER PRUEBAS
+                        //self.IndexSeleccionado = 99
+                    }
                     )
                 }
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:.infinity)

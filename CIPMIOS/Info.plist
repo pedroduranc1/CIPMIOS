@@ -5,6 +5,6 @@
         <key>NSSpeechRecognitionUsageDescription</key>
         <string>Your app needs access to speech recognition for transcription.</string>
         <key>NSMicrophoneUsageDescription</key>
-        <string>Your app needs access to the microphone for audio recording.</string>
+        <string>Necesitamos acceso al micrófono para grabar audio.</string>
     </dict>
 </plist>

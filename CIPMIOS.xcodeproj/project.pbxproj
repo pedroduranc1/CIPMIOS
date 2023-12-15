@@ -41,6 +41,8 @@
 		4475F8C42B23814400307D02 /* Special.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475F8C32B23814400307D02 /* Special.swift */; };
 		4475F8C62B23817800307D02 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475F8C52B23817800307D02 /* People.swift */; };
 		4475F8C82B23908000307D02 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475F8C72B23908000307D02 /* TextInput.swift */; };
+		44AF79172B2C91F100D732A0 /* PruebaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AF79162B2C91F100D732A0 /* PruebaView.swift */; };
+		44AF79192B2CAA7100D732A0 /* Vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AF79182B2CAA7100D732A0 /* Vocab.swift */; };
 		44CCB4562B275C62000782E2 /* ProfileIconComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCB4552B275C62000782E2 /* ProfileIconComp.swift */; };
 		44D9D9512B20B858004CCFFC /* BottomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9D9502B20B858004CCFFC /* BottomNav.swift */; };
 		44F7D4FC2B1F790B00EAAC8B /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D4FB2B1F790B00EAAC8B /* ModalView.swift */; };
@@ -106,6 +108,8 @@
 		4475F8C32B23814400307D02 /* Special.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Special.swift; sourceTree = "<group>"; };
 		4475F8C52B23817800307D02 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		4475F8C72B23908000307D02 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		44AF79162B2C91F100D732A0 /* PruebaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaView.swift; sourceTree = "<group>"; };
+		44AF79182B2CAA7100D732A0 /* Vocab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocab.swift; sourceTree = "<group>"; };
 		44CCB4552B275C62000782E2 /* ProfileIconComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIconComp.swift; sourceTree = "<group>"; };
 		44D9D9502B20B858004CCFFC /* BottomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNav.swift; sourceTree = "<group>"; };
 		44F7D4FB2B1F790B00EAAC8B /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 				444E80632B1E5A3F004AC6BF /* Premium.swift */,
 				444E80652B1E5A7D004AC6BF /* Chat.swift */,
 				444E80672B1E5AAB004AC6BF /* Perfil.swift */,
+				44AF79162B2C91F100D732A0 /* PruebaView.swift */,
+				44AF79182B2CAA7100D732A0 /* Vocab.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,6 +418,7 @@
 				44F7D5022B1F9DC500EAAC8B /* BtnEmpezar.swift in Sources */,
 				444E80662B1E5A7D004AC6BF /* Chat.swift in Sources */,
 				444E80682B1E5AAB004AC6BF /* Perfil.swift in Sources */,
+				44AF79192B2CAA7100D732A0 /* Vocab.swift in Sources */,
 				44F7D4FC2B1F790B00EAAC8B /* ModalView.swift in Sources */,
 				444E80502B1E3D69004AC6BF /* Main.swift in Sources */,
 				444E80602B1E593D004AC6BF /* SpeakingFacil.swift in Sources */,
@@ -441,6 +448,7 @@
 				444E805C2B1E479B004AC6BF /* BottonImg.swift in Sources */,
 				444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */,
 				444E80582B1E428C004AC6BF /* ButtonNormal.swift in Sources */,
+				44AF79172B2C91F100D732A0 /* PruebaView.swift in Sources */,
 				44D9D9512B20B858004CCFFC /* BottomNav.swift in Sources */,
 				44476F8D2B28AFF300D57C6C /* Funcs_Estruc.swift in Sources */,
 				444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */,

@@ -26,6 +26,10 @@ struct Routes: View {
             case 5:
                 //Speaking FACIL
                 SpeakingFacil(IndexSeleccionado: $IndexSeleccionado)
+                
+            case 99:
+                //VIEW DE PRUEBAS
+                PruebaView()
             default:
                 EmptyView()
             }
