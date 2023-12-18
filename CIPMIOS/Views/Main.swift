@@ -10,6 +10,8 @@ import SwiftUI
 struct Main: View {
     @State private var isSpeakingFacil = false
     @Binding var IndexSeleccionado: Int
+    @State var showToast = false
+    
     var body: some View {
         ScrollView{
             VStack(spacing:0){
@@ -20,7 +22,9 @@ struct Main: View {
                 ButtonNormal(buttonText: "SABER MI NIVEL", backgroundColor: "amarillo", outsideColor: "azul", textColor: .black, action: {})
                 
                 //BOTON SABER MI NIVEL
-                ButtonNormal(buttonText: "MY PLAN", backgroundColor: "azul", outsideColor: "blanco", textColor: .white, action: {})
+                ButtonNormal(buttonText: "MY PLAN", backgroundColor: "azul", outsideColor: "blanco", textColor: .white, action: {
+                    showToast = true
+                })
                 
                 //SEPARADOR
                 Separador()
@@ -38,6 +42,8 @@ struct Main: View {
                     BottonImg(TextoButton: "Vocabulario", ImagenButton: "img_vocabu", action: {
                         //VIEW PARA HACER PRUEBAS
                         //self.IndexSeleccionado = 99
+                        
+                        self.IndexSeleccionado = 6
                     }
                     )
                 }
@@ -82,6 +88,8 @@ struct Main: View {
                 }
                 .frame(width: .infinity, height: 150)
                 .background(Color("azul"))
+                .toast(isShowing: $showToast,
+                       toastConfig: ToastConfig(message: "Funcion solo Disponible para Usuarios Premiums"))
                 
                 VStack{
                     Button(action:{

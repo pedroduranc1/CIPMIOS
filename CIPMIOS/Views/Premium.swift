@@ -38,7 +38,7 @@ struct Premium: View {
                 .padding(.bottom,15)
                 
                 //VIDEO
-                VideoPlayerView(videoURL: videoURL)
+                VideoPlayerView(videoURL: videoURL,onStop: {})
                     .frame(height: 220)
                     .padding(.horizontal, 25)
                 

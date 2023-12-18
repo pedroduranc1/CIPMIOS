@@ -30,7 +30,7 @@ struct Test: View {
                 }
                 
                 // VIDEO VIEW
-                VideoPlayerView(videoURL: videoURL)
+                VideoPlayerView(videoURL: videoURL,onStop: {})
                     .frame(height: 220)
                     .padding(.horizontal, 20)
                 

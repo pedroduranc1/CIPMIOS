@@ -4,6 +4,7 @@ import AVKit
 
 struct VideoPlayerView: UIViewControllerRepresentable {
     var videoURL: URL?
+    var onStop: () -> Void // Nueva propiedad para manejar la acción al detenerse
 
     class Coordinator: NSObject {
         var parent: VideoPlayerView
@@ -43,10 +44,14 @@ struct VideoPlayerView: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
-        // Forzar la actualización recreando la vista cuando cambia el videoURL
+        // Detener el reproductor actual antes de asignar la nueva URL
+        uiViewController.player?.pause()
+
+        // Asignar la nueva URL y comenzar la reproducción
         if let videoURL = videoURL {
             let player = AVPlayer(url: videoURL)
             uiViewController.player = player
+            player.play()
         }
     }
 }

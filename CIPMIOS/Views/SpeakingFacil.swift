@@ -28,7 +28,7 @@ struct SpeakingFacil: View {
     @State private var StatusColor: String = "blanco"
     
     //VARIABLES DE FUNCIONABILIDAD
-    @State private var IsPremium: Bool = true
+    @State private var IsPremium: Bool = false
     @State private var BtnSelected: Float = 0
     
     var body: some View {
@@ -46,9 +46,16 @@ struct SpeakingFacil: View {
                 }
                 
                 // VIDEO VIEW
-                VideoPlayerView(videoURL: videoURL)
-                    .frame(height: 220)
-                    .padding(.horizontal, 20)
+                VideoPlayerView(videoURL: videoURL, onStop: {
+                    // Manejar la acción al detenerse (puedes poner cualquier código que desees ejecutar)
+                    
+                })
+                .frame(height: 220)
+                .padding(.horizontal, 20)
+                .onDisappear {
+                    // Detener el video cuando la vista desaparece
+                    videoURL = getVideoURL(for: "", currentPage: "Speaking Facil")
+                }
                 
                 //SELECT BOX RANGO
                 PickerCustom(defaultOption: "0 a 100", selectedOption: $selectedRango, options: IsPremium ? LevelOptionsPremium : LevelOptionsFree) {
@@ -172,38 +179,38 @@ struct SpeakingFacil: View {
                 }
                 
                 //BTN OPTIONS DESPUES VEMOS PARA QUE SIRVE
-//                if isEmpezarClicked {
-//                    HStack{
-//                        Button(action:{}){
-//                            VStack{
-//                                Text("ORACION FACIL")
-//                                    .padding(.vertical,5)
-//                            }
-//                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-//                            .background(Color("azul"))
-//                            .bold()
-//                            .cornerRadius(8)
-//                            .foregroundColor(.white)
-//                            
-//                        }
-//                        
-//                        
-//                        Button(action:{}){
-//                            VStack{
-//                                Text("MAS DIFICIL")
-//                                    .padding(.vertical,5)
-//                            }
-//                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-//                            .border(Color.blue, width: 1.5)
-//                            .bold()
-//                            .clipShape(RoundedRectangle(cornerRadius: 8))
-//                        }
-//                        
-//                    }
-//                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-//                    .padding(.horizontal,20)
-//                    .padding(.vertical,10)
-//                }
+                //                if isEmpezarClicked {
+                //                    HStack{
+                //                        Button(action:{}){
+                //                            VStack{
+                //                                Text("ORACION FACIL")
+                //                                    .padding(.vertical,5)
+                //                            }
+                //                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                //                            .background(Color("azul"))
+                //                            .bold()
+                //                            .cornerRadius(8)
+                //                            .foregroundColor(.white)
+                //
+                //                        }
+                //
+                //
+                //                        Button(action:{}){
+                //                            VStack{
+                //                                Text("MAS DIFICIL")
+                //                                    .padding(.vertical,5)
+                //                            }
+                //                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                //                            .border(Color.blue, width: 1.5)
+                //                            .bold()
+                //                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                //                        }
+                //
+                //                    }
+                //                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                //                    .padding(.horizontal,20)
+                //                    .padding(.vertical,10)
+                //                }
                 
                 
                 if !isCorrect && isEmpezarClicked {
@@ -298,7 +305,7 @@ struct SpeakingFacil: View {
     private func ComprobarRespuesta() {
         let palabraCorrecta = TxtEng.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         let palabraIngresada = userInput.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-
+        
         if palabraCorrecta == palabraIngresada {
             print("correcto")
             StatusColor = "success"
@@ -310,5 +317,5 @@ struct SpeakingFacil: View {
             isCorrect = false
         }
     }
-
+    
 }
