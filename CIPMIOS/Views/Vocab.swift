@@ -25,7 +25,13 @@ struct Vocab: View {
     
     //VARIABLES DE VOCABULARY
     @State private var videoURL: URL?
+    @State private var TxtEng = ""
+    @State private var TxtSpa = ""
+    @State private var TxtPalabraClave = ""
+    @State private var StatusColor: String = "blanco"
+    @State private var userInput: String = ""
     @State private var isEmpezarClicked = false
+    @State private var isCorrect = true
     
     var body: some View {
         ScrollView{
@@ -53,9 +59,76 @@ struct Vocab: View {
                     videoURL = getVideoURL(for: "", currentPage: "Vocabulary")
                 }
                 
+                //Separador
+                SeparadorPequeno()
+                
+                if isEmpezarClicked {
+                    VStack{
+                        
+                    }
+                    .padding(.vertical,10)
+                }
+                
+                // Mostrar el VStack si el botón "Empezar" se ha presionado
+                if isEmpezarClicked {
+                    VStack(spacing:10) {
+                        HStack(alignment:.top){
+                            Text("Palabra clave: ")
+                            Text(TxtPalabraClave)
+                                .underline(true,color: Color("azul"))
+                                .foregroundColor(Color("azul"))
+                            
+                            Spacer()
+                        }
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:.infinity)
+                        .padding(.horizontal,20)
+                        
+                        HStack(alignment:.top){
+                            Text("Como dirias?: ")
+                            Text(TxtSpa)
+                            
+                            Spacer()
+                        }
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:.infinity)
+                        .padding(.horizontal,20)
+                        
+                        // Usando TextInput y proporcionando la variable de estado
+                        TextInput(userInput: $userInput, StatusColor: $StatusColor)
+                    }
+                }
+                
+                if !isCorrect && isEmpezarClicked {
+                    HStack(alignment:.top){
+                        Text("Respuesta Correcta: ")
+                        Text(TxtEng)
+                            .underline(true,color: Color("azul"))
+                            .foregroundColor(Color("azul"))
+                            .lineLimit(nil)  // Mostrar el texto completo, sin truncar
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer()
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:20)
+                    .padding(.horizontal,20)
+                    .padding(.top,15)
+                }
+                
+                if isEmpezarClicked {
+                    VStack{
+                        
+                    }
+                    .padding(.vertical,10)
+                }
+                
                 if !isEmpezarClicked {
                     VStack{}
                         .padding(.vertical,50)
+                }
+                
+                if isEmpezarClicked {
+                    //BTN EMPEZAR
+                    BtnEmpezar(TextBtn: "Chequea tu respuesta", action: {
+                        ComprobarRespuesta()
+                    })
                 }
                 
                 if !isEmpezarClicked {
@@ -63,6 +136,7 @@ struct Vocab: View {
                     BtnEmpezar(TextBtn: "Empezar", action: {
                         
                         isEmpezarClicked.toggle()
+                        practice()
                     })
                 }
             }
@@ -77,5 +151,31 @@ struct Vocab: View {
         // Llamada a getVideoURL para actualizar videoURL
         videoURL = getVideoURL(for: selectedOption ?? "0 a 50", currentPage: "Vocabulary")
         
+        LimpiarDatos()
+        isEmpezarClicked = false
+    }
+    
+    private func practice(){
+        VocabPractice(selectedRango: selectedOption ?? "0 a 50", TxtEng: &TxtEng, TxtSpa: &TxtSpa, TxtPalabraClave: &TxtPalabraClave)
+    }
+    
+    private func LimpiarDatos(){
+        Limpiar(TxtEng: $TxtEng, TxtSpa: $TxtSpa, TxtPalabraClave: $TxtPalabraClave, StatusColor: $StatusColor, userInput: $userInput)
+    }
+    
+    private func ComprobarRespuesta() {
+        let palabraCorrecta = TxtEng.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        let palabraIngresada = userInput.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        
+        if palabraCorrecta == palabraIngresada {
+            print("correcto")
+            StatusColor = "success"
+            isCorrect = true
+            LimpiarDatos()
+            practice()
+        } else {
+            StatusColor = "error"
+            isCorrect = false
+        }
     }
 }

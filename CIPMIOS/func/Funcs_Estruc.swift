@@ -9,14 +9,14 @@ import Foundation
 import SwiftUI
 
 func extraerVerbo(oracionCompleta: String) -> String {
-    let oracionCompletaTrimmed = oracionCompleta.trimmingCharacters(in: .whitespacesAndNewlines)
-    let palabras = oracionCompletaTrimmed.components(separatedBy: " ")
-    
-    if palabras.count > 0 {
-        return palabras[palabras.count - 1]
-    } else {
-        return ""
-    }
+let oracionCompletaTrimmed = oracionCompleta.trimmingCharacters(in: .whitespacesAndNewlines)
+let palabras = oracionCompletaTrimmed.components(separatedBy: " ")
+
+if palabras.count > 0 {
+    return palabras[palabras.count - 1]
+} else {
+    return ""
+}
 }
 
 func hintPalabraClave(oracion: String) -> String {

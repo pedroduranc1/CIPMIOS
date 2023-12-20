@@ -173,9 +173,7 @@ struct SpeakingFacil: View {
                         
                         // Usando TextInput y proporcionando la variable de estado
                         TextInput(userInput: $userInput, StatusColor: $StatusColor)
-                        
                     }
-                    
                 }
                 
                 //BTN OPTIONS DESPUES VEMOS PARA QUE SIRVE
