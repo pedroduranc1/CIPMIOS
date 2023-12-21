@@ -43,6 +43,7 @@
 		4475F8C42B23814400307D02 /* Special.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475F8C32B23814400307D02 /* Special.swift */; };
 		4475F8C62B23817800307D02 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475F8C52B23817800307D02 /* People.swift */; };
 		4475F8C82B23908000307D02 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475F8C72B23908000307D02 /* TextInput.swift */; };
+		4477A6D52B3480FA003A2475 /* C150a200.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4477A6D42B3480FA003A2475 /* C150a200.swift */; };
 		4485CB282B31D53F00AE02FB /* Vocabgen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485CB272B31D53F00AE02FB /* Vocabgen.swift */; };
 		4485CB2B2B31D71F00AE02FB /* C0a50.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485CB2A2B31D71F00AE02FB /* C0a50.swift */; };
 		4485CB2D2B31E96400AE02FB /* Funcs_Vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485CB2C2B31E96400AE02FB /* Funcs_Vocab.swift */; };
@@ -116,6 +117,7 @@
 		4475F8C32B23814400307D02 /* Special.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Special.swift; sourceTree = "<group>"; };
 		4475F8C52B23817800307D02 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		4475F8C72B23908000307D02 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		4477A6D42B3480FA003A2475 /* C150a200.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C150a200.swift; sourceTree = "<group>"; };
 		4485CB272B31D53F00AE02FB /* Vocabgen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabgen.swift; sourceTree = "<group>"; };
 		4485CB2A2B31D71F00AE02FB /* C0a50.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C0a50.swift; sourceTree = "<group>"; };
 		4485CB2C2B31E96400AE02FB /* Funcs_Vocab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs_Vocab.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				4485CB2A2B31D71F00AE02FB /* C0a50.swift */,
 				44584E822B332C2D00401894 /* C50a100.swift */,
 				44584E842B33355200401894 /* C100a150.swift */,
+				4477A6D42B3480FA003A2475 /* C150a200.swift */,
 			);
 			path = VocabLeng;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				4475F8BE2B2380CD00307D02 /* Pasts.swift in Sources */,
 				4475F8BC2B2380A200307D02 /* Oo.swift in Sources */,
 				4485CB2B2B31D71F00AE02FB /* C0a50.swift in Sources */,
+				4477A6D52B3480FA003A2475 /* C150a200.swift in Sources */,
 				4475F8C02B2380F800307D02 /* Arrays.swift in Sources */,
 				44CCB4562B275C62000782E2 /* ProfileIconComp.swift in Sources */,
 				444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */,

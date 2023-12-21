@@ -93,4 +93,105 @@ class Vocabgen {
         default: break;
         }
     }
+    
+    public func cientociencin(){
+        //conexion con el dato
+        let ci = C100a150()
+        
+        //random
+        let i = Int.random(in: 0..<6)
+        
+        switch i {
+        case 0:
+            ci.verbhuntofif();
+            gens = ci.gens ?? "";
+            gene = ci.gene ?? "";
+            break;
+            
+        case 1:
+            ci.vocabbecome();
+            gens = ci.gens ?? "";
+            gene = ci.gene ?? "";
+            break;
+            
+        case 2:
+            ci.maymeth();
+            gens = ci.gens ?? "";
+            gene = ci.gene ?? "";
+            break;
+            
+        case 3:
+            ci.shouldmeth();
+            gens = ci.gens ?? "";
+            gene = ci.gene ?? "";
+            break;
+            
+        case 4:
+            ci.advermeth();
+            gens = ci.gens ?? "";
+            gene = ci.gene ?? "";
+            break;
+            
+        case 5:
+            ci.prepmeth();
+            gens = ci.gens ?? "";
+            gene = ci.gene ?? "";
+            break;
+            
+        default:break;
+        }
+    }
+    
+    public func CV150a200(){
+        //conexion con el dato
+        let c = C150a200()
+        
+        //random
+        let i = Int.random(in: 0..<7)
+        
+        switch i {
+        case 0:
+            c.verbgen();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 1:
+            c.adjn();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 2:
+            c.verbsgenadv();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 3:
+            c.detmeth();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 4:
+            c.meth4();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 5:
+            c.mostmeth();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+        case 6:
+            c.eachmeth();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        default:break;
+        }
+    }
 }

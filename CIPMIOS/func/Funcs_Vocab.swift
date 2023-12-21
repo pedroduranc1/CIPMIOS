@@ -28,6 +28,25 @@ func VocabPractice(selectedRango: String?,TxtEng: inout String, TxtSpa: inout St
         TxtEng = gen.gene;
         TxtSpa = gen.gens;
         TxtPalabraClave = hintPalabraClave(oracion: TxtEng);
+        
+    case "100 a 150":
+        let gen = Vocabgen()
+        
+        gen.cientociencin()
+        
+        TxtEng = gen.gene;
+        TxtSpa = gen.gens;
+        TxtPalabraClave = hintPalabraClave(oracion: TxtEng);
+        
+    case "150 a 200":
+        let gen = Vocabgen()
+        
+        gen.CV150a200()
+        
+        TxtEng = gen.gene;
+        TxtSpa = gen.gens;
+        TxtPalabraClave = hintPalabraClave(oracion: TxtEng);
+        
     default: break;
     }
 }
