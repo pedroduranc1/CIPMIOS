@@ -194,4 +194,96 @@ class Vocabgen {
         default:break;
         }
     }
+    
+    public func CV200a250(){
+        //conexion con el dato
+        let c = C200a250()
+        
+        //random
+        let i = Int.random(in: 0..<8)
+        
+        switch i {
+        case 0:
+            c.vocab200a250();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 1:
+            c.verbgen();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 2:
+            c.advsverbsgen();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 3:
+            c.prepnoun();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 4:
+            c.adjnounmale();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 5:
+            c.adjnounfemale();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+        case 6:
+            c.detf200a250();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+            
+        case 7:
+            c.detm200a250();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            break;
+        default:break;
+        }
+    }
+    
+    public func CV250a300(){
+        //conexion con el dato
+        let c = C250a300()
+        
+        //random
+        let i = Int.random(in: 0..<5)
+        
+        switch i {
+        case 0:
+            c.verbsadvgen();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+        case 1:
+            c.advsverbsgen();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+        case 2:
+            c.prepn();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+        case 3:
+            c.adjnm();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+        case 4:
+            c.least();
+            gens = c.gens ?? "";
+            gene = c.gene ?? "";
+            
+            
+        default:break;
+        }
+    }
 }
