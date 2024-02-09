@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct Perfil: View {
+    @ObservedObject var userManager = UserManager()
+    
     var body: some View {
         ScrollView{
             VStack(spacing:0){
@@ -20,24 +23,43 @@ struct Perfil: View {
                         Spacer()
                     }
                     
-                    Image(systemName: "person.crop.square")
-                        .resizable()
-                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                        .frame(width: 70,height: 70)
-                        .background(Color("blanco"))
-                        .cornerRadius(10)
-                        .padding(.top,50)
+                    if !userManager.UserInfoProf.urlImage.isEmpty{
+                        URLImage(URL(string: userManager.UserInfoProf.urlImage)!) { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                                .frame(width: 70,height: 70)
+                                .background(Color("blanco"))
+                                .cornerRadius(10)
+                                .padding(.top,50)
+                        }
+                    }else{
+                        Image(systemName: "person.crop.square")
+                            .resizable()
+                            .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                            .frame(width: 70,height: 70)
+                            .background(Color("blanco"))
+                            .cornerRadius(10)
+                            .padding(.top,50)
+                    }
                     
                 }
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:200)
                 .frame(height: 150)
                 
                 HStack{
-                    Text("Nombre Apellido")
-                        .font(.system(size: 20))
-                        .bold()
-                    Image(systemName: "gear")
-                        .foregroundColor(.gray)
+                    if !userManager.UserInfoProf.nombre.isEmpty {
+                        Text("\(userManager.UserInfoProf.nombre) \(userManager.UserInfoProf.apellido)")
+                            .font(.system(size: 20))
+                            .bold()
+                    }
+                    Button(action: {
+                        logout()
+                    }){
+                        Image(systemName: "gear")
+                            .foregroundColor(.gray)
+                    }
+                    
                 }
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:100)
                 
@@ -52,7 +74,7 @@ struct Perfil: View {
                         .font(.system(size: 15))
                         .foregroundColor(.gray)
                         .frame(width: 130)
-                        
+                    
                     
                     VStack{
                         Color("azul")
@@ -90,7 +112,7 @@ struct Perfil: View {
                 
                 HStack{
                     ProfileIconComp(ImgName: "img_chatMaestro", TextName: "Transiciones", PercentageText: "0.00% de avance",TextSize: 20)
-                   
+                    
                 }
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:.infinity)
                 .padding(.horizontal,20)
@@ -99,9 +121,14 @@ struct Perfil: View {
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         }
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .onAppear {
+            userManager.fetchUserProfileInfo()
+        }
+    }
+    
+    private func logout() {
+        // Llama al método de logout de tu AuthManager
+        AuthManager.shared.logout()
     }
 }
 
-#Preview {
-    Perfil()
-}

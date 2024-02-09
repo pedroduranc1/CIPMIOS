@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct AuthRoutes: View {
+    @Binding var IndexSeleAuth: Int
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+            switch IndexSeleAuth {
+            case 0:
+                Login(IndexSeleAuth: $IndexSeleAuth)
+            case 1:
+                Registro(IndexSeleAuth: $IndexSeleAuth)
+            default:
+                EmptyView()
+            }
+            
+        }
+        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
     }
 }
 
-#Preview {
-    AuthRoutes()
-}

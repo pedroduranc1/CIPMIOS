@@ -23,6 +23,7 @@ struct Routes: View {
                 Chat()
             case 4:
                 Perfil()
+                    .environmentObject(UserManager())
             case 5:
                 //Speaking FACIL
                 SpeakingFacil(IndexSeleccionado: $IndexSeleccionado)

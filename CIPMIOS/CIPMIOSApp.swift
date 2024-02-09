@@ -1,17 +1,18 @@
-//
-//  CIPMIOSApp.swift
-//  CIPMIOS
-//
-//  Created by Pedro Duran on 4/12/23.
-//
-
 import SwiftUI
 
 @main
 struct CIPMIOSApp: App {
+    @StateObject var authManager = AuthManager.shared
+    
+    @State var IndexSeleAuth = 0
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authManager.isUserAuthenticated {
+                ContentView()
+            } else {
+                AuthRoutes(IndexSeleAuth: $IndexSeleAuth)
+            }
         }
     }
 }

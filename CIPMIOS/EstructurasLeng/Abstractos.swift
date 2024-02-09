@@ -749,7 +749,7 @@ func randomStarter() {
 
         //PASADOS
         func GenPassSimp1() {                                                  randomStarter()
-            var sr = Int.random(in: 0..<2);
+            let sr = Int.random(in: 0..<2);
             switch (neg) {
                 case 1:
                     if (sr == 0) {
