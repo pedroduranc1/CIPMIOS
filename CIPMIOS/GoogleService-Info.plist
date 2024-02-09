@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>548094058614-t6mcs4nm3mfieoubj4pbv7096atj2rbo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.548094058614-t6mcs4nm3mfieoubj4pbv7096atj2rbo</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>548094058614-fkrqjukeih4pbbbo2vldua9p0ljcburt.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAXIGNZT0qthzZiy-z8tp_oqT5DriJWHqU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>548094058614</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>CIPM.CIPMIOS</string>
+	<key>PROJECT_ID</key>
+	<string>cipmbilling-24963</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cipmbilling-24963.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:548094058614:ios:ffce95357cf8ca79ea3f57</string>
+	<key>DATABASE_URL</key>
+	<string>https://cipmbilling-24963-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
