@@ -1,19 +1,17 @@
 //
-//  Login.swift
+//  ResetPass.swift
 //  CIPMIOS
 //
-//  Created by Pedro Duran on 6/2/24.
+//  Created by Pedro Duran on 12/2/24.
 //
 
 import SwiftUI
 
-struct Login: View {
+struct ResetPass: View {
     @State private var email: String = ""
-    @State private var password: String = ""
-    @State private var errorMessage: String?
+    @State private var errorMessage: String = ""
     @State private var isLoading: Bool = false
     @Binding var IndexSeleAuth: Int
-    
     var body: some View {
         VStack{
             VStack{
@@ -24,16 +22,14 @@ struct Login: View {
                     .cornerRadius(10)
                     .padding(.top,50)
                 
-                Text("!Bienvenido de nuevo a la App!")
+                Text("!Resetea tu Contraseña!")
                     .font(.system(size: 20))
                     .padding(.top,20)
                     .foregroundColor(.white)
                     .frame(width: .infinity)
                 
-                VStack{
-                    
-                }
-                .padding(.vertical,15)
+                VStack{}
+                    .padding(.vertical,15)
                 
                 TextField("Ingresa tu correo electronico",text: $email)
                     .padding(.vertical,15)
@@ -48,54 +44,13 @@ struct Login: View {
                     .cornerRadius(5)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 
-                SecureField("Contraseña",text: $password)
-                    .padding(.vertical,15)
-                    .padding(.horizontal, 10)
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .padding(.vertical,50)
-                            .padding(.horizontal,40)
-                    )
-                    .foregroundColor(.black)
-                    .background(Color("blanco"))
-                    .cornerRadius(5)
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                
-                VStack(){
-                    VStack(alignment:.trailing){
-                        Button(action:{self.IndexSeleAuth = 2}){
-                            HStack{
-                                Spacer()
-                                Text("Recuperar contraseña")
-                                    .foregroundStyle(.white)
-                                    .bold()
-                                    .padding(.vertical,5)
-                            }
-                            .foregroundColor(.black)
-                            .cornerRadius(8)
-                        }
-                    }
-                    
-                }
-                .frame(maxWidth: .infinity)
-                .cornerRadius(10)
-                
-                if let errorMessage = errorMessage {
-                    Text(errorMessage)
-                        .foregroundColor(.red)
-                        .padding()
-                }
-                
-                VStack{
-                    
-                }
-                .padding(.vertical,5)
-                
+                VStack{}
+                    .padding(.vertical,5)
                 
                 VStack(){
                     VStack(alignment:.center){
                         Button(action:{
-                            login()
+                            resetPass()
                         }){
                             VStack{
                                 if isLoading {
@@ -104,7 +59,7 @@ struct Login: View {
                                         .padding(.vertical, 15) // Ajustar el espacio entre el texto y el loader
                                         .foregroundColor(.black)
                                 }else {
-                                    Text("Iniciar Sesion")
+                                    Text("Recuperar contraseña")
                                         .foregroundStyle(.white)
                                         .bold()
                                         .padding(.vertical,15)
@@ -121,42 +76,20 @@ struct Login: View {
                 .background(Color("rojo"))
                 .cornerRadius(10)
                 
-                VStack{
-                    
+                VStack{}
+                    .padding(.vertical,20)
+                
+                if errorMessage != "" {
+                    Text(errorMessage)
+                        .foregroundColor(.red)
+                        .padding()
                 }
-                .padding(.vertical,5)
                 
                 VStack{
                     Color(.white)
                 }
-                .padding(.horizontal,20)
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                .frame(height: 2)
-                
-                VStack{
-                    
-                }
-                .padding(.vertical,10)
-                
-                VStack(){
-                    VStack(alignment:.center){
-                        Button(action:{self.IndexSeleAuth = 1}){
-                            VStack{
-                                Text("¿No tienes cuenta? Registrate aqui")
-                                    .foregroundStyle(.white)
-                                    .bold()
-                                    .padding(.vertical,15)
-                                    .padding(.horizontal,20)
-                            }
-                            .foregroundColor(.black)
-                            .cornerRadius(8)
-                        }
-                    }
-                    
-                }
-                .frame(maxWidth: .infinity)
-                .cornerRadius(10)
-                
+                .frame(height: 1)
                 
             }
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
@@ -167,17 +100,17 @@ struct Login: View {
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
     
-    private func login() {
+    private func resetPass(){
         isLoading = true // Activar el loader
         
-        AuthManager.shared.login(email: email, password: password) { result in
+        AuthManager.shared.resetPassword(email: email) { result in
             DispatchQueue.main.async { // Asegurarse de realizar las actualizaciones en el hilo principal
                 isLoading = false // Desactivar el loader
                 
                 switch result {
                 case .success:
                     // Inicio de sesión exitoso
-                    print("Inicio de sesión exitoso")
+                    self.IndexSeleAuth = 0
                 case .failure(let error):
                     // Manejar errores durante el inicio de sesión
                     errorMessage = error.localizedDescription
@@ -186,4 +119,5 @@ struct Login: View {
         }
     }
 }
+
 

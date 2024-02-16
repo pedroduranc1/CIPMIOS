@@ -11,6 +11,7 @@
 		440F49012B73DD880082CE34 /* AuthRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F49002B73DD880082CE34 /* AuthRoutes.swift */; };
 		443589D82B20E88200D5760D /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443589D72B20E88200D5760D /* SpeechRecognizer.swift */; };
 		443589DC2B20E95700D5760D /* ReconocerdorDeVoz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */; };
+		444226FE2B7A6A7300881CF8 /* ResetPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444226FD2B7A6A7300881CF8 /* ResetPass.swift */; };
 		44476F8D2B28AFF300D57C6C /* Funcs_Estruc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */; };
 		444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80242B1E3D1B004AC6BF /* CIPMIOSApp.swift */; };
 		444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80262B1E3D1B004AC6BF /* ContentView.swift */; };
@@ -96,6 +97,7 @@
 		443589D32B20E25700D5760D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		443589D72B20E88200D5760D /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconocerdorDeVoz.swift; sourceTree = "<group>"; };
+		444226FD2B7A6A7300881CF8 /* ResetPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPass.swift; sourceTree = "<group>"; };
 		44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs_Estruc.swift; sourceTree = "<group>"; };
 		444E80212B1E3D1B004AC6BF /* CIPMIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIPMIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		444E80242B1E3D1B004AC6BF /* CIPMIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIPMIOSApp.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				44AF79182B2CAA7100D732A0 /* Vocab.swift */,
 				44F621012B72856600CAD21C /* Login.swift */,
 				440F48FE2B73DD170082CE34 /* Registro.swift */,
+				444226FD2B7A6A7300881CF8 /* ResetPass.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				4475F8C22B23812500307D02 /* Abstractos.swift in Sources */,
 				44FC34E62B3C9EEA008982DF /* C200a250.swift in Sources */,
 				444E805C2B1E479B004AC6BF /* BottonImg.swift in Sources */,
+				444226FE2B7A6A7300881CF8 /* ResetPass.swift in Sources */,
 				44584E852B33355200401894 /* C100a150.swift in Sources */,
 				444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */,
 				444E80582B1E428C004AC6BF /* ButtonNormal.swift in Sources */,

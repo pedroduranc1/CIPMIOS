@@ -43,6 +43,45 @@ class AuthManager: ObservableObject {
         }
     }
     
+    func registro(fullName: String, email: String, password: String, completion: @escaping (Result<Void, Error>) -> Void) {
+            // Separar el nombre completo en nombre y apellido
+            let fullNameComponents = fullName.components(separatedBy: " ")
+            guard let firstName = fullNameComponents.first, let lastName = fullNameComponents.last else {
+                completion(.failure(NSError(domain: "InvalidFullName", code: 0, userInfo: [NSLocalizedDescriptionKey: "Nombre completo no válido"])))
+                return
+            }
+            
+            // Registrar el usuario en Firebase Auth
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let error = error {
+                    completion(.failure(error))
+                    return
+                }
+                
+                // Guardar datos del usuario en Firestore
+                let db = Firestore.firestore()
+                let userData: [String: Any] = ["nombre": firstName, "apellido": lastName, "cuantoTiempoLlevas": "", "deDondeEres":"","hazTomadoClases":"","telefono":"","urlImage":""]
+                db.collection(authResult!.user.uid).document("EstudentsInfo").setData(userData) { error in
+                    if let error = error {
+                        completion(.failure(error))
+                        return
+                    }
+                    
+                    completion(.success(()))
+                }
+            }
+        }
+    
+    func resetPassword(email: String, completion: @escaping (Result<Void, Error>) -> Void) {
+            Auth.auth().sendPasswordReset(withEmail: email) { error in
+                if let error = error {
+                    completion(.failure(error))
+                } else {
+                    completion(.success(()))
+                }
+            }
+        }
+    
     func logout() {
         do {
             try Auth.auth().signOut()

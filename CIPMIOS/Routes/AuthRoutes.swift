@@ -17,6 +17,8 @@ struct AuthRoutes: View {
                 Login(IndexSeleAuth: $IndexSeleAuth)
             case 1:
                 Registro(IndexSeleAuth: $IndexSeleAuth)
+            case 2:
+                ResetPass(IndexSeleAuth: $IndexSeleAuth)
             default:
                 EmptyView()
             }
