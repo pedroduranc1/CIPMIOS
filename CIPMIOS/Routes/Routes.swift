@@ -30,9 +30,11 @@ struct Routes: View {
             case 6:
                 //VOCAB
                 Vocab(IndexSeleccionado: $IndexSeleccionado)
+            case 7:
+                Listening(IndexSeleccionado: $IndexSeleccionado)
             case 99:
                 //VIEW DE PRUEBAS
-                PruebaView()
+                SpeechView()
             default:
                 EmptyView()
             }

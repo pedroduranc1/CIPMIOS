@@ -32,6 +32,9 @@ struct Vocab: View {
     @State private var userInput: String = ""
     @State private var isEmpezarClicked = false
     @State private var isCorrect = true
+    @State private var currentTimeInSeconds: Double = 0 // Estado para el tiempo actual del vídeo
+    @State private var seekTimeInSeconds: Double?
+    @State var isButtonPressed: Bool?
     
     var body: some View {
         ScrollView{
@@ -48,10 +51,13 @@ struct Vocab: View {
                 }
                 
                 // VIDEO VIEW
-                VideoPlayerView(videoURL: videoURL, onStop: {
-                    // Manejar la acción al detenerse (puedes poner cualquier código que desees ejecutar)
-                    
-                })
+                VideoPlayerView(videoURL: videoURL,
+                                currentTimeInSeconds: $currentTimeInSeconds,
+                                seekTimeInSeconds: $seekTimeInSeconds,
+                                onStop: {
+                    // Aquí manejas lo que sucede cuando el video se detiene
+                    print("El video ha terminado.")
+                }, isButtonPressed: $isButtonPressed)
                 .frame(height: 220)
                 .padding(.horizontal, 20)
                 .onDisappear {

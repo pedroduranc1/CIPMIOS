@@ -19,7 +19,9 @@ struct Main: View {
                 NotchSpacing(ColorNotch: "azul")
                 
                 //BOTON SABER MI NIVEL
-                ButtonNormal(buttonText: "SABER MI NIVEL", backgroundColor: "amarillo", outsideColor: "azul", textColor: .black, action: {})
+                ButtonNormal(buttonText: "SABER MI NIVEL", backgroundColor: "amarillo", outsideColor: "azul", textColor: .black, action: {
+                    self.IndexSeleccionado = 99
+                })
                 
                 //BOTON SABER MI NIVEL
                 ButtonNormal(buttonText: "MY PLAN", backgroundColor: "azul", outsideColor: "blanco", textColor: .white, action: {
@@ -55,13 +57,15 @@ struct Main: View {
                 HStack(alignment:.top){
                     
                     
-                    BottonPeque(btnTexto: "Listening", btnImage: "listening")
+                    BottonPeque(btnTexto: "Listening", btnImage: "listening",action: {
+                        self.IndexSeleccionado = 7
+                    })
                     
-                    BottonPeque(btnTexto: "Pienso en Espanol", btnImage: "spaint")
+                    BottonPeque(btnTexto: "Pienso en Espanol", btnImage: "spaint",action: {})
                     
-                    BottonPeque(btnTexto: "Listening Dificil", btnImage: "conint")
+                    BottonPeque(btnTexto: "Listening Dificil", btnImage: "conint",action: {})
                     
-                    BottonPeque(btnTexto: "Lectura", btnImage: "availa")
+                    BottonPeque(btnTexto: "Lectura", btnImage: "availa",action: {})
                     
                 }
                 .padding()

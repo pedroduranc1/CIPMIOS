@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		440F48FF2B73DD170082CE34 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F48FE2B73DD170082CE34 /* Registro.swift */; };
 		440F49012B73DD880082CE34 /* AuthRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F49002B73DD880082CE34 /* AuthRoutes.swift */; };
-		443589D82B20E88200D5760D /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443589D72B20E88200D5760D /* SpeechRecognizer.swift */; };
-		443589DC2B20E95700D5760D /* ReconocerdorDeVoz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */; };
 		444226FE2B7A6A7300881CF8 /* ResetPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444226FD2B7A6A7300881CF8 /* ResetPass.swift */; };
+		4443DBDC2B83A6FC002386E8 /* Listening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4443DBDB2B83A6FC002386E8 /* Listening.swift */; };
+		4445EA772B84F4FF00C65685 /* CultureTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445EA762B84F4FF00C65685 /* CultureTypes.swift */; };
 		44476F8D2B28AFF300D57C6C /* Funcs_Estruc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */; };
 		444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80242B1E3D1B004AC6BF /* CIPMIOSApp.swift */; };
 		444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E80262B1E3D1B004AC6BF /* ContentView.swift */; };
@@ -36,6 +36,7 @@
 		44584E832B332C2D00401894 /* C50a100.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44584E822B332C2D00401894 /* C50a100.swift */; };
 		44584E852B33355200401894 /* C100a150.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44584E842B33355200401894 /* C100a150.swift */; };
 		4460C6B32B224F9A002F981E /* VideoUrlHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4460C6B22B224F9A002F981E /* VideoUrlHandler.swift */; };
+		447314762B83A138008646CB /* SpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447314752B83A138008646CB /* SpeechView.swift */; };
 		4475F8B52B237DD500307D02 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475F8B42B237DD500307D02 /* Generator.swift */; };
 		4475F8B82B237ECD00307D02 /* Intrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475F8B72B237ECD00307D02 /* Intrans.swift */; };
 		4475F8BA2B23807B00307D02 /* Nobles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475F8B92B23807B00307D02 /* Nobles.swift */; };
@@ -95,9 +96,9 @@
 		440F48FE2B73DD170082CE34 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
 		440F49002B73DD880082CE34 /* AuthRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRoutes.swift; sourceTree = "<group>"; };
 		443589D32B20E25700D5760D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		443589D72B20E88200D5760D /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
-		443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconocerdorDeVoz.swift; sourceTree = "<group>"; };
 		444226FD2B7A6A7300881CF8 /* ResetPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPass.swift; sourceTree = "<group>"; };
+		4443DBDB2B83A6FC002386E8 /* Listening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listening.swift; sourceTree = "<group>"; };
+		4445EA762B84F4FF00C65685 /* CultureTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultureTypes.swift; sourceTree = "<group>"; };
 		44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcs_Estruc.swift; sourceTree = "<group>"; };
 		444E80212B1E3D1B004AC6BF /* CIPMIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIPMIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		444E80242B1E3D1B004AC6BF /* CIPMIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIPMIOSApp.swift; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 		44584E822B332C2D00401894 /* C50a100.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C50a100.swift; sourceTree = "<group>"; };
 		44584E842B33355200401894 /* C100a150.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C100a150.swift; sourceTree = "<group>"; };
 		4460C6B22B224F9A002F981E /* VideoUrlHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUrlHandler.swift; sourceTree = "<group>"; };
+		447314752B83A138008646CB /* SpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechView.swift; sourceTree = "<group>"; };
 		4475F8B42B237DD500307D02 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		4475F8B72B237ECD00307D02 /* Intrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intrans.swift; sourceTree = "<group>"; };
 		4475F8B92B23807B00307D02 /* Nobles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nobles.swift; sourceTree = "<group>"; };
@@ -200,7 +202,6 @@
 		443589D62B20E86A00D5760D /* func */ = {
 			isa = PBXGroup;
 			children = (
-				443589D72B20E88200D5760D /* SpeechRecognizer.swift */,
 				4460C6B22B224F9A002F981E /* VideoUrlHandler.swift */,
 				44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */,
 				4485CB2C2B31E96400AE02FB /* Funcs_Vocab.swift */,
@@ -289,6 +290,8 @@
 				44F621012B72856600CAD21C /* Login.swift */,
 				440F48FE2B73DD170082CE34 /* Registro.swift */,
 				444226FD2B7A6A7300881CF8 /* ResetPass.swift */,
+				447314752B83A138008646CB /* SpeechView.swift */,
+				4443DBDB2B83A6FC002386E8 /* Listening.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,7 +311,6 @@
 				44F7D5012B1F9DC500EAAC8B /* BtnEmpezar.swift */,
 				44F7D5032B1F9E3200EAAC8B /* SeparadorPequeno.swift */,
 				44D9D9502B20B858004CCFFC /* BottomNav.swift */,
-				443589DB2B20E95700D5760D /* ReconocerdorDeVoz.swift */,
 				4475F8C72B23908000307D02 /* TextInput.swift */,
 				44CCB4552B275C62000782E2 /* ProfileIconComp.swift */,
 				449778DF2B3094F3006A6082 /* ToastManager.swift */,
@@ -366,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				44CBBAEB2B71359100C0F321 /* UserTypes.swift */,
+				4445EA762B84F4FF00C65685 /* CultureTypes.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				440F48FF2B73DD170082CE34 /* Registro.swift in Sources */,
 				444E80502B1E3D69004AC6BF /* Main.swift in Sources */,
 				4485CB282B31D53F00AE02FB /* Vocabgen.swift in Sources */,
+				4443DBDC2B83A6FC002386E8 /* Listening.swift in Sources */,
 				444E80602B1E593D004AC6BF /* SpeakingFacil.swift in Sources */,
 				44F7D5002B1F7DA200EAAC8B /* VideoPlayerView.swift in Sources */,
 				4475F8C62B23817800307D02 /* People.swift in Sources */,
@@ -535,11 +539,12 @@
 				44F621022B72856600CAD21C /* Login.swift in Sources */,
 				444E80642B1E5A3F004AC6BF /* Premium.swift in Sources */,
 				449778E02B3094F3006A6082 /* ToastManager.swift in Sources */,
+				4445EA772B84F4FF00C65685 /* CultureTypes.swift in Sources */,
+				447314762B83A138008646CB /* SpeechView.swift in Sources */,
 				444E80542B1E3F97004AC6BF /* Routes.swift in Sources */,
 				444E80562B1E3FBA004AC6BF /* NotchSpacing.swift in Sources */,
 				444E80622B1E59B6004AC6BF /* Test.swift in Sources */,
 				4475F8C82B23908000307D02 /* TextInput.swift in Sources */,
-				443589D82B20E88200D5760D /* SpeechRecognizer.swift in Sources */,
 				444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */,
 				4475F8BE2B2380CD00307D02 /* Pasts.swift in Sources */,
 				4475F8BC2B2380A200307D02 /* Oo.swift in Sources */,
@@ -548,7 +553,6 @@
 				4475F8C02B2380F800307D02 /* Arrays.swift in Sources */,
 				44CCB4562B275C62000782E2 /* ProfileIconComp.swift in Sources */,
 				444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */,
-				443589DC2B20E95700D5760D /* ReconocerdorDeVoz.swift in Sources */,
 				44F7D5042B1F9E3200EAAC8B /* SeparadorPequeno.swift in Sources */,
 				4475F8B82B237ECD00307D02 /* Intrans.swift in Sources */,
 				4475F8C22B23812500307D02 /* Abstractos.swift in Sources */,

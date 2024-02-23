@@ -11,6 +11,9 @@ struct Premium: View {
     @Binding var IndexSeleccionado: Int
     // 
     @State private var videoURL: URL?
+    @State private var currentTimeInSeconds: Double = 0 // Estado para el tiempo actual del vídeo
+    @State private var seekTimeInSeconds: Double?
+    @State var isButtonPressed: Bool?
     var body: some View {
         ScrollView{
             VStack(spacing:0){
@@ -38,9 +41,15 @@ struct Premium: View {
                 .padding(.bottom,15)
                 
                 //VIDEO
-                VideoPlayerView(videoURL: videoURL,onStop: {})
-                    .frame(height: 220)
-                    .padding(.horizontal, 25)
+                VideoPlayerView(videoURL: videoURL,
+                                currentTimeInSeconds: $currentTimeInSeconds,
+                                seekTimeInSeconds: $seekTimeInSeconds,
+                                onStop: {
+                    // Aquí manejas lo que sucede cuando el video se detiene
+                    print("El video ha terminado.")
+                }, isButtonPressed: $isButtonPressed)
+                .frame(height: 220)
+                .padding(.horizontal, 25)
                 
                 //CONDICIONES PARA CANCELAR
                 VStack(alignment: .leading,spacing:0){

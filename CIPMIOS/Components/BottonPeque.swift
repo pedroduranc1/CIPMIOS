@@ -10,11 +10,10 @@ import SwiftUI
 struct BottonPeque: View {
     var btnTexto : String
     var btnImage : String
+    var action: () -> Void
     
     var body: some View {
-        Button(action: {
-            // Acción para el primer botón
-        }) {
+        Button(action:action) {
             VStack {
                 Image(btnImage) // Cambia "1.circle" por el nombre de tu imagen
                     .resizable()

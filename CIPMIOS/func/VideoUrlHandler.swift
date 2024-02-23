@@ -70,6 +70,14 @@ func getVideoURL(for option: String?,currentPage: String) -> URL? {
         
     case "Premium":
         return URL(string: "https://adrianlealcaldera.com/premiumpromo.mp4")
+        
+    case "Culture":
+        switch(option){
+        case "Moonlight":
+            return URL(string: "https://adrianlealcaldera.com/presentesimple.mp4")
+        default:
+            return nil
+        }
     default:
         return nil
     }
