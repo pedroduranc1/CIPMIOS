@@ -18,14 +18,18 @@ struct Listening: View {
     @State private var selectedOption: String? = "Moonlight"
     @State private var Explanation = 0
     @State private var Clip = 0
-    @State private var IsPremium: Bool = false
+    @State private var IsPremium: Bool = true
     @State private var ShowExpla = false
     @State private var ShowClip = false
     @State private var KeyWord = "Ain't no refund"
     @State private var currentTimeInSeconds: Double = 0 // Estado para el tiempo actual del vídeo
-    @State private var seekTimeInSeconds: Double?
+    @State private var seekTimeInSeconds: Double = 0
     @State var isButtonPressed: Bool?
     @State var TimeStart = 0
+    @State var TimeEnd = 0
+    @State private var hasSeeked = false
+    @State var showToast = false
+    @State var Message = ""
     
     var body: some View {
         ScrollView {
@@ -37,19 +41,26 @@ struct Listening: View {
                 HeaderNav(location: "Culture", IndexSeleccionado: $IndexSeleccionado)
                 
                 // VIDEO VIEW
-                VideoPlayerView(videoURL: videoURL,
-                                currentTimeInSeconds: $currentTimeInSeconds,
-                                seekTimeInSeconds: $seekTimeInSeconds,
-                                onStop: {
-                    // Aquí manejas lo que sucede cuando el video se detiene
-                    print("El video ha terminado.")
-                }, isButtonPressed: $isButtonPressed)
-                .frame(height: 220)
-                .padding(.top, 15)
-                .padding(.horizontal, 20)
-                .onChange(of: selectedOption) { _ in
-                    handleSelectedOptionChange()
+                if let safeVideoURL = videoURL {
+                    CultureVideoView(videoURL: safeVideoURL, seekTime: $seekTimeInSeconds) { time in
+                        if !hasSeeked {
+                            seekTimeInSeconds = 0
+                        }
+                        currentTimeInSeconds = time
+                    }
+                    .frame(height: 220)
+                    .padding(.top, 15)
+                    .padding(.horizontal, 20)
+                    .id(videoURL)
+                    .onChange(of: videoURL) { _ in
+                        hasSeeked = false // Restablecer cuando cambia la URL del video
+                        updateVideoURL()
+                    }
+                } else {
+                    // Considera mostrar algún contenido alternativo o un mensaje de error aquí
+                    Text("Video URL is not available.")
                 }
+                
                 
                 // SELECT BOX
                 PickerCustom(defaultOption: "Moonlight", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {
@@ -88,8 +99,8 @@ struct Listening: View {
                         Spacer()
                         Button(action: {
                             let seconds = Double(TimeStart) / 1000.0
-                            self.isButtonPressed = true
                             seekTimeInSeconds = seconds
+                            hasSeeked = true
                         }){
                             Text(KeyWord)
                                 .padding(.bottom,10)
@@ -103,17 +114,66 @@ struct Listening: View {
                     
                     
                     BtnEmpezar(TextBtn: "Get", action: {
-                        handleFindKeyWord()
+                        validarTiempos()
                     })
+                    
+                    VStack {
+                        Spacer()
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:.infinity)
+                    .toast(isShowing: $showToast,
+                           toastConfig: ToastConfig(message: "Funcion solo Disponible para Usuarios Premiums"))
+                    
+                    
+                    
                 }
+                
+            }
+            .onChange(of: videoURL) { _ in
+                // Cada vez que cambia el videoURL, reseteamos hasSeeked y establecemos el tiempo adecuado
+                hasSeeked = false
+                // Aquí podrías establecer currentTimeInSeconds a un valor inicial específico si es necesario
+            }
+            .onChange(of: currentTimeInSeconds) { newValue in
+                // Una vez que se cambia el tiempo, evita futuras actualizaciones automáticas
+                hasSeeked = true
+            }
+            .onChange(of: selectedOption) { _ in
+                handleSelectedOptionChange()
             }
             .onAppear {
                 // Inicializa videoURL cuando la vista aparece
                 updateVideoURL()
                 
             }
+            
             .edgesIgnoringSafeArea(.all)
         }
+    }
+    
+    private func handleEmpezarPractica() {
+        isEmpezarClicked = true // Asegura que se marque como empezado.
+        ShowExpla = true
+        ShowClip = false
+        // Asume que quieres mostrar la primera explicación.
+        // Ajusta según tu lógica para determinar qué explicación mostrar.
+        Explanation = 1
+        updateVideoURL() // Actualiza el videoURL basado en los nuevos estados.
+    }
+    
+    private func handleFindKeyWord() {
+        if ShowExpla {
+            // Si estamos mostrando la explicación, cambia a mostrar el clip.
+            ShowExpla = false
+            ShowClip = true
+            Clip = Explanation // Asume que el clip a mostrar corresponde al número de explicación actual.
+        } else {
+            // Si no estamos mostrando la explicación, incrementa Explanation y muestra la siguiente explicación.
+            Explanation += 1
+            ShowClip = false
+            ShowExpla = true
+        }
+        updateVideoURL() // Asegúrate de actualizar el videoURL cada vez que cambien los estados relevantes.
     }
     
     private func handleSelectedOptionChange() {
@@ -132,44 +192,74 @@ struct Listening: View {
             VarIndex = 0
         case "Rick and Morty":
             VarIndex = 1
+        case "Do You Want Pepsi":
+            VarIndex = 2
+        case "Sangre Por Sangre Foodline":
+            VarIndex = 3
+        case "Sangre Por Sangre Watch El Paisaje":
+            VarIndex = 4
+        case "Training Day Rabbit Has The Gun":
+            VarIndex = 5
+        case "Hancock Train":
+            VarIndex = 6
+        case "Malcom in the Middle Teacher":
+            VarIndex = 7
+        case "Sangre Por Sangre Comedor":
+            VarIndex = 8
+        case "Dave Chapelle Man Rape":
+            VarIndex = 9
+        case "Análisis de cultura Gringa y Frases Coloquiales 2":
+            VarIndex = 10
+        case "Boys in the Hood":
+            VarIndex = 11
+        case "Cultura y Fonética":
+            VarIndex = 12
+        case "Kings of the Hills Drugs":
+            VarIndex = 13
         default:
             VarIndex = 0
         }
         
-        
-        
         if ShowExpla {
             videoURL = URL(string: ClipsData.collection[VarIndex].clips[Explanation-1].urlExp)
         } else if ShowClip {
-            videoURL = URL(string: ClipsData.collection[VarIndex].clips[Clip].urlClip)
-            TimeStart = ClipsData.collection[VarIndex].clips[Explanation-1].timeStart
-            KeyWord = ClipsData.collection[VarIndex].clips[Explanation-1].keyword
+            videoURL = URL(string: ClipsData.collection[VarIndex].clips[Clip-1].urlClip)
+            TimeStart = ClipsData.collection[VarIndex].clips[Clip-1].timeStart
+            TimeEnd = ClipsData.collection[VarIndex].clips[Clip-1].timeStop
+            KeyWord = ClipsData.collection[VarIndex].clips[Clip-1].keyword
         } else {
-            // Default or initial video URL logic
+            // Lógica para establecer la URL del video inicial o predeterminado.
             videoURL = URL(string: ClipsData.collection[VarIndex].clips[0].urlClip)
         }
     }
-    
-    private func handleEmpezarPractica() {
-        isEmpezarClicked = true
-        Explanation = 0 // Start with the first explanation video
-        ShowExpla = true
-        ShowClip = false
-        updateVideoURL()
-    }
-    
-    private func handleFindKeyWord() {
-        if ShowExpla {
-            ShowExpla = false
-            ShowClip = true
-        } else {
-            seekTimeInSeconds = 0
+    private func validarTiempos() {
+        let secondStart = Double(TimeStart) / 1000.0
+        let secondEnd = Double(TimeEnd) / 1000.0
+        if currentTimeInSeconds >= secondStart && currentTimeInSeconds <= secondEnd {
+            // Incrementa Explanation para avanzar a la siguiente explicación.
+            
             Explanation += 1
-            ShowClip = false
+            
+            // Asegúrate de que ShowExpla se establezca en true para mostrar la explicación.
             ShowExpla = true
+            
+            // Asegúrate de que ShowClip se establezca en false ya que vamos a mostrar la explicación, no el clip.
+            ShowClip = false
+            
+            // No es necesario modificar isEmpezarClicked aquí a menos que quieras reiniciar el proceso.
+            seekTimeInSeconds = 0
+            hasSeeked = true
+            
+            showToast = true
+            Message = "Felicidades la encontraste."
+            // Actualiza el videoURL para cargar el video de explicación correspondiente.
+            updateVideoURL()
+        } else {
+            showToast = true
+            Message = "Aqui no se encuentra la palabra. Vuelve a Intentarlo"
+            // Opcional: manejar el caso en el que el tiempo actual no esté en el rango esperado.
+            // Por ejemplo, puedes querer mostrar un mensaje al usuario o hacer alguna otra acción.
         }
-        updateVideoURL()
     }
-    
     
 }
