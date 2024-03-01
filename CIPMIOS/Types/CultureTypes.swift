@@ -132,6 +132,39 @@ struct ClipsData {
             Clip(keyword: "I done had a lot of jobs", timeStart: 8900, timeStop: 10000, urlExp: "https://adrianlealcaldera.com/I%20done%20had%20a%20lot%20of%20jobs%20-%20Ana%CC%81lisis%20de%20cultura%20Gringa%20y%20Frases%20Coloquiales%202.mp4", urlClip: "https://adrianlealcaldera.com/analisisdeculturagringayfrasescoloquiales2Clip.mp4"),
             Clip(keyword: "Got into", timeStart: 10000, timeStop: 12000, urlExp: "https://adrianlealcaldera.com/Got%20into%20-%20Ana%CC%81lisis%20de%20cultura%20Gringa%20y%20Frases%20Coloquiales%202.mp4", urlClip: "https://adrianlealcaldera.com/analisisdeculturagringayfrasescoloquiales2Clip.mp4"),
             Clip(keyword: "Out of them", timeStart: 15000, timeStop: 16500, urlExp: "https://adrianlealcaldera.com/Out%20of%20them%20-%20Ana%CC%81lisis%20de%20cultura%20Gringa%20y%20Frases%20Coloquiales%202.mp4", urlClip: "https://adrianlealcaldera.com/analisisdeculturagringayfrasescoloquiales2Clip.mp4")
+        ]),
+        //Boys in the Hood
+        ClipsCategory(clips: [
+            Clip(keyword: "What’s wrong with you", timeStart: 12000, timeStop: 14000, urlExp: "https://adrianlealcaldera.com/Whats%20wrong%20with%20you%20-%20Boys%20in%20the%20Hood.mp4", urlClip: "https://adrianlealcaldera.com/BoyzntheHoodClip.mp4"),
+            Clip(keyword: "What the fuck are you looking at", timeStart: 15000, timeStop: 17000, urlExp: "https://adrianlealcaldera.com/What%20the%20fuck%20are%20you%20looking%20at%20-%20Boys%20in%20the%20Hood.mp4", urlClip: "https://adrianlealcaldera.com/BoyzntheHoodClip.mp4"),
+            Clip(keyword: "I’m Still trying to find out “Tryna”", timeStart: 16800, timeStop: 19000, urlExp: "https://adrianlealcaldera.com/Im%20Still%20trying%20to%20find%20out%20-%20Boys%20in%20the%20Hood.mp4", urlClip: "https://adrianlealcaldera.com/BoyzntheHoodClip.mp4"),
+            Clip(keyword: "We got a problem here?", timeStart: 21000, timeStop: 23000, urlExp: "https://adrianlealcaldera.com/We%20got%20a%20problem%20here%20-%20Boys%20in%20the%20Hood.mp4", urlClip: "https://adrianlealcaldera.com/BoyzntheHoodClip.mp4"),
+            Clip(keyword: "Start some shit", timeStart: 55000, timeStop: 57000, urlExp: "https://adrianlealcaldera.com/Start%20some%20shit%20-%20Boys%20in%20the%20Hood.mp4", urlClip: "https://adrianlealcaldera.com/BoyzntheHoodClip.mp4"),
+            Clip(keyword: "That’s why fool be getting shot all the time", timeStart: 61000, timeStop: 63000, urlExp: "https://adrianlealcaldera.com/Thats%20why%20fool%20be%20getting%20shot%20all%20the%20time%20-%20Boys%20in%20the%20Hood.mp4", urlClip: "https://adrianlealcaldera.com/BoyzntheHoodClip.mp4"),
+            Clip(keyword: "Tryna show how hard they is", timeStart: 64000, timeStop: 66000, urlExp: "https://adrianlealcaldera.com/Tryna%20show%20how%20hard%20they%20is%20-%20Boys%20in%20the%20Hood.mp4", urlClip: "https://adrianlealcaldera.com/BoyzntheHoodClip.mp4"),
+            Clip(keyword: "You be doing that shit, too", timeStart: 69000, timeStop: 72000, urlExp: "https://adrianlealcaldera.com/You%20be%20doing%20that%20shit,%20too%20-%20Boys%20in%20the%20Hood.mp4", urlClip: "https://adrianlealcaldera.com/BoyzntheHoodClip.mp4"),
+            Clip(keyword: "I’m getting the fuck out of LA", timeStart: 102000, timeStop: 106000, urlExp: "https://adrianlealcaldera.com/Im%20getting%20the%20fuck%20out%20of%20LA%20-%20Boys%20in%20the%20Hood.mp4", urlClip: "https://adrianlealcaldera.com/BoyzntheHoodClip.mp4")
+        ]),
+        //Cultura y Fonética
+        ClipsCategory(clips: [
+            Clip(keyword: "Look man I don’t mean no disrespect or nothing G", timeStart: 150, timeStop: 2080, urlExp: "https://adrianlealcaldera.com/Look%20man%20I%20dont%20mean%20no%20disrespect%20or%20nothing%20G%20-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4"),
+            Clip(keyword: "I’m just trying to see", timeStart: 2250, timeStop: 3000, urlExp: "https://adrianlealcaldera.com/Im%20just%20trying%20to%20see%20-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4"),
+            Clip(keyword: "If can get a little bro", timeStart: 3050, timeStop: 3450, urlExp: "https://adrianlealcaldera.com/If%20can%20get%20a%20little%20bro%20-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4"),
+            Clip(keyword: "You can’t get nothing man", timeStart: 4000, timeStop: 5000, urlExp: "https://adrianlealcaldera.com/You%20cant%20get%20nothing%20man%20-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4"),
+            Clip(keyword: "You know what time it is", timeStart: 5000, timeStop: 6000, urlExp: "https://adrianlealcaldera.com/You%20know%20what%20time%20it%20is%20-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4"),
+            Clip(keyword: "I keep looking out for you", timeStart: 6900, timeStop: 7500, urlExp: "https://adrianlealcaldera.com/I%20keep%20looking%20out%20for%20you%20-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4"),
+            Clip(keyword: "Just a little something man", timeStart: 8000, timeStop: 8800, urlExp: "https://adrianlealcaldera.com/Just%20a%20little%20something%20man%20-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4"),
+            Clip(keyword: "All my soothing cost a little something", timeStart: 9000, timeStop: 10800, urlExp: "https://adrianlealcaldera.com/All%20my%20soothing%20cost%20a%20little%20something%20-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4"),
+            Clip(keyword: "If you ain’t got it get to stepping", timeStart: 11000, timeStop: 12070, urlExp: "https://adrianlealcaldera.com/If%20you%20aint%20got%20it%20get%20to%20stepping%20-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4"),
+            Clip(keyword: "I am not fixing to repeat myself", timeStart: 13050, timeStop: 14000, urlExp: "https://adrianlealcaldera.com/I%20am%20not%20fixing%20to%20repeat%20myself-%20Cultura%20y%20Fone%CC%81tica.mp4", urlClip: "https://adrianlealcaldera.com/CulturayFone%CC%81ticaClip.mp4")
+        ]),
+        //Kings of the Hills Drugs
+        ClipsCategory(clips: [
+            Clip(keyword: "What do you want", timeStart: 10900, timeStop: 11200, urlExp: "https://adrianlealcaldera.com/What%20do%20you%20want%20-%20Kings%20of%20the%20Hills%20Drugs.mp4", urlClip: "https://adrianlealcaldera.com/kingofthehilldrugseditedClip.mp4"),
+            Clip(keyword: "Are you looking to", timeStart: 15000, timeStop: 17000, urlExp: "https://adrianlealcaldera.com/Are%20you%20looking%20to%20-%20Kings%20of%20the%20Hills%20Drugs.mp4", urlClip: "https://adrianlealcaldera.com/kingofthehilldrugseditedClip.mp4"),
+            Clip(keyword: "I have been thinking about", timeStart: 22000, timeStop: 24000, urlExp: "https://adrianlealcaldera.com/I%20have%20been%20thinking%20about%20-%20Kings%20of%20the%20Hills%20Drugs.mp4", urlClip: "https://adrianlealcaldera.com/kingofthehilldrugseditedClip.mp4"),
+            Clip(keyword: "What do you need", timeStart: 24000, timeStop: 26000, urlExp: "https://adrianlealcaldera.com/What%20do%20you%20need%20-%20Kings%20of%20the%20Hills%20Drugs.mp4", urlClip: "https://adrianlealcaldera.com/kingofthehilldrugseditedClip.mp4")
+            
         ])
     ]
 }

@@ -116,19 +116,19 @@ struct Listening: View {
                     BtnEmpezar(TextBtn: "Get", action: {
                         validarTiempos()
                     })
-                    
-                    VStack {
-                        Spacer()
-                    }
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:.infinity)
-                    .toast(isShowing: $showToast,
-                           toastConfig: ToastConfig(message: "Funcion solo Disponible para Usuarios Premiums"))
-                    
-                    
-                    
                 }
                 
+                VStack{
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity)
+                .frame(height: 200)
+                
             }
+            .overlay(content: {
+                ToastCustom(message: Message, showToast: $showToast)
+                    .padding(.bottom, 50)
+            })
             .onChange(of: videoURL) { _ in
                 // Cada vez que cambia el videoURL, reseteamos hasSeeked y establecemos el tiempo adecuado
                 hasSeeked = false
@@ -232,6 +232,7 @@ struct Listening: View {
             videoURL = URL(string: ClipsData.collection[VarIndex].clips[0].urlClip)
         }
     }
+    
     private func validarTiempos() {
         let secondStart = Double(TimeStart) / 1000.0
         let secondEnd = Double(TimeEnd) / 1000.0
