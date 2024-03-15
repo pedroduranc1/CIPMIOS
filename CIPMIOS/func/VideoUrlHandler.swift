@@ -78,6 +78,54 @@ func getVideoURL(for option: String?,currentPage: String) -> URL? {
         default:
             return nil
         }
+    case "Availability":
+        switch(option){
+        case "Black Fathers":
+            return URL(string: "https://adrianlealcaldera.com/blackfathers.mp4")
+        case "Is America Racist?":
+            return URL(string: "https://adrianlealcaldera.com/isamericaracist.mp4")
+        case "Don't Compare Yourself to Others":
+            return URL(string: "https://adrianlealcaldera.com/DontCompareYourselftoOthersPrag.mp4")
+        case "Fix Yourself":
+            return URL(string: "https://adrianlealcaldera.com/FixYourself.mp4")
+        case "Are Men and Women Different?":
+            return URL(string: "https://adrianlealcaldera.com/Are%20Men%20and%20Women%20Different.mp4")
+        case "Don't Waste Your Time":
+            return URL(string: "https://adrianlealcaldera.com/Dating%20Dont%20Waste%20Your%20Time.mp4")
+        case "How to Make Our Cities Safer":
+            return URL(string: "https://adrianlealcaldera.com/How%20to%20Make%20Our%20Cities%20Safer.mp4")
+        case "How to End Systemic Racism":
+            return URL(string: "https://adrianlealcaldera.com/How%20to%20End%20Systemic%20Racism.mp4")
+        case "Should Government Bail Out Big Banks?":
+            return URL(string: "https://adrianlealcaldera.com/Should%20Government%20Bail%20Out%20Big%20Banks.mp4")
+        default:
+            return nil
+        }
+    case "Speaking Dificil":
+        switch(option){
+        case "Conectores Standar Presente Simple":
+            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+        case "Conectores Standar Presente Dificil":
+            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+        default:
+            return nil
+        }
+        
+    case "Listening Dificil":
+        switch(option){
+        case "Steve Jobs 1":
+            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+        case "Kot Fishing 1":
+            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+        case "Kot Fishing 2":
+            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+        case "Helicoptero 1":
+            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+        case "Helicoptero 2":
+            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+        default:
+            return nil
+        }
     default:
         return nil
     }

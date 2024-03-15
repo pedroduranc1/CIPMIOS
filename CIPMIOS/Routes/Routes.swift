@@ -31,7 +31,16 @@ struct Routes: View {
                 //VOCAB
                 Vocab(IndexSeleccionado: $IndexSeleccionado)
             case 7:
+                //CULTURA
                 Listening(IndexSeleccionado: $IndexSeleccionado)
+            case 8:
+                //LECTURA
+                LecturaView(IndexSeleccionado: $IndexSeleccionado)
+            case 9:
+                //Speaking Dificil
+                SpeakingDificil(IndexSeleccionado: $IndexSeleccionado)
+            case 10:
+                ListeningDif(IndexSeleccionado: $IndexSeleccionado)
             case 99:
                 //VIEW DE PRUEBAS
                 SpeechView()

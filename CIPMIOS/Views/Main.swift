@@ -63,15 +63,21 @@ struct Main: View {
                     
                     BottonPeque(btnTexto: "Pienso en Espanol", btnImage: "spaint",action: {})
                     
-                    BottonPeque(btnTexto: "Listening Dificil", btnImage: "conint",action: {})
+                    BottonPeque(btnTexto: "Listening Dificil", btnImage: "conint",action: {
+                        self.IndexSeleccionado = 10
+                    })
                     
-                    BottonPeque(btnTexto: "Lectura", btnImage: "availa",action: {})
+                    BottonPeque(btnTexto: "Lectura", btnImage: "availa",action: {
+                        //self.IndexSeleccionado = 8
+                    })
                     
                 }
                 .padding()
                 
                 VStack{
-                    Button(action:{}){
+                    Button(action:{
+                        self.IndexSeleccionado = 9
+                    }){
                         HStack(alignment: .bottom){
                             Text("Speaking (Dificil)")
                                 .padding(.horizontal,25)

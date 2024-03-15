@@ -1047,3 +1047,28 @@ func Limpiar(TxtEng: Binding<String>, TxtSpa: Binding<String>, TxtPalabraClave: 
     StatusColor.wrappedValue = "blanco"
     userInput.wrappedValue = ""
 }
+
+func SpeakDif(selectedOption: String?, TxtEng: inout String, TxtSpa: inout String, TxtPalabraClave: inout String){
+    guard let selectedOption = selectedOption else { return }
+    
+    switch selectedOption {
+    case "Conectores Standar Presente Simple":
+        let gen = Generator()
+        // Estructura
+        gen.GenConectoresStandarCanSimpleXCanSimple()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+    case "Conectores Standar Presente Continuo":
+        let gen = Generator()
+        // Estructura
+        gen.GenConectoresStandarCanSimpleXPresenteContinuo()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+    default:
+        break
+    }
+}
