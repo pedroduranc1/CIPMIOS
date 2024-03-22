@@ -121,6 +121,7 @@ struct SpeakingDificil: View {
                     .padding(.horizontal,25)
                     .padding(.top,20)
                 }
+                
                 VStack(alignment:.leading){
                     
                 }

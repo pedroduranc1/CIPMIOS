@@ -114,15 +114,15 @@ func getVideoURL(for option: String?,currentPage: String) -> URL? {
     case "Listening Dificil":
         switch(option){
         case "Steve Jobs 1":
-            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+            return URL(string: "https://adrianlealcaldera.com/billburrstevejobsclip1.mp4")
         case "Kot Fishing 1":
-            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+            return URL(string: "https://adrianlealcaldera.com/kotfishing1Clip.mp4")
         case "Kot Fishing 2":
-            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+            return URL(string: "https://adrianlealcaldera.com/kotfishing2Clip.mp4")
         case "Helicoptero 1":
-            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+            return URL(string: "https://adrianlealcaldera.com/Helicoptero1Clip.mp4")
         case "Helicoptero 2":
-            return URL(string: "https://adrianlealcaldera.com/transiciones.mp4")
+            return URL(string: "https://adrianlealcaldera.com/Helicoptero2Clip.mp4")
         default:
             return nil
         }

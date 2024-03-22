@@ -20,6 +20,16 @@ struct LecturaView: View {
     let palabrasClave: [String: String] = ["años": "Hace mucho tiempo", "progreso": "Avance o mejora"]
     let praguerText: String = "Este es un texto de prueba de PragerU. Hace años, la economía de Estados Unidos era muy diferente. En aquellos tiempos, la gente tenía que trabajar más duro para ganar menos. Sin embargo, con el paso de los años, las cosas han mejorado significativamente. Ahora, la vida es mucho más fácil y cómoda para la mayoría de las personas. Aunque todavía existen desafíos, el progreso es innegable."
     
+    @State private var selectedTextContent = ""
+    @State private var isTest = false
+    
+    @State private var preg = "esta es una pregunta de larga distancia para probar los margenes"
+    
+    @State private var preg1 = "respuesta 1"
+    @State private var preg2 = "respuesta 2"
+    @State private var preg3 = "respuesta 3"
+    @State private var preg4 = "respuesta 4"
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
@@ -45,29 +55,123 @@ struct LecturaView: View {
                     handleSelectedOptionChange()
                 }
                 
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 5) {
-                        ForEach(analyzeAndHighlightText(text: praguerText, keywords: palabrasClave), id: \.id) { component in
-                            Text(component.text)
-                                .foregroundColor(component.isKeyword ? .blue : .primary)
-                                .underline(component.isKeyword)
-                                .onTapGesture {
-                                    if component.isKeyword {
-                                        self.selectedKeyword = component.word
-                                        self.showModal = true
-                                    }
-                                }
+                HStack(){
+                    Text("Transcript")
+                        .font(.system(size: 25))
+                        .underline(true,color: Color("azul"))
+                        .foregroundColor(Color("azul"))
+                    Spacer()
+                    Button(action: {
+                        self.isTest = true
+                    }){
+                        Text("Actividad de Comprension")
+                            .font(.system(size: 15))
+                    }
+                    .frame(width: 120)
+                    .foregroundColor(Color("azul"))
+                }
+                .padding(.horizontal,25)
+                .padding(.top,-15)
+                .padding(.bottom,10)
+                
+                if !isTest {
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text(selectedTextContent)
+                                .padding(.horizontal, 25)
                         }
-                        .padding()
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // Esto asegura que el contenido del ScrollView pueda crecer en altura
                     }
+                    .frame(height: 350) // Altura fija del ScrollView
                 }
-                .sheet(isPresented: $showModal) {
-                    if let significado = palabrasClave[selectedKeyword.lowercased()] {
-                        Text("\(selectedKeyword): \(significado)")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .foregroundColor(.blue)
+                
+                if isTest {
+                    HStack(alignment: .firstTextBaseline) {
+                        Text("Pregunta:")
+                        Spacer()
+                        Text(preg)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
+                    .padding(.horizontal, 25)
+                    
+                    Button(action:{}){
+                        VStack {
+                            Text(preg1)
+                                .font(.system(size: 16))
+                                .padding(.vertical,10)
+                        }
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .border(Color.blue, width: 1.5)
+                        .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
+                        
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .padding(.horizontal,20)
+                    .padding(.top,15)
+                    .padding(.bottom,5)
+                    
+                    Button(action:{}){
+                        VStack {
+                            Text(preg2)
+                                .font(.system(size: 16))
+                                .padding(.vertical,10)
+                        }
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .border(Color.blue, width: 1.5)
+                        .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
+                        
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .padding(.horizontal,20)
+                    .padding(.vertical,5)
+                    
+                    Button(action:{}){
+                        VStack {
+                            Text(preg3)
+                                .font(.system(size: 16))
+                                .padding(.vertical,10)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .border(Color.blue, width: 1.5)
+                        .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
+                        
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .padding(.horizontal,20)
+                    .padding(.vertical,5)
+                    
+                    Button(action:{}){
+                        VStack {
+                            Text(preg4)
+                                .font(.system(size: 16))
+                                .padding(.vertical,10)
+                        }
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .border(Color.blue, width: 1.5)
+                        .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
+                        
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .padding(.horizontal,20)
+                    .padding(.vertical,5)
+                    
+                    Button(action:{}){
+                        VStack {
+                            Text("SIGUIENTE")
+                                .font(.system(size: 16))
+                                .padding(.vertical,10)
+                        }
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .border(Color.blue, width: 1.5)
+                        .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
+                        
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .padding(.horizontal,20)
+                    .padding(.top,25)
+
                 }
+
             }
         }
         .edgesIgnoringSafeArea(.all)
@@ -83,7 +187,7 @@ struct LecturaView: View {
     
     private func updateSelectedTextContent() {
         if let entry = Texts.shared.entry(forKey: selectedOption ?? "Black Fathers") {
-            //selectedTextContent = entry.content
+            selectedTextContent = entry.content
         }
     }
     
@@ -92,23 +196,6 @@ struct LecturaView: View {
         isEmpezarClicked = false
     }
     
-    func analyzeAndHighlightText(text: String, keywords: [String: String]) -> [TextComponent] {
-           var components: [TextComponent] = []
-           let words = text.split(separator: " ").map(String.init)
-           
-           for word in words {
-               let trimmedWord = word.trimmingCharacters(in: .punctuationCharacters).lowercased()
-               let keywordMatch = keywords.first(where: { trimmedWord.contains($0.key.lowercased()) })
-               
-               if let match = keywordMatch {
-                   components.append(TextComponent(text: word, isKeyword: true, word: match.key, meaning: match.value))
-               } else {
-                   components.append(TextComponent(text: word, isKeyword: false, word: word))
-               }
-           }
-           
-           return components
-       }
 }
 
 struct TextComponent: Identifiable {

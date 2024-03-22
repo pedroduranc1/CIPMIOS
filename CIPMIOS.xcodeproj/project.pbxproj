@@ -81,6 +81,7 @@
 		44FC34E82B3C9EF2008982DF /* C250a300.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC34E72B3C9EF2008982DF /* C250a300.swift */; };
 		C15815002BA09ECF008883E1 /* SpeakingDificil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */; };
 		C15B43E82BA36B6500D90883 /* ListeningDif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B43E72BA36B6500D90883 /* ListeningDif.swift */; };
+		C183539B2BA9DE8100CBE367 /* RachelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183539A2BA9DE8100CBE367 /* RachelTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		44FC34E72B3C9EF2008982DF /* C250a300.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C250a300.swift; sourceTree = "<group>"; };
 		C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakingDificil.swift; sourceTree = "<group>"; };
 		C15B43E72BA36B6500D90883 /* ListeningDif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningDif.swift; sourceTree = "<group>"; };
+		C183539A2BA9DE8100CBE367 /* RachelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachelTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,6 +391,7 @@
 				44CBBAEB2B71359100C0F321 /* UserTypes.swift */,
 				4445EA762B84F4FF00C65685 /* CultureTypes.swift */,
 				44ADD0CA2B97688900383991 /* ListeningTypes.swift */,
+				C183539A2BA9DE8100CBE367 /* RachelTypes.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				4443DBDC2B83A6FC002386E8 /* Listening.swift in Sources */,
 				444E80602B1E593D004AC6BF /* SpeakingFacil.swift in Sources */,
 				44F7D5002B1F7DA200EAAC8B /* VideoPlayerView.swift in Sources */,
+				C183539B2BA9DE8100CBE367 /* RachelTypes.swift in Sources */,
 				4475F8C62B23817800307D02 /* People.swift in Sources */,
 				4475F8BA2B23807B00307D02 /* Nobles.swift in Sources */,
 				440F49012B73DD880082CE34 /* AuthRoutes.swift in Sources */,

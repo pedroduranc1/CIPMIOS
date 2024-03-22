@@ -68,7 +68,7 @@ struct Main: View {
                     })
                     
                     BottonPeque(btnTexto: "Lectura", btnImage: "availa",action: {
-                        //self.IndexSeleccionado = 8
+                        self.IndexSeleccionado = 8
                     })
                     
                 }
