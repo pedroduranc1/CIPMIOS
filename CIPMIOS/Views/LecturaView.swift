@@ -7,7 +7,7 @@ struct LecturaView: View {
     @State private var StructureOptionsPremium = ["Black Fathers", "Is America Racist?", "Don't Compare Yourself to Others", "Fix Yourself", "Are Men and Women Different?", "Don't Waste Your Time", "How to Make Our Cities Safer", "How to End Systemic Racism", "Should Government Bail Out Big Banks?"]
     
     @State private var selectedOption: String? = "Black Fathers"
-    @State private var IsPremium: Bool = false
+    @State private var IsPremium: Bool = true
     @State private var videoURL: URL?
     @State private var isEmpezarClicked = false
     
@@ -29,6 +29,15 @@ struct LecturaView: View {
     @State private var preg2 = "respuesta 2"
     @State private var preg3 = "respuesta 3"
     @State private var preg4 = "respuesta 4"
+    
+    @State private var preg1StatusColor:Color = .white
+    @State private var preg2StatusColor:Color = .white
+    @State private var preg3StatusColor:Color = .white
+    @State private var preg4StatusColor:Color = .white
+    
+    @State private var RespCorrec = ""
+    
+    @State private var IndexPreg = 0
     
     var body: some View {
         ScrollView {
@@ -62,7 +71,7 @@ struct LecturaView: View {
                         .foregroundColor(Color("azul"))
                     Spacer()
                     Button(action: {
-                        self.isTest = true
+                        startQuizTest()
                     }){
                         Text("Actividad de Comprension")
                             .font(.system(size: 15))
@@ -94,13 +103,16 @@ struct LecturaView: View {
                     }
                     .padding(.horizontal, 25)
                     
-                    Button(action:{}){
+                    Button(action:{
+                        ComprobarResp(resp: preg1)
+                    }){
                         VStack {
                             Text(preg1)
                                 .font(.system(size: 16))
                                 .padding(.vertical,10)
                         }
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .background(preg1StatusColor)
                         .border(Color.blue, width: 1.5)
                         .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
                         
@@ -110,13 +122,16 @@ struct LecturaView: View {
                     .padding(.top,15)
                     .padding(.bottom,5)
                     
-                    Button(action:{}){
+                    Button(action:{
+                        ComprobarResp(resp: preg2)
+                    }){
                         VStack {
                             Text(preg2)
                                 .font(.system(size: 16))
                                 .padding(.vertical,10)
                         }
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .background(preg2StatusColor)
                         .border(Color.blue, width: 1.5)
                         .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
                         
@@ -125,13 +140,16 @@ struct LecturaView: View {
                     .padding(.horizontal,20)
                     .padding(.vertical,5)
                     
-                    Button(action:{}){
+                    Button(action:{
+                        ComprobarResp(resp: preg3)
+                    }){
                         VStack {
                             Text(preg3)
                                 .font(.system(size: 16))
                                 .padding(.vertical,10)
                         }
                         .frame(maxWidth: .infinity)
+                        .background(preg3StatusColor)
                         .border(Color.blue, width: 1.5)
                         .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
                         
@@ -140,13 +158,16 @@ struct LecturaView: View {
                     .padding(.horizontal,20)
                     .padding(.vertical,5)
                     
-                    Button(action:{}){
+                    Button(action:{
+                        ComprobarResp(resp: preg4)
+                    }){
                         VStack {
                             Text(preg4)
                                 .font(.system(size: 16))
                                 .padding(.vertical,10)
                         }
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .background(preg4StatusColor)
                         .border(Color.blue, width: 1.5)
                         .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
                         
@@ -155,7 +176,10 @@ struct LecturaView: View {
                     .padding(.horizontal,20)
                     .padding(.vertical,5)
                     
-                    Button(action:{}){
+                    Button(action:{
+                        IndexPreg+=1
+                        startQuizTest()
+                    }){
                         VStack {
                             Text("SIGUIENTE")
                                 .font(.system(size: 16))
@@ -169,9 +193,9 @@ struct LecturaView: View {
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal,20)
                     .padding(.top,25)
-
+                    
                 }
-
+                
             }
         }
         .edgesIgnoringSafeArea(.all)
@@ -188,6 +212,62 @@ struct LecturaView: View {
     private func updateSelectedTextContent() {
         if let entry = Texts.shared.entry(forKey: selectedOption ?? "Black Fathers") {
             selectedTextContent = entry.content
+        }
+    }
+    
+    private func startQuizTest(){
+        // Restablecer colores de fondo a blanco para una nueva pregunta
+        preg1StatusColor = .white
+        preg2StatusColor = .white
+        preg3StatusColor = .white
+        preg4StatusColor = .white
+        
+        
+        self.isTest = true
+        
+        if let LecturaPregs = DatosPregRachel.first(where: {$0.nombre == selectedOption}){
+            let PregData = LecturaPregs.pregs
+            
+            if PregData.count > 1 && IndexPreg < PregData.count  {
+                let Data = PregData[IndexPreg]
+                
+                preg = Data.preg
+                preg1 = Data.preg1
+                preg2 = Data.preg2
+                preg3 = Data.preg3
+                preg4 = Data.preg4
+                
+                RespCorrec = Data.respCorrec
+            }
+            else {
+                IndexPreg = 0
+                isEmpezarClicked = false
+            }
+        }
+        
+    }
+    
+    private func ComprobarResp(resp:String){
+        // Restablecer colores de todas las respuestas a blanco antes de asignar el nuevo color
+        preg1StatusColor = .white
+        preg2StatusColor = .white
+        preg3StatusColor = .white
+        preg4StatusColor = .white
+        
+        if RespCorrec == resp {
+            print("resp correcta")
+            // Asignar color de correcto a la respuesta seleccionada
+            if resp == preg1 { preg1StatusColor = .green }
+            else if resp == preg2 { preg2StatusColor = .green }
+            else if resp == preg3 { preg3StatusColor = .green }
+            else if resp == preg4 { preg4StatusColor = .green }
+        } else {
+            print("resp incorrecta")
+            // Asignar color de incorrecto a la respuesta seleccionada
+            if resp == preg1 { preg1StatusColor = .red }
+            else if resp == preg2 { preg2StatusColor = .red }
+            else if resp == preg3 { preg3StatusColor = .red }
+            else if resp == preg4 { preg4StatusColor = .red }
         }
     }
     
