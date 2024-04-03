@@ -17,8 +17,8 @@ struct LecturaView: View {
     
     @State private var showModal = false
     @State private var selectedKeyword: String = ""
-    let palabrasClave: [String: String] = ["años": "Hace mucho tiempo", "progreso": "Avance o mejora"]
-    let praguerText: String = "Este es un texto de prueba de PragerU. Hace años, la economía de Estados Unidos era muy diferente. En aquellos tiempos, la gente tenía que trabajar más duro para ganar menos. Sin embargo, con el paso de los años, las cosas han mejorado significativamente. Ahora, la vida es mucho más fácil y cómoda para la mayoría de las personas. Aunque todavía existen desafíos, el progreso es innegable."
+    let palabrasClave: [String: String] = ["years ago": "Hace mucho tiempo", "full": "Avance o mejora"]
+    let praguerText: String = "years ago i have full time jobs"
     
     @State private var selectedTextContent = ""
     @State private var isTest = false
@@ -38,6 +38,62 @@ struct LecturaView: View {
     @State private var RespCorrec = ""
     
     @State private var IndexPreg = 0
+    
+    @State private var text = "/*This is a sample*/ text. It contains multiple sentences. /*We want*/ to highlight this sentence."
+    struct ContentViewElement: Hashable {
+        let id = UUID()
+        let content: AnyView
+        
+        func hash(into hasher: inout Hasher) {
+            hasher.combine(id)
+        }
+        
+        static func == (lhs: ContentViewElement, rhs: ContentViewElement) -> Bool {
+            lhs.id == rhs.id
+        }
+    }
+    
+    private func parseText() -> some View {
+            let components = text.components(separatedBy: "/*")
+            var parsedText: [ContentViewElement] = []
+            
+            var currentIndex = 0
+            
+            for component in components {
+                if let endIndex = component.range(of: "*/")?.lowerBound {
+                    let prefix = component[..<endIndex]
+                    let suffix = component.suffix(from: component.index(endIndex, offsetBy: 2)) // Offset by 2 to account for '*/'
+                    
+                    let word = prefix.trimmingCharacters(in: .whitespaces)
+                    
+                    parsedText.append(ContentViewElement(content: AnyView(Text(word))))
+                    
+                    parsedText.append(ContentViewElement(content: AnyView(
+                        Button(action: {
+                            print("Button pressed with word: \(word)")
+                        }) {
+                            Text(word)
+                                .foregroundColor(.blue)
+                                .underline(true,color: Color.azul)
+                        }
+                    )))
+                    
+                    currentIndex += component.count
+                    
+                    parsedText.append(ContentViewElement(content: AnyView(Text(suffix))))
+                } else {
+                    parsedText.append(ContentViewElement(content: AnyView(Text(component))))
+                    currentIndex += component.count
+                }
+            }
+            
+            return VStack(alignment: .leading) {
+                ForEach(parsedText, id: \.id) { element in
+                    element.content
+                }
+            }
+        }
+        
     
     var body: some View {
         ScrollView {
@@ -86,8 +142,9 @@ struct LecturaView: View {
                 if !isTest {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 5) {
-                            Text(selectedTextContent)
-                                .padding(.horizontal, 25)
+                            VStack(spacing: 20) {
+                                parseText()
+                            }
                         }
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // Esto asegura que el contenido del ScrollView pueda crecer en altura
                     }
@@ -212,6 +269,7 @@ struct LecturaView: View {
     private func updateSelectedTextContent() {
         if let entry = Texts.shared.entry(forKey: selectedOption ?? "Black Fathers") {
             selectedTextContent = entry.content
+            
         }
     }
     
@@ -278,10 +336,3 @@ struct LecturaView: View {
     
 }
 
-struct TextComponent: Identifiable {
-    let id = UUID()
-    let text: String
-    let isKeyword: Bool
-    let word: String
-    var meaning: String? = nil
-}
