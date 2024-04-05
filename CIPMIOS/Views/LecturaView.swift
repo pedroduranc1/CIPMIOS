@@ -16,6 +16,7 @@ struct LecturaView: View {
     @State var isButtonPressed: Bool?
     
     @State private var showModal = false
+    @State private var message:String = "this is a sample"
     @State private var selectedKeyword: String = ""
     let palabrasClave: [String: String] = ["years ago": "Hace mucho tiempo", "full": "Avance o mejora"]
     let praguerText: String = "years ago i have full time jobs"
@@ -52,47 +53,49 @@ struct LecturaView: View {
             lhs.id == rhs.id
         }
     }
+
     
     private func parseText() -> some View {
-            let components = text.components(separatedBy: "/*")
-            var parsedText: [ContentViewElement] = []
+        var parsedText: [ContentViewElement] = []
+        var remainingText = selectedTextContent
+        
+        while let startRange = remainingText.range(of: "/*"), let endRange = remainingText.range(of: "*/") {
+            let prefix = remainingText[..<startRange.lowerBound]
+            let markedWord = remainingText[startRange.upperBound..<endRange.lowerBound]
+            let suffix = remainingText[endRange.upperBound...]
             
-            var currentIndex = 0
-            
-            for component in components {
-                if let endIndex = component.range(of: "*/")?.lowerBound {
-                    let prefix = component[..<endIndex]
-                    let suffix = component.suffix(from: component.index(endIndex, offsetBy: 2)) // Offset by 2 to account for '*/'
-                    
-                    let word = prefix.trimmingCharacters(in: .whitespaces)
-                    
-                    parsedText.append(ContentViewElement(content: AnyView(Text(word))))
-                    
-                    parsedText.append(ContentViewElement(content: AnyView(
-                        Button(action: {
-                            print("Button pressed with word: \(word)")
-                        }) {
-                            Text(word)
-                                .foregroundColor(.blue)
-                                .underline(true,color: Color.azul)
-                        }
-                    )))
-                    
-                    currentIndex += component.count
-                    
-                    parsedText.append(ContentViewElement(content: AnyView(Text(suffix))))
-                } else {
-                    parsedText.append(ContentViewElement(content: AnyView(Text(component))))
-                    currentIndex += component.count
+            parsedText.append(ContentViewElement(content: AnyView(Text(prefix))))
+            parsedText.append(ContentViewElement(content: AnyView(
+                Button(action: {
+                    showModal = true
+                    message = String(markedWord)
+                    print("Button pressed with word: \(markedWord)")
+                }) {
+                    Text(markedWord)
+                        .foregroundColor(.blue)
+                        .underline(true, color: Color.azul)
                 }
-            }
+            )))
             
-            return VStack(alignment: .leading) {
-                ForEach(parsedText, id: \.id) { element in
-                    element.content
-                }
+            remainingText = String(suffix)
+        }
+        
+        // Add the remaining text after all replacements
+        parsedText.append(ContentViewElement(content: AnyView(Text(remainingText))))
+        
+        return VStack(alignment: .leading){
+            ForEach(parsedText, id: \.id) { element in
+                element.content
             }
         }
+    }
+
+    private func replaceWord(with word: String) {
+        if let startIndex = text.range(of: "/*")?.upperBound, let endIndex = text.range(of: "*/")?.lowerBound {
+            let range = startIndex..<endIndex
+            text.replaceSubrange(range, with: "")
+        }
+    }
         
     
     var body: some View {
@@ -141,13 +144,12 @@ struct LecturaView: View {
                 
                 if !isTest {
                     ScrollView {
-                        VStack(alignment: .leading, spacing: 5) {
-                            VStack(spacing: 20) {
-                                parseText()
-                            }
-                        }
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // Esto asegura que el contenido del ScrollView pueda crecer en altura
+                        VStack() {
+                            parseText()
+                                .padding(.horizontal,20)
                     }
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // Esto asegura que el contenido del ScrollView pueda crecer en altura
+                }
                     .frame(height: 350) // Altura fija del ScrollView
                 }
                 
@@ -256,6 +258,16 @@ struct LecturaView: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
+        .sheet(isPresented: $showModal) {
+            Text("\(message):")
+                .padding()
+                .background(Color.white)
+                .cornerRadius(10)
+            Text("Esto es un ejemplo")
+                .padding()
+                .background(Color.white)
+                .cornerRadius(10)
+        }
         .onAppear {
             updateSelectedTextContent()
             handleSelectedOptionChange()

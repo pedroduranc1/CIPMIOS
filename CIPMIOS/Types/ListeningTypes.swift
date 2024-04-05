@@ -29,7 +29,7 @@ struct Texts {
             "Black Fathers": TextEntry(
                 title: "Black Fathers",
                 content: """
-                Years ago, I interviewed Kweisi Mfume, then the president of the NAACP. “As between the presence of white racism and the absence of black fathers,” I asked, “Which poses the bigger threat to the black community?” Without missing a beat, he said, “The absence of black fathers.
+                /*Years ago*/, I interviewed Kweisi Mfume, then the president of the NAACP. “As between the presence of white racism and the absence of /*black fathers*/,” I asked, “Which poses the bigger threat to the black community?” Without missing a beat, he said, “The absence of black fathers.
 
                 "It was President Barack Obama who said, \"We all know the statistics. That children who grow up without a father are five times more likely to live in poverty and commit crime; nine times more likely to drop out of school and 20 times more likely to end up in prison.”
 
