@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 struct LecturaView: View {
     @Binding var IndexSeleccionado: Int
@@ -16,10 +17,8 @@ struct LecturaView: View {
     @State var isButtonPressed: Bool?
     
     @State private var showModal = false
-    @State private var message:String = "this is a sample"
-    @State private var selectedKeyword: String = ""
-    let palabrasClave: [String: String] = ["years ago": "Hace mucho tiempo", "full": "Avance o mejora"]
-    let praguerText: String = "years ago i have full time jobs"
+    @State private var keyWord:String = ""
+    @State private var Significado:String = ""
     
     @State private var selectedTextContent = ""
     @State private var isTest = false
@@ -40,63 +39,12 @@ struct LecturaView: View {
     
     @State private var IndexPreg = 0
     
-    @State private var text = "/*This is a sample*/ text. It contains multiple sentences. /*We want*/ to highlight this sentence."
-    struct ContentViewElement: Hashable {
-        let id = UUID()
-        let content: AnyView
-        
-        func hash(into hasher: inout Hasher) {
-            hasher.combine(id)
-        }
-        
-        static func == (lhs: ContentViewElement, rhs: ContentViewElement) -> Bool {
-            lhs.id == rhs.id
-        }
-    }
-
+    @State private var tappedWord = ""
     
-    private func parseText() -> some View {
-        var parsedText: [ContentViewElement] = []
-        var remainingText = selectedTextContent
-        
-        while let startRange = remainingText.range(of: "/*"), let endRange = remainingText.range(of: "*/") {
-            let prefix = remainingText[..<startRange.lowerBound]
-            let markedWord = remainingText[startRange.upperBound..<endRange.lowerBound]
-            let suffix = remainingText[endRange.upperBound...]
-            
-            parsedText.append(ContentViewElement(content: AnyView(Text(prefix))))
-            parsedText.append(ContentViewElement(content: AnyView(
-                Button(action: {
-                    showModal = true
-                    message = String(markedWord)
-                    print("Button pressed with word: \(markedWord)")
-                }) {
-                    Text(markedWord)
-                        .foregroundColor(.blue)
-                        .underline(true, color: Color.azul)
-                }
-            )))
-            
-            remainingText = String(suffix)
-        }
-        
-        // Add the remaining text after all replacements
-        parsedText.append(ContentViewElement(content: AnyView(Text(remainingText))))
-        
-        return VStack(alignment: .leading){
-            ForEach(parsedText, id: \.id) { element in
-                element.content
-            }
-        }
-    }
-
-    private func replaceWord(with word: String) {
-        if let startIndex = text.range(of: "/*")?.upperBound, let endIndex = text.range(of: "*/")?.lowerBound {
-            let range = startIndex..<endIndex
-            text.replaceSubrange(range, with: "")
-        }
-    }
-        
+    @State private var textContent:String = ""
+    
+    @State private var highlightedWords = ["ago"]
+    
     
     var body: some View {
         ScrollView {
@@ -143,14 +91,23 @@ struct LecturaView: View {
                 .padding(.bottom,10)
                 
                 if !isTest {
-                    ScrollView {
-                        VStack() {
-                            parseText()
-                                .padding(.horizontal,20)
+                    VStack {
+                        AttributedText(fullText: textContent, highlights: highlightedWords) { word in
+                            self.tappedWord = word
+                            self.showModal = true
+                            buscarSignificado(pragger: selectedOption ?? "Black Fathers", keyword: tappedWord, keyWord: $keyWord, significado: $Significado)
+                        }
+                        .id(textContent)
+                        .padding(.horizontal,20)
                     }
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // Esto asegura que el contenido del ScrollView pueda crecer en altura
-                }
                     .frame(height: 350) // Altura fija del ScrollView
+                    .sheet(isPresented: $showModal) {
+                        CustomModal(keyWord: $tappedWord, Significado: $Significado)
+                            .padding(.horizontal,20)
+                            .presentationDetents([.height(350)])
+                            .presentationDragIndicator(.visible)
+                    }
+                    
                 }
                 
                 if isTest {
@@ -258,30 +215,31 @@ struct LecturaView: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
-        .sheet(isPresented: $showModal) {
-            Text("\(message):")
-                .padding()
-                .background(Color.white)
-                .cornerRadius(10)
-            Text("Esto es un ejemplo")
-                .padding()
-                .background(Color.white)
-                .cornerRadius(10)
-        }
         .onAppear {
             updateSelectedTextContent()
             handleSelectedOptionChange()
         }
-        .onChange(of: selectedOption) {
+        .onChange(of: selectedOption) {_ in
             updateSelectedTextContent()
             handleSelectedOptionChange()
         }
     }
     
     private func updateSelectedTextContent() {
-        if let entry = Texts.shared.entry(forKey: selectedOption ?? "Black Fathers") {
-            selectedTextContent = entry.content
+        
+        if let palabrasArrayClave = DatosInfoRachel.first(where: { $0.pragger == (selectedOption ?? "Black Fathers") }) {
+            // Obtener todas las palabras clave (keyWord) para "Black Fathers"
+            let data = palabrasArrayClave.praggerWord.map { $0.keyWord }
             
+            highlightedWords = data
+        } else {
+            print("No se encontró información para 'Black Fathers'")
+        }
+        
+        if let blackFathersInfo = DatosPragger.first(where: { $0.pragger == (selectedOption ?? "Black Fathers") }) {
+            self.textContent = blackFathersInfo.praggerWord
+        } else {
+            print("No matching entry found.")
         }
     }
     
@@ -347,4 +305,137 @@ struct LecturaView: View {
     }
     
 }
+
+struct AttributedText: UIViewRepresentable {
+    var fullText: String
+    var highlights: [String]
+    var onTap: (String) -> Void
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(onTap: onTap)
+    }
+    
+    func makeUIView(context: Context) -> UITextView {
+        let textView = UITextView()
+        textView.isEditable = false
+        textView.isSelectable = true
+        textView.isUserInteractionEnabled = true
+        textView.dataDetectorTypes = .all
+        
+        context.coordinator.setup(textView: textView, with: fullText, highlights: highlights)
+        
+        return textView
+    }
+    
+    func updateUIView(_ uiView: UITextView, context: Context) {
+        // Coordinator will take care of updating the attributed text
+    }
+    
+    class Coordinator: NSObject, UIGestureRecognizerDelegate {
+        var onTap: (String) -> Void
+        var textView: UITextView?
+        var wordsToRanges: [String: [NSRange]] = [:]
+        
+        init(onTap: @escaping (String) -> Void) {
+            self.onTap = onTap
+        }
+        
+        func setup(textView: UITextView, with text: String, highlights: [String]) {
+            self.textView = textView
+            
+            let attributedString = NSMutableAttributedString(string: text)
+            let attributes: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 18),
+                .foregroundColor: UIColor.label
+            ]
+            
+            attributedString.addAttributes(attributes, range: NSRange(text.startIndex..., in: text))
+            
+            let highlightedAttributes: [NSAttributedString.Key: Any] = [
+                .foregroundColor: UIColor.azul,
+                .underlineStyle:true,
+                .underlineColor:UIColor.azul
+            ]
+            
+            for word in highlights {
+                var range = NSRange(text.startIndex..., in: text)
+                while range.location != NSNotFound {
+                    range = (text as NSString).range(of: word, options: .caseInsensitive, range: range)
+                    if range.location != NSNotFound {
+                        attributedString.addAttributes(highlightedAttributes, range: range)
+                        if wordsToRanges[word] != nil {
+                            wordsToRanges[word]?.append(range)
+                        } else {
+                            wordsToRanges[word] = [range]
+                        }
+                        range = NSRange(location: range.location + range.length, length: text.utf16.count - range.location - range.length)
+                    }
+                }
+            }
+            
+            textView.attributedText = attributedString
+            
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+            textView.addGestureRecognizer(tapGesture)
+        }
+        
+        @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+            guard let textView = textView else { return }
+            let location = gesture.location(in: textView)
+            let position = CGPoint(x: location.x, y: location.y)
+            let tapIndex = textView.layoutManager.characterIndex(for: position, in: textView.textContainer, fractionOfDistanceBetweenInsertionPoints: nil)
+            
+            let attributedString = textView.attributedText.string as NSString
+            for (word, ranges) in wordsToRanges {
+                for range in ranges {
+                    if NSLocationInRange(tapIndex, range) {
+                        let tappedWord = attributedString.substring(with: range)
+                        onTap(tappedWord)
+                        return
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct CustomModal: View {
+    @Binding var keyWord: String
+    @Binding var Significado: String
+    
+    var body: some View {
+        VStack {
+            Text(keyWord)
+                .padding()
+                .font(.system(size: 20))
+                .bold()
+                .background(Color.white)
+                .cornerRadius(10)
+            Text(Significado)
+                .padding()
+                .background(Color.white)
+                .cornerRadius(10)
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 200) // Establece el alto de este VStack a 200
+        .background(Color.gray.opacity(0.1)) // Puedes ajustar el color de fondo si lo deseas
+        .cornerRadius(20) // Para bordes redondeados
+    }
+}
+
+
+func buscarSignificado(pragger: String, keyword: String, keyWord: Binding<String>, significado: Binding<String>) {
+    for item in DatosInfoRachel {
+        if item.pragger == pragger {
+            for word in item.praggerWord {
+                if word.keyWord.lowercased() == keyword.lowercased() {
+                    keyWord.wrappedValue = word.keyWord
+                    significado.wrappedValue = word.significado
+                }
+            }
+        }
+    }
+}
+
+
 

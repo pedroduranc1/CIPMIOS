@@ -5,6 +5,16 @@ struct TextEntry {
     let content: String
 }
 
+struct CatPregSig: Codable{
+    let pragger: String
+    let praggerWord: [CatPregInd]
+}
+
+struct CatPregInd: Codable {
+    let keyWord: String
+    let significado: String
+}
+
 struct CatPreg: Codable {
     let nombre: String
     let pregs: [pregStruc]
@@ -19,17 +29,19 @@ struct pregStruc: Codable{
     let respCorrec: String
 }
 
-struct Texts {
-    static let shared = Texts()
-    
-    let entries: [String: TextEntry]
-    
-    private init() {
-        entries = [
-            "Black Fathers": TextEntry(
-                title: "Black Fathers",
-                content: """
-                /*Years ago*/, I interviewed Kweisi Mfume, then the president of the NAACP. “As between the presence of white racism and the absence of /*black fathers*/,” I asked, “Which poses the bigger threat to the black community?” Without missing a beat, he said, “The absence of black fathers.
+struct praggerText: Codable{
+    let pragger:String
+    let text:String
+}
+
+struct praggerTextInfo: Codable{
+    let pragger: String
+    let praggerWord: String
+}
+
+let DatosPragger: [praggerTextInfo] = [
+    praggerTextInfo(pragger: "Black Fathers", praggerWord: """
+                Years ago, I interviewed Kweisi Mfume, then the president of the NAACP. “As between the presence of white racism and the absence of black fathers,” I asked, “Which poses the bigger threat to the black community?” Without missing a beat, he said, “The absence of black fathers.
 
                 "It was President Barack Obama who said, \"We all know the statistics. That children who grow up without a father are five times more likely to live in poverty and commit crime; nine times more likely to drop out of school and 20 times more likely to end up in prison.”
 
@@ -62,108 +74,12 @@ struct Texts {
                 "Fathers matter. Until we have a government policy that makes that its first priority, nothing will change.
 
                 "I’m Larry Elder for Prager University.
-"""
-            ),
-            "IsAmericaRacist": TextEntry(
-                title: "Is America Racist",
-                content: """
-                Is racism still a major problem in America? President Barack Obama certainly thinks so. He said that racism is “in our DNA.” Really? If racism is in our DNA, doesn’t that mean it's immutable, unchangeable?
-                            
-                
-                "But America has changed -- and dramatically so. In 1960, 60% of Americans said they would never vote for a black president. Almost 50 years later, the black man who said racism is in America’s DNA was elected president, and four years later re-elected. That’s only the most obvious example of racial progress. There are many others."
-                            
-                "Take inter-racial marriage. As William H. Frey of the Brookings Institution wrote, “Sociologists have traditionally viewed multiracial marriage as a benchmark for the ultimate stage of assimilation of a particular group into society.” Black-white marriages were still illegal in 16 states until 1967. And a 1958 Gallup poll found that only 4% of Americans approved of black-white marriages. Today that number is 87%. In 1960, of all marriages by blacks, only 1.7 percent were black-white. Today, it’s 12 percent and rising."
-                
-                "Now what about “racial profiling” and abuse of blacks by police? Doesn’t that prove that racism remains a major problem? In the summer of 2014, Ferguson, Missouri became ground zero for this accusation when a white policeman shot and killed an unarmed black teenager.  While a Department of Justice investigation of the incident cleared the officer of any wrongdoing, it did accuse the city’s police department of racial bias."
-                
-                "But what was the Justice Department report’s most headline grabbing stat? The gap between the percentage of blacks living in Ferguson -- 67% -- and the percentage of those stopped by police for traffic violation who are black -- 85%. An 18 point discrepancy."
-                
-                "Racism, right? Not so fast." +
-                            
-                "Blacks comprise 25% of New York City, but account for 55% of those stopped for traffic offenses -- a 30-point discrepancy, far bigger than that of Ferguson. Why isn’t the NYPD, a department that is now majority minority, considered even more institutionally racist than the Ferguson PD? The answer is you cannot have an honest discussion about police conduct without an honest discussion of black crime."
-                
-                "Though blacks are 13% of the population, they commit 50% of the nation’s homicides, and almost always the victim is another black person, just as most white homicides are against other whites. In 2012, according to the Center for Disease Control, police killed 123 blacks, while, by the way, killing over twice that many whites. But that same year blacks killed over 6,000 people -- again, mostly other blacks."
-                
-                "What about traffic stops? Unlike when responding to dispatch calls, police officers exercise more discretion when it comes to traffic stops. Therefore “racist” cops can have a field day when it comes to traffic stops, right?"
-                
-                "Actually, no."
-                
-                "The National Institute of Justice is the research agency of the Department of Justice. In 2013, the National Institute of Justice published a study called \"Race, Trust and Police Legitimacy.\" Three out of four black drivers admitted that they were stopped by the police for a \"legitimate reason.\" Blacks, compared to whites, were on average more likely to commit speeding and other traffic offenses. The Institute wrote, “Seatbelt usage is chronically lower among black drivers. If a law enforcement agency aggressively enforces seatbelt violations, police will stop more black drivers.\"
-                
-                "The NIJ’s conclusion? These numerical disparities result from \"differences in offending\" -- in other words, not because of racism."
-                
-                "Similarly, the National Highway Traffic Safety Administration also found that blacks violate traffic laws at higher rates than whites -- in every offense, whether it’s driving without a license, not wearing a seat belt, not using a child safety seat or speeding."
-                
-                "Is there still racism in America? Of course, there is. But racism is not in America’s DNA. Recent history and a lot of research and data prove it."
-                
-                "As liberal Harvard sociologist Orlando Patterson said, America, “is now the least racist white-majority society in the world; has a better record of legal protections of minorities than any other society, white or black; offers more opportunities to a greater number of black persons than any other society, including all of those of Africa.\"
-                
-                "Patterson, by the way, is black."
-                
-                "I’m Larry Elder for Prager University."
-                """
-            ),
-            "Don't Compare Yourself to Others":TextEntry(
-                title:"Don't Compare Yourself to Others",
-                content:"""
-                        "Do you ever look at the lives of people around you and say, “Man, I wish that was me!”?"
+"""),
+    praggerTextInfo(pragger: "Is America Racist?", praggerWord: """
+                hola mundo
+""")
+]
             
-                        "You know you do. Everybody does. But I bet you never compared yourself to me. Haven’t heard of me? I do have my own TV show...in the middle of the night."
-            
-                        "When I started I wanted to be as big as Jerry Seinfeld. I’m not. And yet, I’m a pretty happy guy. Here’s why: I stopped comparing myself to other people. Seriously, that’s the whole trick."
-            
-                        "Here’s what I mean."
-            
-                        "If my happiness were based on being the biggest comedian in the business, I’d be mad at whoever was getting more Netflix specials than me. (I have zero.) If it were based on having the best TV ratings, I’d be mad at Jimmy Fallon. He beats me every night. And if it were based on being rich, I’d be mad at a lot of people. And even if I were rich – really rich, like #10 on the Forbes 400 rich – I’d be mad that there were nine other people richer than me. It never ends. Comparing yourself to others creates a totally unrealistic measure for what constitutes success. And I know, because the entertainment business is all about unrealistic expectations."
-            
-                        "All through my career I’d meet with satisfied customers after my shows and they’d say,“Hey, you’re good! Maybe someday you’ll be successful like Jerry Seinfeld.” He’s the measure of success? The top guy?"
-            
-                        "When someone tells you they’re a doctor, you don’t say, “Well, maybe someday you’ll cure a disease and save millions of lives, just like Jonas Salk did for polio.”"
-            
-                        "Or a lawyer: “Oh, wow, so what’s your ultimate goal? The Supreme Court?”"
-            
-                        "Do you see how crazy that sounds?"
-            
-                        "Professional success is about making a living, pursuing excellence, and finding meaning in what you do."
-            
-                        "When I first started doing standup, I was a nobody. It took more than a decade of playing in front of tuned-out crowds before it started paying the bills. Ten years is a lot of time to tell jokes for no money to people who aren’t laughing."
-            
-                        "In those days, I spent a lot of time thinking about the comedians I admired. The guys at the top. I wanted those big, sold out houses I wasn’t playing. The big paydays I wasn’t making. TheTV specials I wasn’t doing."
-            
-                        "And not just their success; their talent. I’d look at comics like George Carlin, Robin Williams and Louis C.K. They were all able to turn their dark, personal struggles into brilliant comedy. I envy their talent, but I wouldn’t want the dark personal struggles that went along with it."
-            
-                        "If you don’t factor in everything about whoever you’re comparing yourself to, you’re playing a sort of mix-and-match game that doesn’t exist in the real world."
-            
-                        "Here’s one of life’s little truths: everyone is a package deal. You can’t view one element of someone else’s life in isolation. That’s cheating."
-            
-                        "You can’t say, “I want Louis C.K.’s money and fame, Jay Leno’s car collection and Tom Shillue’s wife and kids.” That person doesn’t exist! If he did, he’d be pretty cool. I would definitely want to hang with him."
-            
-                        "Everyone has pain in their lives. Think of anybody who you know really well. You know the awful stuff they’ve had to deal with -- the demons they battle. How many dead rock stars, movie stars and, yes, comedians does it take to convince us all that everyone’s life is hard?"
-            
-                        "Face it."
-            
-                        "You really don’t want someone else’s life. You want your own life -- only better. But that’s the thing. You can make your life better by not doing something – comparing yourself to other people."
-            
-                        "Back when I was a nobody, I wanted to sell out the biggest venues and have a prime-time TV show with millions of viewers. Now I sell out small venues and I’m on in the middle of the night with half a million viewers. And I appreciate every one of them."
-            
-                        "I guess when I compare myself now to myself then, I’m doing okay. You should try it."
-            
-                        "I’m Tom Shillue for Prager University. "
-            """)
-            // Add other entries here following the same pattern
-        ]
-    }
-    
-    func entry(forKey key: String) -> TextEntry? {
-        return entries[key]
-    }
-}
-
-// Example of how to access an entry
-//if let blackFathersText = Texts.shared.entry(forKey: "BlackFathers") {
-//    print(blackFathersText.title)
-//    print(blackFathersText.content)
-//}
 
 let DatosPregRachel: [CatPreg] = [
     CatPreg(nombre: "Black Fathers", pregs: [
@@ -1218,4 +1134,68 @@ let DatosPregRachel: [CatPreg] = [
     ])
 ];
 
-
+let DatosInfoRachel: [CatPregSig] = [
+    CatPregSig(pragger: "Black Fathers", praggerWord: [
+        CatPregInd(keyWord: "between", significado: "una preposición usada para decir que algo está entre dos cosas."),
+        CatPregInd(keyWord: "children", significado: "una palabra para referirse a niños y niñas"),
+        CatPregInd(keyWord: "ago", significado: "se usa con una expresión de tiempo para indicar que algo fue en pasado, por ejemplo = years ago- años atrás, ten years ago- hace diez años"),
+        CatPregInd(keyWord: "then", significado: "entonces"),
+        CatPregInd(keyWord: "i asked", significado: "yo pregunté"),
+        CatPregInd(keyWord: "which", significado: "cual, usualmente la usamos cuando tenemos dos opciones"),
+        CatPregInd(keyWord: "poses", significado: "presentar o constituir (un problema, peligro, dificultad)"),
+        CatPregInd(keyWord: "bigger", significado: "más grande (el sufijo ER se usa en adjetivos cortos para hacer que comparen, small/pequeño, smaller-más pequeño, tall-alto, taller-más alto)"),
+        CatPregInd(keyWord: "threat", significado: "amenaza"),
+        CatPregInd(keyWord: "without missing a beat", significado: "esta es una expresión coloquial, es el equivalente en español a ¨sin titubear¨"),
+        CatPregInd(keyWord: "he said", significado: "él dijo"),
+        CatPregInd(keyWord: "it was", significado: "fue"),
+        CatPregInd(keyWord: "who", significado: "quien"),
+        CatPregInd(keyWord: "weall", significado: "todos nosotros"),
+        CatPregInd(keyWord: "know", significado: "saber o conocer"),
+        CatPregInd(keyWord: "that", significado: "que (se usa para introducir una cláusula)"),
+        CatPregInd(keyWord: "growup", significado: "verbo compuesto, crecer"),
+        CatPregInd(keyWord: "likely", significado: "propenso, probable"),
+        CatPregInd(keyWord: "poverty", significado: "pobreza"),
+        CatPregInd(keyWord: "dropout", significado: "salir de la escuela, dejar de ir a la escuela prematuramente"),
+        CatPregInd(keyWord: "endup", significado: "terminar"),
+        CatPregInd(keyWord: "even", significado: "incluso"),
+        CatPregInd(keyWord: "after", significado: "después, después de, después de que"),
+        CatPregInd(keyWord: "controlling", significado: "controlar, los verbos después de cualquier preposición se escriben con terminación ing"),
+        CatPregInd(keyWord: "varying", significado: "algo que varía"),
+        CatPregInd(keyWord: "householdincome", significado: "ingreso del hogar"),
+        CatPregInd(keyWord: "jail", significado: "la cárcel"),
+        CatPregInd(keyWord: "mostlikely", significado: "los más probables/ superlativo"),
+        CatPregInd(keyWord: "windup", significado: "terminar, encontrarte a ti mismo en una situación inesperada y no placentera"),
+        CatPregInd(keyWord: "each other", significado: "uno con el otro"),
+        CatPregInd(keyWord: "risen", significado: "participio de elevar, elevado"),
+        CatPregInd(keyWord: "reached", significado: "alcanzar en pasado, alcanzó"),
+        CatPregInd(keyWord: "during", significado: "durante"),
+        CatPregInd(keyWord: "marriage", significado: "matrimonio"),
+        CatPregInd(keyWord: "were", significado: "eran o estaban"),
+        CatPregInd(keyWord: "than", significado: "que, se usa en contexto de comparación"),
+        CatPregInd(keyWord: "raised", significado: "criado, en este contexto raise se usa como <criar>"),
+        CatPregInd(keyWord: "both", significado: "ambos"),
+        CatPregInd(keyWord: "written", significado: "escrito"),
+        CatPregInd(keyWord: "according", significado: "según"),
+        CatPregInd(keyWord: "outofwedlock", significado: "fuera de matrimonio"),
+        CatPregInd(keyWord: "birth", significado: "nacimientos"),
+        CatPregInd(keyWord: "less than", significado: "menos de"),
+        CatPregInd(keyWord: "over", significado: "sobre"),
+        CatPregInd(keyWord: "answer", significado: "respuesta"),
+        CatPregInd(keyWord: "found", significado: "Participio de find (encontrar), encontrado"),
+        CatPregInd(keyWord: "law", significado: "ley"),
+        CatPregInd(keyWord: "if", significado: "Conector condicional es el ´si´ en español, por ejemplo, si tu vienes yo voy"),
+        CatPregInd(keyWord: "subsidize", significado: "subsidiar"),
+        CatPregInd(keyWord: "undesirable", significado: "indeseable"),
+        CatPregInd(keyWord: "behavior", significado: "comportamiento"),
+        CatPregInd(keyWord: "you will get", significado: "´will´ + get, juntos significan, tu obtendrás. ´Will´ no tiene significado solo"),
+        CatPregInd(keyWord: "so called", significado: "así llamado, se usa para mostrar que algo o alguien se designa comúnmente por el nombre o término especificado"),
+        CatPregInd(keyWord: "war", significado: "Guerra"),
+        CatPregInd(keyWord: "began", significado: "comenzó"),
+        CatPregInd(keyWord: "began to flatline", significado: "comenzó alrededor"),
+        CatPregInd(keyWord: "from", significado: "desde"),
+        CatPregInd(keyWord: "until", significado: "hasta"),
+        CatPregInd(keyWord: "until now", significado: "hasta ahora"),
+        CatPregInd(keyWord: "spent", significado: "gastado, en esta situación está justo después del has, has spent, ha gastado"),
+        CatPregInd(keyWord: "has spent", significado: "ha gastado"),
+    ])
+];
