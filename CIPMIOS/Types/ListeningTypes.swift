@@ -43,7 +43,7 @@ let DatosPragger: [praggerTextInfo] = [
     praggerTextInfo(pragger: "Black Fathers", praggerWord: """
                 Years ago, I interviewed Kweisi Mfume, then the president of the NAACP. “As between the presence of white racism and the absence of black fathers,” I asked, “Which poses the bigger threat to the black community?” Without missing a beat, he said, “The absence of black fathers.
 
-                "It was President Barack Obama who said, \"We all know the statistics. That children who grow up without a father are five times more likely to live in poverty and commit crime; nine times more likely to drop out of school and 20 times more likely to end up in prison.”
+                "It was President Barack Obama who said, We all know the statistics. That children who grow up without a father are five times more likely to live in poverty and commit crime; nine times more likely to drop out of school and 20 times more likely to end up in prison.”
 
                 "The Journal of Research on Adolescence confirms that even after controlling for varying levels of household income, kids in father-absent homes are more likely to end up in jail. And kids who never had a father in the house are the most likely to wind up behind bars.
 
@@ -57,30 +57,156 @@ let DatosPragger: [praggerTextInfo] = [
 
                 "The answer is found in a basic law of economics: If you subsidize undesirable behavior you will get more undesirable behavior. In 1949, the nation’s poverty rate was 34 percent. By 1965, it was cut in half, to 17 percent -- all before President Lyndon Johnson’s so-called War on Poverty. But after that war began in 1965, poverty began to flat line. From 1965 until now, the government has spent over $20 trillion to fight poverty.
 
-                "The poverty rate has remained unchanged, but the relationship between poor men and women has changed – dramatically. That’s because our generous welfare system allows women, in effect, to marry the government. And this makes it all too easy for men to abandon their traditional moral and financial responsibilities. Psychologists call such dependency \"learned helplessness.
+                "The poverty rate has remained unchanged, but the relationship between poor men and women has changed – dramatically. That’s because our generous welfare system allows women, in effect, to marry the government. And this makes it all too easy for men to abandon their traditional moral and financial responsibilities. Psychologists call such dependency learned helplessness.
 
                 "How do we know that the welfare state creates disincentives that hurt the very people we are trying to help? They tell us.
 
-                "In 1985, the Los Angeles Times asked both the poor and the non-poor whether poor women \"often\"have children to get additional benefits. Most of the non-poor respondents said no. However, 64 percent of poor respondents said yes. Now, who do you think is in a better position to know?
+                "In 1985, the Los Angeles Times asked both the poor and the non-poor whether poor women oftenhave children to get additional benefits. Most of the non-poor respondents said no. However, 64 percent of poor respondents said yes. Now, who do you think is in a better position to know?
 
-                "Tupac Shakur, the late rapper, once said: \"I know for a fact that had I had a father, I'd have some discipline. I'd have more confidence.\"He admitted he began running with gangs because he wanted the things a father gives to a child, especially to a boy: structure and protection.
+                "Tupac Shakur, the late rapper, once said: I know for a fact that had I had a father, I'd have some discipline. I'd have more confidence.He admitted he began running with gangs because he wanted the things a father gives to a child, especially to a boy: structure and protection.
 
                 "“Your mother cannot calm you down the way a man can,” Shakur said. “You need a man to teach you how to be a man.
 
-                "In my book \"Dear Father, Dear Son,\"I write about my rough, tough World War II Marine staff sergeant dad. Born in the Jim Crow South of Athens, Ga., he was 14 at the start of the Great Depression. Growing up, I watched my father work two full-time jobs as a janitor. He also cooked for a rich family on the weekends--and somehow managed to go to night school to get his GED. When I was 10, my father opened a small restaurant that he ran until he retired in his mid-80s.
+                "In my book Dear Father, Dear Son,I write about my rough, tough World War II Marine staff sergeant dad. Born in the Jim Crow South of Athens, Ga., he was 14 at the start of the Great Depression. Growing up, I watched my father work two full-time jobs as a janitor. He also cooked for a rich family on the weekends--and somehow managed to go to night school to get his GED. When I was 10, my father opened a small restaurant that he ran until he retired in his mid-80s.
 
-                "He was never angry or bitter--and insisted that today’s America was very different from the world of racial segregation and limited opportunity in which he grew up. \"Hard work wins,” he told me and my brothers. “You get out of life what you put into it. You can’t control the outcome, but you are 100% in control of the effort. And before blaming other people, go to the nearest mirror and ask yourself, ‘what could I have done to change the outcome?’” This advice shaped my life.
+                "He was never angry or bitter--and insisted that today’s America was very different from the world of racial segregation and limited opportunity in which he grew up. Hard work wins,” he told me and my brothers. “You get out of life what you put into it. You can’t control the outcome, but you are 100% in control of the effort. And before blaming other people, go to the nearest mirror and ask yourself, ‘what could I have done to change the outcome?’” This advice shaped my life.
 
                 "Fathers matter. Until we have a government policy that makes that its first priority, nothing will change.
 
                 "I’m Larry Elder for Prager University.
 """),
     praggerTextInfo(pragger: "Is America Racist?", praggerWord: """
-                hola mundo
-""")
+                    Is racism still a major problem in America? President Barack Obama certainly thinks so. He said that racism is “in our DNA.” Really? If racism is in our DNA, doesn’t that mean it's immutable, unchangeable?
+                    
+                    But America has changed -- and dramatically so. In 1960, 60% of Americans said they would never vote for a black president. Almost 50 years later, the black man who said racism is in America’s DNA was elected president, and four years later re-elected. That’s only the most obvious example of racial progress. There are many others.
+                    
+                    Take inter-racial marriage. As William H. Frey of the Brookings Institution wrote, “Sociologists have traditionally viewed multiracial marriage as a benchmark for the ultimate stage of assimilation of a particular group into society.” Black-white marriages were still illegal in 16 states until 1967. And a 1958 Gallup poll found that only 4% of Americans approved of black-white marriages. Today that number is 87%. In 1960, of all marriages by blacks, only 1.7 percent were black-white. Today, it’s 12 percent and rising.
+                    
+                    Now what about “racial profiling” and abuse of blacks by police? Doesn’t that prove that racism remains a major problem? In the summer of 2014, Ferguson, Missouri became ground zero for this accusation when a white policeman shot and killed an unarmed black teenager.  While a Department of Justice investigation of the incident cleared the officer of any wrongdoing, it did accuse the city’s police department of racial bias.
+                    
+                    But what was the Justice Department report’s most headline grabbing stat? The gap between the percentage of blacks living in Ferguson -- 67% -- and the percentage of those stopped by police for traffic violation who are black -- 85%. An 18 point discrepancy.
+                    
+                    Racism, right? Not so fast.
+                    
+                    Blacks comprise 25% of New York City, but account for 55% of those stopped for traffic offenses -- a 30-point discrepancy, far bigger than that of Ferguson. Why isn’t the NYPD, a department that is now majority minority, considered even more institutionally racist than the Ferguson PD? The answer is you cannot have an honest discussion about police conduct without an honest discussion of black crime.
+                    
+                    Though blacks are 13% of the population, they commit 50% of the nation’s homicides, and almost always the victim is another black person, just as most white homicides are against other whites. In 2012, according to the Center for Disease Control, police killed 123 blacks, while, by the way, killing over twice that many whites. But that same year blacks killed over 6,000 people -- again, mostly other blacks.
+                    
+                    What about traffic stops? Unlike when responding to dispatch calls, police officers exercise more discretion when it comes to traffic stops. Therefore “racist” cops can have a field day when it comes to traffic stops, right?
+                    
+                    Actually, no.
+                    
+                    The National Institute of Justice is the research agency of the Department of Justice. In 2013, the National Institute of Justice published a study called Race, Trust and Police Legitimacy. Three out of four black drivers admitted that they were stopped by the police for a legitimate reason. Blacks, compared to whites, were on average more likely to commit speeding and other traffic offenses. The Institute wrote, “Seatbelt usage is chronically lower among black drivers. If a law enforcement agency aggressively enforces seatbelt violations, police will stop more black drivers.
+                    
+                    The NIJ’s conclusion? These numerical disparities result from differences in offending -- in other words, not because of racism.
+                    
+                    Similarly, the National Highway Traffic Safety Administration also found that blacks violate traffic laws at higher rates than whites -- in every offense, whether it’s driving without a license, not wearing a seat belt, not using a child safety seat or speeding."
+                    
+                    Is there still racism in America? Of course, there is. But racism is not in America’s DNA. Recent history and a lot of research and data prove it."
+                    
+                    As liberal Harvard sociologist Orlando Patterson said, America, “is now the least racist white-majority society in the world; has a better record of legal protections of minorities than any other society, white or black; offers more opportunities to a greater number of black persons than any other society, including all of those of Africa.
+                    
+                    Patterson, by the way, is black.
+                    
+                    I’m Larry Elder for Prager University.
+"""),
+    praggerTextInfo(pragger: "Don't Compare Yourself to Others", praggerWord: """
+                            Do you ever look at the lives of people around you and say, “Man, I wish that was me!”?
+                            
+                            You know you do. Everybody does. But I bet you never compared yourself to me. Haven’t heard of me? I do have my own TV show...in the middle of the night.
+                            
+                            When I started I wanted to be as big as Jerry Seinfeld. I’m not. And yet, I’m a pretty happy guy. Here’s why: I stopped comparing myself to other people. Seriously, that’s the whole trick.
+                            
+                            Here’s what I mean.
+                            
+                            If my happiness were based on being the biggest comedian in the business, I’d be mad at whoever was getting more Netflix specials than me. (I have zero.) If it were based on having the best TV ratings, I’d be mad at Jimmy Fallon. He beats me every night. And if it were based on being rich, I’d be mad at a lot of people. And even if I were rich – really rich, like #10 on the Forbes 400 rich – I’d be mad that there were nine other people richer than me. It never ends. Comparing yourself to others creates a totally unrealistic measure for what constitutes success. And I know, because the entertainment business is all about unrealistic expectations.
+                            
+                            All through my career I’d meet with satisfied customers after my shows and they’d say,“Hey, you’re good! Maybe someday you’ll be successful like Jerry Seinfeld.” He’s the measure of success? The top guy?
+                            
+                            When someone tells you they’re a doctor, you don’t say, “Well, maybe someday you’ll cure a disease and save millions of lives, just like Jonas Salk did for polio.”
+                            
+                            Or a lawyer: “Oh, wow, so what’s your ultimate goal? The Supreme Court?”
+                            Do you see how crazy that sounds?
+                            
+                            Professional success is about making a living, pursuing excellence, and finding meaning in what you do.
+                            
+                            When I first started doing standup, I was a nobody. It took more than a decade of playing in front of tuned-out crowds before it started paying the bills. Ten years is a lot of time to tell jokes for no money to people who aren’t laughing.
+                            
+                            In those days, I spent a lot of time thinking about the comedians I admired. The guys at the top. I wanted those big, sold out houses I wasn’t playing. The big paydays I wasn’t making. TheTV specials I wasn’t doing.
+                            
+                            And not just their success; their talent. I’d look at comics like George Carlin, Robin Williams and Louis C.K. They were all able to turn their dark, personal struggles into brilliant comedy. I envy their talent, but I wouldn’t want the dark personal struggles that went along with it.
+                            
+                            If you don’t factor in everything about whoever you’re comparing yourself to, you’re playing a sort of mix-and-match game that doesn’t exist in the real world.
+                            
+                            Here’s one of life’s little truths: everyone is a package deal. You can’t view one element of someone else’s life in isolation. That’s cheating.
+                            
+                            You can’t say, “I want Louis C.K.’s money and fame, Jay Leno’s car collection and Tom Shillue’s wife and kids.” That person doesn’t exist! If he did, he’d be pretty cool. I would definitely want to hang with him.
+                            
+                            Everyone has pain in their lives. Think of anybody who you know really well. You know the awful stuff they’ve had to deal with -- the demons they battle. How many dead rock stars, movie stars and, yes, comedians does it take to convince us all that everyone’s life is hard?
+                            
+                            Face it.
+                            
+                            You really don’t want someone else’s life. You want your own life -- only better. But that’s the thing. You can make your life better by not doing something – comparing yourself to other people.
+                            
+                            Back when I was a nobody, I wanted to sell out the biggest venues and have a prime-time TV show with millions of viewers. Now I sell out small venues and I’m on in the middle of the night with half a million viewers. And I appreciate every one of them.
+                            
+                            I guess when I compare myself now to myself then, I’m doing okay. You should try it.
+                            
+                            I’m Tom Shillue for Prager University.
+                """),
+    praggerTextInfo(pragger: "Fix Yourself", praggerWord: """
+                                Blaming others for your problems is a complete waste of time. When you do that, you don’t learn anything.
+                                
+                                You can’t grow, and you can’t mature. Thus, you can’t make your life better.
+                                
+                                In my three decades as a professor and clinical psychologist, I have learned that there are two fundamental attitudes toward life and its sorrows. Those with the first attitude blame the world. Those with the second ask what they could do differently.
+                                
+                                Imagine a couple on the brink of divorce. They’re hurt and angry. The unhappy, bitter husband recalls the terrible things his wife has done, and the reasons he can no longer live with her.
+                                
+                                The harried and disillusioned wife, in turn, can describe all the ways her husband let her down. Each has a long list of necessary changes — for the other person.
+                                
+                                Their prospects for reconciliation are grim. Why? Because other people aren’t the problem. You’re the problem. You can’t change other people, but you can change yourself. But it’s difficult. It takes courage to change, and it takes discipline. It’s much easier — and much more gratifying to your basest desires — to blame someone else for your misery.
+                                
+                                Consider the youthful activist, making a statement against the “corrupt” capitalist system by smashing in the storefront of a local business. What has he done, other than to bring harm to people who have nothing to do with his real problems?
+                                
+                                The guilt, doubt and shame he will inevitably feel in consequence will have to be suppressed so his beliefs can remain unchanged. And that suppression will do nothing but foster his anger and alienation.
+                                Do you see how crazy that sounds?
+                                
+                                In the play “The Cocktail Party” by American-English poet T.S. Eliot, one of the characters is having a very hard time of it. She speaks of her profound unhappiness to her psychiatrist. She tells him that she hopes her suffering is all her own fault.
+                                
+                                Taken aback, the psychiatrist asks why. Because, she tells him, if it’s her fault, she can do something about it. If it’s in the nature of the world, however, she’s doomed. She can’t change everything else. But she could change herself.
+                                
+                                Now, there are people who seem to be consigned to a terrible fate. But most of us aren’t. Most of us have a chance to make our lives better.
+                                
+                                But how?
+                                
+                                Start small. Ask yourself a few questions: Have you taken full advantage of the opportunities offered to you? Are you working to your fullest capacity at school or at work? Have you, in other words, set your own house in order?
+                                
+                                If the answer is no, try this: stop doing what you know to be wrong. Stop today.
+                                
+                                Don’t waste time asking how you know that what you’re doing is wrong.
+                                
+                                Inopportune questioning can confuse without enlightening, and deflect you from action. You can know something is right or wrong without knowing why.
+                                
+                                Start paying attention: Do you procrastinate, show up late, spend money you don’t have, and drink more than you should?
+                                
+                                It’s not a matter of accepting some externally imposed morality. It’s a dialogue with your own conscience. What are you doing that’s wrong, from your own perspective? What could you put right right now?
+                                
+                                Get to work on time. Stop interrupting people. Make peace with your siblings and your parents. Diligently utilize everything you already have at hand. If you do those things, your life will improve. You’ll become more peaceful, productive and desirable.
+                                
+                                After some days, or weeks, or months of attentive effort, your mind will clear. Your life will become less tragic, and you will become more confident. You’ll start seeing right from wrong more clearly. The path in front of you will shine more brightly. You’ll stop getting in your own way. Instead of bringing trouble to yourself, your family, and your society, you’ll be a positive and reliable force.
+                                
+                                Your life will still be difficult. You’ll still suffer. That’s the price of being alive. But maybe you’ll become strong enough to accept that burden, and in that fashion even come to act nobly, and with purpose.
+                                
+                                The proper way to fix the world isn’t to fix the world. There’s no reason to assume that you’re even up to such a task. But you can fix yourself. You’ll do no one any harm by doing so.
+                                
+                                And in that manner, at least, you will make the world a better place.
+                                
+                                I’m Jordan Peterson, Professor of Psychology at the University of Toronto, for Prager University.
+                                """)
 ]
-            
 
+//PREGUNTAS TEST
 let DatosPregRachel: [CatPreg] = [
     CatPreg(nombre: "Black Fathers", pregs: [
         pregStruc(preg: "Who did the author interview years ago?", preg1: "Martin Luther King Jr", preg2: "Al Sharpton", preg3: "Kweisi Mfume, the president of the NAACP", preg4: "Jesse Jackson", respCorrec: "Kweisi Mfume, the president of the NAACP"),
@@ -198,7 +324,7 @@ let DatosPregRachel: [CatPreg] = [
             preg3: "Larry Elder",
             preg4: "Barack Obama",
             respCorrec: "Larry Elder"
-        )
+        ),
     ]),
     CatPreg(nombre: "Is America Racist?", pregs: [
         pregStruc(preg: "According to the text, what percentage of Americans in 1960 said they would never vote for a black president?",
@@ -296,7 +422,7 @@ let DatosPregRachel: [CatPreg] = [
                   preg2: "Black",
                   preg3: "Hispanic",
                   preg4: "Asian",
-                  respCorrec: "Black")
+                  respCorrec: "Black"),
         
     ]),
     CatPreg(nombre: "Don't Compare Yourself to Others", pregs: [
@@ -395,7 +521,7 @@ let DatosPregRachel: [CatPreg] = [
                   preg2: "To compare yourself only to the past version of yourself",
                   preg3: "To be envious of others' success",
                   preg4: "To focus on fame and fortune",
-                  respCorrec: "To compare yourself only to the past version of yourself")
+                  respCorrec: "To compare yourself only to the past version of yourself"),
         
     ]),
     CatPreg(nombre: "Fix Yourself", pregs: [
@@ -496,7 +622,7 @@ let DatosPregRachel: [CatPreg] = [
             preg2: "California",
             preg3: "Texas",
             preg4: "Los Angeles",
-            respCorrec: "Toronto")
+            respCorrec: "Toronto"),
     ]),
     CatPreg(nombre: "Are Men and Women Different?", pregs: [
         pregStruc(preg: "What is the analogy of the beach ball used for in the speech?",
@@ -594,7 +720,7 @@ let DatosPregRachel: [CatPreg] = [
                   preg2: "Because society wanted to control women's sexuality",
                   preg3: "Because it was more convenient for inheritance purposes",
                   preg4: "Because of religious dogma",
-                  respCorrec: "Because it is a big deal with deep emotional, psychological, and physical implications")
+                  respCorrec: "Because it is a big deal with deep emotional, psychological, and physical implications"),
     ]),
     CatPreg(nombre: "Don't Waste Your Time", pregs: [
         pregStruc(preg: "According to the text, what is the purpose of dating for women?",
@@ -692,7 +818,7 @@ let DatosPregRachel: [CatPreg] = [
                   preg2: "Alejandro Berry",
                   preg3: "Lauren Chen",
                   preg4: "Adriana Monsalve",
-                  respCorrec: "Lauren Chen")
+                  respCorrec: "Lauren Chen"),
     ]),
     CatPreg(nombre: "How to End Systemic Racism", pregs: [
         pregStruc(
@@ -1006,7 +1132,7 @@ let DatosPregRachel: [CatPreg] = [
         ),
         
         pregStruc(
-            preg:"What was the purpose of the Troubled Asset Relief Program (TARP)?",
+            preg:"What was the purpose of the Troubled Asset Relief Program (TARP),?",
             preg1:"To bail out Lehman Brothers",
             preg2:"To pump taxpayer cash into America's banks and financial institutions",
             preg3:"To provide short-term credit to struggling companies",
@@ -1015,7 +1141,7 @@ let DatosPregRachel: [CatPreg] = [
         ),
         
         pregStruc(
-            preg:"What was the phrase \"too big to fail\"referring to in the context of the 1984 bailout of Continental Illinois?",
+            preg:"What was the phrase too big to failreferring to in the context of the 1984 bailout of Continental Illinois?",
             preg1:"The bank had too much debt to be saved",
             preg2:"The bank was too large and powerful to be allowed to fail",
             preg3:"The bank was too risky to be bailed out",
@@ -1078,7 +1204,7 @@ let DatosPregRachel: [CatPreg] = [
         ),
         
         pregStruc(
-            preg:"How did the government's bailout of Continental Illinois in 1984 introduce the phrase \"too big to fail\"to the financial media's vocabulary?",
+            preg:"How did the government's bailout of Continental Illinois in 1984 introduce the phrase too big to failto the financial media's vocabulary?",
             preg1:"The government believed that Continental Illinois was too risky to be saved",
             preg2:"The government wanted to send a message to the financial industry that it would always bail out big banks",
             preg3:"The government feared that if Continental Illinois failed, it would cause a panic in the financial markets",
@@ -1114,7 +1240,7 @@ let DatosPregRachel: [CatPreg] = [
         ),
         
         pregStruc(
-            preg:"Why did President George W. Bush sign the Troubled Asset Relief Program (TARP) into law in 2008?",
+            preg:"Why did President George W. Bush sign the Troubled Asset Relief Program (TARP), into law in 2008?",
             preg1:"Because he believed in government intervention in the financial industry",
             preg2:"Because he wanted to send a message to the financial industry that the government would always bail out big banks",
             preg3:"Because he believed that the global financial system was in danger of collapsing",
@@ -1131,71 +1257,331 @@ let DatosPregRachel: [CatPreg] = [
             respCorrec:"Decrease government involvement in the financial industry"
         ),
         
-    ])
+    ]),
 ];
 
 let DatosInfoRachel: [CatPregSig] = [
     CatPregSig(pragger: "Black Fathers", praggerWord: [
         CatPregInd(keyWord: "between", significado: "una preposición usada para decir que algo está entre dos cosas."),
-        CatPregInd(keyWord: "children", significado: "una palabra para referirse a niños y niñas"),
-        CatPregInd(keyWord: "ago", significado: "se usa con una expresión de tiempo para indicar que algo fue en pasado, por ejemplo = years ago- años atrás, ten years ago- hace diez años"),
-        CatPregInd(keyWord: "then", significado: "entonces"),
-        CatPregInd(keyWord: "i asked", significado: "yo pregunté"),
-        CatPregInd(keyWord: "which", significado: "cual, usualmente la usamos cuando tenemos dos opciones"),
-        CatPregInd(keyWord: "poses", significado: "presentar o constituir (un problema, peligro, dificultad)"),
-        CatPregInd(keyWord: "bigger", significado: "más grande (el sufijo ER se usa en adjetivos cortos para hacer que comparen, small/pequeño, smaller-más pequeño, tall-alto, taller-más alto)"),
-        CatPregInd(keyWord: "threat", significado: "amenaza"),
-        CatPregInd(keyWord: "without missing a beat", significado: "esta es una expresión coloquial, es el equivalente en español a ¨sin titubear¨"),
-        CatPregInd(keyWord: "he said", significado: "él dijo"),
-        CatPregInd(keyWord: "it was", significado: "fue"),
-        CatPregInd(keyWord: "who", significado: "quien"),
-        CatPregInd(keyWord: "weall", significado: "todos nosotros"),
-        CatPregInd(keyWord: "know", significado: "saber o conocer"),
-        CatPregInd(keyWord: "that", significado: "que (se usa para introducir una cláusula)"),
-        CatPregInd(keyWord: "growup", significado: "verbo compuesto, crecer"),
-        CatPregInd(keyWord: "likely", significado: "propenso, probable"),
-        CatPregInd(keyWord: "poverty", significado: "pobreza"),
-        CatPregInd(keyWord: "dropout", significado: "salir de la escuela, dejar de ir a la escuela prematuramente"),
-        CatPregInd(keyWord: "endup", significado: "terminar"),
-        CatPregInd(keyWord: "even", significado: "incluso"),
-        CatPregInd(keyWord: "after", significado: "después, después de, después de que"),
-        CatPregInd(keyWord: "controlling", significado: "controlar, los verbos después de cualquier preposición se escriben con terminación ing"),
-        CatPregInd(keyWord: "varying", significado: "algo que varía"),
-        CatPregInd(keyWord: "householdincome", significado: "ingreso del hogar"),
-        CatPregInd(keyWord: "jail", significado: "la cárcel"),
-        CatPregInd(keyWord: "mostlikely", significado: "los más probables/ superlativo"),
-        CatPregInd(keyWord: "windup", significado: "terminar, encontrarte a ti mismo en una situación inesperada y no placentera"),
-        CatPregInd(keyWord: "each other", significado: "uno con el otro"),
-        CatPregInd(keyWord: "risen", significado: "participio de elevar, elevado"),
-        CatPregInd(keyWord: "reached", significado: "alcanzar en pasado, alcanzó"),
-        CatPregInd(keyWord: "during", significado: "durante"),
+        CatPregInd(keyWord: "children", significado: "una palabra para referirse a niños y niñas."),
+        CatPregInd(keyWord: "ago", significado: "se usa con una expresión de tiempo para indicar que algo ocurrió en el pasado, por ejemplo, 'years ago' - años atrás, 'ten years ago' - hace diez años."),
+        CatPregInd(keyWord: "then", significado: "entonces."),
+        CatPregInd(keyWord: "I asked", significado: "yo pregunté."),
+        CatPregInd(keyWord: "which", significado: "cuál, usualmente la usamos cuando tenemos dos opciones."),
+        CatPregInd(keyWord: "poses", significado: "presentar o constituir (un problema, peligro, dificultad),."),
+        CatPregInd(keyWord: "bigger", significado: "más grande (el sufijo ER se usa en adjetivos cortos para hacer que comparen, small/pequeño, smaller-más pequeño, tall-alto, taller-más alto),."),
+        CatPregInd(keyWord: "threat", significado: "amenaza."),
+        CatPregInd(keyWord: "Without missing a beat", significado: "esta es una expresión coloquial, es el equivalente en español a ¨sin titubear¨."),
+        CatPregInd(keyWord: "he said", significado: "él dijo."),
+        CatPregInd(keyWord: "it was", significado: "fue."),
+        CatPregInd(keyWord: "who", significado: "quién."),
+        CatPregInd(keyWord: "we all", significado: "todos nosotros."),
+        CatPregInd(keyWord: "know", significado: "saber o conocer."),
+        CatPregInd(keyWord: "that", significado: "que (se usa para introducir una cláusula),."),
+        CatPregInd(keyWord: "grow up", significado: "verbo compuesto, crecer."),
+        CatPregInd(keyWord: "likely", significado: "propenso, probable."),
+        CatPregInd(keyWord: "poverty", significado: "pobreza."),
+        CatPregInd(keyWord: "drop out", significado: "salir de la escuela, dejar de ir a la escuela prematuramente."),
+        CatPregInd(keyWord: "end up", significado: "terminar."),
+        CatPregInd(keyWord: "even", significado: "incluso."),
+        CatPregInd(keyWord: "after", significado: "después, después de, después de que."),
+        CatPregInd(keyWord: "controlling", significado: "controlar, los verbos después de cualquier preposición se escriben con terminación ing."),
+        CatPregInd(keyWord: "varying", significado: "algo que varía."),
+        CatPregInd(keyWord: "household income", significado: "ingreso del hogar."),
+        CatPregInd(keyWord: "jail", significado: "la cárcel."),
+        CatPregInd(keyWord: "most likely", significado: "los más probables/ superlativo."),
+        CatPregInd(keyWord: "wind up", significado: "terminar, encontrarte a ti mismo en una situación inesperada y no placentera."),
+        CatPregInd(keyWord: "each other", significado: "uno con el otro."),
+        CatPregInd(keyWord: "risen", significado: "participio de elevar, elevado."),
+        CatPregInd(keyWord: "reached", significado: "alcanzar en pasado, alcanzó."),
+        CatPregInd(keyWord: "during", significado: "durante."),
+        CatPregInd(keyWord: "marriage", significado: "matrimonio."),
+        CatPregInd(keyWord: "were", significado: "eran o estaban."),
+        CatPregInd(keyWord: "than", significado: "que, se usa en contexto de comparación."),
+        CatPregInd(keyWord: "raised", significado: "criado, en este contexto raise se usa como 'criar'."),
+        CatPregInd(keyWord: "both", significado: "ambos."),
+        CatPregInd(keyWord: "written", significado: "escrito."),
+        
+        CatPregInd(keyWord: "according", significado: "según."),
+        CatPregInd(keyWord: "out-of-wedlock", significado: "fuera de matrimonio."),
+        CatPregInd(keyWord: "birth", significado: "nacimientos."),
+        CatPregInd(keyWord: "less than", significado: "menos de."),
+        CatPregInd(keyWord: "over", significado: "sobre."),
+        CatPregInd(keyWord: "answer", significado: "respuesta."),
+        CatPregInd(keyWord: "found", significado: "Participio de find (encontrar), encontrado."),
+        CatPregInd(keyWord: "law", significado: "ley."),
+        CatPregInd(keyWord: "if", significado: "Conector condicional es el 'si' en español, por ejemplo, si tú vienes yo voy."),
+        CatPregInd(keyWord: "subsidize", significado: "subsidiar."),
+        CatPregInd(keyWord: "undesirable", significado: "indeseable."),
+        CatPregInd(keyWord: "behavior", significado: "comportamiento."),
+        CatPregInd(keyWord: "you will get", significado: "'will' + get, juntos significan, tú obtendrás. 'Will' no tiene significado solo."),
+        CatPregInd(keyWord: "so-called", significado: "así llamado, se usa para mostrar que algo o alguien se designa comúnmente por el nombre o término especificado."),
+        CatPregInd(keyWord: "war", significado: "guerra."),
+        CatPregInd(keyWord: "began", significado: "comenzó."),
+        CatPregInd(keyWord: "began to flatline", significado: "comenzó a estancarse."),
+        CatPregInd(keyWord: "from", significado: "desde."),
+        CatPregInd(keyWord: "until", significado: "hasta."),
+        CatPregInd(keyWord: "until now", significado: "hasta ahora."),
+        CatPregInd(keyWord: "spent", significado: "gastado, en esta situación está justo después del 'has', 'has spent', ha gastado."),
+        CatPregInd(keyWord: "has spent", significado: "ha gastado."),
+        CatPregInd(keyWord: "to fight poverty", significado: "para luchar contra la pobreza."),
+        CatPregInd(keyWord: "rate", significado: "tasa."),
+        CatPregInd(keyWord: "has remained unchanged", significado: "se ha mantenido sin cambios."),
+        CatPregInd(keyWord: "has changed", significado: "ha cambiado."),
+        CatPregInd(keyWord: "dramatically", significado: "dramáticamente."),
+        CatPregInd(keyWord: "That's because", significado: "Eso es porque."),
+        CatPregInd(keyWord: "generous", significado: "generoso."),
+        CatPregInd(keyWord: "in effect", significado: "en efecto."),
+        CatPregInd(keyWord: "abandon", significado: "abandonar."),
+        CatPregInd(keyWord: "traditional", significado: "tradicional."),
+        CatPregInd(keyWord: "financial", significado: "financiero."),
+        CatPregInd(keyWord: "responsibilities", significado: "responsabilidades."),
+        CatPregInd(keyWord: "such dependency", significado: "tal dependencia."),
+        CatPregInd(keyWord: "learned helplessness", significado: "desamparo aprendido."),
+        CatPregInd(keyWord: "disincentive", significado: "desincentivo, especialmente una desventaja financiera, que tiende a desalentar a las personas de hacer algo."),
+        CatPregInd(keyWord: "trying to help", significado: "tratando de ayudar."),
+        CatPregInd(keyWord: "poor", significado: "pobre."),
+        CatPregInd(keyWord: "non-poor", significado: "no pobre."),
+        CatPregInd(keyWord: "whether", significado: "ya sea, expresar una duda o elección entre alternativas."),
+        CatPregInd(keyWord: "additional", significado: "adicionales."),
+        CatPregInd(keyWord: "respondents", significado: "encuestados."),
+        CatPregInd(keyWord: "once said", significado: "una vez dijo."),
+        CatPregInd(keyWord: "he admitted", significado: "él admitió."),
+        CatPregInd(keyWord: "running with", significado: "juntarse con."),
+        CatPregInd(keyWord: "gangs", significado: "pandillas."),
+        CatPregInd(keyWord: "structure", significado: "estructura."),
+        CatPregInd(keyWord: "protection", significado: "protección."),
+        CatPregInd(keyWord: "calm you down", significado: "calmarte."),
+        CatPregInd(keyWord: "the way", significado: "de la manera."),
+        CatPregInd(keyWord: "teach you", significado: "enseñarte."),
+        CatPregInd(keyWord: "how to be", significado: "cómo ser."),
+        CatPregInd(keyWord: "my rough", significado: "mi áspero."),
+        CatPregInd(keyWord: "growing up", significado: "creciendo."),
+        CatPregInd(keyWord: "full-time jobs", significado: "trabajos de tiempo completo."),
+        CatPregInd(keyWord: "as a", significado: "como un."),
+        CatPregInd(keyWord: "janitor", significado: "conserje."),
+        CatPregInd(keyWord: "also", significado: "también."),
+        CatPregInd(keyWord: "his mid-80s", significado: "alrededor de sus 80 años."),
+        CatPregInd(keyWord: "angry", significado: "molesto."),
+        CatPregInd(keyWord: "bitter", significado: "amargado."),
+        CatPregInd(keyWord: "insisted", significado: "insistió."),
+        CatPregInd(keyWord: "racial segregation", significado: "segregación racial."),
+        CatPregInd(keyWord: "you get out of life what you put into it", significado: "recibes de la vida lo que pones en ella."),
+        CatPregInd(keyWord: "blaming other people", significado: "culpar a otras personas."),
+        CatPregInd(keyWord: "what could I have done to change the outcome", significado: "qué pude haber hecho yo para cambiar el resultado."),
+        CatPregInd(keyWord: "This advice shaped", significado: "este consejo formó."),
+        CatPregInd(keyWord: "staff sergeant", significado: "sargento de personal."),
+        CatPregInd(keyWord: "Jim Crow South", significado: "Sur de Jim Crow."),
+        CatPregInd(keyWord: "full-time", significado: "de tiempo completo."),
+        CatPregInd(keyWord: "somehow", significado: "de alguna manera."),
+        CatPregInd(keyWord: "cooked", significado: "cocinaba."),
+        CatPregInd(keyWord: "and somehow managed", significado: "y de alguna manera logró."),
+        CatPregInd(keyWord: "night school", significado: "escuela nocturna."),
+        CatPregInd(keyWord: "get his GED", significado: "obtener su GED."),
+        CatPregInd(keyWord: "he ran", significado: "él administró."),
+        CatPregInd(keyWord: "the late rapper", significado: "el fallecido rapero."),
+        CatPregInd(keyWord: "fathers matter", significado: "los padres importan."),
+        CatPregInd(keyWord: "we have", significado: "tenemos."),
+        
+    ]),
+    CatPregSig(pragger: "Is America Racist?", praggerWord: [
+        CatPregInd(keyWord: "certainly", significado: "ciertamente"),
+        CatPregInd(keyWord: "think's so", significado: "piensa de esta forma"),
+        CatPregInd(keyWord: "doesn't that mean", significado: "eso no significa?"),
+        CatPregInd(keyWord: "vote", significado: "votar"),
+        CatPregInd(keyWord: "was", significado: "fue"),
+        CatPregInd(keyWord: "elected", significado: "elegido"),
+        CatPregInd(keyWord: "almost", significado: "casi"),
+        CatPregInd(keyWord: "later", significado: "después"),
+        CatPregInd(keyWord: "that's", significado: "eso es"),
+        CatPregInd(keyWord: "only", significado: "solamente"),
+        CatPregInd(keyWord: "the most", significado: "el más, superlativo, no hay nada por encima"),
+        CatPregInd(keyWord: "there are", significado: "hay, plural"),
+        CatPregInd(keyWord: "take", significado: "toma"),
         CatPregInd(keyWord: "marriage", significado: "matrimonio"),
-        CatPregInd(keyWord: "were", significado: "eran o estaban"),
-        CatPregInd(keyWord: "than", significado: "que, se usa en contexto de comparación"),
-        CatPregInd(keyWord: "raised", significado: "criado, en este contexto raise se usa como <criar>"),
-        CatPregInd(keyWord: "both", significado: "ambos"),
-        CatPregInd(keyWord: "written", significado: "escrito"),
-        CatPregInd(keyWord: "according", significado: "según"),
-        CatPregInd(keyWord: "outofwedlock", significado: "fuera de matrimonio"),
-        CatPregInd(keyWord: "birth", significado: "nacimientos"),
-        CatPregInd(keyWord: "less than", significado: "menos de"),
-        CatPregInd(keyWord: "over", significado: "sobre"),
-        CatPregInd(keyWord: "answer", significado: "respuesta"),
-        CatPregInd(keyWord: "found", significado: "Participio de find (encontrar), encontrado"),
-        CatPregInd(keyWord: "law", significado: "ley"),
-        CatPregInd(keyWord: "if", significado: "Conector condicional es el ´si´ en español, por ejemplo, si tu vienes yo voy"),
-        CatPregInd(keyWord: "subsidize", significado: "subsidiar"),
-        CatPregInd(keyWord: "undesirable", significado: "indeseable"),
-        CatPregInd(keyWord: "behavior", significado: "comportamiento"),
-        CatPregInd(keyWord: "you will get", significado: "´will´ + get, juntos significan, tu obtendrás. ´Will´ no tiene significado solo"),
-        CatPregInd(keyWord: "so called", significado: "así llamado, se usa para mostrar que algo o alguien se designa comúnmente por el nombre o término especificado"),
-        CatPregInd(keyWord: "war", significado: "Guerra"),
-        CatPregInd(keyWord: "began", significado: "comenzó"),
-        CatPregInd(keyWord: "began to flatline", significado: "comenzó alrededor"),
-        CatPregInd(keyWord: "from", significado: "desde"),
+        CatPregInd(keyWord: "wrote", significado: "escribió"),
+        CatPregInd(keyWord: "viewed", significado: "visto"),
+        CatPregInd(keyWord: "benchmark", significado: "marcador"),
+        CatPregInd(keyWord: "stage", significado: "escenario, en este caso se refiere al último paso"),
+        CatPregInd(keyWord: "were", significado: "eran, fueron, estaban"),
         CatPregInd(keyWord: "until", significado: "hasta"),
-        CatPregInd(keyWord: "until now", significado: "hasta ahora"),
-        CatPregInd(keyWord: "spent", significado: "gastado, en esta situación está justo después del has, has spent, ha gastado"),
-        CatPregInd(keyWord: "has spent", significado: "ha gastado"),
-    ])
+        CatPregInd(keyWord: "Gallup poll", significado: "poll es encuesta Gallup es una empresa que se dedica a hacer encuestas, una encuesta de Gallup."),
+        CatPregInd(keyWord: "found", significado: "encontró"),
+        CatPregInd(keyWord: "of", significado: "de"),
+        CatPregInd(keyWord: "all", significado: "todos"),
+        CatPregInd(keyWord: "by", significado: "por"),
+        CatPregInd(keyWord: "rising", significado: "elevándose"),
+        CatPregInd(keyWord: "what about", significado: "expresión coloquial, como cuando tú dices “qué hay sobre” o “qué tal” y luego introduces una idea."),
+        CatPregInd(keyWord: "racial profiling", significado: "es una idea, perfil racial, se refiere a que la gente es detenida por la policía solo por su color de piel."),
+        CatPregInd(keyWord: "doesn't that", significado: "eso no?"),
+        CatPregInd(keyWord: "remains", significado: "sigue siendo"),
+        CatPregInd(keyWord: "summer", significado: "verano"),
+        CatPregInd(keyWord: "became", significado: "se convirtió"),
+        CatPregInd(keyWord: "ground zero", significado: "literal es donde sucedió un estallido atómico, pero se usa coloquialmente para indicar que fue el lugar que empezó un movimiento social."),
+        CatPregInd(keyWord: "unarmed", significado: "desarmado"),
+        CatPregInd(keyWord: "teenager", significado: "adolescente"),
+        CatPregInd(keyWord: "while", significado: "mientras"),
+        CatPregInd(keyWord: "cleared", significado: "aquí se refiere a que 'limpió' o 'aclaró'"),
+        CatPregInd(keyWord: "wrongdoing", significado: "se refiere a cualquier hecho con malicia, error o crimen"),
+        CatPregInd(keyWord: "city's", significado: "aquí se refiere al 'city's police department' o el departamento de policía de la ciudad"),
+        CatPregInd(keyWord: "bias", significado: "favoritismo o sesgo"),
+        CatPregInd(keyWord: "headline grabbing stat", significado: "la estadística que más agarró encabezados de periódico"),
+        CatPregInd(keyWord: "gap", significado: "hueco"),
+        CatPregInd(keyWord: "those", significado: "aquellos"),
+        CatPregInd(keyWord: "not so fast", significado: "no tan rápido"),
+        CatPregInd(keyWord: "comprise", significado: "compone, contiene, está compuesto por"),
+        CatPregInd(keyWord: "account", significado: "cuentan por"),
+        CatPregInd(keyWord: "bigger", significado: "más grande"),
+        CatPregInd(keyWord: "even", significado: "incluso"),
+        CatPregInd(keyWord: "than", significado: "que"),
+        CatPregInd(keyWord: "PD", significado: "police department"),
+        CatPregInd(keyWord: "cannot", significado: "no puedes"),
+        CatPregInd(keyWord: "about", significado: "acerca de"),
+        CatPregInd(keyWord: "without", significado: "sin"),
+        CatPregInd(keyWord: "though", significado: "aunque"),
+        CatPregInd(keyWord: "commit", significado: "cometer"),
+        CatPregInd(keyWord: "almost", significado: "casi"),
+        CatPregInd(keyWord: "always", significado: "siempre"),
+        CatPregInd(keyWord: "according to", significado: "según"),
+        CatPregInd(keyWord: "by the way", significado: "por cierto"),
+        CatPregInd(keyWord: "over", significado: "en esta situación 'over' se refiere a sobre o más de"),
+        CatPregInd(keyWord: "twice", significado: "dos veces"),
+        CatPregInd(keyWord: "that many", significado: "esta es una frase cuando están juntas, es como decir de esos"),
+        CatPregInd(keyWord: "but", significado: "pero"),
+        CatPregInd(keyWord: "same", significado: "mismo"),
+        CatPregInd(keyWord: "mostly", significado: "mayoritariamente"),
+        CatPregInd(keyWord: "unlike", significado: "no parecido a"),
+        CatPregInd(keyWord: "dispatch", significado: "despachar, dispatch calls son cuando mandan a los policías a un lugar en específico por una llamada de 911"),
+        CatPregInd(keyWord: "when it comes to", significado: "cuando tiene que ver con"),
+        CatPregInd(keyWord: "therefore", significado: "por lo tanto"),
+        CatPregInd(keyWord: "have a field day", significado: "tienen un día de campo, se dan gusto"),
+        CatPregInd(keyWord: "actually", significado: "realmente"),
+        CatPregInd(keyWord: "published", significado: "publicó"),
+        CatPregInd(keyWord: "called", significado: "llamado"),
+        CatPregInd(keyWord: "out of", significado: "aquí se refiere a que tres de cada cuatro"),
+        CatPregInd(keyWord: "drivers", significado: "conductores"),
+        CatPregInd(keyWord: "were", significado: "fueron"),
+        CatPregInd(keyWord: "average", significado: "promedio"),
+        CatPregInd(keyWord: "likely", significado: "probables"),
+        CatPregInd(keyWord: "speeding", significado: "pasarse del límite de velocidad"),
+        CatPregInd(keyWord: "seatbelt", significado: "cinturón de seguridad"),
+        CatPregInd(keyWord: "usage", significado: "uso de"),
+        CatPregInd(keyWord: "lower", significado: "más bajo"),
+        CatPregInd(keyWord: "among", significado: "entre"),
+        CatPregInd(keyWord: "from", significado: "de"),
+        CatPregInd(keyWord: "words", significado: "palabras"),
+        CatPregInd(keyWord: "because of", significado: "a razón de, o por"),
+        CatPregInd(keyWord: "also", significado: "también"),
+        CatPregInd(keyWord: "higher", significado: "más alto"),
+        CatPregInd(keyWord: "rates", significado: "tasa"),
+        CatPregInd(keyWord: "whether", significado: "ya sea"),
+        CatPregInd(keyWord: "wearing", significado: "usar, se usa para ropa, aquí se usa para el cinturón de seguridad"),
+        CatPregInd(keyWord: "safety", significado: "seguridad"),
+        CatPregInd(keyWord: "there is", significado: "hay, singular"),
+        CatPregInd(keyWord: "the least", significado: "el menos"),
+        CatPregInd(keyWord: "better", significado: "mejor"),
+        CatPregInd(keyWord: "any", significado: "cualquier"),
+        CatPregInd(keyWord: "greater", significado: "más grande"),
+    ]),
+    CatPregSig(pragger: "Don't Compare Yourself to Others", praggerWord: [
+        CatPregInd(keyWord: "do you ever look", significado: "¿Alguna vez miras?"),
+        CatPregInd(keyWord: "I wish", significado: "Yo deseo"),
+        CatPregInd(keyWord: "everybody", significado: "Todos"),
+        CatPregInd(keyWord: "bet", significado: "Apostar"),
+        CatPregInd(keyWord: "compared", significado: "Comparado (del verbo comparar)"),
+        CatPregInd(keyWord: "yourself", significado: "A ti mismo (Reflexivo)"),
+        CatPregInd(keyWord: "do", significado: "Palabra usada para poner énfasis al afirmar algo. Ejemplo = No necesito esto, pero SI necesito aquello."),
+        CatPregInd(keyWord: "own", significado: "Propio"),
+        CatPregInd(keyWord: "middle", significado: "Mitad"),
+        CatPregInd(keyWord: "as big as", significado: "Tan grande como"),
+        CatPregInd(keyWord: "pretty", significado: "Muy. También usado como bonito (a) en otros contextos."),
+        CatPregInd(keyWord: "here's why", significado: "Aquí está por qué"),
+        CatPregInd(keyWord: "people", significado: "Personas (en plural)"),
+        CatPregInd(keyWord: "whole", significado: "Todo o completo"),
+        CatPregInd(keyWord: "trick", significado: "Truco"),
+        CatPregInd(keyWord: "here's what I mean", significado: "Aquí está a lo que me refiero"),
+        CatPregInd(keyWord: "happiness", significado: "Felicidad"),
+        CatPregInd(keyWord: "were based", significado: "Fuera basada"),
+        CatPregInd(keyWord: "biggest", significado: "El más grande"),
+        CatPregInd(keyWord: "business", significado: "Negocio"),
+        CatPregInd(keyWord: "I'd be mad", significado: "Yo estaría muy enojado"),
+        CatPregInd(keyWord: "whoever", significado: "Quien"),
+        CatPregInd(keyWord: "he beats me", significado: "Él me gana / Él me vence"),
+        CatPregInd(keyWord: "rich", significado: "Rico"),
+        CatPregInd(keyWord: "a lot", significado: "Mucho"),
+        CatPregInd(keyWord: "like", significado: "Como (usado para comparación). También puede significar gustar"),
+        CatPregInd(keyWord: "there were", significado: "Hay (En plural)"),
+        CatPregInd(keyWord: "richer", significado: "Más rico"),
+        CatPregInd(keyWord: "never", significado: "Nunca"),
+        CatPregInd(keyWord: "measure", significado: "Medida"),
+        CatPregInd(keyWord: "constitutes", significado: "Constituye"),
+        CatPregInd(keyWord: "success", significado: "Éxito"),
+        CatPregInd(keyWord: "entertainment", significado: "Entretenimiento"),
+        CatPregInd(keyWord: "all through", significado: "A través de"),
+        CatPregInd(keyWord: "career", significado: "Carrera (universitaria)"),
+        CatPregInd(keyWord: "customers", significado: "Clientes"),
+        CatPregInd(keyWord: "someday", significado: "Algún día"),
+        CatPregInd(keyWord: "you'll be", significado: "Tú serás/estarás"),
+        CatPregInd(keyWord: "successful", significado: "Exitoso/a"),
+        CatPregInd(keyWord: "top guy", significado: "Hombre/chico superior"),
+        CatPregInd(keyWord: "someone", significado: "Alguien"),
+        CatPregInd(keyWord: "they're", significado: "Ellos son/estarán"),
+        CatPregInd(keyWord: "disease", significado: "Enfermedad"),
+        CatPregInd(keyWord: "save", significado: "Salvar/Guardar"),
+        CatPregInd(keyWord: "just like", significado: "Igual como, igual que"),
+        CatPregInd(keyWord: "lawyer", significado: "Abogado/a"),
+        CatPregInd(keyWord: "crazy", significado: "Loco"),
+        CatPregInd(keyWord: "making a living", significado: "Haciendo una vida (Literalmente: Ganarse la vida)"),
+        CatPregInd(keyWord: "pursuing", significado: "Persiguiendo (Del verbo perseguir)"),
+        CatPregInd(keyWord: "finding meaning", significado: "Encontrando significado"),
+        CatPregInd(keyWord: "what", significado: "Qué (Usado como conector)"),
+        CatPregInd(keyWord: "first", significado: "Primero"),
+        CatPregInd(keyWord: "standup", significado: "Comedia en vivo o monólogo"),
+        CatPregInd(keyWord: "nobody", significado: "Nadie"),
+        CatPregInd(keyWord: "tuned-out crowds", significado: "Multitudes desconectadas o que no prestan atención"),
+        CatPregInd(keyWord: "before", significado: "Antes"),
+        CatPregInd(keyWord: "jokes", significado: "Chistes"),
+        CatPregInd(keyWord: "laughing", significado: "Riendo (Del verbo reír)"),
+        CatPregInd(keyWord: "about", significado: "Acerca de / Sobre de"),
+        CatPregInd(keyWord: "sold out houses", significado: "Lugares agotados (En el contexto de lugares donde se hacen presentaciones de comedia)"),
+        CatPregInd(keyWord: "I wasn't playing", significado: "Yo no estaba actuando (Play también se usa como actuar)"),
+        CatPregInd(keyWord: "big payday", significado: "Grandes días de pago (Ingresos considerables)"),
+        CatPregInd(keyWord: "able", significado: "Capaz"),
+        CatPregInd(keyWord: "their", significado: "Su (Posesivo para ellos/ellas)"),
+        CatPregInd(keyWord: "dark", significado: "Oscuro"),
+        CatPregInd(keyWord: "struggle", significado: "Lucha"),
+        CatPregInd(keyWord: "envy", significado: "Envidia"),
+        CatPregInd(keyWord: "went along with it", significado: "Que acompañaron o siguieron con ello"),
+        CatPregInd(keyWord: "factor", significado: "Factor"),
+        CatPregInd(keyWord: "sort of", significado: "Algo así como / Tipo de"),
+        CatPregInd(keyWord: "mix-and-match game", significado: "Juego de mezclar y combinar (usado para describir una situación donde se combinan diferentes elementos)"),
+        CatPregInd(keyWord: "world", significado: "Mundo"),
+        CatPregInd(keyWord: "here's one of life's little truths", significado: "Aquí una de las pequeñas verdades de la vida"),
+        CatPregInd(keyWord: "package deal", significado: "Paquete completo (En el sentido de un acuerdo o situación que se acepta en su totalidad)"),
+        CatPregInd(keyWord: "view", significado: "Ver"),
+        CatPregInd(keyWord: "someone else's life", significado: "La vida de alguien más"),
+        CatPregInd(keyWord: "cheating", significado: "Haciendo trampa"),
+        CatPregInd(keyWord: "pretty cool", significado: "Muy genial"),
+        CatPregInd(keyWord: "hang with him", significado: "Pasar tiempo con él"),
+        CatPregInd(keyWord: "pain", significado: "Dolor"),
+        CatPregInd(keyWord: "anybody", significado: "Cualquiera"),
+        CatPregInd(keyWord: "really", significado: "Realmente"),
+        CatPregInd(keyWord: "awful stuff", significado: "Cosas terribles"),
+        CatPregInd(keyWord: "deal with", significado: "Lidiar con"),
+        CatPregInd(keyWord: "battle", significado: "Batallar con"),
+        CatPregInd(keyWord: "dead rock stars", significado: "Estrellas de rock fallecidas"),
+        CatPregInd(keyWord: "hard", significado: "Duro"),
+        CatPregInd(keyWord: "face it", significado: "Enfréntalo"),
+        CatPregInd(keyWord: "sellout", significado: "Agotar (en el sentido de vender todas las entradas o productos)"),
+        CatPregInd(keyWord: "biggest venues", significado: "Los lugares más grandes"),
+        CatPregInd(keyWord: "primetime TV show", significado: "Programa de televisión en horario estelar"),
+        CatPregInd(keyWord: "viewers", significado: "Espectadores"),
+        CatPregInd(keyWord: "half", significado: "Mitad"),
+        CatPregInd(keyWord: "myself", significado: "Mí mismo/a"),
+        CatPregInd(keyWord: "I'm doing okay", significado: "Me está yendo bien"),
+        CatPregInd(keyWord: "try it", significado: "Inténtalo"),
+    ]),
+    CatPregSig(pragger: "Fix Yourself", praggerWord: [
+        CatPregInd(keyWord: "do you ever look", significado: "¿Alguna vez miras?"),
+    ]),
 ];

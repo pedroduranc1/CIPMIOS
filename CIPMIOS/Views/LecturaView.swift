@@ -352,23 +352,23 @@ struct AttributedText: UIViewRepresentable {
             attributedString.addAttributes(attributes, range: NSRange(text.startIndex..., in: text))
             
             let highlightedAttributes: [NSAttributedString.Key: Any] = [
-                .foregroundColor: UIColor.azul,
-                .underlineStyle:true,
-                .underlineColor:UIColor.azul
+                .foregroundColor: UIColor.azul, // Use your custom color here
+                .underlineStyle: NSUnderlineStyle.single.rawValue,
+                .underlineColor: UIColor.azul  // Use your custom color here
             ]
             
-            for word in highlights {
-                var range = NSRange(text.startIndex..., in: text)
-                while range.location != NSNotFound {
-                    range = (text as NSString).range(of: word, options: .caseInsensitive, range: range)
-                    if range.location != NSNotFound {
-                        attributedString.addAttributes(highlightedAttributes, range: range)
-                        if wordsToRanges[word] != nil {
-                            wordsToRanges[word]?.append(range)
-                        } else {
-                            wordsToRanges[word] = [range]
-                        }
-                        range = NSRange(location: range.location + range.length, length: text.utf16.count - range.location - range.length)
+            for highlight in highlights {
+                let pattern = "\\b\(NSRegularExpression.escapedPattern(for: highlight))\\b"
+                let regex = try! NSRegularExpression(pattern: pattern, options: [])
+                let range = NSRange(location: 0, length: text.utf16.count)
+                let matches = regex.matches(in: text, options: [], range: range)
+
+                for match in matches {
+                    attributedString.addAttributes(highlightedAttributes, range: match.range)
+                    if wordsToRanges[highlight] != nil {
+                        wordsToRanges[highlight]?.append(match.range)
+                    } else {
+                        wordsToRanges[highlight] = [match.range]
                     }
                 }
             }
@@ -378,6 +378,8 @@ struct AttributedText: UIViewRepresentable {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
             textView.addGestureRecognizer(tapGesture)
         }
+
+
         
         @objc func handleTap(_ gesture: UITapGestureRecognizer) {
             guard let textView = textView else { return }
