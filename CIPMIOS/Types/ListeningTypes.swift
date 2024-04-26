@@ -203,7 +203,49 @@ let DatosPragger: [praggerTextInfo] = [
                                 And in that manner, at least, you will make the world a better place.
                                 
                                 I’m Jordan Peterson, Professor of Psychology at the University of Toronto, for Prager University.
-                                """)
+                                """),
+    praggerTextInfo(pragger: "Are Men and Women Different?", praggerWord: """
+                    Have you ever pushed a beach ball underwater? What happens? It pops right back up!
+                    Because of its nature, a beach ball will not stay submerged.
+                    
+                    The same is true for men and women. Each has a distinct nature that will always rise to the surface.
+                    
+                    Simply put, men and women are different. They look different. They have different body parts. Different biology. Different hormones. They express emotions differently. They have different needs and desires.
+                    
+                    Now, if you told that to your great-grandmother who never went to college, never used an iPhone, never used social media, she would have asked, \"Why are you telling me something so obvious?\" But if you said the same thing to a graduate student in sociology or anthropology, let alone gender studies, they'd say you were wrong.
+                    
+                    Men and women are basically the same,\" the grad student would say. \"Sexuality exists on a spectrum. It's determined by people's internal feelings.\"
+                    
+                    Between great-granny and the gender studies PhD, I'm going with granny and her common sense.
+                    
+                    To believe that men and women are basically the same is to believe a delusion. A delusion is a belief that contradicts reality. You can say you're Napoleon, but that doesn't make you Napoleon. You can try to socialize girls into behaving like boys or boys into behaving like girls, but it won't work. You can push the beach ball underwater, but not for long.
+                    
+                    New York pediatrician George Lazarus tells the story of a couple who didn't want their young daughter to conform to the usual pink and blue stereotype. So they bought her a set of toy trucks. The father went to her room to check on her, and she told him to be quiet--the trucks were sleeping.
+                    
+                    A similar story about his twin daughters pretending their \"daddy truck\" was \"carrying the baby truck\" was told by the former president of Harvard University, Lawrence Summers. Give a little boy a truck--or just about any other object--and sooner or later he will turn it into a weapon. That's reality.
+                    
+                    Believing delusions makes people say and do foolish, self-destructive things.
+                    
+                    Here's an example: If men and women are basically the same, they want the same things from sex--right? But this isn't true. Women tend to be far more selective about partners with whom they choose to be intimate. That's female nature. Men tend to be, shall we say, far less discerning. That's male nature.
+                    
+                    Once, this was considered common sense. Nobody had to go to graduate school or do an academic study to figure it out. But now everything is upside down. We're trying to push the beach ball under water. Today, male and female college students who, 50 years ago, lived in separate buildings and had delusion now share the same dorm rooms and even the same bathrooms.
+                    
+                    And sex--well, it's just another form of college entertainment. It means nothing and has no consequences--emotionally, psychologically, or physically.
+                    
+                    But, certainly as far as most women are concerned, this just isn't true. If sex doesn't mean anything, why would any woman feel violated by an uninvited touch? Do you think a man whose Leg is touched by a woman he doesn't know feels as violated as a woman does when her leg is touched by a man she doesn't know?
+                    
+                    If sex doesn't mean anything, why did Jennifer Lawrence say to the Hollywood Reporter after filming an intimate scene with her co-star, Chris Pratt, in the movie Passengers:
+                    
+                    I knew it was my job, but I couldn't tell my stomach that... That was the most vulnerable I've ever been.\"
+                    
+                    She felt vulnerable in that scene, but not in others, because she knows even acting out in a movie scene, sex is a big deal. That's one of many reasons it has traditionally been confined to marriage. And why experience and research show that sex within marriage is more satisfying emotionally, psychologically, and physically--not to mention spiritually--than sex outside of marriage.
+                    
+                    Anyone who tells you that men and women are basically the same and that sex means as little to women as it can to many men is not telling you the truth. They're making stuff up. They're pushing an agenda--theirs, not yours.
+                    
+                    So, trust granny. Trust common sense. And remember the beach ball.
+                    
+                    I'm Sean McDowell, Associate Professor of Theology and Philosophy at Biola University, for Prager University.
+                    """)
 ]
 
 //PREGUNTAS TEST
@@ -1582,6 +1624,201 @@ let DatosInfoRachel: [CatPregSig] = [
         CatPregInd(keyWord: "try it", significado: "Inténtalo"),
     ]),
     CatPregSig(pragger: "Fix Yourself", praggerWord: [
-        CatPregInd(keyWord: "do you ever look", significado: "¿Alguna vez miras?"),
+        CatPregInd(keyWord: "Blaming others", significado: "Culpando a otros"),
+        CatPregInd(keyWord: "waste of time", significado: "Pérdida de tiempo"),
+        CatPregInd(keyWord: "that", significado: "Eso"),
+        CatPregInd(keyWord: "learn", significado: "Aprender"),
+        CatPregInd(keyWord: "anything", significado: "Cualquier cosa"),
+        CatPregInd(keyWord: "grow", significado: "Crecer"),
+        CatPregInd(keyWord: "mature", significado: "Madurar"),
+        CatPregInd(keyWord: "thus", significado: "Por lo tanto"),
+        CatPregInd(keyWord: "life", significado: "Vida"),
+        CatPregInd(keyWord: "better", significado: "Mejor"),
+        CatPregInd(keyWord: "as", significado: "Como"),
+        CatPregInd(keyWord: "there are", significado: "Hay"),
+        CatPregInd(keyWord: "attitudes", significado: "Actitudes"),
+        CatPregInd(keyWord: "toward", significado: "Hacia"),
+        CatPregInd(keyWord: "sorrows", significado: "Penas"),
+        CatPregInd(keyWord: "those", significado: "Aquellos"),
+        CatPregInd(keyWord: "first", significado: "Primero"),
+        CatPregInd(keyWord: "world", significado: "Mundo"),
+        CatPregInd(keyWord: "second", significado: "Segundo"),
+        CatPregInd(keyWord: "differently", significado: "De manera diferente"),
+        CatPregInd(keyWord: "couple", significado: "Pareja"),
+        CatPregInd(keyWord: "on the brink", significado: "Al borde"),
+        CatPregInd(keyWord: "they're", significado: "Ellos son/están"),
+        CatPregInd(keyWord: "hurt", significado: "Heridos"),
+        CatPregInd(keyWord: "angry", significado: "Enojados"),
+        CatPregInd(keyWord: "unhappy", significado: "Infeliz"),
+        CatPregInd(keyWord: "bitter", significado: "Amargado"),
+        CatPregInd(keyWord: "husband", significado: "Esposo"),
+        CatPregInd(keyWord: "recalls", significado: "Recuerda"),
+        CatPregInd(keyWord: "things", significado: "Cosas"),
+        CatPregInd(keyWord: "wife", significado: "Esposa"),
+        CatPregInd(keyWord: "reasons", significado: "Razones"),
+        CatPregInd(keyWord: "no longer live with her", significado: "Ya no puede vivir con ella"),
+        CatPregInd(keyWord: "harried", significado: "Acosado"),
+        CatPregInd(keyWord: "disillusioned", significado: "Desilusionado"),
+        CatPregInd(keyWord: "all", significado: "Todos"),
+        CatPregInd(keyWord: "ways", significado: "Maneras"),
+        CatPregInd(keyWord: "let her down", significado: "La decepcionó"),
+        CatPregInd(keyWord: "each", significado: "Cada uno"),
+        CatPregInd(keyWord: "changes", significado: "Cambios"),
+        CatPregInd(keyWord: "prospects", significado: "Perspectivas"),
+        CatPregInd(keyWord: "grim", significado: "Sombrío"),
+        CatPregInd(keyWord: "aren't", significado: "No son"),
+        CatPregInd(keyWord: "you're", significado: "Tú eres"),
+        CatPregInd(keyWord: "can't", significado: "No puedes"),
+        CatPregInd(keyWord: "yourself", significado: "Tú mismo"),
+        CatPregInd(keyWord: "courage", significado: "Coraje"),
+        CatPregInd(keyWord: "easier", significado: "Más fácil"),
+        CatPregInd(keyWord: "much more", significado: "Mucho más"),
+        CatPregInd(keyWord: "gratifying", significado: "Gratificante"),
+        CatPregInd(keyWord: "basest", significado: "Más bajos"),
+        CatPregInd(keyWord: "desires", significado: "Deseos"),
+        CatPregInd(keyWord: "someone else", significado: "Alguien más"),
+        CatPregInd(keyWord: "youthful", significado: "Juvenil"),
+        CatPregInd(keyWord: "making a statement", significado: "Haciendo una declaración"),
+        CatPregInd(keyWord: "against", significado: "En contra"),
+        CatPregInd(keyWord: "smashing", significado: "Aplastando"),
+        CatPregInd(keyWord: "storefront", significado: "Fachada"),
+        CatPregInd(keyWord: "business", significado: "Negocio"),
+        CatPregInd(keyWord: "other than", significado: "Aparte de"),
+        CatPregInd(keyWord: "bring", significado: "Traer"),
+        CatPregInd(keyWord: "harm", significado: "Daño"),
+        CatPregInd(keyWord: "who have nothing to do", significado: "Quienes no tienen nada que ver"),
+        CatPregInd(keyWord: "guilt", significado: "Culpa"),
+        CatPregInd(keyWord: "doubt", significado: "Duda"),
+        CatPregInd(keyWord: "shame", significado: "Vergüenza"),
+        CatPregInd(keyWord: "inevitably", significado: "Inevitablemente"),
+        CatPregInd(keyWord: "suppressed", significado: "Suprimido"),
+        CatPregInd(keyWord: "beliefs", significado: "Creencias"),
+        CatPregInd(keyWord: "unchanged", significado: "Sin cambiar"),
+        CatPregInd(keyWord: "foster", significado: "Fomentar"),
+        CatPregInd(keyWord: "anger", significado: "Enojo"),
+        CatPregInd(keyWord: "alienation", significado: "Alienación"),
+        CatPregInd(keyWord: "play", significado: "Obra"),
+        CatPregInd(keyWord: "characters", significado: "Personajes"),
+        CatPregInd(keyWord: "very hard time", significado: "Tiempo muy difícil"),
+        CatPregInd(keyWord: "profound", significado: "Profundo"),
+        CatPregInd(keyWord: "unhappiness", significado: "Infelicidad"),
+        CatPregInd(keyWord: "suffering", significado: "Sufrimiento"),
+        CatPregInd(keyWord: "own", significado: "Propia"),
+        CatPregInd(keyWord: "fault", significado: "Culpa"),
+        CatPregInd(keyWord: "taken aback", significado: "Tomado por sorpresa"),
+        CatPregInd(keyWord: "if", significado: "Si"),
+        CatPregInd(keyWord: "her fault", significado: "Su culpa"),
+        CatPregInd(keyWord: "she's", significado: "Ella es"),
+        CatPregInd(keyWord: "doomed", significado: "Condenada"),
+        CatPregInd(keyWord: "herself", significado: "Ella misma"),
+        CatPregInd(keyWord: "seem", significado: "Parecen"),
+        CatPregInd(keyWord: "consigned", significado: "Consagrado"),
+        CatPregInd(keyWord: "fate", significado: "Destino"),
+        CatPregInd(keyWord: "most of us", significado: "La mayoría de nosotros"),
+        CatPregInd(keyWord: "chance", significado: "Oportunidad"),
+        CatPregInd(keyWord: "questions", significado: "Preguntas"),
+        CatPregInd(keyWord: "full", significado: "Completo"),
+        CatPregInd(keyWord: "advantage", significado: "Ventaja"),
+        CatPregInd(keyWord: "answer", significado: "Respuesta"),
+        CatPregInd(keyWord: "try", significado: "Intentar"),
+        CatPregInd(keyWord: "stop doing", significado: "Deja de hacer"),
+        CatPregInd(keyWord: "wrong", significado: "Equivocado"),
+        CatPregInd(keyWord: "waste", significado: "Desperdiciar"),
+        CatPregInd(keyWord: "inopportune questioning", significado: "Cuestionamiento inoportuno"),
+        CatPregInd(keyWord: "without", significado: "Sin"),
+        CatPregInd(keyWord: "enlightening", significado: "Iluminando"),
+        CatPregInd(keyWord: "deflect", significado: "Desviar"),
+        CatPregInd(keyWord: "something", significado: "Algo"),
+        CatPregInd(keyWord:"right", significado: "Correcto"),
+        CatPregInd(keyWord: "paying attention", significado: "Prestar atención"),
+        CatPregInd(keyWord: "show up late", significado: "Llegar tarde"),
+        CatPregInd(keyWord: "spend", significado: "Gastar"),
+        CatPregInd(keyWord: "it's not a matter", significado: "No es un asunto"),
+        CatPregInd(keyWord: "some", significado: "Algunos"),
+        CatPregInd(keyWord: "imposed", significado: "Impuesto"),
+        CatPregInd(keyWord: "what could you put right", significado: "¿Qué podrías corregir?"),
+        CatPregInd(keyWord: "right now", significado: "Ahora mismo"),
+        CatPregInd(keyWord: "get to work on time", significado: "Llegar a tiempo al trabajo"),
+        CatPregInd(keyWord: "diligently", significado: "Diligentemente"),
+        CatPregInd(keyWord: "utilize", significado: "Utilizar"),
+        CatPregInd(keyWord: "peaceful", significado: "Pacífico"),
+        CatPregInd(keyWord: "productive", significado: "Productivo"),
+        CatPregInd(keyWord: "desirable", significado: "Deseable"),
+        CatPregInd(keyWord: "weeks", significado: "Semanas"),
+        CatPregInd(keyWord: "months", significado: "Meses"),
+        CatPregInd(keyWord: "attentive", significado: "Atento"),
+        CatPregInd(keyWord: "effort", significado: "Esfuerzo"),
+        CatPregInd(keyWord: "your mind will clear", significado: "Tu mente se aclarará"),
+        CatPregInd(keyWord: "less", significado: "Menos"),
+        CatPregInd(keyWord: "path", significado: "Camino"),
+        CatPregInd(keyWord: "in front", significado: "En frente"),
+        CatPregInd(keyWord: "will shine", significado: "Brillará"),
+        CatPregInd(keyWord: "brightly", significado: "Brillantemente"),
+        CatPregInd(keyWord: "getting your own way", significado: "Salirse con la suya"),
+        CatPregInd(keyWord: "instead", significado: "En lugar de"),
+        CatPregInd(keyWord: "trouble to yourself", significado: "Problemas para ti mismo"),
+        CatPregInd(keyWord: "society", significado: "Sociedad"),
+        CatPregInd(keyWord: "suffer", significado: "Sufrir"),
+        CatPregInd(keyWord: "that's the price of being alive", significado: "Ese es el precio de estar vivo"),
+        CatPregInd(keyWord: "maybe", significado: "Quizás"),
+        CatPregInd(keyWord: "enough", significado: "Suficiente"),
+        CatPregInd(keyWord: "burden", significado: "Carga"),
+        CatPregInd(keyWord: "in that fashion", significado: "De esa manera"),
+        CatPregInd(keyWord: "nobly", significado: "Noblemente"),
+        CatPregInd(keyWord: "purpose", significado: "Propósito"),
+        CatPregInd(keyWord: "proper way", significado: "Forma apropiada"),
+        CatPregInd(keyWord: "fix", significado: "Arreglar"),
+        CatPregInd(keyWord: "in that manner", significado: "De esa manera"),
+        CatPregInd(keyWord: "at least", significado: "Al menos"),
+        CatPregInd(keyWord: "place", significado: "Lugar"),
     ]),
+    CatPregSig(pragger: "Are Men and Women Different?", praggerWord: [
+        CatPregInd(keyWord: "delusion", significado: "creencia que contradice la realidad"),
+        CatPregInd(keyWord: "discerning", significado: "Perspicaz, exigente, selectivo"),
+        CatPregInd(keyWord: "supervised curfews", significado: "toque de queda supervisado"),
+        CatPregInd(keyWord: "intimate", significado: "íntimo/a"),
+        CatPregInd(keyWord: "violated", significado: "violado/a (en el sentido de haber sido objeto de una acción no deseada o no consentida)"),
+        CatPregInd(keyWord: "vulnerable", significado: "vulnerable, frágil"),
+        CatPregInd(keyWord: "confined", significado: "limitado/a, restringido/a"),
+        CatPregInd(keyWord: "satisfying", significado: "satisfactorio/a, gratificante"),
+        CatPregInd(keyWord: "emotionally", significado: "emocionalmente"),
+        CatPregInd(keyWord: "psychologically", significado: "psicológicamente"),
+        CatPregInd(keyWord: "physically", significado: "físicamente"),
+        CatPregInd(keyWord: "spiritually", significado: "espiritualmente"),
+        CatPregInd(keyWord: "commonsense", significado: "sentido común"),
+        CatPregInd(keyWord: "agenda", significado: "programa, plan, intención"),
+        CatPregInd(keyWord: "sociology", significado: "sociología"),
+        CatPregInd(keyWord: "anthropology", significado: "antropología"),
+        CatPregInd(keyWord: "gender studies", significado: "estudios de género"),
+        CatPregInd(keyWord: "spectrum", significado: "espectro"),
+        CatPregInd(keyWord: "internal feelings", significado: "sentimientos internos"),
+        CatPregInd(keyWord: "toy trucks", significado: "camiones de juguete"),
+        CatPregInd(keyWord: "pink and blue stereotype", significado: "estereotipo de rosa y azul"),
+        CatPregInd(keyWord: "reality", significado: "realidad"),
+        CatPregInd(keyWord: "college entertainment", significado: "entretenimiento universitario"),
+        CatPregInd(keyWord: "making stuff up", significado: "inventando cosas"),
+        CatPregInd(keyWord: "pushing an agenda", significado: "promoviendo una agenda"),
+        CatPregInd(keyWord: "traditionally", significado: "tradicionalmente"),
+        CatPregInd(keyWord: "marriage", significado: "matrimonio"),
+        CatPregInd(keyWord: "experience", significado: "experiencia"),
+        CatPregInd(keyWord: "research", significado: "investigación"),
+        CatPregInd(keyWord: "associate professor", significado: "profesor asociado"),
+        CatPregInd(keyWord: "theology", significado: "teología"),
+        CatPregInd(keyWord: "philosophy", significado: "filosofía"),
+        CatPregInd(keyWord: "beach ball", significado: "pelota de playa"),
+        CatPregInd(keyWord: "distinct nature", significado: "naturaleza distinta"),
+        CatPregInd(keyWord: "body parts", significado: "partes del cuerpo"),
+        CatPregInd(keyWord: "biology", significado: "biología"),
+        CatPregInd(keyWord: "hormones", significado: "hormonas"),
+        CatPregInd(keyWord: "express emotions", significado: "expresar emociones"),
+        CatPregInd(keyWord: "needs", significado: "necesidades"),
+        CatPregInd(keyWord: "desires", significado: "deseos"),
+        CatPregInd(keyWord: "uninvited touch", significado: "toque no deseado"),
+        CatPregInd(keyWord: "leg", significado: "pierna"),
+        CatPregInd(keyWord: "Hollywood Reporter", significado: "Reportero de Hollywood"),
+        CatPregInd(keyWord: "Co-Star", significado: "coprotagonista"),
+        CatPregInd(keyWord: "acting out", significado: "representando"),
+        CatPregInd(keyWord: "commonsense", significado: "sentido común"),
+        CatPregInd(keyWord: "remember the beach ball", significado: "recuerda la pelota de playa"),
+    ])
 ];
