@@ -49,9 +49,6 @@ struct LecturaView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
-                NotchSpacing(ColorNotch: "blanco")
-                
-                HeaderNav(location: "Availability", IndexSeleccionado: $IndexSeleccionado)
                 
                 VStack {}.frame(maxWidth: .infinity).frame(height: 20)
                 

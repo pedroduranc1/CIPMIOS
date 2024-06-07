@@ -44,138 +44,137 @@ struct ListeningDif: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 0) {
-                // NOTCH
-                NotchSpacing(ColorNotch: "blanco")
-                
-                // HEADER
-                HeaderNav(location: "Conscious Interference", IndexSeleccionado: $IndexSeleccionado)
-                
-                // SELECT BOX
-                PickerCustom(defaultOption: "Steve Jobs 1", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {
-                    handleSelectedOptionChange()
-                }
-                
-                // VIDEO VIEW
-                VideoPlayerView(videoURL: videoURL,
-                                currentTimeInSeconds: $currentTimeInSeconds,
-                                seekTimeInSeconds: $seekTimeInSeconds,
-                                onStop: {
-                    // Aquí manejas lo que sucede cuando el video se detiene
-                    print("El video ha terminado.")
-                }, isButtonPressed: $isButtonPressed)
-                .frame(height: 220)
-                .padding(.horizontal, 20)
-                .onDisappear {
-                    // Detener el video cuando la vista desaparece
-                    videoURL = getVideoURL(for: "", currentPage: "Listening Dificil")
-                }
-                
-                HStack{
-                    Text("Practice It")
-                        .font(.system(size: 22))
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        .underline(color:.blue)
+            if #available(iOS 17.0, *) {
+                VStack(spacing: 0) {
                     
-                    Spacer()
-                }
-                .padding(.top,20)
-                .padding(.horizontal,20)
-                
-                HStack{
-                    Text("Pon atencion al clip a continuacion y cuando termine haz click en empezar practica")
-                        .font(.system(size: 16))
+                    // SELECT BOX
+                    PickerCustom(defaultOption: "Steve Jobs 1", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {
+                        handleSelectedOptionChange()
+                    }
                     
-                    Spacer()
-                }
-                .padding(.top,20)
-                .padding(.horizontal,20)
-                
-                if !isEmpezarClicked {
-                    //BTN EMPEZAR
-                    BtnEmpezar(TextBtn: "Empezar", action: {
-                        isEmpezarClicked.toggle()
-                        startTest()
-                    })
-                    .padding(.top,30)
-                }
-                
-                if isEmpezarClicked{
+                    // VIDEO VIEW
+                    VideoPlayerView(videoURL: videoURL,
+                                    currentTimeInSeconds: $currentTimeInSeconds,
+                                    seekTimeInSeconds: $seekTimeInSeconds,
+                                    onStop: {
+                        // Aquí manejas lo que sucede cuando el video se detiene
+                        print("El video ha terminado.")
+                    }, isButtonPressed: $isButtonPressed)
+                    .frame(height: 220)
+                    .padding(.horizontal, 20)
+                    .onDisappear {
+                        // Detener el video cuando la vista desaparece
+                        videoURL = getVideoURL(for: "", currentPage: "Listening Dificil")
+                    }
+                    
                     HStack{
-                        Text("\(IndexNum + 1)")
-                            .frame(maxWidth: 15)
-                            .font(.system(size: 27))
+                        Text("Practice It")
+                            .font(.system(size: 22))
                             .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        // Usando TextInput y proporcionando la variable de estado
-                        TextInput(userInput: $userInput, StatusColor: $StatusColor)
+                            .underline(color:.blue)
+                        
+                        Spacer()
                     }
                     .padding(.top,20)
                     .padding(.horizontal,20)
-                }
-                
-                if !isCorrect && isEmpezarClicked {
-                    HStack(alignment:.top){
-                        Text("Respuesta Correcta: ")
-                        Text(TxtEng)
-                            .underline(true,color: Color("azul"))
-                            .foregroundColor(Color("azul"))
-                            .lineLimit(nil)  // Mostrar el texto completo, sin truncar
-                            .fixedSize(horizontal: false, vertical: true)
+                    
+                    HStack{
+                        Text("Pon atencion al clip a continuacion y cuando termine haz click en empezar practica")
+                            .font(.system(size: 16))
+                        
                         Spacer()
                     }
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                    .padding(.horizontal,25)
-                    .padding(.top,5)
-                    HStack(){
-                        Button(action:{
-                            videoURL = ExpUrl
-                        }){
-                            VStack {
-                                Text("Ver explicacion")
-                                    .font(.system(size: 16))
-                                    .padding(.vertical,6)
-                            }
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                            .border(Color.blue, width: 1.5)
-                            .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
-                            
+                    .padding(.top,20)
+                    .padding(.horizontal,20)
+                    
+                    if !isEmpezarClicked {
+                        //BTN EMPEZAR
+                        BtnEmpezar(TextBtn: "Empezar", action: {
+                            isEmpezarClicked.toggle()
+                            startTest()
+                        })
+                        .padding(.top,30)
+                    }
+                    
+                    if isEmpezarClicked{
+                        HStack{
+                            Text("\(IndexNum + 1)")
+                                .frame(maxWidth: 15)
+                                .font(.system(size: 27))
+                                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            // Usando TextInput y proporcionando la variable de estado
+                            TextInput(userInput: $userInput, StatusColor: $StatusColor)
                         }
-                        .frame(width: 150)
+                        .padding(.top,20)
                         .padding(.horizontal,20)
-                        Spacer()
                     }
-                    .padding(.bottom,5)
+                    
+                    if !isCorrect && isEmpezarClicked {
+                        HStack(alignment:.top){
+                            Text("Respuesta Correcta: ")
+                            Text(TxtEng)
+                                .underline(true,color: Color("azul"))
+                                .foregroundColor(Color("azul"))
+                                .lineLimit(nil)  // Mostrar el texto completo, sin truncar
+                                .fixedSize(horizontal: false, vertical: true)
+                            Spacer()
+                        }
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                        .padding(.horizontal,25)
+                        .padding(.top,5)
+                        HStack(){
+                            Button(action:{
+                                videoURL = ExpUrl
+                            }){
+                                VStack {
+                                    Text("Ver explicacion")
+                                        .font(.system(size: 16))
+                                        .padding(.vertical,6)
+                                }
+                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                .border(Color.blue, width: 1.5)
+                                .clipShape(RoundedRectangle(cornerRadius: 4)) // Ajusta el valor según sea necesario
+                                
+                            }
+                            .frame(width: 150)
+                            .padding(.horizontal,20)
+                            Spacer()
+                        }
+                        .padding(.bottom,5)
+                    }
+                    
+                    
+                    if isEmpezarClicked {
+                        //BTN EMPEZAR
+                        BtnEmpezar(TextBtn: "Chequea tu respuesta", action: {
+                            ComprobarRespuesta()
+                        })
+                        .padding(.top,20)
+                    }
+                    
+                    if isEmpezarClicked {
+                        //BTN EMPEZAR
+                        BtnEmpezar(TextBtn: "Mostrar Respuesta", action: {
+                            MostrarResp()
+                        })
+                        .padding(.top,20)
+                    }
+                    
+                    
                 }
-                
-                
-                if isEmpezarClicked {
-                    //BTN EMPEZAR
-                    BtnEmpezar(TextBtn: "Chequea tu respuesta", action: {
-                        ComprobarRespuesta()
-                    })
-                    .padding(.top,20)
+                .overlay(content: {
+                    ToastCustom(message: Message, showToast: $showToast)
+                        .padding(.bottom, 50)
+                })
+                .onAppear {
+                    // Inicializa videoURL cuando la vista aparece
+                    videoURL = getVideoURL(for: "Steve Jobs 1", currentPage: "Listening Dificil")
                 }
-                
-                if isEmpezarClicked {
-                    //BTN EMPEZAR
-                    BtnEmpezar(TextBtn: "Mostrar Respuesta", action: {
-                        MostrarResp()
-                    })
-                    .padding(.top,20)
+                .onChange(of: selectedOption) { oldValue, newValue in
+                    IndexNum = 0
                 }
-                
-                
-            }
-            .overlay(content: {
-                ToastCustom(message: Message, showToast: $showToast)
-                    .padding(.bottom, 50)
-            })
-            .onAppear {
-                // Inicializa videoURL cuando la vista aparece
-                videoURL = getVideoURL(for: "Steve Jobs 1", currentPage: "Listening Dificil")
-            }
-            .onChange(of: selectedOption) { oldValue, newValue in
-                IndexNum = 0
+            } else {
+                // Fallback on earlier versions
             }
         }
         .edgesIgnoringSafeArea(.all)

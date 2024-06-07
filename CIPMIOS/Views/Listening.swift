@@ -34,11 +34,6 @@ struct Listening: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
-                // NOTCH
-                NotchSpacing(ColorNotch: "blanco")
-                
-                // HEADER
-                HeaderNav(location: "Culture", IndexSeleccionado: $IndexSeleccionado)
                 
                 // VIDEO VIEW
                 if let safeVideoURL = videoURL {

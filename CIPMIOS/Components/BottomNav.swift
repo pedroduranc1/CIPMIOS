@@ -9,79 +9,49 @@ import SwiftUI
 
 struct BottomNav: View {
     @Binding var IndexSeleccionado: Int
+    
+    let opciones: [(nombre: String, icono: String, indice: Int,page:Int)] = [
+        ("Perfil", "person.crop.square", 4,4),
+        ("Clases en linea", "play.desktopcomputer", 1,2),
+        ("CIPM Premium", "diamond.inset.filled", 2,2),
+        ("Saber mi nivel", "doc.fill", 3,1),
+        ("Servicio al cliente", "text.bubble", 5,1),
+        ("Toefl","testtube.2",6,1),
+        ("Plan personalizado","person.badge.key.fill",7,1),
+        
+    ]
     var body: some View {
         Rectangle()
             .frame(height: 1)
             .foregroundColor(.gray)
-        HStack{
-            Spacer()
-            Button(action:{
-                self.IndexSeleccionado = 0
-            }){
-                VStack{
-                    Image(systemName: "book.fill")
-                        .font(.system(size: 25))
-                    Text("Main")
-                        .font(.system(size: 15))
-                        .padding(.top,2)
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 16) { // Espaciado entre elementos
+                ForEach(opciones, id: \.indice) { opcion in
+                    Button(action: {
+                        self.IndexSeleccionado = opcion.page
+                    }) {
+                        VStack {
+                            Image(systemName: opcion.icono)
+                                .font(.system(size: 25))
+                                .frame(height: 21) // Altura fija para el icono
+                            Text(opcion.nombre)
+                                .font(.system(size: 10))
+                                .multilineTextAlignment(.center) // Alineación central del texto
+                                .frame(height: 40) // Altura fija para el texto
+                        }
+                        .frame(width: 60) // Ancho fijo para cada botón
+                        .padding(.vertical, 8) // Padding vertical para cada botón
+                        .foregroundColor(IndexSeleccionado == opcion.page ? (opcion.nombre == "Premium" ? Color("amarillo") : .blue) : .gray)
+                    }
                 }
-                .foregroundColor(IndexSeleccionado == 0 ? .blue : .gray)
             }
-            Spacer()
-            Button(action:{
-                self.IndexSeleccionado = 1
-            }){
-                VStack{
-                    Image(systemName: "doc.fill")
-                        .font(.system(size: 25))
-                    Text("Test")
-                        .font(.system(size: 15))
-                        .padding(.top,2)
-                }
-                .foregroundColor(IndexSeleccionado == 1 ? .blue : .gray)
-            }
-            Spacer()
-            Button(action:{
-                self.IndexSeleccionado = 2
-            }){
-                VStack{
-                    Image(systemName: "diamond.inset.filled")
-                        .font(.system(size: 25))
-                    Text("Premium")
-                        .font(.system(size: 15))
-                        .padding(.top,2)
-                }
-                .foregroundColor(IndexSeleccionado == 2 ? Color("amarillo") : .gray)
-            }
-            Spacer()
-            Button(action:{
-                self.IndexSeleccionado = 3
-            }){
-                VStack{
-                    Image(systemName: "message.fill")
-                        .font(.system(size: 25))
-                    Text("Chat")
-                        .font(.system(size: 15))
-                        .padding(.top,2)
-                }
-                .foregroundColor(IndexSeleccionado == 3 ? .blue : .gray)
-            }
-            Spacer()
-            Button(action:{
-                self.IndexSeleccionado = 4
-            }){
-                VStack{
-                    Image(systemName: "person.crop.square")
-                        .font(.system(size: 30))
-                    Text("Perfil")
-                        .font(.system(size: 15))
-                        .padding(.top,2)
-                }
-                .foregroundColor(IndexSeleccionado == 4 ? .blue : .gray)
-            }
-            Spacer()
+            .padding(.horizontal)
         }
+        .frame(height: 70)
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: 100)
     }
 }
 
+#Preview {
+    ContentView()
+}

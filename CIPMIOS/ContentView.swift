@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var IndexSeleccionado = 0
+    @State var IndexSeleccionado = 11
     var body: some View {
         VStack(spacing:0){
+            //TOPNAV
+            TopNav(IndexSeleccionado: $IndexSeleccionado)
+            
             //PAGINAS
             Routes(IndexSeleccionado: $IndexSeleccionado)
+                .padding(.top,80)
             
             //BOTOMNAV
             BottomNav(IndexSeleccionado: $IndexSeleccionado)

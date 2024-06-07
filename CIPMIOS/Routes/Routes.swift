@@ -41,6 +41,9 @@ struct Routes: View {
                 SpeakingDificil(IndexSeleccionado: $IndexSeleccionado)
             case 10:
                 ListeningDif(IndexSeleccionado: $IndexSeleccionado)
+            case 11:
+                //LESSONS PAGE
+                LessonsView(IndexSeleccionado: $IndexSeleccionado )
             case 99:
                 //VIEW DE PRUEBAS
                 SpeechView()

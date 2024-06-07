@@ -39,11 +39,6 @@ struct Vocab: View {
     var body: some View {
         ScrollView{
             VStack{
-                // NOTCH
-                NotchSpacing(ColorNotch: "blanco")
-                
-                // HEADER
-                HeaderNav(location: "Vocabulary", IndexSeleccionado: $IndexSeleccionado)
                 
                 // SELECT BOX
                 PickerCustom(defaultOption: "0 a 50", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {

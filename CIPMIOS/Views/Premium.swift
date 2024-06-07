@@ -17,9 +17,6 @@ struct Premium: View {
     var body: some View {
         ScrollView{
             VStack(spacing:0){
-                NotchSpacing(ColorNotch: "blanco")
-                
-                HeaderNav(location: "Hazte Premium",IndexSeleccionado: $IndexSeleccionado)
                 
                 //BOTON SABER MI NIVEL
                 VStack{

@@ -36,11 +36,6 @@ struct SpeakingDificil: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
-                // NOTCH
-                NotchSpacing(ColorNotch: "blanco")
-                
-                // HEADER
-                HeaderNav(location: "Transiciones", IndexSeleccionado: $IndexSeleccionado)
                 
                 // SELECT BOX
                 PickerCustom(defaultOption: "Present Simple", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {

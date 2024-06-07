@@ -20,10 +20,10 @@ struct Test: View {
         ScrollView {
             VStack(spacing: 0) {
                 //NOTCH
-                NotchSpacing(ColorNotch: "blanco")
-                
-                //HEADER
-                HeaderNav(location: "Vocabulary",IndexSeleccionado: $IndexSeleccionado)
+//                NotchSpacing(ColorNotch: "blanco")
+//                
+//                //HEADER
+//                HeaderNav(location: "Vocabulary",IndexSeleccionado: $IndexSeleccionado)
                 
                 
                 // SELECT BOX

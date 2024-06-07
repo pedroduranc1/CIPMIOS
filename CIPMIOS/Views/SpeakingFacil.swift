@@ -11,6 +11,7 @@ struct SpeakingFacil: View {
     
     //ARRAYS DE LAS STRUCTURAS Y RANGOS FREE
     @State private var StructureOptionsPremium = ["Present Simple", "Present Continuous", "Present Perfect", "Present Perfect Continuous","Past Simple", "Past Continuous", "Past Perfect", "Past Perfect Continuous","Future Simple", "Future Continuous", "Future Perfect", "Future Perfect Continuous","Would Simple", "Would Continuous", "Would Perfect", "Would Perfect Continuous"]
+    
     @State private var LevelOptionsPremium = ["0 a 100","100 a 200","200 a 300"]
     
     //VARIABLES POR DEFECTO
@@ -37,11 +38,6 @@ struct SpeakingFacil: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
-                // NOTCH
-                NotchSpacing(ColorNotch: "blanco")
-                
-                // HEADER
-                HeaderNav(location: "Structures", IndexSeleccionado: $IndexSeleccionado)
                 
                 // SELECT BOX
                 PickerCustom(defaultOption: "Present Simple", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {
