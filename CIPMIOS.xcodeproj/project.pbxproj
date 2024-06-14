@@ -79,10 +79,14 @@
 		44F7D5042B1F9E3200EAAC8B /* SeparadorPequeno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D5032B1F9E3200EAAC8B /* SeparadorPequeno.swift */; };
 		44FC34E62B3C9EEA008982DF /* C200a250.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC34E52B3C9EEA008982DF /* C200a250.swift */; };
 		44FC34E82B3C9EF2008982DF /* C250a300.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC34E72B3C9EF2008982DF /* C250a300.swift */; };
+		C10FC59C2C174EFD0011F827 /* Toefl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10FC59B2C174EFD0011F827 /* Toefl.swift */; };
+		C10FC59E2C174FB80011F827 /* PlanPerzonalizado.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10FC59D2C174FB80011F827 /* PlanPerzonalizado.swift */; };
+		C10FC5A02C17521C0011F827 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10FC59F2C17521C0011F827 /* GlobalData.swift */; };
 		C1331E992C0E5C2C00329281 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1331E982C0E5C2C00329281 /* LessonCard.swift */; };
 		C1331E9B2C0E5D4500329281 /* LessonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1331E9A2C0E5D4500329281 /* LessonTypes.swift */; };
 		C15815002BA09ECF008883E1 /* SpeakingDificil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */; };
 		C15B43E82BA36B6500D90883 /* ListeningDif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B43E72BA36B6500D90883 /* ListeningDif.swift */; };
+		C16989332C18AB7D0059CE23 /* SpaInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16989322C18AB7D0059CE23 /* SpaInt.swift */; };
 		C176FB8D2C0E451800487F3B /* TopNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176FB8C2C0E451800487F3B /* TopNav.swift */; };
 		C176FB8F2C0E47A500487F3B /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176FB8E2C0E47A500487F3B /* Lessons.swift */; };
 		C183539B2BA9DE8100CBE367 /* RachelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183539A2BA9DE8100CBE367 /* RachelTypes.swift */; };
@@ -174,10 +178,14 @@
 		44F7D5032B1F9E3200EAAC8B /* SeparadorPequeno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparadorPequeno.swift; sourceTree = "<group>"; };
 		44FC34E52B3C9EEA008982DF /* C200a250.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C200a250.swift; sourceTree = "<group>"; };
 		44FC34E72B3C9EF2008982DF /* C250a300.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C250a300.swift; sourceTree = "<group>"; };
+		C10FC59B2C174EFD0011F827 /* Toefl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toefl.swift; sourceTree = "<group>"; };
+		C10FC59D2C174FB80011F827 /* PlanPerzonalizado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPerzonalizado.swift; sourceTree = "<group>"; };
+		C10FC59F2C17521C0011F827 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		C1331E982C0E5C2C00329281 /* LessonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCard.swift; sourceTree = "<group>"; };
 		C1331E9A2C0E5D4500329281 /* LessonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTypes.swift; sourceTree = "<group>"; };
 		C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakingDificil.swift; sourceTree = "<group>"; };
 		C15B43E72BA36B6500D90883 /* ListeningDif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningDif.swift; sourceTree = "<group>"; };
+		C16989322C18AB7D0059CE23 /* SpaInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaInt.swift; sourceTree = "<group>"; };
 		C176FB8C2C0E451800487F3B /* TopNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNav.swift; sourceTree = "<group>"; };
 		C176FB8E2C0E47A500487F3B /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		C183539A2BA9DE8100CBE367 /* RachelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachelTypes.swift; sourceTree = "<group>"; };
@@ -320,6 +328,9 @@
 				C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */,
 				C15B43E72BA36B6500D90883 /* ListeningDif.swift */,
 				C176FB8E2C0E47A500487F3B /* Lessons.swift */,
+				C10FC59B2C174EFD0011F827 /* Toefl.swift */,
+				C10FC59D2C174FB80011F827 /* PlanPerzonalizado.swift */,
+				C16989322C18AB7D0059CE23 /* SpaInt.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,6 +403,7 @@
 			children = (
 				44CBBAE82B712F9000C0F321 /* UserManager.swift */,
 				44F620FF2B7283E000CAD21C /* AuthManager.swift */,
+				C10FC59F2C17521C0011F827 /* GlobalData.swift */,
 			);
 			path = Db;
 			sourceTree = "<group>";
@@ -552,6 +564,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C16989332C18AB7D0059CE23 /* SpaInt.swift in Sources */,
 				44F7D5022B1F9DC500EAAC8B /* BtnEmpezar.swift in Sources */,
 				44584E832B332C2D00401894 /* C50a100.swift in Sources */,
 				444E80662B1E5A7D004AC6BF /* Chat.swift in Sources */,
@@ -588,6 +601,7 @@
 				444E80562B1E3FBA004AC6BF /* NotchSpacing.swift in Sources */,
 				444E80622B1E59B6004AC6BF /* Test.swift in Sources */,
 				4475F8C82B23908000307D02 /* TextInput.swift in Sources */,
+				C10FC59C2C174EFD0011F827 /* Toefl.swift in Sources */,
 				444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */,
 				4475F8BE2B2380CD00307D02 /* Pasts.swift in Sources */,
 				4475F8BC2B2380A200307D02 /* Oo.swift in Sources */,
@@ -599,6 +613,7 @@
 				444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */,
 				44F7D5042B1F9E3200EAAC8B /* SeparadorPequeno.swift in Sources */,
 				4475F8B82B237ECD00307D02 /* Intrans.swift in Sources */,
+				C10FC5A02C17521C0011F827 /* GlobalData.swift in Sources */,
 				C176FB8F2C0E47A500487F3B /* Lessons.swift in Sources */,
 				4475F8C22B23812500307D02 /* Abstractos.swift in Sources */,
 				44FC34E62B3C9EEA008982DF /* C200a250.swift in Sources */,
@@ -614,6 +629,7 @@
 				44FC34E82B3C9EF2008982DF /* C250a300.swift in Sources */,
 				444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */,
 				4475F8B52B237DD500307D02 /* Generator.swift in Sources */,
+				C10FC59E2C174FB80011F827 /* PlanPerzonalizado.swift in Sources */,
 				44ADD0CB2B97688900383991 /* ListeningTypes.swift in Sources */,
 				44CBBAEC2B71359100C0F321 /* UserTypes.swift in Sources */,
 				C15815002BA09ECF008883E1 /* SpeakingDificil.swift in Sources */,

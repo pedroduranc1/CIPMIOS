@@ -4,7 +4,9 @@ import UIKit
 struct LecturaView: View {
     @Binding var IndexSeleccionado: Int
     
+    @State private var strucOptionsFree: [String] = []
     @State private var StructureOptionsFree = ["Black Fathers", "Is America Racist?"]
+    @State private var strucOptionsPremium: [String] = []
     @State private var StructureOptionsPremium = ["Black Fathers", "Is America Racist?", "Don't Compare Yourself to Others", "Fix Yourself", "Are Men and Women Different?", "Don't Waste Your Time", "How to Make Our Cities Safer", "How to End Systemic Racism", "Should Government Bail Out Big Banks?"]
     
     @State private var selectedOption: String? = "Black Fathers"
@@ -64,7 +66,7 @@ struct LecturaView: View {
                     videoURL = getVideoURL(for: selectedOption ?? "Black Fathers", currentPage: "Availability")
                 }
                 
-                PickerCustom(defaultOption: "Black Fathers", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {
+                PickerCustom(defaultOption: "Black Fathers", selectedOption: $selectedOption, options: IsPremium ? strucOptionsPremium : strucOptionsFree) {
                     handleSelectedOptionChange()
                 }
                 
@@ -297,7 +299,17 @@ struct LecturaView: View {
     }
     
     private func handleSelectedOptionChange() {
-        videoURL = getVideoURL(for: selectedOption ?? "Black Fathers", currentPage: "Availability")
+        
+        if let lesson = GlobalData.shared.selectedLesson {
+            strucOptionsPremium = [lesson]
+            strucOptionsFree = [lesson]
+            selectedOption = lesson
+            videoURL = getVideoURL(for: selectedOption ?? "Black Fathers", currentPage: "Availability")
+        } else {
+            strucOptionsPremium = StructureOptionsPremium
+            strucOptionsFree = StructureOptionsFree
+            videoURL = getVideoURL(for: selectedOption ?? "Black Fathers", currentPage: "Availability")
+        }
         isEmpezarClicked = false
     }
     

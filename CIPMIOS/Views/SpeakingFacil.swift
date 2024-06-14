@@ -6,10 +6,12 @@ struct SpeakingFacil: View {
     @Binding var IndexSeleccionado: Int
     
     //ARRAYS DE LAS STRUCTURAS Y RANGOS FREE
+    @State private var strucOptionsFree: [String] = []
     @State private var StructureOptionsFree = ["Present Simple", "Present Continuous"]
     @State private var LevelOptionsFree = ["0 a 100"]
     
     //ARRAYS DE LAS STRUCTURAS Y RANGOS FREE
+    @State private var strucOptionsPremium: [String] = []
     @State private var StructureOptionsPremium = ["Present Simple", "Present Continuous", "Present Perfect", "Present Perfect Continuous","Past Simple", "Past Continuous", "Past Perfect", "Past Perfect Continuous","Future Simple", "Future Continuous", "Future Perfect", "Future Perfect Continuous","Would Simple", "Would Continuous", "Would Perfect", "Would Perfect Continuous"]
     
     @State private var LevelOptionsPremium = ["0 a 100","100 a 200","200 a 300"]
@@ -40,7 +42,7 @@ struct SpeakingFacil: View {
             VStack(spacing: 0) {
                 
                 // SELECT BOX
-                PickerCustom(defaultOption: "Present Simple", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {
+                PickerCustom(defaultOption: "Present Simple", selectedOption: $selectedOption, options: IsPremium ? strucOptionsPremium : strucOptionsFree) {
                     handleSelectedOptionChange()
                 }
                 
@@ -253,7 +255,16 @@ struct SpeakingFacil: View {
             }
             .onAppear {
                 // Inicializa videoURL cuando la vista aparece
-                videoURL = getVideoURL(for: "Present Simple", currentPage: "Speaking Facil")
+                if let lesson = GlobalData.shared.selectedLesson {
+                    strucOptionsPremium = [lesson]
+                    strucOptionsFree = [lesson]
+                    selectedOption = lesson
+                    videoURL = getVideoURL(for: lesson, currentPage: "Speaking Facil")
+                } else {
+                    strucOptionsPremium = StructureOptionsPremium
+                    strucOptionsFree = StructureOptionsFree
+                    videoURL = getVideoURL(for: "Present Simple", currentPage: "Speaking Facil")
+                }
             }
         }
         .edgesIgnoringSafeArea(.all)

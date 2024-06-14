@@ -44,6 +44,12 @@ struct Routes: View {
             case 11:
                 //LESSONS PAGE
                 LessonsView(IndexSeleccionado: $IndexSeleccionado )
+            case 12:
+                Toefl()
+            case 13:
+                PlanPerzonalizado()
+            case 14:
+                SpaInt()
             case 99:
                 //VIEW DE PRUEBAS
                 SpeechView()

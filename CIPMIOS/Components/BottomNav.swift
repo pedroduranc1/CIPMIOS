@@ -12,14 +12,20 @@ struct BottomNav: View {
     
     let opciones: [(nombre: String, icono: String, indice: Int,page:Int)] = [
         ("Perfil", "person.crop.square", 4,4),
-        ("Clases en linea", "play.desktopcomputer", 1,2),
+        ("Clases en linea", "play.desktopcomputer", 101,101),
         ("CIPM Premium", "diamond.inset.filled", 2,2),
-        ("Saber mi nivel", "doc.fill", 3,1),
-        ("Servicio al cliente", "text.bubble", 5,1),
-        ("Toefl","testtube.2",6,1),
-        ("Plan personalizado","person.badge.key.fill",7,1),
+        ("Saber mi nivel", "doc.fill", 1,1),
+        ("Servicio al cliente", "text.bubble", 3,3),
+        ("Toefl","testtube.2",12,12),
+        ("Plan personalizado","person.badge.key.fill",13,13),
         
     ]
+    
+    func openWebsite(){
+        if let url = URL(string: "https://www.cursosdeinglespersonalizadosenmonterrey.com") {
+            UIApplication.shared.open(url)
+        }
+    }
     var body: some View {
         Rectangle()
             .frame(height: 1)
@@ -28,7 +34,13 @@ struct BottomNav: View {
             HStack(spacing: 16) { // Espaciado entre elementos
                 ForEach(opciones, id: \.indice) { opcion in
                     Button(action: {
-                        self.IndexSeleccionado = opcion.page
+                        if (opcion.page == 101){
+                            openWebsite()
+                        }else{
+                            GlobalData.shared.selectedLesson = nil
+                            self.IndexSeleccionado = opcion.page
+                        }
+                    
                     }) {
                         VStack {
                             Image(systemName: opcion.icono)

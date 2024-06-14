@@ -26,9 +26,9 @@ struct LessonCard: View {
         } else if estructuraDificil.contains(subtitle) {
             return 9
         } else if cultura.contains(subtitle) {
-            return 7
-        } else if listening.contains(subtitle) {
             return 8
+        } else if listening.contains(subtitle) {
+            return 7
         } else {
             return nil
         }
@@ -37,6 +37,7 @@ struct LessonCard: View {
     var body: some View {
         Button(action: {
             if let categoryNumber = searchLessonCategory(subtitle: lesson.subtitle) {
+                GlobalData.shared.selectedLesson = lesson.subtitle
                 self.IndexSeleccionado = categoryNumber
             } else {
                 self.showModal = true

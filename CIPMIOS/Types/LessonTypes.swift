@@ -8,6 +8,7 @@
 import Foundation
 
 struct LessonTypes {
+    let id = UUID()
     var title: String
     var subtitle: String
     var description: String

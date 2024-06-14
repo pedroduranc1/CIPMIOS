@@ -11,21 +11,21 @@ struct TopNav: View {
     @Binding var IndexSeleccionado: Int
     @State private var showModal = false
     
-    let opciones: [(nombre: String, icono: String, indice: Int,page:Int)] = [
-        ("Clases de 5 Minutos", "tv.badge.wifi.fill", 11,11),
-        ("Aprende a Estructurar", "brain.head.profile", 2,1),
-        ("aprende una palabra", "plus", 3,1),
-        ("Aprende a Conectar", "link", 4,1),
-        ("Para ya no pensar en español", "head.profile.arrow.forward.and.visionpro", 5,1),
-        ("Para Recordar Vocab","books.vertical.fill",6,6),
-        ("Aprende una frase Cultural","person.and.arrow.left.and.arrow.right",7,7),
-        ("Mejora tu listening","ear.badge.waveform",10,10),
-        ("Videos de Estructura","movieclapper.fill",5,5),
-        ("Videos de Vocab","arrow.up.and.down.text.horizontal",6,6),
-        ("Estructuras Conectadas Dificil","arrow.up.left.and.down.right.and.arrow.up.right.and.down.left",9,9),
-    ]
+    let opciones: [(nombre: String, icono: String, indice: Int, page: Int)] = [
+           ("Clases de 5 Minutos", "tv.badge.wifi.fill", 11, 11),
+           ("Aprende a Estructurar", "brain.head.profile", 2, 2),
+           ("Aprende una palabra", "plus", 3, 3),
+           ("Aprende a Conectar", "link", 4, 4),
+           ("Para ya no pensar en español", "head.profile.arrow.forward.and.visionpro", 14, 14),
+           ("Para Recordar Vocab", "books.vertical.fill", 7, 7),
+           ("Aprende una frase Cultural", "person.and.arrow.left.and.arrow.right", 8, 8),
+           ("Mejora tu listening", "ear.badge.waveform", 10, 10),
+           ("Videos de Estructura", "movieclapper.fill", 12, 5), // Cambiado para ID único
+           ("Videos de Vocab", "arrow.up.and.down.text.horizontal", 6, 6), // Cambiado para ID único
+           ("Estructuras Conectadas Dificil", "arrow.up.left.and.down.right.and.arrow.up.right.and.down.left", 9, 9)
+       ]
     
-    let validNames: Set<String> = ["Clases de 5 Minutos", "Para Recordar Vocab", "Aprende una frase Cultural", "Mejora tu listening", "Videos de Estructura", "Videos de Vocab", "Estructuras Conectadas Dificil"]
+    let validNames: Set<String> = ["Clases de 5 Minutos", "Para Recordar Vocab", "Aprende una frase Cultural", "Mejora tu listening", "Videos de Estructura", "Videos de Vocab", "Estructuras Conectadas Dificil","Para ya no pensar en español"]
     
     var body: some View {
         VStack {
@@ -36,6 +36,7 @@ struct TopNav: View {
                     ForEach(opciones, id: \.indice) { opcion in
                         Button(action: {
                             if validNames.contains(opcion.nombre) {
+                                GlobalData.shared.selectedLesson = nil
                                 self.IndexSeleccionado = opcion.page
                             } else {
                                 self.showModal = true

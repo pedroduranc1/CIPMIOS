@@ -11,7 +11,9 @@ struct SpeakingDificil: View {
     @Binding var IndexSeleccionado: Int
     
     //ARRAYS DE LAS STRUCTURAS Y RANGOS FREE
+    @State private var strucOptionsFree: [String] = []
     @State private var StructureOptionsFree = ["Conectores Standar Presente Simple", "Conectores Standar Presente Continuo"]
+    @State private var strucOptionsPremium: [String] = []
     @State private var StructureOptionsPremium = ["Conectores Standar Presente Simple", "Conectores Standar Presente Continuo"]
     
     //VARIABLES POR DEFECTO
@@ -38,7 +40,7 @@ struct SpeakingDificil: View {
             VStack(spacing: 0) {
                 
                 // SELECT BOX
-                PickerCustom(defaultOption: "Present Simple", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {
+                PickerCustom(defaultOption: "Present Simple", selectedOption: $selectedOption, options: IsPremium ? strucOptionsPremium : strucOptionsFree) {
                     handleSelectedOptionChange()
                 }
                 
@@ -142,8 +144,18 @@ struct SpeakingDificil: View {
                 }
             }
             .onAppear {
+                
                 // Inicializa videoURL cuando la vista aparece
-                videoURL = getVideoURL(for: "Conectores Standar Presente Simple", currentPage: "Speaking Dificil")
+                if let lesson = GlobalData.shared.selectedLesson {
+                    strucOptionsPremium = [lesson]
+                    strucOptionsFree = [lesson]
+                    selectedOption = lesson
+                    videoURL = getVideoURL(for: lesson, currentPage: "Speaking Dificil")
+                } else {
+                    strucOptionsPremium = StructureOptionsPremium
+                    strucOptionsFree = StructureOptionsFree
+                    videoURL = getVideoURL(for: "Conectores Standar Presente Simple", currentPage: "Speaking Dificil")
+                }
             }
         }
         .edgesIgnoringSafeArea(.all)
