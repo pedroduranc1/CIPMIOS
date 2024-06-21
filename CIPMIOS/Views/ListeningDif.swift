@@ -11,7 +11,10 @@ struct ListeningDif: View {
     @Binding var IndexSeleccionado: Int
     
     //ARRAYS DE LAS STRUCTURAS Y RANGOS FREE
+    @State private var strucOptionsFree: [String] = []
     @State private var StructureOptionsFree = ["Steve Jobs 1"]
+    
+    @State private var strucOptionsPremium: [String] = []
     @State private var StructureOptionsPremium = ["Steve Jobs 1", "Kot Fishing 1","Kot Fishing 2","Helicoptero 1","Helicoptero 2"]
     
     //VARIABLES POR DEFECTO
@@ -48,7 +51,7 @@ struct ListeningDif: View {
                 VStack(spacing: 0) {
                     
                     // SELECT BOX
-                    PickerCustom(defaultOption: "Steve Jobs 1", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {
+                    PickerCustom(defaultOption: "Steve Jobs 1", selectedOption: $selectedOption, options: IsPremium ? strucOptionsPremium : strucOptionsFree) {
                         handleSelectedOptionChange()
                     }
                     
@@ -168,7 +171,17 @@ struct ListeningDif: View {
                 })
                 .onAppear {
                     // Inicializa videoURL cuando la vista aparece
-                    videoURL = getVideoURL(for: "Steve Jobs 1", currentPage: "Listening Dificil")
+                    
+                    if let lesson = GlobalData.shared.selectedLesson {
+                        strucOptionsPremium = [lesson]
+                        strucOptionsFree = [lesson]
+                        selectedOption = lesson
+                        videoURL = getVideoURL(for: lesson, currentPage: "Listening Dificil")
+                    } else {
+                        strucOptionsPremium = StructureOptionsPremium
+                        strucOptionsFree = StructureOptionsFree
+                        videoURL = getVideoURL(for: "Steve Jobs 1", currentPage: "Listening Dificil")
+                    }
                 }
                 .onChange(of: selectedOption) { oldValue, newValue in
                     IndexNum = 0

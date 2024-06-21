@@ -63,7 +63,7 @@ struct SpaInt: View {
                 .padding(.horizontal, 20)
                 .onDisappear {
                     // Detener el video cuando la vista desaparece
-                    videoURL = getVideoURL(for: "", currentPage: "Speaking Facil")
+                    videoURL = getVideoURL(for: "", currentPage: "SpaInt")
                 }
                 
                 //TEXT
@@ -96,17 +96,44 @@ struct SpaInt: View {
                         // Usando TextInput y proporcionando la variable de estado
                         TextInput(userInput: $userInput, StatusColor: $StatusColor)
                     }
-                    .padding(.bottom,40)
+                    .padding(.bottom,20)
                 }
                 
+                if !isCorrect && isEmpezarClicked {
+                    HStack(alignment:.top){
+                        Text("Respuesta Correcta: ")
+                        Text(TxtEng)
+                            .underline(true,color: Color("azul"))
+                            .foregroundColor(Color("azul"))
+                            .lineLimit(nil)  // Mostrar el texto completo, sin truncar
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer()
+                    }
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:20)
+                    .padding(.horizontal,20)
+                    .padding(.top,15)
+                }
+                VStack(alignment:.leading){
+                    
+                }
+                .padding(.bottom,25)
+                .padding(.horizontal,20)
                 
                 
                 
                 if isEmpezarClicked {
                     //BTN EMPEZAR
+                    BtnEmpezar(TextBtn: "Siguiente oracion", action: {
+                        practice()
+                    })
+                    
+                    Spacer()
+                    
+                    //BTN EMPEZAR
                     BtnEmpezar(TextBtn: "Chequea tu respuesta", action: {
                         ComprobarRespuesta()
                     })
+                    
                 }
                 
                 if !isEmpezarClicked {
@@ -114,19 +141,32 @@ struct SpaInt: View {
                     BtnEmpezar(TextBtn: "Empezar", action: {
                         
                         isEmpezarClicked.toggle()
-                        //SetDificultad()
+                        practice()
                     })
                 }
             }
         }
         .onAppear{
-            videoURL = getVideoURL(for: "Present Simple", currentPage: "Speaking Facil")
+            if let lesson = GlobalData.shared.selectedLesson {
+                strucOptionsPremium = [lesson]
+                strucOptionsFree = [lesson]
+                selectedOption = lesson
+                videoURL = getVideoURL(for: lesson, currentPage: "SpaInt")
+            } else {
+                strucOptionsPremium = StructureOptionsPremium
+                strucOptionsFree = StructureOptionsFree
+                videoURL = getVideoURL(for: "Por Sujeto", currentPage: "SpaInt")
+            }
         }
+    }
+    
+    private func practice(){
+        SpaIntGen(selectedOption: selectedOption ?? "Por Sujeto", selectedRango: selectedRango ?? "0 a 100", TxtEng: &TxtEng, TxtSpa: &TxtSpa, TxtPalabraClave: &TxtPalabraClave)
     }
     
     private func handleSelectedOptionChange() {
         // Llamada a getVideoURL para actualizar videoURL
-        videoURL = getVideoURL(for: selectedOption ?? "Present Simple", currentPage: "Speaking Facil")
+        videoURL = getVideoURL(for: selectedOption ?? "Por Sujeto", currentPage: "SpaInt")
         
         LimpiarDatos()
         isEmpezarClicked = false
@@ -141,7 +181,7 @@ struct SpaInt: View {
             StatusColor = "success"
             isCorrect = true
             LimpiarDatos()
-            //SetDificultad()
+            practice()
         } else {
             StatusColor = "error"
             isCorrect = false

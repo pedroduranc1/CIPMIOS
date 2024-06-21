@@ -16,7 +16,9 @@ struct LessonCard: View {
     let test = ["Test"]
     let estructuraDificil = ["Conectores Standar Presente Simple", "Conectores Standar Presente Continuo"]
     let cultura = ["Black Fathers", "Is America Racist?", "Don't Compare Yourself to Others", "Fix Yourself", "Are Men and Women Different?", "Don't Waste Your Time", "How to Make Our Cities Safer", "How to End Systemic Racism", "Should Government Bail Out Big Banks?"]
-    let listening = ["Moonlight", "Rick and Morty", "Do You Want Pepsi", "Sangre Por Sangre Foodline", "Sangre Por Sangre Watch El Paisaje", "Training Day Rabbit Has The Gun", "Hancock Train", "Malcom in the Middle Teacher", "Sangre Por Sangre Comedor", "Dave Chapelle Man Rape", "Análisis de cultura Gringa y Frases Coloquiales 2", "Boys in the Hood", "Cultura y Fonética", "Kings of the Hills Drugs"]
+    let vocab = ["Moonlight", "Rick and Morty", "Do You Want Pepsi", "Sangre Por Sangre Foodline", "Sangre Por Sangre Watch El Paisaje", "Training Day Rabbit Has The Gun", "Hancock Train", "Malcom in the Middle Teacher", "Sangre Por Sangre Comedor", "Dave Chapelle Man Rape", "Análisis de cultura Gringa y Frases Coloquiales 2", "Boys in the Hood", "Cultura y Fonética", "Kings of the Hills Drugs"]
+    let listening = ["Steve Jobs 1", "Kot Fishing 1","Kot Fishing 2","Helicoptero 1","Helicoptero 2"]
+    let interferencias = ["Por Sujeto","Por Preposicion","Por Objeto","Interferencia Reflexiva","Interferencia Pasiva"]
     
     func searchLessonCategory(subtitle: String) -> Int? {
         if estructuras.contains(subtitle) {
@@ -27,9 +29,14 @@ struct LessonCard: View {
             return 9
         } else if cultura.contains(subtitle) {
             return 8
-        } else if listening.contains(subtitle) {
+        } else if vocab.contains(subtitle) {
             return 7
-        } else {
+        } else if listening.contains(subtitle){
+            return 10
+        } else if interferencias.contains(subtitle){
+            return 14
+        }
+        else {
             return nil
         }
     }

@@ -1072,3 +1072,58 @@ func SpeakDif(selectedOption: String?, TxtEng: inout String, TxtSpa: inout Strin
         break
     }
 }
+
+func SpaIntGen(selectedOption: String?, selectedRango: String?, TxtEng: inout String, TxtSpa: inout String, TxtPalabraClave: inout String){
+    guard let selectedOption = selectedOption else { return }
+    
+    switch selectedOption {
+        case "Por Sujeto":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.generatepsporSujeto()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+        case "Por Preposicion":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.generatepsporprep()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+        case "Por Objeto":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.generatepsporObjeto()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+        case "Interferencia Reflexiva":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.generatepsporReflexivos()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+        case "Interferencia Pasiva":
+            // Generador
+            let gen = Generator()
+            // Estructura
+            gen.GenIntPorPasiva()
+            
+            TxtEng = gen.gene
+            TxtSpa = gen.gens
+            TxtPalabraClave = hintPalabraClave(oracion: TxtEng)
+            
+    default:
+        break;
+    }
+}

@@ -10,7 +10,10 @@ import SwiftUI
 struct Listening: View {
     @Binding var IndexSeleccionado: Int
     
+    @State private var strucOptionsFree: [String] = []
     @State private var StructureOptionsFree = ["Moonlight", "Rick and Morty", "Sangre por Sangre Foodline"]
+    
+    @State private var strucOptionsPremium: [String] = []
     @State private var StructureOptionsPremium = ["Moonlight", "Rick and Morty", "Do You Want Pepsi", "Sangre Por Sangre Foodline", "Sangre Por Sangre Watch El Paisaje", "Training Day Rabbit Has The Gun", "Hancock Train", "Malcom in the Middle Teacher", "Sangre Por Sangre Comedor", "Dave Chapelle Man Rape", "Análisis de cultura Gringa y Frases Coloquiales 2", "Boys in the Hood", "Cultura y Fonética", "Kings of the Hills Drugs"]
     
     @State private var videoURL: URL?
@@ -58,7 +61,7 @@ struct Listening: View {
                 
                 
                 // SELECT BOX
-                PickerCustom(defaultOption: "Moonlight", selectedOption: $selectedOption, options: IsPremium ? StructureOptionsPremium : StructureOptionsFree) {
+                PickerCustom(defaultOption: "Moonlight", selectedOption: $selectedOption, options: IsPremium ? strucOptionsPremium : strucOptionsFree) {
                     handleSelectedOptionChange()
                     
                 }
@@ -139,7 +142,6 @@ struct Listening: View {
             .onAppear {
                 // Inicializa videoURL cuando la vista aparece
                 updateVideoURL()
-                
             }
             
             .edgesIgnoringSafeArea(.all)
@@ -181,7 +183,19 @@ struct Listening: View {
     }
     
     private func updateVideoURL() {
+        
         let VarIndex: Int
+        
+        if let lesson = GlobalData.shared.selectedLesson {
+            strucOptionsPremium = [lesson]
+            strucOptionsFree = [lesson]
+            selectedOption = lesson
+            
+        } else {
+            strucOptionsPremium = StructureOptionsPremium
+            strucOptionsFree = StructureOptionsFree
+        }
+        
         switch selectedOption {
         case "Moonlight":
             VarIndex = 0
@@ -214,6 +228,7 @@ struct Listening: View {
         default:
             VarIndex = 0
         }
+        
         
         if ShowExpla {
             videoURL = URL(string: ClipsData.collection[VarIndex].clips[Explanation-1].urlExp)

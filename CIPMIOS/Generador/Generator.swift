@@ -62474,318 +62474,1092 @@ class Generator {
        default:  break    }
        } //hechos PD
 
-    // interferencias
-       // genera interferencias de presente Simp por preposición
-            let gene7: String = ""
-       //interferencias empiezan
-       func generatepsporprep(){
-           let rand = Int.random(in: 0..<pronombres.count);
-           let verb = Int.random(in: 0..<4);// tipo de verbo, por ahora solo los 4 base
-           let temp = pronombres[rand];
-           switch (temp) {
-               case "yo ":
-                   switch (verb) {
-                       case 0:
-                           let p = Nobles();
-                           p.intporprepps0a100();
-                           gens = p.ps1;
-                           gene = p.ps1eng;
-                           gene2 = p.ps1eng2;
-                           gene2 = "null";
-                           gene3 =  "null";
-                           break;
-                       case 1:
-                           let po = Oo();
-                           po.intporprepps0a100();
-                           gens = po.ps1;
-                           gene = po.ps1eng;
-                           gene2 = "null";
-                           gene3 =  "null";
+    func generatepsporprep(){
+        let rand = Int.random(in: 0..<pronombres.count);
+        let verb = Int.random(in: 0..<4);// tipo de verbo, por ahora solo los 4 base
+        let temp = pronombres[rand];
+        switch (temp) {
+            case "yo ":
+                switch (verb) {
+                    case 0:
+                        let p = Nobles();
+                        p.intporprepps0a100();
+                        gens = p.ps1;
+                        gene = p.ps1eng;
+                        gene2 = p.ps1eng2;
+                        gene2 = "null";
+                        gene3 =  "null";
+                        break;
+                    case 1:
+                        let po = Oo();
+                        po.intporprepps0a100();
+                        gens = po.ps1;
+                        gene = po.ps1eng;
+                        gene2 = "null";
+                        gene3 =  "null";
 
-                           break;
+                        break;
 
-                       case 2:
-                           // abstractos
-                           let a = Abstractos();
-                           a.intporprepps0a100();
-                           gens = a.ps1;
-                           gene = a.ps1eng;
-                           gene2 = "null";
-                           gene3 =  "null";
+                    case 2:
+                        // abstractos
+                        let a = Abstractos();
+                        a.intporprepps0a100();
+                        gens = a.ps1;
+                        gene = a.ps1eng;
+                        gene2 = "null";
+                        gene3 =  "null";
 
-                           break;
+                        break;
 
-                       case 3:
-                           // people
-                           let pe = People();
-                           pe.intporprepps0a100();
-                           gens = pe.ps1;
-                           gene = pe.ps1eng;
-                           gene2 = "null";
-                           gene3 =  "null";
-                           break;
+                    case 3:
+                        // people
+                        let pe = People();
+                        pe.intporprepps0a100();
+                        gens = pe.ps1;
+                        gene = pe.ps1eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+                        break;
 
 
-               default:  break     }
-                   
-               case "tú ":
-                   switch (verb) {
-                       case 0:
-                           let p = Nobles();
-                           p.intporprepps0a100();
-                           gens = p.ps2;
-                           gene = p.ps2eng;
-                           gene2 = "null";
-                           gene3 =  "null";
-                           break;
-                       case 1:
-                           let po = Oo();
-                           po.intporprepps0a100();
-                           gens = po.ps2;
-                           gene = po.ps2eng;
-                           gene2 = "null";
-                           gene3 =  "null";
-                           break;
+            default:  break     }
+                
+            case "tú ":
+                switch (verb) {
+                    case 0:
+                        let p = Nobles();
+                        p.intporprepps0a100();
+                        gens = p.ps2;
+                        gene = p.ps2eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+                        break;
+                    case 1:
+                        let po = Oo();
+                        po.intporprepps0a100();
+                        gens = po.ps2;
+                        gene = po.ps2eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+                        break;
 
-                       case 2:
-                           // abstractos
-                           let a = Abstractos();
-                           a.intporprepps0a100();
-                           gens = a.ps2;
-                           gene = a.ps2eng;
-                           gene2 = "null";
-                           gene3 =  "null";
+                    case 2:
+                        // abstractos
+                        let a = Abstractos();
+                        a.intporprepps0a100();
+                        gens = a.ps2;
+                        gene = a.ps2eng;
+                        gene2 = "null";
+                        gene3 =  "null";
 
-                           break;
+                        break;
 
-                       case 3:
-                           // people
-                           let pe = People();
-                           pe.intporprepps0a100();
-                           gens = pe.ps2;
-                           gene = pe.ps2eng;
-                           gene2 = "null";
-                           gene3 =  "null";
-                           break;
-
-
-               default:  break     }
-                   
-               case "él ":
-                   switch (verb) {
-                       case 0:
-                           let n = Nobles();
-                           n.intporprepps0a100();
-                           gens = n.ps3;
-                           gene = n.ps3eng;
-                           gene2 = n.ps3she;
-                           gene3 =  n.ps3it;
-
-                           break;
-                       case 1:
-                           let o = Oo();
-                           o.intporprepps0a100();
-                           gens = o.ps3;
-                           gene = o.ps3eng;
-                           gene2 = o.ps3she;
-                           gene3 =  o.ps3it;
-                           break;
-
-                       case 2:
-                           let a = Abstractos();
-                           a.intporprepps0a100();
-                           gens = a.ps3;
-                           gene = a.ps3eng;
-                           gene2 = a.ps3she;
-                           gene3 =  a.ps3it;
-                           break;
-
-                       case 3:
-                           let p = People();
-                           p.intporprepps0a100();
-                           gens = p.ps3;
-                           gene = p.ps3eng;
-                           gene2 = p.ps3she;
-                           gene3 =  p.ps3it;
-                           break;
+                    case 3:
+                        // people
+                        let pe = People();
+                        pe.intporprepps0a100();
+                        gens = pe.ps2;
+                        gene = pe.ps2eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+                        break;
 
 
-               default:  break     }
-                   
-               case "ella ":
-                   switch (verb) {
-                       case 0:
-                           let n = Nobles();
-                           n.intporprepps0a100();
-                           gens = n.ps3ella;
-                           gene2 = n.ps3eng;
-                           gene =  n.ps3she;
-                           gene3 =  n.ps3it;
+            default:  break     }
+                
+            case "él ":
+                switch (verb) {
+                    case 0:
+                        let n = Nobles();
+                        n.intporprepps0a100();
+                        gens = n.ps3;
+                        gene = n.ps3eng;
+                        gene2 = n.ps3she;
+                        gene3 =  n.ps3it;
 
-                           break;
-                       case 1:
-                           let o = Oo();
-                           o.intporprepps0a100();
-                           gens = o.ps3ella;
-                           gene2 = o.ps3eng;
-                           gene =  o.ps3she;
-                           gene3 =  o.ps3it;
-                           break;
+                        break;
+                    case 1:
+                        let o = Oo();
+                        o.intporprepps0a100();
+                        gens = o.ps3;
+                        gene = o.ps3eng;
+                        gene2 = o.ps3she;
+                        gene3 =  o.ps3it;
+                        break;
 
-                       case 2:
-                           let a = Abstractos();
-                           a.intporprepps0a100();
-                           gens = a.ps3ella;
-                           gene2 = a.ps3eng;
-                           gene =  a.ps3she;
-                           gene3 =  a.ps3it;
-                           break;
+                    case 2:
+                        let a = Abstractos();
+                        a.intporprepps0a100();
+                        gens = a.ps3;
+                        gene = a.ps3eng;
+                        gene2 = a.ps3she;
+                        gene3 =  a.ps3it;
+                        break;
 
-                       case 3:
-                           let p = People();
-                           p.intporprepps0a100();
-                           gens = p.ps3ella;
-                           gene2 = p.ps3eng;
-                           gene =  p.ps3she;
-                           gene3 =  p.ps3it;
-                           break;
-
-
-               default:  break     }
-                   
-               case "eso ":
-                   switch (verb) {
-                       case 0:
-                           let n = Nobles();
-                           n.intporprepps0a100();
-                           gens = n.ps3eso;
-                           gene3 = n.ps3eng;
-                           gene2 = n.ps3she;
-                           gene =  n.ps3it;
-
-                           break;
-                       case 1:
-                           let o = Oo();
-                           o.intporprepps0a100();
-                           gens = o.ps3eso;
-                           gene3 = o.ps3eng;
-                           gene2 = o.ps3she;
-                           gene =  o.ps3it;
-                           break;
-
-                       case 2:
-                           let a = Abstractos();
-                           a.intporprepps0a100();
-                           gens = a.ps3eso;
-                           gene3 = a.ps3eng;
-                           gene2 = a.ps3she;
-                           gene =  a.ps3it;
-                           break;
-
-                       case 3:
-                           let p = People();
-                           p.intporprepps0a100();
-                           gens = p.ps3eso;
-                           gene3 = p.ps3eng;
-                           gene2 = p.ps3she;
-                           gene =  p.ps3it;
-                           break;
+                    case 3:
+                        let p = People();
+                        p.intporprepps0a100();
+                        gens = p.ps3;
+                        gene = p.ps3eng;
+                        gene2 = p.ps3she;
+                        gene3 =  p.ps3it;
+                        break;
 
 
-               default:  break     }
-                   
-               case "ellos ":
-                   switch (verb) {
-                       case 0:
-                           let p = Nobles();
-                           p.intporprepps0a100();
-                           gens = p.ps4;
-                           gene = p.ps4eng;
-                           gene2 = "null"
-                           gene3 =  "null"
-                           break;
-                       case 1:
-                           let po = Oo();
-                           po.intporprepps0a100();
-                           gens = po.ps4;
-                           gene = po.ps4eng;
-                           gene2 = "null";
-                           gene3 =  "null";
+            default:  break     }
+                
+            case "ella ":
+                switch (verb) {
+                    case 0:
+                        let n = Nobles();
+                        n.intporprepps0a100();
+                        gens = n.ps3ella;
+                        gene2 = n.ps3eng;
+                        gene =  n.ps3she;
+                        gene3 =  n.ps3it;
 
-                           break;
+                        break;
+                    case 1:
+                        let o = Oo();
+                        o.intporprepps0a100();
+                        gens = o.ps3ella;
+                        gene2 = o.ps3eng;
+                        gene =  o.ps3she;
+                        gene3 =  o.ps3it;
+                        break;
 
-                       case 2:
-                           // abstractos
-                           let a = Abstractos();
-                           a.intporprepps0a100();
-                           gens = a.ps4;
-                           gene = a.ps4eng;
-                           gene2 = "null";
-                           gene3 =  "null";
+                    case 2:
+                        let a = Abstractos();
+                        a.intporprepps0a100();
+                        gens = a.ps3ella;
+                        gene2 = a.ps3eng;
+                        gene =  a.ps3she;
+                        gene3 =  a.ps3it;
+                        break;
 
-                           break;
-
-                       case 3:
-                           // people
-                           let pe = People();
-                           pe.intporprepps0a100();
-                           gens = pe.ps4;
-                           gene = pe.ps4eng;
-                           gene2 = "null";
-                           gene3 =  "null";
-                           break;
+                    case 3:
+                        let p = People();
+                        p.intporprepps0a100();
+                        gens = p.ps3ella;
+                        gene2 = p.ps3eng;
+                        gene =  p.ps3she;
+                        gene3 =  p.ps3it;
+                        break;
 
 
-               default:  break     }
-                   
-               case "nosotros ":
-                   switch (verb) {
-                       case 0:
-                           let p = Nobles();
-                           p.intporprepps0a100();
-                           gens = p.ps5;
-                           gene = p.ps5eng;
-                           gene2 = "null";
-                           gene3 =  "null";
-                           break;
-                       case 1:
-                           let po = Oo();
-                           po.intporprepps0a100();
-                           gens = po.ps5;
-                           gene = po.ps5eng;
-                           gene2 = "null";
-                           gene3 =  "null";
+            default:  break     }
+                
+            case "eso ":
+                switch (verb) {
+                    case 0:
+                        let n = Nobles();
+                        n.intporprepps0a100();
+                        gens = n.ps3eso;
+                        gene3 = n.ps3eng;
+                        gene2 = n.ps3she;
+                        gene =  n.ps3it;
 
-                           break;
+                        break;
+                    case 1:
+                        let o = Oo();
+                        o.intporprepps0a100();
+                        gens = o.ps3eso;
+                        gene3 = o.ps3eng;
+                        gene2 = o.ps3she;
+                        gene =  o.ps3it;
+                        break;
 
-                       case 2:
-                           // abstractos
-                           let a = Abstractos();
-                           a.intporprepps0a100();
-                           gens = a.ps5;
-                           gene = a.ps5eng;
-                           gene2 = "null";
-                           gene3 =  "null";
+                    case 2:
+                        let a = Abstractos();
+                        a.intporprepps0a100();
+                        gens = a.ps3eso;
+                        gene3 = a.ps3eng;
+                        gene2 = a.ps3she;
+                        gene =  a.ps3it;
+                        break;
 
-                           break;
-
-                       case 3:
-                           // people
-                           let pe = People();
-                           pe.intporprepps0a100();
-                           gens = pe.ps5;
-                           gene = pe.ps5eng;
-                           gene2 = "null";
-                           gene3 = "null";
-                           break;
+                    case 3:
+                        let p = People();
+                        p.intporprepps0a100();
+                        gens = p.ps3eso;
+                        gene3 = p.ps3eng;
+                        gene2 = p.ps3she;
+                        gene =  p.ps3it;
+                        break;
 
 
-               default:  break     }
-           default:
-               break
-                   
-           }
-       }   // done tercera persona ambigua
+            default:  break     }
+                
+            case "ellos ":
+                switch (verb) {
+                    case 0:
+                        let p = Nobles();
+                        p.intporprepps0a100();
+                        gens = p.ps4;
+                        gene = p.ps4eng;
+                        gene2 = "null"
+                        gene3 =  "null"
+                        break;
+                    case 1:
+                        let po = Oo();
+                        po.intporprepps0a100();
+                        gens = po.ps4;
+                        gene = po.ps4eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+
+                        break;
+
+                    case 2:
+                        // abstractos
+                        let a = Abstractos();
+                        a.intporprepps0a100();
+                        gens = a.ps4;
+                        gene = a.ps4eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+
+                        break;
+
+                    case 3:
+                        // people
+                        let pe = People();
+                        pe.intporprepps0a100();
+                        gens = pe.ps4;
+                        gene = pe.ps4eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+                        break;
+
+
+            default:  break     }
+                
+            case "nosotros ":
+                switch (verb) {
+                    case 0:
+                        let p = Nobles();
+                        p.intporprepps0a100();
+                        gens = p.ps5;
+                        gene = p.ps5eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+                        break;
+                    case 1:
+                        let po = Oo();
+                        po.intporprepps0a100();
+                        gens = po.ps5;
+                        gene = po.ps5eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+
+                        break;
+
+                    case 2:
+                        // abstractos
+                        let a = Abstractos();
+                        a.intporprepps0a100();
+                        gens = a.ps5;
+                        gene = a.ps5eng;
+                        gene2 = "null";
+                        gene3 =  "null";
+
+                        break;
+
+                    case 3:
+                        // people
+                        let pe = People();
+                        pe.intporprepps0a100();
+                        gens = pe.ps5;
+                        gene = pe.ps5eng;
+                        gene2 = "null";
+                        gene3 = "null";
+                        break;
+
+
+            default:  break     }
+        default:
+            break
+                
+        }
+    }   // done tercera persona ambigua
+    
+    func generatepsporSujeto() {
+        let rand = Int.random(in: 0..<pronombres.count)
+        let verb = Int.random(in: 0..<4)
+        let temp = pronombres[rand]
+        
+        switch temp {
+        case "yo ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intporsujetops0a100()
+                gens = p.ps1
+                gene = p.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intporsujetops0a100()
+                gens = po.ps1
+                gene = po.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intporsujetops0a100()
+                gens = a.ps1
+                gene = a.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intporsujetops0a100()
+                gens = pe.ps1
+                gene = pe.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        case "tú ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intporsujetops0a100()
+                gens = p.ps2
+                gene = p.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intporsujetops0a100()
+                gens = po.ps2
+                gene = po.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intporsujetops0a100()
+                gens = a.ps2
+                gene = a.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intporsujetops0a100()
+                gens = pe.ps2
+                gene = pe.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        case "él ":
+            switch verb {
+            case 0:
+                let n = Nobles()
+                n.intporsujetops0a100()
+                gens = n.ps3
+                gene = n.ps3eng
+                gene2 = n.ps3she
+                gene3 = n.ps3it
+            case 1:
+                let o = Oo()
+                o.intporsujetops0a100()
+                gens = o.ps3
+                gene = o.ps3eng
+                gene2 = o.ps3she
+                gene3 = o.ps3it
+            case 2:
+                let a = Abstractos()
+                a.intporsujetops0a100()
+                gens = a.ps3
+                gene = a.ps3eng
+                gene2 = a.ps3she
+                gene3 = a.ps3it
+            case 3:
+                let p = People()
+                p.intporsujetops0a100()
+                gens = p.ps3
+                gene = p.ps3eng
+                gene2 = p.ps3she
+                gene3 = p.ps3it
+            default:
+                break
+            }
+        case "ella ":
+            switch verb {
+            case 0:
+                let n = Nobles()
+                n.intporsujetops0a100()
+                gens = n.ps3ella
+                gene = n.ps3she
+                gene2 = n.ps3eng
+                gene3 = n.ps3it
+            case 1:
+                let o = Oo()
+                o.intporsujetops0a100()
+                gens = o.ps3ella
+                gene = o.ps3she
+                gene2 = o.ps3eng
+                gene3 = o.ps3it
+            case 2:
+                let a = Abstractos()
+                a.intporsujetops0a100()
+                gens = a.ps3ella
+                gene = a.ps3she
+                gene2 = a.ps3eng
+                gene3 = a.ps3it
+            case 3:
+                let p = People()
+                p.intporsujetops0a100()
+                gens = p.ps3ella
+                gene = p.ps3she
+                gene2 = p.ps3eng
+                gene3 = p.ps3it
+            default:
+                break
+            }
+        case "eso ":
+            switch verb {
+            case 0:
+                let n = Nobles()
+                n.intporsujetops0a100()
+                gens = n.ps3eso
+                gene = n.ps3it
+                gene2 = n.ps3eng
+                gene3 = n.ps3she
+            case 1:
+                let o = Oo()
+                o.intporsujetops0a100()
+                gens = o.ps3eso
+                gene = o.ps3it
+                gene2 = o.ps3eng
+                gene3 = o.ps3she
+            case 2:
+                let a = Abstractos()
+                a.intporsujetops0a100()
+                gens = a.ps3eso
+                gene = a.ps3it
+                gene2 = a.ps3eng
+                gene3 = a.ps3she
+            case 3:
+                let p = People()
+                p.intporsujetops0a100()
+                gens = p.ps3eso
+                gene = p.ps3it
+                gene2 = p.ps3eng
+                gene3 = p.ps3she
+            default:
+                break
+            }
+        case "ellos ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intporsujetops0a100()
+                gens = p.ps4
+                gene = p.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intporsujetops0a100()
+                gens = po.ps4
+                gene = po.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intporsujetops0a100()
+                gens = a.ps4
+                gene = a.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intporsujetops0a100()
+                gens = pe.ps4
+                gene = pe.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        case "nosotros ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intporsujetops0a100()
+                gens = p.ps5
+                gene = p.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intporsujetops0a100()
+                gens = po.ps5
+                gene = po.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intporsujetops0a100()
+                gens = a.ps5
+                gene = a.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intporsujetops0a100()
+                gens = pe.ps5
+                gene = pe.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        default:
+            break
+        }
+    }
+    
+    func generatepsporObjeto() {
+        let rand = Int.random(in: 0..<pronombres.count)
+        let verb = Int.random(in: 0..<4)
+        let temp = pronombres[rand]
+        
+        switch temp {
+        case "yo ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intporobjps0a100()
+                gens = p.ps1
+                gene = p.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intporobjps0a100()
+                gens = po.ps1
+                gene = po.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intporobjps0a100()
+                gens = a.ps1
+                gene = a.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intporobjps0a100()
+                gens = pe.ps1
+                gene = pe.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        case "tú ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intporobjps0a100()
+                gens = p.ps2
+                gene = p.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intporobjps0a100()
+                gens = po.ps2
+                gene = po.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intporobjps0a100()
+                gens = a.ps2
+                gene = a.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intporobjps0a100()
+                gens = pe.ps2
+                gene = pe.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        case "él ":
+            switch verb {
+            case 0:
+                let n = Nobles()
+                n.intporobjps0a100()
+                gens = n.ps3
+                gene = n.ps3eng
+                gene2 = n.ps3she
+                gene3 = n.ps3it
+            case 1:
+                let o = Oo()
+                o.intporobjps0a100()
+                gens = o.ps3
+                gene = o.ps3eng
+                gene2 = o.ps3she
+                gene3 = o.ps3it
+            case 2:
+                let a = Abstractos()
+                a.intporobjps0a100()
+                gens = a.ps3
+                gene = a.ps3eng
+                gene2 = a.ps3she
+                gene3 = a.ps3it
+            case 3:
+                let p = People()
+                p.intporobjps0a100()
+                gens = p.ps3
+                gene = p.ps3eng
+                gene2 = p.ps3she
+                gene3 = p.ps3it
+            default:
+                break
+            }
+        case "ella ":
+            switch verb {
+            case 0:
+                let n = Nobles()
+                n.intporobjps0a100()
+                gens = n.ps3ella
+                gene = n.ps3she
+                gene2 = n.ps3eng
+                gene3 = n.ps3it
+            case 1:
+                let o = Oo()
+                o.intporobjps0a100()
+                gens = o.ps3ella
+                gene = o.ps3she
+                gene2 = o.ps3eng
+                gene3 = o.ps3it
+            case 2:
+                let a = Abstractos()
+                a.intporobjps0a100()
+                gens = a.ps3ella
+                gene = a.ps3she
+                gene2 = a.ps3eng
+                gene3 = a.ps3it
+            case 3:
+                let p = People()
+                p.intporobjps0a100()
+                gens = p.ps3ella
+                gene = p.ps3she
+                gene2 = p.ps3eng
+                gene3 = p.ps3it
+            default:
+                break
+            }
+        case "eso ":
+            switch verb {
+            case 0:
+                let n = Nobles()
+                n.intporobjps0a100()
+                gens = n.ps3eso
+                gene = n.ps3it
+                gene2 = n.ps3eng
+                gene3 = n.ps3she
+            case 1:
+                let o = Oo()
+                o.intporobjps0a100()
+                gens = o.ps3eso
+                gene = o.ps3it
+                gene2 = o.ps3eng
+                gene3 = o.ps3she
+            case 2:
+                let a = Abstractos()
+                a.intporobjps0a100()
+                gens = a.ps3eso
+                gene = a.ps3it
+                gene2 = a.ps3eng
+                gene3 = a.ps3she
+            case 3:
+                let p = People()
+                p.intporobjps0a100()
+                gens = p.ps3eso
+                gene = p.ps3it
+                gene2 = p.ps3eng
+                gene3 = p.ps3she
+            default:
+                break
+            }
+        case "ellos ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intporobjps0a100()
+                gens = p.ps4
+                gene = p.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intporobjps0a100()
+                gens = po.ps4
+                gene = po.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intporobjps0a100()
+                gens = a.ps4
+                gene = a.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intporobjps0a100()
+                gens = pe.ps4
+                gene = pe.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        case "nosotros ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intporobjps0a100()
+                gens = p.ps5
+                gene = p.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intporobjps0a100()
+                gens = po.ps5
+                gene = po.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intporobjps0a100()
+                gens = a.ps5
+                gene = a.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intporobjps0a100()
+                gens = pe.ps5
+                gene = pe.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        default:
+            break
+        }
+    }
+
+    func generatepsporReflexivos() {
+        let rand = Int.random(in: 0..<pronombres.count)
+        let verb = Int.random(in: 0..<4)
+        let temp = pronombres[rand]
+        
+        switch temp {
+        case "yo ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intreflps0a100()
+                gens = p.ps1
+                gene = p.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intreflps0a100()
+                gens = po.ps1
+                gene = po.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intreflps0a100()
+                gens = a.ps1
+                gene = a.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intreflps0a100()
+                gens = pe.ps1
+                gene = pe.ps1eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        case "tú ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intreflps0a100()
+                gens = p.ps2
+                gene = p.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intreflps0a100()
+                gens = po.ps2
+                gene = po.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intreflps0a100()
+                gens = a.ps2
+                gene = a.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intreflps0a100()
+                gens = pe.ps2
+                gene = pe.ps2eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        case "él ":
+            switch verb {
+            case 0:
+                let n = Nobles()
+                n.intreflps0a100()
+                gens = n.ps3
+                gene = n.ps3eng
+                gene2 = n.ps3she
+                gene3 = n.ps3it
+            case 1:
+                let o = Oo()
+                o.intreflps0a100()
+                gens = o.ps3
+                gene = o.ps3eng
+                gene2 = o.ps3she
+                gene3 = o.ps3it
+            case 2:
+                let a = Abstractos()
+                a.intreflps0a100()
+                gens = a.ps3
+                gene = a.ps3eng
+                gene2 = a.ps3she
+                gene3 = a.ps3it
+            case 3:
+                let p = People()
+                p.intreflps0a100()
+                gens = p.ps3
+                gene = p.ps3eng
+                gene2 = p.ps3she
+                gene3 = p.ps3it
+            default:
+                break
+            }
+        case "ella ":
+            switch verb {
+            case 0:
+                let n = Nobles()
+                n.intreflps0a100()
+                gens = n.ps3ella
+                gene = n.ps3she
+                gene2 = n.ps3eng
+                gene3 = n.ps3it
+            case 1:
+                let o = Oo()
+                o.intreflps0a100()
+                gens = o.ps3ella
+                gene = o.ps3she
+                gene2 = o.ps3eng
+                gene3 = o.ps3it
+            case 2:
+                let a = Abstractos()
+                a.intreflps0a100()
+                gens = a.ps3ella
+                gene = a.ps3she
+                gene2 = a.ps3eng
+                gene3 = a.ps3it
+            case 3:
+                let p = People()
+                p.intreflps0a100()
+                gens = p.ps3ella
+                gene = p.ps3she
+                gene2 = p.ps3eng
+                gene3 = p.ps3it
+            default:
+                break
+            }
+        case "eso ":
+            switch verb {
+            case 0:
+                let n = Nobles()
+                n.intreflps0a100()
+                gens = n.ps3eso
+                gene = n.ps3it
+                gene2 = n.ps3eng
+                gene3 = n.ps3she
+            case 1:
+                let o = Oo()
+                o.intreflps0a100()
+                gens = o.ps3eso
+                gene = o.ps3it
+                gene2 = o.ps3eng
+                gene3 = o.ps3she
+            case 2:
+                let a = Abstractos()
+                a.intreflps0a100()
+                gens = a.ps3eso
+                gene = a.ps3it
+                gene2 = a.ps3eng
+                gene3 = a.ps3she
+            case 3:
+                let p = People()
+                p.intreflps0a100()
+                gens = p.ps3eso
+                gene = p.ps3it
+                gene2 = p.ps3eng
+                gene3 = p.ps3she
+            default:
+                break
+            }
+        case "ellos ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intreflps0a100()
+                gens = p.ps4
+                gene = p.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intreflps0a100()
+                gens = po.ps4
+                gene = po.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intreflps0a100()
+                gens = a.ps4
+                gene = a.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intreflps0a100()
+                gens = pe.ps4
+                gene = pe.ps4eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        case "nosotros ":
+            switch verb {
+            case 0:
+                let p = Nobles()
+                p.intreflps0a100()
+                gens = p.ps5
+                gene = p.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            case 1:
+                let po = Oo()
+                po.intreflps0a100()
+                gens = po.ps5
+                gene = po.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            case 2:
+                let a = Abstractos()
+                a.intreflps0a100()
+                gens = a.ps5
+                gene = a.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            case 3:
+                let pe = People()
+                pe.intreflps0a100()
+                gens = pe.ps5
+                gene = pe.ps5eng
+                gene2 = "null"
+                gene3 = "null"
+            default:
+                break
+            }
+        default:
+            break
+        }
+    }
+    
+    func GenIntPorPasiva() {
+        let verb = Int.random(in: 0..<4)
+        
+        switch verb {
+        case 0:
+            let p = Nobles()
+            p.intporpasiva0a100()
+            gens = p.ps3
+            gene = p.ps3eng
+            gene2 = p.ps3she
+            gene3 = p.ps3it
+            gene4 = p.ps4eng
+            gene5 = p.ps5eng
+            gene6 = p.ps1eng
+        case 1:
+            let po = Oo()
+            po.intporpasiva0a100()
+            gens = po.ps3
+            gene = po.ps3eng
+            gene2 = po.ps3she
+            gene3 = po.ps3it
+            gene4 = po.ps4eng
+            gene5 = po.ps5eng
+            gene6 = po.ps1eng
+        case 2:
+            let a = Abstractos()
+            a.intporpasiva0a100()
+            gens = a.ps3
+            gene = a.ps3eng
+            gene2 = a.ps3she
+            gene3 = a.ps3it
+            gene4 = a.ps4eng
+            gene5 = a.ps5eng
+            gene6 = a.ps1eng
+        case 3:
+            let pe = People()
+            pe.intporpasiva0a100()
+            gens = pe.ps3
+            gene = pe.ps3eng
+            gene2 = pe.ps3she
+            gene3 = pe.ps3it
+            gene4 = pe.ps4eng
+            gene5 = pe.ps5eng
+            gene6 = pe.ps1eng
+        default:
+            break
+        }
+    }
+
+
+    
     func getRandomNum(min: Int, max: Int, numToAvoid: Int) -> Int {
      var randomNum: Int
 
