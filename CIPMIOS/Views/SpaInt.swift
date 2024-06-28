@@ -94,7 +94,7 @@ struct SpaInt: View {
                         .padding(.horizontal,20)
                         
                         // Usando TextInput y proporcionando la variable de estado
-                        TextInput(userInput: $userInput, StatusColor: $StatusColor)
+//                        TextInput(userInput: $userInput, StatusColor: $StatusColor)
                     }
                     .padding(.bottom,20)
                 }

@@ -106,7 +106,7 @@ struct ListeningDif: View {
                                 .font(.system(size: 27))
                                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                             // Usando TextInput y proporcionando la variable de estado
-                            TextInput(userInput: $userInput, StatusColor: $StatusColor)
+//                            TextInput(userInput: $userInput, StatusColor: $StatusColor)
                         }
                         .padding(.top,20)
                         .padding(.horizontal,20)

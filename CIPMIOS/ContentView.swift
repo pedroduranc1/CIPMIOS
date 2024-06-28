@@ -22,6 +22,13 @@ struct ContentView: View {
             BottomNav(IndexSeleccionado: $IndexSeleccionado)
             
         }
+        .onAppear {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                windowScene.windows.forEach { window in
+                    window.overrideUserInterfaceStyle = .light
+                }
+            }
+        }
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }

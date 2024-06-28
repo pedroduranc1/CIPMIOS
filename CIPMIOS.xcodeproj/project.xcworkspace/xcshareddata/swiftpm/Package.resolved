@@ -1,5 +1,5 @@
 {
-  "originHash" : "d0ceb6d7ebac43ee32f76fff75c59442405a18012381b86d96681ae5b0f2a686",
+  "originHash" : "2c59e1e88ebabc903e0dfe6730de452ffb17757281f717672a5dfdb8a08b3e81",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -116,6 +116,15 @@
       "state" : {
         "revision" : "65e8f29b2d63c4e38e736b25c27b83e012159be8",
         "version" : "1.25.2"
+      }
+    },
+    {
+      "identity" : "swiftspeech",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Cay-Zhang/SwiftSpeech",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6e41f289f5ccc1751ef5674972d46b48b326c4c6"
       }
     },
     {

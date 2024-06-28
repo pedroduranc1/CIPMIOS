@@ -1127,3 +1127,14 @@ func SpaIntGen(selectedOption: String?, selectedRango: String?, TxtEng: inout St
         break;
     }
 }
+
+func getColorForStatus(StatusColor:String) -> Color {
+    switch StatusColor {
+    case "success":
+        return .green
+    case "error":
+        return .red
+    default:
+        return .clear
+    }
+}

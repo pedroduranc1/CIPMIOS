@@ -86,10 +86,12 @@
 		C1331E9B2C0E5D4500329281 /* LessonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1331E9A2C0E5D4500329281 /* LessonTypes.swift */; };
 		C15815002BA09ECF008883E1 /* SpeakingDificil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */; };
 		C15B43E82BA36B6500D90883 /* ListeningDif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B43E72BA36B6500D90883 /* ListeningDif.swift */; };
+		C162EFBD2C2DB17000250D55 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162EFBC2C2DB17000250D55 /* KeyboardObserver.swift */; };
 		C16989332C18AB7D0059CE23 /* SpaInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16989322C18AB7D0059CE23 /* SpaInt.swift */; };
 		C176FB8D2C0E451800487F3B /* TopNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176FB8C2C0E451800487F3B /* TopNav.swift */; };
 		C176FB8F2C0E47A500487F3B /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176FB8E2C0E47A500487F3B /* Lessons.swift */; };
 		C183539B2BA9DE8100CBE367 /* RachelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183539A2BA9DE8100CBE367 /* RachelTypes.swift */; };
+		C1CD12532C2B04DF004D9DC4 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = C1CD12522C2B04DF004D9DC4 /* SwiftSpeech */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +187,7 @@
 		C1331E9A2C0E5D4500329281 /* LessonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTypes.swift; sourceTree = "<group>"; };
 		C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakingDificil.swift; sourceTree = "<group>"; };
 		C15B43E72BA36B6500D90883 /* ListeningDif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningDif.swift; sourceTree = "<group>"; };
+		C162EFBC2C2DB17000250D55 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		C16989322C18AB7D0059CE23 /* SpaInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaInt.swift; sourceTree = "<group>"; };
 		C176FB8C2C0E451800487F3B /* TopNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNav.swift; sourceTree = "<group>"; };
 		C176FB8E2C0E47A500487F3B /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CD12532C2B04DF004D9DC4 /* SwiftSpeech in Frameworks */,
 				44F620FE2B727FDB00CAD21C /* URLImageStore in Frameworks */,
 				44CBBAE02B71271600C0F321 /* FirebaseAuth in Frameworks */,
 				44CBBAE22B71271600C0F321 /* FirebaseFirestore in Frameworks */,
@@ -238,6 +242,7 @@
 				4460C6B22B224F9A002F981E /* VideoUrlHandler.swift */,
 				44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */,
 				4485CB2C2B31E96400AE02FB /* Funcs_Vocab.swift */,
+				C162EFBC2C2DB17000250D55 /* KeyboardObserver.swift */,
 			);
 			path = func;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 				44F620FD2B727FDB00CAD21C /* URLImageStore */,
 				449E854F2B9F54FE00CD8E1B /* FirebaseFirestoreCombine-Community */,
 				449E85512B9F54FE00CD8E1B /* FirebaseFirestoreSwift */,
+				C1CD12522C2B04DF004D9DC4 /* SwiftSpeech */,
 			);
 			productName = CIPMIOS;
 			productReference = 444E80212B1E3D1B004AC6BF /* CIPMIOS.app */;
@@ -520,6 +526,7 @@
 			packageReferences = (
 				44CBBADE2B7123F700C0F321 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				44F620FA2B727FDB00CAD21C /* XCRemoteSwiftPackageReference "url-image" */,
+				C1CD12512C2B04DF004D9DC4 /* XCRemoteSwiftPackageReference "SwiftSpeech" */,
 			);
 			productRefGroup = 444E80222B1E3D1B004AC6BF /* Products */;
 			projectDirPath = "";
@@ -601,6 +608,7 @@
 				444E80562B1E3FBA004AC6BF /* NotchSpacing.swift in Sources */,
 				444E80622B1E59B6004AC6BF /* Test.swift in Sources */,
 				4475F8C82B23908000307D02 /* TextInput.swift in Sources */,
+				C162EFBD2C2DB17000250D55 /* KeyboardObserver.swift in Sources */,
 				C10FC59C2C174EFD0011F827 /* Toefl.swift in Sources */,
 				444E80272B1E3D1B004AC6BF /* ContentView.swift in Sources */,
 				4475F8BE2B2380CD00307D02 /* Pasts.swift in Sources */,
@@ -794,14 +802,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CIPMIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 29C7X7MWFB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CIPMIOS/Info.plist;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Necesitamos acceso al micrófono para grabar audio.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Tu aplicacion necesita permisos para poder funcionar";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -815,6 +825,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CIPM.CIPMIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -826,14 +837,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CIPMIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 29C7X7MWFB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CIPMIOS/Info.plist;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Necesitamos acceso al micrófono para grabar audio.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Tu aplicacion necesita permisos para poder funcionar";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -847,6 +860,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CIPM.CIPMIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -983,6 +997,14 @@
 				minimumVersion = 3.1.1;
 			};
 		};
+		C1CD12512C2B04DF004D9DC4 /* XCRemoteSwiftPackageReference "SwiftSpeech" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Cay-Zhang/SwiftSpeech";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1020,6 +1042,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 44F620FA2B727FDB00CAD21C /* XCRemoteSwiftPackageReference "url-image" */;
 			productName = URLImageStore;
+		};
+		C1CD12522C2B04DF004D9DC4 /* SwiftSpeech */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1CD12512C2B04DF004D9DC4 /* XCRemoteSwiftPackageReference "SwiftSpeech" */;
+			productName = SwiftSpeech;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
