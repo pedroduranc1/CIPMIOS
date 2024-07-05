@@ -79,6 +79,10 @@
 		44F7D5042B1F9E3200EAAC8B /* SeparadorPequeno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7D5032B1F9E3200EAAC8B /* SeparadorPequeno.swift */; };
 		44FC34E62B3C9EEA008982DF /* C200a250.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC34E52B3C9EEA008982DF /* C200a250.swift */; };
 		44FC34E82B3C9EF2008982DF /* C250a300.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC34E72B3C9EF2008982DF /* C250a300.swift */; };
+		C106F1AC2C359C40003F41E5 /* LearnStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C106F1AB2C359C40003F41E5 /* LearnStruct.swift */; };
+		C106F1AE2C359C97003F41E5 /* LearnStrucData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C106F1AD2C359C97003F41E5 /* LearnStrucData.swift */; };
+		C106F1B02C359E55003F41E5 /* LearnStrucTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C106F1AF2C359E55003F41E5 /* LearnStrucTypes.swift */; };
+		C106F1B22C35A12E003F41E5 /* LearnStrucCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C106F1B12C35A12E003F41E5 /* LearnStrucCard.swift */; };
 		C10FC59C2C174EFD0011F827 /* Toefl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10FC59B2C174EFD0011F827 /* Toefl.swift */; };
 		C10FC59E2C174FB80011F827 /* PlanPerzonalizado.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10FC59D2C174FB80011F827 /* PlanPerzonalizado.swift */; };
 		C10FC5A02C17521C0011F827 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10FC59F2C17521C0011F827 /* GlobalData.swift */; };
@@ -91,6 +95,7 @@
 		C176FB8D2C0E451800487F3B /* TopNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176FB8C2C0E451800487F3B /* TopNav.swift */; };
 		C176FB8F2C0E47A500487F3B /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176FB8E2C0E47A500487F3B /* Lessons.swift */; };
 		C183539B2BA9DE8100CBE367 /* RachelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183539A2BA9DE8100CBE367 /* RachelTypes.swift */; };
+		C18CA23B2C36F49A00309ACF /* LearnStrucFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CA23A2C36F49A00309ACF /* LearnStrucFuncs.swift */; };
 		C1CD12532C2B04DF004D9DC4 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = C1CD12522C2B04DF004D9DC4 /* SwiftSpeech */; };
 /* End PBXBuildFile section */
 
@@ -180,6 +185,10 @@
 		44F7D5032B1F9E3200EAAC8B /* SeparadorPequeno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparadorPequeno.swift; sourceTree = "<group>"; };
 		44FC34E52B3C9EEA008982DF /* C200a250.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C200a250.swift; sourceTree = "<group>"; };
 		44FC34E72B3C9EF2008982DF /* C250a300.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C250a300.swift; sourceTree = "<group>"; };
+		C106F1AB2C359C40003F41E5 /* LearnStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnStruct.swift; sourceTree = "<group>"; };
+		C106F1AD2C359C97003F41E5 /* LearnStrucData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnStrucData.swift; sourceTree = "<group>"; };
+		C106F1AF2C359E55003F41E5 /* LearnStrucTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnStrucTypes.swift; sourceTree = "<group>"; };
+		C106F1B12C35A12E003F41E5 /* LearnStrucCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnStrucCard.swift; sourceTree = "<group>"; };
 		C10FC59B2C174EFD0011F827 /* Toefl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toefl.swift; sourceTree = "<group>"; };
 		C10FC59D2C174FB80011F827 /* PlanPerzonalizado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPerzonalizado.swift; sourceTree = "<group>"; };
 		C10FC59F2C17521C0011F827 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
@@ -192,6 +201,7 @@
 		C176FB8C2C0E451800487F3B /* TopNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNav.swift; sourceTree = "<group>"; };
 		C176FB8E2C0E47A500487F3B /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		C183539A2BA9DE8100CBE367 /* RachelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachelTypes.swift; sourceTree = "<group>"; };
+		C18CA23A2C36F49A00309ACF /* LearnStrucFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnStrucFuncs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +253,7 @@
 				44476F8C2B28AFF300D57C6C /* Funcs_Estruc.swift */,
 				4485CB2C2B31E96400AE02FB /* Funcs_Vocab.swift */,
 				C162EFBC2C2DB17000250D55 /* KeyboardObserver.swift */,
+				C18CA23A2C36F49A00309ACF /* LearnStrucFuncs.swift */,
 			);
 			path = func;
 			sourceTree = "<group>";
@@ -336,6 +347,7 @@
 				C10FC59B2C174EFD0011F827 /* Toefl.swift */,
 				C10FC59D2C174FB80011F827 /* PlanPerzonalizado.swift */,
 				C16989322C18AB7D0059CE23 /* SpaInt.swift */,
+				C106F1AB2C359C40003F41E5 /* LearnStruct.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +374,7 @@
 				448260642B921E640065110D /* ToastCustom.swift */,
 				C176FB8C2C0E451800487F3B /* TopNav.swift */,
 				C1331E982C0E5C2C00329281 /* LessonCard.swift */,
+				C106F1B12C35A12E003F41E5 /* LearnStrucCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -409,6 +422,7 @@
 				44CBBAE82B712F9000C0F321 /* UserManager.swift */,
 				44F620FF2B7283E000CAD21C /* AuthManager.swift */,
 				C10FC59F2C17521C0011F827 /* GlobalData.swift */,
+				C106F1AD2C359C97003F41E5 /* LearnStrucData.swift */,
 			);
 			path = Db;
 			sourceTree = "<group>";
@@ -421,6 +435,7 @@
 				44ADD0CA2B97688900383991 /* ListeningTypes.swift */,
 				C183539A2BA9DE8100CBE367 /* RachelTypes.swift */,
 				C1331E9A2C0E5D4500329281 /* LessonTypes.swift */,
+				C106F1AF2C359E55003F41E5 /* LearnStrucTypes.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -577,6 +592,7 @@
 				444E80662B1E5A7D004AC6BF /* Chat.swift in Sources */,
 				444E80682B1E5AAB004AC6BF /* Perfil.swift in Sources */,
 				4485CB2D2B31E96400AE02FB /* Funcs_Vocab.swift in Sources */,
+				C106F1B02C359E55003F41E5 /* LearnStrucTypes.swift in Sources */,
 				44AF79192B2CAA7100D732A0 /* Vocab.swift in Sources */,
 				44CBBAE92B712F9000C0F321 /* UserManager.swift in Sources */,
 				44B279982B8E2E1900EE23DB /* CultureVideoView.swift in Sources */,
@@ -592,6 +608,7 @@
 				C183539B2BA9DE8100CBE367 /* RachelTypes.swift in Sources */,
 				4475F8C62B23817800307D02 /* People.swift in Sources */,
 				4475F8BA2B23807B00307D02 /* Nobles.swift in Sources */,
+				C18CA23B2C36F49A00309ACF /* LearnStrucFuncs.swift in Sources */,
 				440F49012B73DD880082CE34 /* AuthRoutes.swift in Sources */,
 				444E805A2B1E43EC004AC6BF /* Separador.swift in Sources */,
 				4475F8C42B23814400307D02 /* Special.swift in Sources */,
@@ -603,6 +620,7 @@
 				C176FB8D2C0E451800487F3B /* TopNav.swift in Sources */,
 				449778E02B3094F3006A6082 /* ToastManager.swift in Sources */,
 				4445EA772B84F4FF00C65685 /* CultureTypes.swift in Sources */,
+				C106F1B22C35A12E003F41E5 /* LearnStrucCard.swift in Sources */,
 				447314762B83A138008646CB /* SpeechView.swift in Sources */,
 				444E80542B1E3F97004AC6BF /* Routes.swift in Sources */,
 				444E80562B1E3FBA004AC6BF /* NotchSpacing.swift in Sources */,
@@ -636,8 +654,10 @@
 				44476F8D2B28AFF300D57C6C /* Funcs_Estruc.swift in Sources */,
 				44FC34E82B3C9EF2008982DF /* C250a300.swift in Sources */,
 				444E80252B1E3D1B004AC6BF /* CIPMIOSApp.swift in Sources */,
+				C106F1AE2C359C97003F41E5 /* LearnStrucData.swift in Sources */,
 				4475F8B52B237DD500307D02 /* Generator.swift in Sources */,
 				C10FC59E2C174FB80011F827 /* PlanPerzonalizado.swift in Sources */,
+				C106F1AC2C359C40003F41E5 /* LearnStruct.swift in Sources */,
 				44ADD0CB2B97688900383991 /* ListeningTypes.swift in Sources */,
 				44CBBAEC2B71359100C0F321 /* UserTypes.swift in Sources */,
 				C15815002BA09ECF008883E1 /* SpeakingDificil.swift in Sources */,

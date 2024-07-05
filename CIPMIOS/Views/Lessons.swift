@@ -12,6 +12,7 @@ struct LessonsView: View {
     
     let lessons: [LessonTypes] = [
         LessonTypes(title: "Aprende a usar las palabras mas básicas de una oración", subtitle: "Function Words", description: "adescription: prende a usar las palabras mas frequentes y funcionales del inglés,relacionan ideas dentro de la oración", lessonNumber: "Lesson 1", level: "Nivel: el Muy Basico"),
+        
         LessonTypes(title: "Responde a la pregunta: Que pasa?", subtitle: "Present Simple", description: "Aprende a hablar de habitos y rutinas en inglés", lessonNumber: "Lesson 2", level: "Nivel Basico"),
         LessonTypes(title: "Que está pasando?", subtitle: "Present Continuous", description: "Aprende a hablar de cosas que estan sucediendo ahora mismo", lessonNumber: "Lesson 3", level: "Nivel Basico"),
         LessonTypes(title: "Que ha pasado?", subtitle: "Present Perfect", description: "Aprende a hablar de cosas que sucedieron en pasado pero que aún tienen relevancia en el presente", lessonNumber: "Lesson 4", level: "Nivel Basico"),

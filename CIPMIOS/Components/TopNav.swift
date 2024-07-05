@@ -13,7 +13,7 @@ struct TopNav: View {
     
     let opciones: [(nombre: String, icono: String, indice: Int, page: Int)] = [
            ("Clases de 5 Minutos", "tv.badge.wifi.fill", 11, 11),
-           ("Aprende a Estructurar", "brain.head.profile", 99, 99),//2,2
+           ("Aprende a Estructurar", "brain.head.profile", 15, 15),//2,2
            ("Aprende una palabra", "plus", 3, 3),
            ("Aprende a Conectar", "link", 4, 4),
            ("Para ya no pensar en español", "head.profile.arrow.forward.and.visionpro", 14, 14),
