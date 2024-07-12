@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct LearnWord: View {
+    let WORD_DATA : [LearnWordTypes] = LearnWordArray
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            VStack{
+                ForEach(Array(WORD_DATA.enumerated()), id: \.element.id) { index, lesson in
+                    LearnWordCard(LearnWord: lesson, index: index)
+                        .padding(.bottom, 16)
+                        .padding(.top,10)
+                    
+                }
+                .padding(.horizontal)
+            }
+        }
     }
 }
 

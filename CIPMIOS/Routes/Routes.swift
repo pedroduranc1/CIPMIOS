@@ -56,6 +56,9 @@ struct Routes: View {
             case 15:
                 //APRENDER A ESTRUCTURAR
                 LearnStruct(IndexSeleccionado: $IndexSeleccionado)
+            case 16:
+                //Aprende una palabra
+                LearnWord()
             case 99:
                 //VIEW DE PRUEBAS
                 SpeechView()

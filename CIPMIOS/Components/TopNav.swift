@@ -14,7 +14,7 @@ struct TopNav: View {
     let opciones: [(nombre: String, icono: String, indice: Int, page: Int)] = [
            ("Clases de 5 Minutos", "tv.badge.wifi.fill", 11, 11),
            ("Aprende a Estructurar", "brain.head.profile", 15, 15),//2,2
-           ("Aprende una palabra", "plus", 3, 3),
+           ("Aprende una palabra", "plus", 16, 16),
            ("Aprende a Conectar", "link", 4, 4),
            ("Para ya no pensar en español", "head.profile.arrow.forward.and.visionpro", 14, 14),
            ("Para Recordar Vocab", "books.vertical.fill", 7, 7),
@@ -25,7 +25,7 @@ struct TopNav: View {
            ("Estructuras Conectadas Dificil", "arrow.up.left.and.down.right.and.arrow.up.right.and.down.left", 9, 9)
        ]
     
-    let validNames: Set<String> = ["Clases de 5 Minutos", "Para Recordar Vocab", "Aprende una frase Cultural", "Mejora tu listening", "Videos de Estructura", "Videos de Vocab", "Estructuras Conectadas Dificil","Para ya no pensar en español","Aprende a Estructurar"]
+    let validNames: Set<String> = ["Clases de 5 Minutos", "Para Recordar Vocab", "Aprende una frase Cultural", "Mejora tu listening", "Videos de Estructura", "Videos de Vocab", "Estructuras Conectadas Dificil","Para ya no pensar en español","Aprende a Estructurar","Aprende una palabra"]
     
     var body: some View {
         VStack {

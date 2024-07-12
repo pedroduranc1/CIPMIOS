@@ -70,6 +70,9 @@ struct LearnStrucCard: View {
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .clipShape(Circle())
+                        .onChange(of: userInput) { newValue in
+                            checkAnswer()
+                        }
                 }
             }
             
@@ -87,16 +90,7 @@ struct LearnStrucCard: View {
             }
             
             HStack{
-                VStack{
-                    Text("EJEMPLOS")
-                        .padding(.vertical,15)
-                        .padding(.horizontal,10)
-                }
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                .background(BtnEjemplo ? Color("azul") : Color("blanco"))
-                .cornerRadius(8)
-                .border(BtnEjemplo ? Color("blanco") : Color.blue , width: 1.5)
-                .foregroundColor(BtnEjemplo ? Color("blanco") : Color("azul"))
+                btnCard(Title: "EJEMPLOS", IsSelected: BtnEjemplo)
                 .onTapGesture {
                     BtnEjemplo = true
                     BtnPracticar = false
@@ -104,53 +98,24 @@ struct LearnStrucCard: View {
                     
                     ActivarGeneradorMedianteOpcion(LearnStruc.title, in: Generator(), TxtEng: &TxtEng, TxtSpa: &TxtSpa)
                 }
-                .bold()
-                .clipShape(RoundedRectangle(cornerRadius: 5))
                 
-                VStack{
-                    Text("PRACTICAR")
-                        .padding(.vertical,15)
-                        .padding(.horizontal,10)
-                }
-                .frame(maxWidth: .infinity)
-                .background(BtnPracticar ? Color("azul") : Color("blanco"))
-                .cornerRadius(8)
-                .border(BtnPracticar ? Color("blanco") : Color.blue , width: 1.5)
-                .foregroundColor(BtnPracticar ? Color("blanco") : Color("azul"))
+                btnCard(Title: "PRACTICAR", IsSelected: BtnPracticar)
                 .onTapGesture {
                     BtnEjemplo = false
                     BtnPracticar = true
                     BtnExplicacion = false
-                    
-                    ActivarGeneradorMedianteOpcion(LearnStruc.title, in: Generator(), TxtEng: &TxtEng, TxtSpa: &TxtSpa)
-                    speak(text: "Como dirias? : \(TxtSpa)", lang: "es-ES")
-                    
+                    practice()
                 }
-                .bold()
-                .clipShape(RoundedRectangle(cornerRadius: 5))
                 
-                VStack{
-                    Text("EXPLICACION")
-                        .font(.footnote)
-                        .padding(.vertical,17)
-                        .padding(.horizontal,10)
-                }
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                .background(BtnExplicacion ? Color("azul") : Color("blanco"))
-                .cornerRadius(8)
-                .border(BtnExplicacion ? Color("blanco") : Color.blue , width: 1.5)
-                .foregroundColor(BtnExplicacion ? Color("blanco") : Color("azul"))
+                //
+                btnCard(Title: "EXPLICACION", IsSelected: BtnExplicacion)
                 .onTapGesture {
                     BtnEjemplo = false
                     BtnPracticar = false
                     BtnExplicacion = true
                 }
-                .bold()
-                .clipShape(RoundedRectangle(cornerRadius: 5))
+                
             }
-            
-            
-            
             // Línea separadora
             Rectangle()
                 .frame(height: 1)
@@ -176,6 +141,10 @@ struct LearnStrucCard: View {
         }
     }
     
+    private func practice(){
+        ActivarGeneradorMedianteOpcion(LearnStruc.title, in: Generator(), TxtEng: &TxtEng, TxtSpa: &TxtSpa)
+        speak(text: "Como dirias? : \(TxtSpa)", lang: "es-ES")
+    }
     
     private func configureAudioSession() {
         let audioSession = AVAudioSession.sharedInstance()
@@ -201,6 +170,40 @@ struct LearnStrucCard: View {
         utterance.pitchMultiplier = 1.0  // Ajusta el tono según tus necesidades
         
         synthesizer.speak(utterance)
+    }
+    
+    private func checkAnswer() {
+        let correctAnswer = TxtEng.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        let userAnswer = userInput.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        
+        if correctAnswer == userAnswer {
+            speak(text: "Correcto", lang: "es-ES")
+            practice()
+            // Aquí puedes agregar una acción adicional, como mostrar una alerta o cambiar el color del texto
+        } else {
+            speak(text: "Incorrecto", lang: "es-ES")
+            // Aquí puedes agregar una acción adicional, como mostrar una alerta o cambiar el color del texto
+        }
+    }
+    
+    private struct btnCard: View {
+        var Title : String
+        var IsSelected: Bool
+        var body: some View {
+            VStack{
+                Text(Title)
+                    .font(.footnote)
+                    .padding(.vertical,17)
+                    .padding(.horizontal,10)
+            }
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+            .background(IsSelected ? Color("azul") : Color("blanco"))
+            .cornerRadius(8)
+            .border(IsSelected ? Color("blanco") : Color.blue , width: 1.5)
+            .foregroundColor(IsSelected ? Color("blanco") : Color("azul"))
+            .bold()
+            .clipShape(RoundedRectangle(cornerRadius: 5))
+        }
     }
 }
 

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct LearnWordTypes {
+    let id = UUID()
+    var word: String
+    var definition: String
+    var explanation: String
+}

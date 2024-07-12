@@ -63,52 +63,148 @@ func ActivarGeneradorMedianteOpcion(_ functionName: String, in object: Generator
         TxtSpa = gen.gens
         break
     case "Future Simple":
+        gen.GenFutSimp2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Future Continuous":
+        gen.GenFutCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Future Perfect":
+        gen.GenFutPerf2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Future Perfect Continuous":
+        gen.GenFutPerfCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Would Simple":
+        gen.GenWouldSimp2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Would Continuous":
+        gen.GenWouldCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Would Perfect":
+        gen.GenWouldPerf2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Would Perfect Continuous":
+        gen.GenWouldPerfCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Could Simple":
+        gen.GenCouldSimp2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Could Continuous":
+        gen.GenCouldCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Could Perfect":
+        gen.GenCouldPerf2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Could Perfect Continuous":
+        gen.GenCouldPerfCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Should Simple":
+        gen.GenShouldSimp2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Should Continuous":
+        gen.GenShouldCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Should Perfect":
+        gen.GenShouldPerf2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Should Perfect Continuous":
+        gen.GenShouldPerfCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Might Simple":
+        gen.GenMightSimp2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Might Continuous":
+        gen.GenMightCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Might Perfect":
+        gen.GenMightPerf2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Might Perfect Continuous":
+        gen.GenMightPerfCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Can Simple":
+        gen.GenCanSimp2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Can Continuous":
+        gen.GenCanCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Must Simple":
+        gen.GenMustSimp2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Must Continuous":
+        gen.GenMustCont2()
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
         break
     case "Present Simple Passive":
         break
