@@ -26,6 +26,8 @@ struct LearnStrucCard: View {
     
     var LearnStruc: LearnStrucTypes
     
+    var index: Int
+    
     
     var body: some View {
         VStack(spacing: 16) {
@@ -34,7 +36,7 @@ struct LearnStrucCard: View {
                 Circle()
                     .stroke(lineWidth: 2)
                     .frame(width: 120, height: 100)
-                Text("Structure \(LearnStruc.lessonNumber)")
+                Text("Structure \(index + 1)")
                     .foregroundColor(.blue)
             }
             

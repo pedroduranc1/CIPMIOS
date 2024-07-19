@@ -96,6 +96,11 @@
 		C176FB8F2C0E47A500487F3B /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C176FB8E2C0E47A500487F3B /* Lessons.swift */; };
 		C183539B2BA9DE8100CBE367 /* RachelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C183539A2BA9DE8100CBE367 /* RachelTypes.swift */; };
 		C18CA23B2C36F49A00309ACF /* LearnStrucFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CA23A2C36F49A00309ACF /* LearnStrucFuncs.swift */; };
+		C192A59D2C456CBD005DD008 /* 0TO50.swift in Sources */ = {isa = PBXBuildFile; fileRef = C192A59C2C456CBD005DD008 /* 0TO50.swift */; };
+		C192A59F2C4575A4005DD008 /* NewNounClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C192A59E2C4575A4005DD008 /* NewNounClass.swift */; };
+		C192A5A12C457660005DD008 /* NewVerbClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C192A5A02C457660005DD008 /* NewVerbClass.swift */; };
+		C195A8D02C4AC064005E48C3 /* LessonsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C195A8CF2C4AC064005E48C3 /* LessonsData.swift */; };
+		C195A8D22C4AC3FD005E48C3 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C195A8D12C4AC3FD005E48C3 /* SplashScreenView.swift */; };
 		C1CD12532C2B04DF004D9DC4 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = C1CD12522C2B04DF004D9DC4 /* SwiftSpeech */; };
 		C1FC590D2C3ECEC10040D5EF /* LearnWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FC590C2C3ECEC10040D5EF /* LearnWord.swift */; };
 		C1FC590F2C3ECF2A0040D5EF /* LearnWordFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FC590E2C3ECF2A0040D5EF /* LearnWordFuncs.swift */; };
@@ -207,6 +212,11 @@
 		C176FB8E2C0E47A500487F3B /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		C183539A2BA9DE8100CBE367 /* RachelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachelTypes.swift; sourceTree = "<group>"; };
 		C18CA23A2C36F49A00309ACF /* LearnStrucFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnStrucFuncs.swift; sourceTree = "<group>"; };
+		C192A59C2C456CBD005DD008 /* 0TO50.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 0TO50.swift; sourceTree = "<group>"; };
+		C192A59E2C4575A4005DD008 /* NewNounClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNounClass.swift; sourceTree = "<group>"; };
+		C192A5A02C457660005DD008 /* NewVerbClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVerbClass.swift; sourceTree = "<group>"; };
+		C195A8CF2C4AC064005E48C3 /* LessonsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsData.swift; sourceTree = "<group>"; };
+		C195A8D12C4AC3FD005E48C3 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		C1FC590C2C3ECEC10040D5EF /* LearnWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWord.swift; sourceTree = "<group>"; };
 		C1FC590E2C3ECF2A0040D5EF /* LearnWordFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordFuncs.swift; sourceTree = "<group>"; };
 		C1FC59102C3ECF450040D5EF /* LearnWordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnWordData.swift; sourceTree = "<group>"; };
@@ -252,6 +262,9 @@
 			children = (
 				4475F8B42B237DD500307D02 /* Generator.swift */,
 				4485CB272B31D53F00AE02FB /* Vocabgen.swift */,
+				C192A59C2C456CBD005DD008 /* 0TO50.swift */,
+				C192A59E2C4575A4005DD008 /* NewNounClass.swift */,
+				C192A5A02C457660005DD008 /* NewVerbClass.swift */,
 			);
 			path = Generador;
 			sourceTree = "<group>";
@@ -355,6 +368,7 @@
 				C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */,
 				C15B43E72BA36B6500D90883 /* ListeningDif.swift */,
 				C176FB8E2C0E47A500487F3B /* Lessons.swift */,
+				C195A8CF2C4AC064005E48C3 /* LessonsData.swift */,
 				C10FC59B2C174EFD0011F827 /* Toefl.swift */,
 				C10FC59D2C174FB80011F827 /* PlanPerzonalizado.swift */,
 				C16989322C18AB7D0059CE23 /* SpaInt.swift */,
@@ -388,6 +402,7 @@
 				C1331E982C0E5C2C00329281 /* LessonCard.swift */,
 				C106F1B12C35A12E003F41E5 /* LearnStrucCard.swift */,
 				C1FC59142C3ED1C60040D5EF /* LearnWordCard.swift */,
+				C195A8D12C4AC3FD005E48C3 /* SplashScreenView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -605,6 +620,7 @@
 				44F7D5022B1F9DC500EAAC8B /* BtnEmpezar.swift in Sources */,
 				44584E832B332C2D00401894 /* C50a100.swift in Sources */,
 				444E80662B1E5A7D004AC6BF /* Chat.swift in Sources */,
+				C192A59F2C4575A4005DD008 /* NewNounClass.swift in Sources */,
 				444E80682B1E5AAB004AC6BF /* Perfil.swift in Sources */,
 				4485CB2D2B31E96400AE02FB /* Funcs_Vocab.swift in Sources */,
 				C106F1B02C359E55003F41E5 /* LearnStrucTypes.swift in Sources */,
@@ -616,6 +632,7 @@
 				C15B43E82BA36B6500D90883 /* ListeningDif.swift in Sources */,
 				440F48FF2B73DD170082CE34 /* Registro.swift in Sources */,
 				444E80502B1E3D69004AC6BF /* Main.swift in Sources */,
+				C192A5A12C457660005DD008 /* NewVerbClass.swift in Sources */,
 				4485CB282B31D53F00AE02FB /* Vocabgen.swift in Sources */,
 				4443DBDC2B83A6FC002386E8 /* Listening.swift in Sources */,
 				444E80602B1E593D004AC6BF /* SpeakingFacil.swift in Sources */,
@@ -650,12 +667,14 @@
 				4485CB2B2B31D71F00AE02FB /* C0a50.swift in Sources */,
 				4477A6D52B3480FA003A2475 /* C150a200.swift in Sources */,
 				44F6B0392B961286006FC9B6 /* LecturaView.swift in Sources */,
+				C195A8D22C4AC3FD005E48C3 /* SplashScreenView.swift in Sources */,
 				4475F8C02B2380F800307D02 /* Arrays.swift in Sources */,
 				44CCB4562B275C62000782E2 /* ProfileIconComp.swift in Sources */,
 				444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */,
 				44F7D5042B1F9E3200EAAC8B /* SeparadorPequeno.swift in Sources */,
 				4475F8B82B237ECD00307D02 /* Intrans.swift in Sources */,
 				C10FC5A02C17521C0011F827 /* GlobalData.swift in Sources */,
+				C195A8D02C4AC064005E48C3 /* LessonsData.swift in Sources */,
 				C176FB8F2C0E47A500487F3B /* Lessons.swift in Sources */,
 				4475F8C22B23812500307D02 /* Abstractos.swift in Sources */,
 				44FC34E62B3C9EEA008982DF /* C200a250.swift in Sources */,
@@ -665,6 +684,7 @@
 				C1331E9B2C0E5D4500329281 /* LessonTypes.swift in Sources */,
 				444226FE2B7A6A7300881CF8 /* ResetPass.swift in Sources */,
 				44584E852B33355200401894 /* C100a150.swift in Sources */,
+				C192A59D2C456CBD005DD008 /* 0TO50.swift in Sources */,
 				444E806A2B1E5DE5004AC6BF /* HeaderNav.swift in Sources */,
 				444E80582B1E428C004AC6BF /* ButtonNormal.swift in Sources */,
 				44AF79172B2C91F100D732A0 /* PruebaView.swift in Sources */,

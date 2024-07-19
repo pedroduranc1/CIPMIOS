@@ -11,6 +11,7 @@ struct LessonCard: View {
     @Binding var IndexSeleccionado: Int
     @State private var showModal = false
     var lesson: LessonTypes
+    var index: Int
     
     let estructuras = ["Present Simple", "Present Continuous", "Present Perfect", "Present Perfect Continuous","Past Simple", "Past Continuous", "Past Perfect", "Past Perfect Continuous","Future Simple", "Future Continuous", "Future Perfect", "Future Perfect Continuous","Would Simple", "Would Continuous", "Would Perfect", "Would Perfect Continuous"]
     let test = ["Test"]
@@ -56,7 +57,7 @@ struct LessonCard: View {
                     Circle()
                         .stroke(lineWidth: 2)
                         .frame(width: 100, height: 100)
-                    Text(lesson.lessonNumber)
+                    Text("Lesson \(index + 1)")
                         .foregroundColor(.blue)
                 }
                 // Título principal

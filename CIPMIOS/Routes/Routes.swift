@@ -11,7 +11,6 @@ struct Routes: View {
     @Binding var IndexSeleccionado: Int
     var body: some View {
         VStack{
-            
             switch IndexSeleccionado {
             case 0:
                 Main(IndexSeleccionado: $IndexSeleccionado)

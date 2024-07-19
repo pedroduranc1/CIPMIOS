@@ -88,29 +88,29 @@ struct LearnWordCard: View {
             
             HStack{
                 btnCard(Title: "EJEMPLOS", IsSelected: BtnEjemplo)
-                .onTapGesture {
-                    BtnEjemplo = true
-                    BtnPracticar = false
-                    BtnExplicacion = false
-                    
-                    //ActivarGeneradorMedianteOpcion(LearnStruc.title, in: Generator(), TxtEng: &TxtEng, TxtSpa: &TxtSpa)
-                }
+                    .onTapGesture {
+                        BtnEjemplo = true
+                        BtnPracticar = false
+                        BtnExplicacion = false
+                        
+                        ActivarPalabraVocab(LearnWord.word, TxtEng: &TxtEng, TxtSpa: &TxtSpa)
+                    }
                 
                 btnCard(Title: "PRACTICAR", IsSelected: BtnPracticar)
-                .onTapGesture {
-                    BtnEjemplo = false
-                    BtnPracticar = true
-                    BtnExplicacion = false
-                    //practice()
-                }
+                    .onTapGesture {
+                        BtnEjemplo = false
+                        BtnPracticar = true
+                        BtnExplicacion = false
+                        practice()
+                    }
                 
                 //
                 btnCard(Title: "EXPLICACION", IsSelected: BtnExplicacion)
-                .onTapGesture {
-                    BtnEjemplo = false
-                    BtnPracticar = false
-                    BtnExplicacion = true
-                }
+                    .onTapGesture {
+                        BtnEjemplo = false
+                        BtnPracticar = false
+                        BtnExplicacion = true
+                    }
                 
             }
             // Línea separadora
@@ -163,12 +163,17 @@ struct LearnWordCard: View {
         
         if correctAnswer == userAnswer {
             speak(text: "Correcto", lang: "es-ES")
-            //practice()
+            practice()
             // Aquí puedes agregar una acción adicional, como mostrar una alerta o cambiar el color del texto
         } else {
             speak(text: "Incorrecto", lang: "es-ES")
             // Aquí puedes agregar una acción adicional, como mostrar una alerta o cambiar el color del texto
         }
+    }
+    
+    private func practice(){
+        ActivarPalabraVocab(LearnWord.word, TxtEng: &TxtEng, TxtSpa: &TxtSpa)
+        speak(text: "Como dirias?: \(TxtSpa)", lang: "es-ES")
     }
     
     private struct btnCard: View {

@@ -8,6 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showSplashScreen = true
+    
+    var body: some View {
+        Group {
+            if showSplashScreen {
+                SplashScreenView()
+            } else {
+                MainView() // Reemplaza con la vista principal de tu app
+            }
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                withAnimation {
+                    showSplashScreen = false
+                }
+            }
+        }
+    }
+}
+
+struct MainView: View {
     @State var IndexSeleccionado = 11
     var body: some View {
         VStack(spacing:0){
@@ -33,6 +55,3 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
-}
