@@ -1186,6 +1186,673 @@ class NewVerbClass {
         }
     }
 
+    func genPerfectTenses(eng1: String, eng2: String, sp1: String, sp2: String, sp3: String, sp4: String, sp5: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbsParticiple.count)
+        let objRand = Int.random(in: 0..<verbObjects.count)
+        let ob2 = Int.random(in: 0..<verbObjects[objRand].count)
+        let pronoun = "I "
+
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + eng1 + verbsParticiple[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[0] + sp1 + verbsParticipleSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "You ":
+            gene = subjectsEnglish[1] + eng1 + verbsParticiple[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[1] + sp2 + verbsParticipleSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "He ":
+            gene = subjectsEnglish[2] + eng2 + verbsParticiple[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[2] + sp3 + verbsParticipleSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "She ":
+            gene = subjectsEnglish[3] + eng2 + verbsParticiple[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[3] + sp3 + verbsParticipleSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "We ":
+            gens = subjectsSpanish[4] + eng1 + verbsParticipleSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+            gene = subjectsEnglish[4] + sp4 + verbs[verbRand] + verbObjects[verbRand][ob2]
+        case "They ":
+            gene = subjectsEnglish[5] + eng1 + verbsParticiple[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[5] + sp5 + verbsParticipleSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        default:
+            break
+        }
+    }
+
+    func genContTenses(eng1: String, eng2: String, eng3: String, sp1: String, sp2: String, sp3: String, sp4: String, sp5: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbsParticiple.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + eng1 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[0] + sp1 + verbosConGerundio[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "You ":
+            gene = subjectsEnglish[1] + eng2 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[1] + sp2 + verbosConGerundio[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "He ":
+            gene = subjectsEnglish[2] + eng3 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[2] + sp3 + verbosConGerundio[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "She ":
+            gene = subjectsEnglish[3] + eng3 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[3] + sp3 + verbosConGerundio[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "We ":
+            gens = subjectsSpanish[4] + sp4 + verbosConGerundio[verbRand] + verbObjectsSpanish[verbRand][ob2]
+            gene = subjectsEnglish[4] + eng2 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+        case "They ":
+            gene = subjectsEnglish[5] + eng2 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[5] + sp5 + verbosConGerundio[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        default:
+            break
+        }
+    }
+
+    func genConj(conjunction: String, conector: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+            gens = subjectsSpanish[0] + verbsSpanishFirstPerson[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+        case "You ":
+            gene = subjectsEnglish[1] + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+            gens = subjectsSpanish[1] + verbsSpanishSecondPerson[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+        case "He ":
+            gene = subjectsEnglish[2] + verbsThirdPerson[verbRand] + verbObjects[verbRand][ob2] + conjunction
+            gens = subjectsSpanish[2] + verbsSpanishThirdPerson[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+        case "She ":
+            gene = subjectsEnglish[3] + verbsThirdPerson[verbRand] + verbObjects[verbRand][ob2] + conjunction
+            gens = subjectsSpanish[3] + verbsSpanishThirdPerson[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+        case "We ":
+            gens = subjectsSpanish[4] + verbsSpanishFirstPersonPlural[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            gene = subjectsEnglish[4] + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+        case "They ":
+            gene = subjectsEnglish[5] + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+            gens = subjectsSpanish[5] + verbsSpanishThirdPersonPlural[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+        default:
+            break
+        }
+    }
+
+    func genConjFuture(conjunction: String, conector: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+        let rand = Int.random(in: 0..<2)
+
+        if rand == 0 {
+            switch pronoun {
+            case "I ":
+                gene = subjectsEnglish[0] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[0] + verbsSpanishFirstPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "You ":
+                gene = subjectsEnglish[1] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[1] + verbsSpanishSecondPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "He ":
+                gene = subjectsEnglish[2] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[2] + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "She ":
+                gene = subjectsEnglish[3] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[3] + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "We ":
+                gens = subjectsSpanish[4] + verbsSpanishFirstPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+                gene = subjectsEnglish[4] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+            case "They ":
+                gene = subjectsEnglish[5] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[5] + verbsSpanishThirdPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            default:
+                break
+            }
+        } else {
+            switch pronoun {
+            case "I ":
+                gene = subjectsEnglish[0] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[0] + "no " + verbsSpanishFirstPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "You ":
+                gene = subjectsEnglish[1] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[1] + "no " + verbsSpanishSecondPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "He ":
+                gene = subjectsEnglish[2] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[2] + "no " + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "She ":
+                gene = subjectsEnglish[3] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[3] + "no " + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "We ":
+                gens = subjectsSpanish[4] + "no " + verbsSpanishFirstPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+                gene = subjectsEnglish[4] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+            case "They ":
+                gene = subjectsEnglish[5] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[5] + "no " + verbsSpanishThirdPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            default:
+                break
+            }
+        }
+    }
+
+    func genConjFuture2(conjunction: String, conector: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+        let rand = 0
+
+        if rand == 0 {
+            switch pronoun {
+            case "I ":
+                gene = subjectsEnglish[0] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[0] + verbsSpanishFirstPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "You ":
+                gene = subjectsEnglish[1] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[1] + verbsSpanishSecondPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "He ":
+                gene = subjectsEnglish[2] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[2] + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "She ":
+                gene = subjectsEnglish[3] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[3] + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "We ":
+                gens = subjectsSpanish[4] + verbsSpanishFirstPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+                gene = subjectsEnglish[4] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+            case "They ":
+                gene = subjectsEnglish[5] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[5] + verbsSpanishThirdPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            default:
+                break
+            }
+        } else {
+            switch pronoun {
+            case "I ":
+                gene = subjectsEnglish[0] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[0] + "no " + verbsSpanishFirstPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "You ":
+                gene = subjectsEnglish[1] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[1] + "no " + verbsSpanishSecondPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "He ":
+                gene = subjectsEnglish[2] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[2] + "no " + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "She ":
+                gene = subjectsEnglish[3] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[3] + "no " + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            case "We ":
+                gens = subjectsSpanish[4] + "no " + verbsSpanishFirstPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+                gene = subjectsEnglish[4] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+            case "They ":
+                gene = subjectsEnglish[5] + "won't " + verbs[verbRand] + verbObjects[verbRand][ob2] + conjunction
+                gens = subjectsSpanish[5] + "no " + verbsSpanishThirdPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2] + conector
+            default:
+                break
+            }
+        }
+    }
+    
+    func genFuture() {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+        
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[0] + verbsSpanishFirstPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "You ":
+            gene = subjectsEnglish[1] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[1] + verbsSpanishSecondPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "He ":
+            gene = subjectsEnglish[2] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[2] + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "She ":
+            gene = subjectsEnglish[3] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[3] + verbsSpanishThirdPersonFuture[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "We ":
+            gene = subjectsEnglish[4] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[4] + verbsSpanishFirstPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "They ":
+            gene = subjectsEnglish[5] + "will " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[5] + verbsSpanishThirdPersonPluralFuture[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        default:
+            break
+        }
+    }
+
+    func genWould() {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbsSpanishHypothetical.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+        
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + "would " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[0] + verbsSpanishHypothetical[verbRand] + verbObjectsSpanish[verbRand][ob2]
+            gens2 = subjectsSpanish[0] + verbsSpanishFirstPersonSubjunctive[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "You ":
+            gene = subjectsEnglish[1] + "would " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[1] + verbsSpanishHypotheticalSecondPerson[verbRand] + verbObjectsSpanish[verbRand][ob2]
+            gens2 = subjectsSpanish[1] + verbsSpanishSecondPersonSubjunctive[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "He ":
+            gene = subjectsEnglish[2] + "would " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[2] + verbsSpanishHypothetical[verbRand] + verbObjectsSpanish[verbRand][ob2]
+            gens2 = subjectsSpanish[2] + verbsSpanishThirdPersonSubjunctive[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "She ":
+            gene = subjectsEnglish[3] + "would " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[3] + verbsSpanishHypothetical[verbRand] + verbObjectsSpanish[verbRand][ob2]
+            gens2 = subjectsSpanish[3] + verbsSpanishThirdPersonSubjunctive[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "We ":
+            gene = subjectsEnglish[4] + "would " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[4] + verbsSpanishHypotheticalFirstPlural[verbRand] + verbObjectsSpanish[verbRand][ob2]
+            gens2 = subjectsSpanish[4] + verbsSpanishFirstPersonPluralSubjunctive[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "They ":
+            gene = subjectsEnglish[5] + "would " + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[5] + verbsSpanishHypotheticalThirdPlural[verbRand] + verbObjectsSpanish[verbRand][ob2]
+            gens2 = subjectsSpanish[5] + verbsSpanishThirdPersonPluralSubjunctive[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        default:
+            break
+        }
+    }
+    
+    func genPresSimpModals(modalEng: String, modalSp1: String, modalSp2: String, modalSp3: String, modalSp4: String, modalSp5: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+        
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[0] + modalSp1 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "You ":
+            gene = subjectsEnglish[1] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[1] + modalSp2 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "He ":
+            gene = subjectsEnglish[2] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[2] + modalSp3 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "She ":
+            gene = subjectsEnglish[3] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[3] + modalSp3 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "We ":
+            gene = subjectsEnglish[4] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[4] + modalSp4 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "They ":
+            gene = subjectsEnglish[5] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[5] + modalSp5 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        default:
+            break
+        }
+    }
+
+    func genHaveTo(modalEng: String, modalEng3: String, modalSp1: String, modalSp2: String, modalSp3: String, modalSp4: String, modalSp5: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+        
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[0] + modalSp1 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "You ":
+            gene = subjectsEnglish[1] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[1] + modalSp2 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "He ":
+            gene = subjectsEnglish[2] + modalEng3 + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[2] + modalSp3 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "She ":
+            gene = subjectsEnglish[3] + modalEng3 + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[3] + modalSp3 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "We ":
+            gene = subjectsEnglish[4] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[4] + modalSp4 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "They ":
+            gene = subjectsEnglish[5] + modalEng + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[5] + modalSp5 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        default:
+            break
+        }
+    }
+    
+    func genGoingTo(modalEng1: String, modalEng2: String, modalEng3: String, modalSp1: String, modalSp2: String, modalSp3: String, modalSp4: String, modalSp5: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+        
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + modalEng1 + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[0] + modalSp1 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "You ":
+            gene = subjectsEnglish[1] + modalEng2 + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[1] + modalSp2 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "He ":
+            gene = subjectsEnglish[2] + modalEng3 + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[2] + modalSp3 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "She ":
+            gene = subjectsEnglish[3] + modalEng3 + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[3] + modalSp3 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "We ":
+            gene = subjectsEnglish[4] + modalEng2 + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[4] + modalSp4 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "They ":
+            gene = subjectsEnglish[5] + modalEng2 + verbs[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[5] + modalSp5 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        default:
+            break
+        }
+    }
+
+
+    func genFeelLike(modalEng1: String, modalEng2: String, modalEng3: String, modalSp1: String, modalSp2: String, modalSp3: String, modalSp4: String, modalSp5: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+        
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + modalEng1 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[0] + modalSp1 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "You ":
+            gene = subjectsEnglish[1] + modalEng2 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[1] + modalSp2 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "He ":
+            gene = subjectsEnglish[2] + modalEng3 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[2] + modalSp3 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "She ":
+            gene = subjectsEnglish[3] + modalEng3 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[3] + modalSp3 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "We ":
+            gene = subjectsEnglish[4] + modalEng1 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[4] + modalSp4 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "They ":
+            gene = subjectsEnglish[5] + modalEng1 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[5] + modalSp5 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        default:
+            break
+        }
+    }
+
+    func genBeUsedTo(modalEng1: String, modalEng2: String, modalEng3: String, modalEng4: String, modalSp1: String, modalSp2: String, modalSp3: String, modalSp3f: String, modalSp4: String, modalSp5: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let ob2 = Int.random(in: 0..<verbObjects[verbRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+        
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + modalEng1 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[0] + modalSp1 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "You ":
+            gene = subjectsEnglish[1] + modalEng2 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[1] + modalSp2 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "He ":
+            gene = subjectsEnglish[2] + modalEng3 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[2] + modalSp3 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "She ":
+            gene = subjectsEnglish[3] + modalEng3 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[3] + modalSp3f + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "We ":
+            gene = subjectsEnglish[4] + modalEng4 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[4] + modalSp4 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        case "They ":
+            gene = subjectsEnglish[5] + modalEng4 + verbsIng[verbRand] + verbObjects[verbRand][ob2]
+            gens = subjectsSpanish[5] + modalSp5 + verbsSpanish[verbRand] + verbObjectsSpanish[verbRand][ob2]
+        default:
+            break
+        }
+    }
+    
+    func GenPresSimpPrepasAdv(preposition: String, preposicion: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbsWithPrepositionsSecondPersonSingular.count)
+        let pronoun = subjectsEnglish[pronounRand]
+        
+        switch pronoun {
+        case "I ":
+            gene = subjectsEnglish[0] + verbsWithPrepositions[verbRand] + preposition
+            gens = subjectsSpanish[0] + verbsWithPrepositionsFirstPersonSingular[verbRand] + preposicion
+        case "You ":
+            gene = subjectsEnglish[1] + verbsWithPrepositions[verbRand] + preposition
+            gens = subjectsSpanish[1] + verbsWithPrepositionsSecondPersonSingular[verbRand] + preposicion
+        case "He ":
+            gene = subjectsEnglish[2] + verbsWithPrepositionsThirdPerson[verbRand] + preposition
+            gens = subjectsSpanish[2] + verbsWithPrepositionsThirdPersonSingular[verbRand] + preposicion
+        case "She ":
+            gene = subjectsEnglish[3] + verbsWithPrepositionsThirdPerson[verbRand] + preposition
+            gens = subjectsSpanish[3] + verbsWithPrepositionsThirdPersonSingular[verbRand] + preposicion
+        case "We ":
+            gene = subjectsEnglish[4] + verbsWithPrepositions[verbRand] + preposition
+            gens = subjectsSpanish[4] + verbsWithPrepositionsFirstPersonPlural[verbRand] + preposicion
+        case "They ":
+            gene = subjectsEnglish[5] + verbsWithPrepositions[verbRand] + preposition
+            gens = subjectsSpanish[5] + verbsWithPrepositionsThirdPersonPlural[verbRand] + preposicion
+        default:
+            break
+        }
+    }
+
+    func GenPresSimpAdverbs(adverb: String, adverbio: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let objRand = Int.random(in: 0..<verbObjects.count)
+        let ob2 = Int.random(in: 0..<verbObjects[objRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+
+        switch pronoun {
+        case "I ":
+            gene = "\(subjectsEnglish[0])\(adverb)\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(subjectsSpanish[0])\(adverbio)\(verbsSpanishFirstPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "You ":
+            gene = "\(subjectsEnglish[1])\(adverb)\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(subjectsSpanish[1])\(adverbio)\(verbsSpanishSecondPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "He ":
+            gene = "\(subjectsEnglish[2])\(adverb)\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(subjectsSpanish[2])\(adverbio)\(verbsSpanishThirdPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "She ":
+            gene = "\(subjectsEnglish[3])\(adverb)\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(subjectsSpanish[3])\(adverbio)\(verbsSpanishThirdPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "We ":
+            gene = "\(subjectsEnglish[4])\(adverb)\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(subjectsSpanish[4])\(adverbio)\(verbsSpanishFirstPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "They ":
+            gene = "\(subjectsEnglish[5])\(adverb)\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(subjectsSpanish[5])\(adverbio)\(verbsSpanishThirdPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        default:
+            break
+        }
+    }
+
+    func GenPresSimpAdverbs2(adverb: String, adverbio: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let objRand = Int.random(in: 0..<verbObjects.count)
+        let ob2 = Int.random(in: 0..<verbObjects[objRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+
+        if adverb != "together " {
+            switch pronoun {
+            case "I ":
+                gene = "\(subjectsEnglish[0])\(verbs[verbRand])\(verbObjects[verbRand][ob2])\(adverb)"
+                gens = "\(subjectsSpanish[0])\(verbsSpanishFirstPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])\(adverbio)"
+            case "You ":
+                gene = "\(subjectsEnglish[1])\(verbs[verbRand])\(verbObjects[verbRand][ob2])\(adverb)"
+                gens = "\(subjectsSpanish[1])\(verbsSpanishSecondPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])\(adverbio)"
+            case "He ":
+                gene = "\(subjectsEnglish[2])\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])\(adverb)"
+                gens = "\(subjectsSpanish[2])\(verbsSpanishThirdPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])\(adverbio)"
+            case "She ":
+                gene = "\(subjectsEnglish[3])\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])\(adverb)"
+                gens = "\(subjectsSpanish[3])\(verbsSpanishThirdPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])\(adverbio)"
+            case "We ":
+                gene = "\(subjectsEnglish[4])\(verbs[verbRand])\(verbObjects[verbRand][ob2])\(adverb)"
+                gens = "\(subjectsSpanish[4])\(verbsSpanishFirstPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])\(adverbio)"
+            case "They ":
+                gene = "\(subjectsEnglish[5])\(verbs[verbRand])\(verbObjects[verbRand][ob2])\(adverb)"
+                gens = "\(subjectsSpanish[5])\(verbsSpanishThirdPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])\(adverbio)"
+            default:
+                break
+            }
+        } else {
+            gene = "they \(verbs[verbRand])\(verbObjects[verbRand][ob2])\(adverb)"
+            gens = "ellos \(verbsSpanishThirdPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])\(adverbio)"
+        }
+    }
+
+    func GenPresSimpAdverbs2NoObject(adverb: String, adverbio: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let pronoun = subjectsEnglish[pronounRand]
+        
+        let objRand = Int.random(in: 0..<verbObjects.count)
+        let ob2 = Int.random(in: 0..<verbObjects[objRand].count)
+
+
+        if adverb != "together " {
+            switch pronoun {
+            case "I ":
+                gene = "\(subjectsEnglish[0])\(verbs[verbRand])\(adverb)"
+                gens = "\(subjectsSpanish[0])\(verbsSpanishFirstPerson[verbRand])\(adverbio)"
+            case "You ":
+                gene = "\(subjectsEnglish[1])\(verbs[verbRand])\(adverb)"
+                gens = "\(subjectsSpanish[1])\(verbsSpanishSecondPerson[verbRand])\(adverbio)"
+            case "He ":
+                gene = "\(subjectsEnglish[2])\(verbsThirdPerson[verbRand])\(adverb)"
+                gens = "\(subjectsSpanish[2])\(verbsSpanishThirdPerson[verbRand])\(adverbio)"
+            case "She ":
+                gene = "\(subjectsEnglish[3])\(verbsThirdPerson[verbRand])\(adverb)"
+                gens = "\(subjectsSpanish[3])\(verbsSpanishThirdPerson[verbRand])\(adverbio)"
+            case "We ":
+                gene = "\(subjectsEnglish[4])\(verbs[verbRand])\(adverb)"
+                gens = "\(subjectsSpanish[4])\(verbsSpanishFirstPersonPlural[verbRand])\(adverbio)"
+            case "They ":
+                gene = "\(subjectsEnglish[5])\(verbs[verbRand])\(adverb)"
+                gens = "\(subjectsSpanish[5])\(verbsSpanishThirdPersonPlural[verbRand])\(adverbio)"
+            default:
+                break
+            }
+        } else {
+            gene = "they \(verbs[verbRand])\(verbObjects[objRand][ob2])\(adverb)"
+            gens = "ellos \(verbsSpanishThirdPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])\(adverbio)"
+        }
+    }
+
+    func GenPresSimpAdverbs3(adverb: String, adverbio: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let objRand = Int.random(in: 0..<verbObjects.count)
+        let ob2 = Int.random(in: 0..<verbObjects[objRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+
+        switch pronoun {
+        case "I ":
+            gene = "\(adverb)\(subjectsEnglish[0])\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(adverbio)\(subjectsSpanish[0])\(verbsSpanishFirstPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "You ":
+            gene = "\(adverb)\(subjectsEnglish[1])\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(adverbio)\(subjectsSpanish[1])\(verbsSpanishSecondPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "He ":
+            gene = "\(adverb)\(subjectsEnglish[2])\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(adverbio)\(subjectsSpanish[2])\(verbsSpanishThirdPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "She ":
+            gene = "\(adverb)\(subjectsEnglish[3])\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(adverbio)\(subjectsSpanish[3])\(verbsSpanishThirdPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "We ":
+            gene = "\(adverb)\(subjectsEnglish[4])\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(adverbio)\(subjectsSpanish[4])\(verbsSpanishFirstPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "They ":
+            gene = "\(adverb)\(subjectsEnglish[5])\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(adverbio)\(subjectsSpanish[5])\(verbsSpanishThirdPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        default:
+            break
+        }
+    }
+
+    func GenIntPorSujeto() {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let objRand = Int.random(in: 0..<verbObjects.count)
+        let ob2 = Int.random(in: 0..<verbObjects[objRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
+
+        switch pronoun {
+        case "I ":
+            gene = "\(subjectsEnglish[0])\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gene2 = "."
+            gens = "\(verbsSpanishFirstPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "You ":
+            gene = "\(subjectsEnglish[1])\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gene2 = "."
+            gens = "\(verbsSpanishSecondPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "He ":
+            gene = "\(subjectsEnglish[2])\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])"
+            gene2 = "\(subjectsEnglish[3])\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(verbsSpanishThirdPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "She ":
+            gene = "\(subjectsEnglish[3])\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])"
+            gene2 = "\(subjectsEnglish[2])\(verbsThirdPerson[verbRand])\(verbObjects[verbRand][ob2])"
+            gens = "\(verbsSpanishThirdPerson[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        case "We ":
+            gens = "\(verbsSpanishFirstPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+            gene = "\(subjectsEnglish[4])\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gene2 = "."
+        case "They ":
+            gene = "\(subjectsEnglish[5])\(verbs[verbRand])\(verbObjects[verbRand][ob2])"
+            gene2 = "."
+            gens = "\(verbsSpanishThirdPersonPlural[verbRand])\(verbObjectsSpanish[verbRand][ob2])"
+        default:
+            break
+        }
+    }
+
+    func GenPresSimp(pronounparm: String, verbpos: Int) {
+        let objRand = Int.random(in: 0..<verbObjects.count)
+        let ob2 = Int.random(in: 0..<verbObjects[objRand].count)
+        let pronoun = pronounparm
+
+        switch pronoun {
+        case "I ":
+            gene = "\(subjectsEnglish[0])\(verbs[verbpos])\(verbObjects[verbpos][ob2])"
+            gens = "\(subjectsSpanish[0])\(verbsSpanishFirstPerson[verbpos])\(verbObjectsSpanish[verbpos][ob2])"
+        case "You ":
+            gene = "\(subjectsEnglish[1])\(verbs[verbpos])\(verbObjects[verbpos][ob2])"
+            gens = "\(subjectsSpanish[1])\(verbsSpanishSecondPerson[verbpos])\(verbObjectsSpanish[verbpos][ob2])"
+        case "He ":
+            gene = "\(subjectsEnglish[2])\(verbsThirdPerson[verbpos])\(verbObjects[verbpos][ob2])"
+            gens = "\(subjectsSpanish[2])\(verbsSpanishThirdPerson[verbpos])\(verbObjectsSpanish[verbpos][ob2])"
+        case "She ":
+            gene = "\(subjectsEnglish[3])\(verbsThirdPerson[verbpos])\(verbObjects[verbpos][ob2])"
+            gens = "\(subjectsSpanish[3])\(verbsSpanishThirdPerson[verbpos])\(verbObjectsSpanish[verbpos][ob2])"
+        case "We ":
+            gens = "\(subjectsSpanish[4])\(verbsSpanishFirstPersonPlural[verbpos])\(verbObjectsSpanish[verbpos][ob2])"
+            gene = "\(subjectsEnglish[4])\(verbs[verbpos])\(verbObjects[verbpos][ob2])"
+        case "They ":
+            gene = "\(subjectsEnglish[5])\(verbs[verbpos])\(verbObjects[verbpos][ob2])"
+            gens = "\(subjectsSpanish[5])\(verbsSpanishThirdPersonPlural[verbpos])\(verbObjectsSpanish[verbpos][ob2])"
+        default:
+            break
+        }
+    }
+
+    func genVerbAndObject(object: String, objeto: String) {
+        let r = Int.random(in: 0..<verbsSpanishThirdPerson.count)
+        let ob2 = Int.random(in: 0..<verbObjects[r].count)
+
+        if object == "the news " {
+            gens = "\(objeto)\(verbsSpanishThirdPersonPlural[r])\(verbObjectsSpanish[r][ob2])"
+            gene = "\(object)\(verbs[r])\(verbObjects[r][ob2])"
+        } else if object == "the people " {
+            gens = "\(objeto)\(verbsSpanishThirdPerson[r])\(verbObjectsSpanish[r][ob2])"
+            gene = "\(object)\(verbs[r])\(verbObjects[r][ob2])"
+        } else {
+            gens = "\(objeto)\(verbsSpanishThirdPerson[r])\(verbObjectsSpanish[r][ob2])"
+            gene = "\(object)\(verbsThirdPerson[r])\(verbObjects[r][ob2])"
+        }
+    }
+
     
     //DATA
     

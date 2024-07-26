@@ -754,70 +754,70 @@ class NewNounClass {
         }
     }
     
-//    func GenIntPorPrep() {
-//        let n = Int.random(in: 0..<nouns.count)
-//        let n2 = Int.random(in: 0..<nouns.count)
-//        let noun = nouns[n]
-//        let sust = nounsSpanish[n]
-//        verbsObject.GenIntPorSujeto()
-//        
-//        switch currentIndex {
-//        case 0:
-//            gens = "en " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " in the " + noun
-//            gene2 = verbsObject.gene2 + " in the " + noun
-//        case 1:
-//            gens = "para " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " for the " + noun
-//            gene2 = verbsObject.gene2 + " for the " + noun
-//        case 2:
-//            gens = "con " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " with the " + noun
-//            gene2 = verbsObject.gene2 + " with the " + noun
-//        case 3:
-//            gens = "sobre " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " on the " + noun
-//            gene2 = verbsObject.gene2 + " on the " + noun
-//        case 4:
-//            gens = "cerca de " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " by the " + noun
-//            gene2 = verbsObject.gene2 + " by the " + noun
-//        case 5:
-//            gens = "como " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " like the " + noun
-//            gene2 = verbsObject.gene2 + " like the " + noun
-//        case 6:
-//            gens = "a través de " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " through the " + noun
-//            gene2 = verbsObject.gene2 + " through the " + noun
-//        case 7:
-//            gens = "entre " + sust + " y " + nounsSpanish[n2] + verbsObject.gens
-//            gene = verbsObject.gene + " between the " + noun + " and the " + nouns[n2]
-//            gene2 = verbsObject.gene2 + " between the " + noun + " and the " + nouns[n2]
-//        case 8:
-//            gens = "fuera de " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " out of the " + noun
-//            gene2 = verbsObject.gene2 + " out of the " + noun
-//        case 9:
-//            gens = "sin " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " without the " + noun
-//            gene2 = verbsObject.gene2 + " without the " + noun
-//        case 10:
-//            gens = "alrededor de " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " around the " + noun
-//            gene2 = verbsObject.gene2 + " around the " + noun
-//        case 11:
-//            gens = "detrás de " + sust + verbsObject.gens
-//            gene = verbsObject.gene + " behind the " + noun
-//            gene2 = verbsObject.gene2 + " behind the " + noun
-//        default:
-//            break
-//        }
-//        currentIndex += 1
-//        if currentIndex == 12 {
-//            currentIndex = 0
-//        }
-//    }
+    func GenIntPorPrep() {
+        let n = Int.random(in: 0..<nouns.count)
+        let n2 = Int.random(in: 0..<nouns.count)
+        let noun = nouns[n]
+        let sust = nounsSpanish[n]
+        verbsObject.GenIntPorSujeto()
+        
+        switch currentIndex {
+        case 0:
+            gens = "en " + sust + verbsObject.gens
+            gene = verbsObject.gene + " in the " + noun
+            gene2 = verbsObject.gene2 + " in the " + noun
+        case 1:
+            gens = "para " + sust + verbsObject.gens
+            gene = verbsObject.gene + " for the " + noun
+            gene2 = verbsObject.gene2 + " for the " + noun
+        case 2:
+            gens = "con " + sust + verbsObject.gens
+            gene = verbsObject.gene + " with the " + noun
+            gene2 = verbsObject.gene2 + " with the " + noun
+        case 3:
+            gens = "sobre " + sust + verbsObject.gens
+            gene = verbsObject.gene + " on the " + noun
+            gene2 = verbsObject.gene2 + " on the " + noun
+        case 4:
+            gens = "cerca de " + sust + verbsObject.gens
+            gene = verbsObject.gene + " by the " + noun
+            gene2 = verbsObject.gene2 + " by the " + noun
+        case 5:
+            gens = "como " + sust + verbsObject.gens
+            gene = verbsObject.gene + " like the " + noun
+            gene2 = verbsObject.gene2 + " like the " + noun
+        case 6:
+            gens = "a través de " + sust + verbsObject.gens
+            gene = verbsObject.gene + " through the " + noun
+            gene2 = verbsObject.gene2 + " through the " + noun
+        case 7:
+            gens = "entre " + sust + " y " + nounsSpanish[n2] + verbsObject.gens
+            gene = verbsObject.gene + " between the " + noun + " and the " + nouns[n2]
+            gene2 = verbsObject.gene2 + " between the " + noun + " and the " + nouns[n2]
+        case 8:
+            gens = "fuera de " + sust + verbsObject.gens
+            gene = verbsObject.gene + " out of the " + noun
+            gene2 = verbsObject.gene2 + " out of the " + noun
+        case 9:
+            gens = "sin " + sust + verbsObject.gens
+            gene = verbsObject.gene + " without the " + noun
+            gene2 = verbsObject.gene2 + " without the " + noun
+        case 10:
+            gens = "alrededor de " + sust + verbsObject.gens
+            gene = verbsObject.gene + " around the " + noun
+            gene2 = verbsObject.gene2 + " around the " + noun
+        case 11:
+            gens = "detrás de " + sust + verbsObject.gens
+            gene = verbsObject.gene + " behind the " + noun
+            gene2 = verbsObject.gene2 + " behind the " + noun
+        default:
+            break
+        }
+        currentIndex += 1
+        if currentIndex == 12 {
+            currentIndex = 0
+        }
+    }
     
     func genPronoun(pronounParm: String) {
         let prep = Int.random(in: 0..<prepositionsEng.count)
@@ -870,11 +870,11 @@ class NewNounClass {
         }
     }
     
-//    func nounGen(engNoun: String, spNoun: String) {
-//        verbsObject.genVerbAndObject(engNoun: engNoun, spNoun: spNoun)
-//        gene = verbsObject.gene
-//        gens = verbsObject.gens
-//    }
+    func nounGen(engNoun: String, spNoun: String) {
+        verbsObject.genVerbAndObject(object: engNoun, objeto: spNoun)
+        gene = verbsObject.gene
+        gens = verbsObject.gens
+    }
     
     func adjectiveGen(adjParamEng: String, adjParamSpM: String, adjParamSpF: String) {
         let n = Int.random(in: 0..<nouns.count)
