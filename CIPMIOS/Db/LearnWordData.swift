@@ -92,7 +92,6 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "than", definition: "que(comparativo)", explanation: thanDef),
     LearnWordTypes(word: "like", definition: "como-(preposición)", explanation: likeDef),
     
-    //Continuar
     LearnWordTypes(word: "other", definition: "otro", explanation: otherDef),
     LearnWordTypes(word: "then", definition: "entonces", explanation: thenDef),
     LearnWordTypes(word: "how", definition: "como", explanation: howDef),
@@ -154,6 +153,7 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "school", definition: "escuela", explanation: schoolDef),
     LearnWordTypes(word: "as", definition: "como", explanation: asConjunctionDef), // Assuming "as" is requested as a conjunction here. If needed as a preposition or in another form, please adjust accordingly.
     
+    //Continuar
     // 30-39
     LearnWordTypes(word: "last", definition: "último", explanation: lastDef),
     LearnWordTypes(word: "ask", definition: "preguntar", explanation: askDef),

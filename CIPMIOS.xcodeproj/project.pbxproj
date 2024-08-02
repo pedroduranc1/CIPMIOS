@@ -88,6 +88,7 @@
 		C10FC5A02C17521C0011F827 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10FC59F2C17521C0011F827 /* GlobalData.swift */; };
 		C1331E992C0E5C2C00329281 /* LessonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1331E982C0E5C2C00329281 /* LessonCard.swift */; };
 		C1331E9B2C0E5D4500329281 /* LessonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1331E9A2C0E5D4500329281 /* LessonTypes.swift */; };
+		C1447CBD2C57DDBF0011C005 /* AuxModalNegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1447CBC2C57DDBF0011C005 /* AuxModalNegator.swift */; };
 		C15815002BA09ECF008883E1 /* SpeakingDificil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */; };
 		C15B43E82BA36B6500D90883 /* ListeningDif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B43E72BA36B6500D90883 /* ListeningDif.swift */; };
 		C162EFBD2C2DB17000250D55 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162EFBC2C2DB17000250D55 /* KeyboardObserver.swift */; };
@@ -204,6 +205,7 @@
 		C10FC59F2C17521C0011F827 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		C1331E982C0E5C2C00329281 /* LessonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCard.swift; sourceTree = "<group>"; };
 		C1331E9A2C0E5D4500329281 /* LessonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTypes.swift; sourceTree = "<group>"; };
+		C1447CBC2C57DDBF0011C005 /* AuxModalNegator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxModalNegator.swift; sourceTree = "<group>"; };
 		C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakingDificil.swift; sourceTree = "<group>"; };
 		C15B43E72BA36B6500D90883 /* ListeningDif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningDif.swift; sourceTree = "<group>"; };
 		C162EFBC2C2DB17000250D55 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				C192A59C2C456CBD005DD008 /* 0TO50.swift */,
 				C192A59E2C4575A4005DD008 /* NewNounClass.swift */,
 				C192A5A02C457660005DD008 /* NewVerbClass.swift */,
+				C1447CBC2C57DDBF0011C005 /* AuxModalNegator.swift */,
 			);
 			path = Generador;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 				444E805E2B1E5094004AC6BF /* BottonPeque.swift in Sources */,
 				44F7D5042B1F9E3200EAAC8B /* SeparadorPequeno.swift in Sources */,
 				4475F8B82B237ECD00307D02 /* Intrans.swift in Sources */,
+				C1447CBD2C57DDBF0011C005 /* AuxModalNegator.swift in Sources */,
 				C10FC5A02C17521C0011F827 /* GlobalData.swift in Sources */,
 				C195A8D02C4AC064005E48C3 /* LessonsData.swift in Sources */,
 				C176FB8F2C0E47A500487F3B /* Lessons.swift in Sources */,

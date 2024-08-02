@@ -438,6 +438,32 @@ class NewNounClass {
         "alarm clock"
     ]
     
+    let auxiliaryVerbs = ["do", "did", "will", "would", "could", "should", "can", "must", "have", "has", "had", "is", "are", "am", "was", "was", "were", "does"]
+    let thirdPersonPronouns = ["he", "she", "it"]
+    let otherPronouns = ["you", "we", "they"]
+    let otherOtherPronouns = ["I", "you", "we", "they"]
+    let questionWordsTransitive = ["What", "When", "Where", "Why", "Who", "How", "How much", "How many"]
+    let questionWordsIntransitive = ["When", "Where", "Why", "How"]
+    let verbsTagged = [
+        "Thave ", "Tdo ", "Tsay ", "Igo ", "Tget ",
+        "Tmake ", "Tknow ", "Tthink ", "Tsee ", "Ttake ",
+        "Icome ", "Twant ", "Tlook ", "Tuse ", "Tfind ",
+        "Tgive ", "Ttell ", "Twork ", "Tcall ", "Ttry ",
+        "Task ", "Tneed ", "Tfeel ", "Ibecome ", "Ileave ",
+        "Tput ", "Tmean ", "Tlet ", "Tkeep ", "Ibegin ",
+        "Iseem ", "Ttalk ", "Tturn ", "Thelp ", "Tstart ",
+        "Tshow ", "Hhear ", "Irun ", "Tplay ", "Tmove ",
+        "Tlike ", "Thold ", "Ilive ", "Tbring ", "Twrite ", "Tprovide ", "Isit ", "Istand ",
+        "Tlose ", "Tmeet ", "Tpay ", "Tinclude ", "Icontinue ", "Tchange ", "Tset ", "Ilead ",
+        "Tlearn ", "Tunderstand ", "Twatch ", "Tfollow ", "Istop ", "Tspeak ", "Tcreate ", "Tallow ",
+        "Tread ", "Tspend ", "Tadd ", "Igrow ", "Iopen ", "Iwalk ", "Toffer ", "Tremember ", "Twin ",
+        "Iappear ", "Tconsider ", "Tlove ", "Tbuy ", "Iwait ", "Idie ", "Tsend ", "Texpect ", "Tserve ",
+        "Istay ", "Tbuild ", "Ifall ", "Tcut ", "Tkill ", "Treach ", "Iremain ", "Tsuggest ", "Traise ",
+        "Tpass ", "Tsell ", "Trequire ", "Tdecide ", "Treport ", "Treturn ", "Tpull ", "Texplain ", "Tcarry ",
+        "Tdevelop ", "Thope ", "Tdrive ", "Tbreak "
+    ]
+    
+    
     let extendedNounAdjunctsSpanish = [
         "caballo de carreras",
         "estantería para libros",
@@ -496,7 +522,7 @@ class NewNounClass {
     var gene2 = ""
     
     var currentIndex = 0
-    let verbsObject = NewVerbClass()
+    var verbsObject = NewVerbClass()
     
     func adjAdv(adverbEng: String, adverbioEsp: String) {
         let v = Int.random(in: 0..<adjectivesEng.count)
@@ -904,34 +930,34 @@ class NewNounClass {
         gene = "The " + adjParamEng + nouns[n]
     }
     
-//    func generateQuestion(verbPos: Int, verPos2: Int) -> String {
-//        let auxiliaryVerb = auxiliaryVerbs.randomElement()!
-//        let subjectPronoun = choosePronoun(auxiliary: auxiliaryVerb)
-//        let verbForm = chooseVerbForm(auxiliary: auxiliaryVerb, verbIndex: verbPos)
-//        let questionWord = chooseQuestionWord(verbForm: verbForm)
-//        let objectOfVerb = chooseVerbObject(verbPosition: verbPos, verPos2: verPos2)
-//        
-//        if auxiliaryVerb == "1was" {
-//            auxiliaryVerb = "was"
-//        }
-//        return "\(questionWord) \(auxiliaryVerb) \(subjectPronoun) \(verbForm.trimmingCharacters(in: .whitespaces)) \(objectOfVerb)"
-//    }
+    func generateQuestion(verbPos: Int, verPos2: Int) -> String {
+        var auxiliaryVerb = auxiliaryVerbs.randomElement()!
+        let subjectPronoun = choosePronoun(auxiliary: auxiliaryVerb)
+        let verbForm = chooseVerbForm(auxiliary: auxiliaryVerb, verbIndex: verbPos)
+        let questionWord = chooseQuestionWord(verbForm: verbForm)
+        let objectOfVerb = chooseVerbObject(verbPosition: verbPos, verPos2: verPos2)
+        
+        if auxiliaryVerb == "1was" {
+            auxiliaryVerb = "was"
+        }
+        return "\(questionWord) \(auxiliaryVerb) \(subjectPronoun) \(verbForm.trimmingCharacters(in: .whitespaces)) \(objectOfVerb)"
+    }
     
     private func chooseVerbObject(verbPosition: Int, verPos2: Int) -> String {
         return verbsObject.verbObjects[verbPosition][verPos2]
     }
     
-//    private func choosePronoun(auxiliary: String) -> String {
-//        if auxiliary == "does" || auxiliary == "is" || auxiliary == "was" || auxiliary == "has" {
-//            return thirdPersonPronouns.randomElement()!
-//        } else if auxiliary == "am" || auxiliary == "1was" {
-//            return "I"
-//        } else if auxiliary == "are" || auxiliary == "were" {
-//            return otherPronouns.randomElement()!
-//        } else {
-//            return otherOtherPronouns.randomElement()!
-//        }
-//    }
+    private func choosePronoun(auxiliary: String) -> String {
+        if auxiliary == "does" || auxiliary == "is" || auxiliary == "was" || auxiliary == "has" {
+            return thirdPersonPronouns.randomElement()!
+        } else if auxiliary == "am" || auxiliary == "1was" {
+            return "I"
+        } else if auxiliary == "are" || auxiliary == "were" {
+            return otherPronouns.randomElement()!
+        } else {
+            return otherOtherPronouns.randomElement()!
+        }
+    }
     
     private func chooseVerbForm(auxiliary: String, verbIndex: Int) -> String {
         switch auxiliary {
@@ -946,13 +972,13 @@ class NewNounClass {
         }
     }
     
-//    private func chooseQuestionWord(verbForm: String) -> String {
-//        if verbForm.hasPrefix("T") {
-//            return questionWordsTransitive.randomElement()!
-//        } else {
-//            return questionWordsIntransitive.randomElement()!
-//        }
-//    }
+    private func chooseQuestionWord(verbForm: String) -> String {
+        if verbForm.hasPrefix("T") {
+            return questionWordsTransitive.randomElement()!
+        } else {
+            return questionWordsIntransitive.randomElement()!
+        }
+    }
     
     func genSpanishQuestion(engQuestion: String, verbPos: Int, v2: Int) -> String {
         let questionParts = engQuestion.split(separator: " ")
@@ -1228,31 +1254,34 @@ class NewNounClass {
         gene = noun + verbsObject.verbsIng[v] + verbsObject.verbObjects[v][o] + verbsObject.verbsThirdPerson[v2] + verbsObject.verbObjects[v2][o2]
     }
     
-//    func GenWish(wishType: Int) {
-//        switch wishType {
-//        case 0:
-//            verbsObject.GenPastSimp()
-//            gens = "ojalá " + verbsObject.gens2
-//            gene = "I wish " + verbsObject.gene
-//            gene2 = "I wish " + AuxModalNegator.negatePastSimple(sentence: verbsObject.gene2)
-//        case 1:
-//            verbsObject.GenWould()
-//            gens = "ojalá " + verbsObject.gens2
-//            gene = "I wish " + verbsObject.gene
-//            gene2 = "I wish " + AuxModalNegator.negateFirstAuxOrModalContracted(sentence: verbsObject.gene)
-//        case 2:
-//            verbsObject.GenPerfectTenses(had: "had ", hubiera: "hubiera ", hubieras: "hubieras ", hubieramos: "hubiéramos ", hubieran: "hubieran ")
-//            gens = "ojalá " + verbsObject.gens
-//            gene = "I wish " + verbsObject.gene
-//            gene2 = "I wish " + AuxModalNegator.negateFirstAuxOrModalContracted(sentence: verbsObject.gene)
-//        default:
-//            gens = "no such number"
+//        func GenWish(wishType: Int) {
+//            verbsObject = NewVerbClass()
+//            
+//            switch wishType {
+//            case 0:
+//                verbsObject.GenPastSimp()
+//                gens = "ojalá " + verbsObject.gens2
+//                gene = "I wish " + verbsObject.gene
+//                gene2 = "I wish " + AuxModalNegator.negatePastSimple(sentence: verbsObject.gene2)
+//            case 1:
+//                verbsObject.GenWould()
+//                gens = "ojalá " + verbsObject.gens2
+//                gene = "I wish " + verbsObject.gene
+//                gene2 = "I wish " + AuxModalNegator.negateFirstAuxOrModalContracted(sentence: verbsObject.gene)
+//            case 2:
+//                verbsObject.GenPerfectTenses(had: "had ", hubiera: "hubiera ", hubieras: "hubieras ", hubieramos: "hubiéramos ", hubieran: "hubieran ")
+//                gens = "ojalá " + verbsObject.gens
+//                gene = "I wish " + verbsObject.gene
+//                gene2 = "I wish " + AuxModalNegator.negateFirstAuxOrModalContracted(sentence: verbsObject.gene)
+//            default:
+//                gens = "no such number"
+//            }
 //        }
-//    }
     
     func GenJustPhrasalVerbs() {
         let pv = Int.random(in: 0..<justEnglishPhrasalVerbs.count)
         gens = justSpanishPhrasalVerbs[pv]
         gene = justEnglishPhrasalVerbs[pv]
     }
+    
 }
