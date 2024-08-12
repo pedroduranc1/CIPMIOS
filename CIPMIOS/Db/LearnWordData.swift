@@ -153,7 +153,6 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "school", definition: "escuela", explanation: schoolDef),
     LearnWordTypes(word: "as", definition: "como", explanation: asConjunctionDef), // Assuming "as" is requested as a conjunction here. If needed as a preposition or in another form, please adjust accordingly.
     
-    //Continuar
     // 30-39
     LearnWordTypes(word: "last", definition: "último", explanation: lastDef),
     LearnWordTypes(word: "ask", definition: "preguntar", explanation: askDef),
@@ -189,7 +188,7 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "let", definition: "dejar", explanation: letDef),
     LearnWordTypes(word: "why", definition: "por qué", explanation: whyDef2),
     LearnWordTypes(word: "president", definition: "presidente", explanation: presidentDef),
-    
+    //CONTINUAR
     // 60-69
     LearnWordTypes(word: "keep", definition: "mantener", explanation: keepDef),
     LearnWordTypes(word: "same", definition: "mismo", explanation: sameDef),

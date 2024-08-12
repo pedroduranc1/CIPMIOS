@@ -386,4 +386,149 @@ class AuxModalNegator{
         return subject + negation + " " + verb + (remainingSentence.isEmpty ? "" : " \(remainingSentence)")
     }
     
+    func expandPresentContinuous(sentence: String) -> String {
+        var newSentence = sentence
+        let replacements = [
+            ("I'm not ", "I am not "),
+            ("I'm ", "I am "),
+            ("you're not ", "you are not "),
+            ("you're ", "you are "),
+            ("he's not ", "he is not "),
+            ("he's ", "he is "),
+            ("she's not ", "she is not "),
+            ("she's ", "she is "),
+            ("it's not ", "it is not "),
+            ("it's ", "it is "),
+            ("we're not ", "we are not "),
+            ("we're ", "we are "),
+            ("they're not ", "they are not "),
+            ("they're ", "they are "),
+            ("isn't ", "is not ")
+        ]
+        
+        replacements.forEach { pattern, replacement in
+            newSentence = newSentence.replacingOccurrences(of: pattern, with: replacement)
+        }
+        
+        return newSentence
+    }
+    
+    func negateVerbalAdjective(phrase: String) -> String {
+        let words = phrase.components(separatedBy: " ")
+        guard words.count >= 3 else { return phrase }
+        var newWords = words
+        newWords[1] = "non-" + newWords[1]
+        return newWords.joined(separator: " ")
+    }
+    
+    func addNoAfterQue(phrase: String) -> String {
+        var words = phrase.components(separatedBy: " ")
+        guard words.count >= 4 else { return phrase }
+        
+        let index = words.firstIndex(of: "que") ?? -1
+        guard index != -1 else { return phrase }
+        words.insert("no", at: index + 1)
+        return words.joined(separator: " ")
+    }
+    
+    func contractHadOrWould(sentence: String) -> String {
+        var words = sentence.components(separatedBy: " ")
+        guard words.count >= 3 else { return sentence }
+        
+        for i in 0..<words.count - 2 {
+            let word = words[i + 1].lowercased()
+            if word == "had" || word == "would" {
+                words[i] += "'d"
+                words.remove(at: i + 1)
+                return words.joined(separator: " ")
+            }
+        }
+        return sentence
+    }
+    
+    func applyContractionModalsHave(sentence: String) -> String {
+        let modals = ["would", "should", "could", "might", "must"]
+        var newSentence = sentence
+        
+        for modal in modals {
+            let pattern = modal + " have"
+            if sentence.contains(pattern) {
+                newSentence = sentence.replacingOccurrences(of: pattern, with: modal + "'ve")
+                break
+            }
+        }
+        
+        return newSentence
+    }
+    
+    func negateThereBeWithNo(sentence: String) -> String {
+        let thereBeVariations = [
+            "there is ", "there are ", "there was ", "there were ",
+            "there will be ", "there would be ", "there could be ",
+            "there should be ", "there might be ", "there has been ",
+            "there have been ", "there had been ", "there will have been ",
+            "there would have been ", "there could have been ",
+            "there should have been ", "there might have been ",
+            "there is going to be ", "there was going to be "
+        ]
+        
+        for variation in thereBeVariations {
+            if sentence.hasPrefix(variation) {
+                let indexAfterVariation = sentence.index(sentence.startIndex, offsetBy: variation.count)
+                
+                if sentence[indexAfterVariation...].hasPrefix("a ") {
+                    let rangeToReplace = sentence.index(indexAfterVariation, offsetBy: 2)..<sentence.index(indexAfterVariation, offsetBy: 2)
+                    var mutableSentence = sentence
+                    mutableSentence.replaceSubrange(rangeToReplace, with: "no ")
+                    return mutableSentence
+                } else {
+                    return sentence.prefix(upTo: indexAfterVariation) + "no " + sentence.suffix(from: indexAfterVariation)
+                }
+            }
+        }
+        
+        return sentence
+    }
+    
+    func negateThereBeSpanish(spanishSentence: String) -> String {
+        return "no " + spanishSentence
+    }
+    
+    func negateReflexiveSpanish(sentence: String) -> String {
+            let wordsToNegate = ["yo", "tú", "él", "ella", "eso", "nosotros", "ellos"]
+            let parts = sentence.components(separatedBy: " ")
+            var result = ""
+
+            var quizáFound = parts.count > 1 && (parts[1].lowercased() == "quizá" || parts[1].lowercased() == "quizás")
+            var suponeQueFound = false
+            var pronounNegated = false
+
+            for (i, var part) in parts.enumerated() {
+                if i < parts.count - 2 && part.lowercased() == "se" && parts[i + 1].lowercased() == "supone" && parts[i + 2].lowercased() == "que" {
+                    suponeQueFound = true
+                    result += part + " "
+                    continue
+                }
+
+                if quizáFound && (part.lowercased() == "quizá" || part.lowercased() == "quizás") {
+                    part += " no"
+                    quizáFound = false
+                } else if !quizáFound && !suponeQueFound && !pronounNegated {
+                    for wordToNegate in wordsToNegate {
+                        if part.lowercased() == wordToNegate {
+                            part += " no"
+                            pronounNegated = true
+                            break
+                        }
+                    }
+                } else if suponeQueFound && part.lowercased() == "que" {
+                    part += " no"
+                    suponeQueFound = false
+                }
+
+                result += part + " "
+            }
+
+            return result.trimmingCharacters(in: .whitespaces)
+        }
 }

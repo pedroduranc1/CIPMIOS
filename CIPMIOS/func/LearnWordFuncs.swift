@@ -852,6 +852,187 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         TxtSpa = gen.gens
         break
         
+    case "last":
+        gen.adjmethod(adjective: "last ");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "ask":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 20);
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "too":
+        newVerb.GenPresSimpAdverbs2(adverb: "too ", adverbio: "tambien ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "need":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 21);
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "three":
+        gen.adjmethodP(adjective: "three ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "feel":                                                              newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 22);
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "become":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 23);
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "state":
+        nouns.nounGen(engNoun: "the state ", spNoun: "el estado ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "never":
+        newVerb.GenPresSimpAdverbs(adverb: "never ", adverbio: "nunca ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "between":
+        nouns.genPreps(prep: "between");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "high":
+        nouns.adjectiveGen(adjParamEng: "high ", adjParamSpM: "alto ", adjParamSpF: "alta ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "something":
+        nouns.genPronoun(pronounParm: "something ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "really":
+        newVerb.GenPresSimpAdverbs(adverb: "really ", adverbio: "realmente ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "most":
+        nouns.adjAdv2(adverbEng: "the most ", adverbioEsp: "el mas ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "another":
+        gen.adjmethod(adjective: "another ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "much":
+        newVerb.GenPresSimpAdverbs2(adverb: "much ",adverbio: "mucho ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "own":
+        gen.adjmethod(adjective: "own ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "family":
+        nouns.nounGen(engNoun: "the family ", spNoun: "la familia ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "house":
+        nouns.nounGen(engNoun: "the house ", spNoun: "la casa ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "leave":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 24);
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "put":
+        //TODO: POR GENERAR
+        break
+        
+    case "old":
+        nouns.adjectiveGen(adjParamEng: "old ", adjParamSpM: "viejo ", adjParamSpF: "vieja ");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "while":
+        //TODO: FALTA POR HACER
+        break
+        
+    case "mean":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 26);
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "let":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 27);
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "why":
+        newVerb.GenPresSimpAdverbs3(adverb: "why ", adverbio: "la razón por la cual ");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+        
+    case "president":
+        nouns.nounGen(engNoun: "the president ", spNoun: "el presidente ");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
     default:
         print("No matching function found for \(functionName)")
     }

@@ -1852,7 +1852,39 @@ class NewVerbClass {
             gene = "\(object)\(verbsThirdPerson[r])\(verbObjects[r][ob2])"
         }
     }
+    
+    func genUsedToPastImp(modalEng: String, modalSp1: String, modalSp2: String, modalSp3: String, modalSp4: String, modalSp5: String) {
+        let pronounRand = Int.random(in: 0..<subjectsEnglish.count)
+        let verbRand = Int.random(in: 0..<verbs.count)
+        let objRand = Int.random(in: 0..<verbObjects.count)
+        let ob2 = Int.random(in: 0..<verbObjects[objRand].count)
+        let pronoun = subjectsEnglish[pronounRand]
 
+        switch pronoun {
+        case "I ":
+            gene = "\(subjectsEnglish[0])\(modalEng) \(verbs[verbRand]) \(verbObjects[objRand][ob2])"
+            gens = "\(subjectsSpanish[0])\(modalSp1) \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+            gens2 = "\(subjectsSpanish[0])used to \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+        case "You ":
+            gene = "\(subjectsEnglish[1])\(modalEng) \(verbs[verbRand]) \(verbObjects[objRand][ob2])"
+            gens = "\(subjectsSpanish[1])\(modalSp2) \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+            gens2 = "\(subjectsSpanish[1])used to \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+        case "He ", "She ":
+            gene = "\(subjectsEnglish[pronounRand])\(modalEng) \(verbs[verbRand]) \(verbObjects[objRand][ob2])"
+            gens = "\(subjectsSpanish[pronounRand])\(modalSp3) \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+            gens2 = "\(subjectsSpanish[pronounRand])used to \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+        case "We ":
+            gene = "\(subjectsEnglish[4])\(modalEng) \(verbs[verbRand]) \(verbObjects[objRand][ob2])"
+            gens = "\(subjectsSpanish[4])\(modalSp4) \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+            gens2 = "\(subjectsSpanish[4])used to \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+        case "They ":
+            gene = "\(subjectsEnglish[5])\(modalEng) \(verbs[verbRand]) \(verbObjects[objRand][ob2])"
+            gens = "\(subjectsSpanish[5])\(modalSp5) \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+            gens2 = "\(subjectsSpanish[5])used to \(verbsSpanish[verbRand]) \(verbObjectsSpanish[objRand][ob2])"
+        default:
+            break
+        }
+    }
     
     //DATA
     
