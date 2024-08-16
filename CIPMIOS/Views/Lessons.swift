@@ -20,7 +20,6 @@ struct LessonsView: View {
             LazyVStack {
                 ForEach(Array(lessons.prefix(itemsPerPage).enumerated()), id: \.element.id) { index, lesson in
                     LessonCard(IndexSeleccionado: $IndexSeleccionado, lesson: lesson,index: index)
-                        .padding(.bottom, 16)
                         .padding(.top, 10)
                         .onAppear {
                             if index == itemsPerPage - 1 {
@@ -28,7 +27,6 @@ struct LessonsView: View {
                             }
                         }
                 }
-                .padding(.horizontal)
             }
         }
     }

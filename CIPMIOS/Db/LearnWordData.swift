@@ -188,7 +188,6 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "let", definition: "dejar", explanation: letDef),
     LearnWordTypes(word: "why", definition: "por qué", explanation: whyDef2),
     LearnWordTypes(word: "president", definition: "presidente", explanation: presidentDef),
-    //CONTINUAR
     // 60-69
     LearnWordTypes(word: "keep", definition: "mantener", explanation: keepDef),
     LearnWordTypes(word: "same", definition: "mismo", explanation: sameDef),
@@ -232,6 +231,7 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "percent", definition: "porcentaje", explanation: percent),
     LearnWordTypes(word: "hear", definition: "escuchar", explanation: hear),
     LearnWordTypes(word: "so", definition: "así que", explanation: soConnector),
+    
     LearnWordTypes(word: "during", definition: "durante", explanation: duringPreposition),
     LearnWordTypes(word: "question", definition: "pregunta", explanation: questionNounDef),
     LearnWordTypes(word: "right", definition: "derecho", explanation: rightNoundef2),
@@ -274,6 +274,7 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "water", definition: "agua", explanation: waterDef),
     LearnWordTypes(word: "mother", definition: "madre", explanation: motherDef),
     LearnWordTypes(word: "different", definition: "diferente", explanation: differentDef),
+    //CONTINUAR
     LearnWordTypes(word: "young", definition: "joven", explanation: youngDef),
     LearnWordTypes(word: "month", definition: "mes", explanation: monthDef),
     LearnWordTypes(word: "lot", definition: "mucho", explanation: lotDef),

@@ -51,48 +51,58 @@ struct LessonCard: View {
                 self.showModal = true
             }
         }) {
-            VStack(spacing: 16) {
+            VStack(alignment: .leading, spacing: 16) {
                 // Círculo con texto en el centro
-                ZStack {
-                    Circle()
-                        .stroke(lineWidth: 2)
-                        .frame(width: 100, height: 100)
-                    Text("Lesson \(index + 1)")
-                        .foregroundColor(.blue)
+                VStack{
+                    HStack(alignment: .firstTextBaseline) {
+                        Image(systemName: "play.circle.fill")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                        Text("Clase #\(index + 1)")
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .padding(.leading,20)
+                        Spacer()
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.azulMedium)
+                    .cornerRadius(16)
                 }
+                .padding(.horizontal,20)
+                
+                
                 // Título principal
-                Text(lesson.title)
-                    .font(.headline)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
+//                Text(lesson.title)
+//                    .font(.headline)
+//                    .multilineTextAlignment(.center)
+//                    .padding(.horizontal)
                 
                 // Subtítulo en cursiva
                 Text(lesson.subtitle)
-                    .font(.subheadline)
-                    .italic()
+                    .font(.title2)
                     .multilineTextAlignment(.center)
+                    .foregroundColor(Color.azulMedium)
+                    .padding(.top, 5)
+                    .padding(.horizontal,20)
                 
                 // Descripción
                 Text(lesson.description)
                     .font(.body)
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.leading)
                     .padding(.horizontal)
                 
                 // Nivel
                 Text(lesson.level)
                     .font(.footnote)
                     .multilineTextAlignment(.center)
+                    .padding(.horizontal,20)
                 
-                // Línea separadora
-                Rectangle()
-                    .frame(height: 1)
-                    .foregroundColor(.gray)
-                    .padding(.horizontal)
             }
             .padding()
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(radius: 5)
+            .padding(.vertical,20)
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+            .background(index % 2 == 0 ? Color.grisLight : Color.white)
         }
         .foregroundColor(.gray)
         .alert(isPresented: $showModal) {
