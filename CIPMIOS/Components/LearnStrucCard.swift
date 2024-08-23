@@ -33,24 +33,50 @@ struct LearnStrucCard: View {
         VStack(spacing: 16) {
             // Círculo con texto en el centro
             ZStack {
-                Circle()
-                    .stroke(lineWidth: 2)
-                    .frame(width: 120, height: 100)
-                Text("Structure \(index + 1)")
-                    .foregroundColor(.blue)
+                VStack{
+                    HStack(alignment: .firstTextBaseline) {
+                        Image(systemName: "play.circle.fill")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                        Text("Clase #\(index + 1)")
+                            .font(.system(size: 29))
+                            .foregroundColor(.white)
+                            .padding(.leading,2)
+                            .padding(.vertical,5)
+                        Spacer()
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.azulMedium)
+                    .cornerRadius(16)
+                }
+                .padding(.horizontal,60)
             }
             
             // Título principal
-            Text(LearnStruc.title)
-                .font(.headline)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal)
+            VStack{
+                HStack{
+                    Text("Responde a la pregunta: ")
+                    Spacer()
+                }
+                HStack{
+                    Text(LearnStruc.definition)
+                        .foregroundColor(Color.azulMedium)
+                    Spacer()
+                }
+            }
+            .padding(.horizontal,20)
             
-            // Subtítulo en cursiva
-            Text(LearnStruc.definition)
-                .font(.subheadline)
-                .italic()
-                .multilineTextAlignment(.center)
+            //ESTRUCTURA
+            VStack{
+                HStack{
+                    Text(LearnStruc.title)
+                        .font(.system(size: 22))
+                        .foregroundColor(Color.azulMedium)
+                    Spacer()
+                }
+            }
+            .padding(.horizontal,20)
             
             if(BtnExplicacion){
                 Text(LearnStruc.explanation)
@@ -80,14 +106,22 @@ struct LearnStrucCard: View {
             
             if(BtnEjemplo){
                 VStack(alignment: .leading){
-                    Text("Spanish: \(TxtSpa)")
-                        .padding(.horizontal)
-                    Rectangle()
-                        .frame(height: 1)
-                        .foregroundColor(.gray)
-                        .padding(.horizontal)
-                    Text("English: \(TxtEng)")
-                        .padding(.horizontal)
+                    HStack(alignment: .top){
+                      Text("Spanish:")
+                            
+                        Text(TxtSpa)
+                            .foregroundColor(Color.azulMedium)
+                    }
+                    .padding(.horizontal)
+                    
+                    dashedLines()
+                    
+                    HStack(alignment: .top){
+                      Text("English:")
+                        Text(TxtEng)
+                            .foregroundColor(Color.azulMedium)
+                    }
+                    .padding(.horizontal)
                 }
             }
             
@@ -109,7 +143,7 @@ struct LearnStrucCard: View {
                     practice()
                 }
                 
-                //
+                
                 btnCard(Title: "EXPLICACION", IsSelected: BtnExplicacion)
                 .onTapGesture {
                     BtnEjemplo = false
@@ -118,14 +152,11 @@ struct LearnStrucCard: View {
                 }
                 
             }
-            // Línea separadora
-            Rectangle()
-                .frame(height: 1)
-                .foregroundColor(.gray)
-                .padding(.horizontal)
+            .padding(.horizontal)
         }
-        .padding()
-        .background(Color.white)
+        .padding(.vertical,40)
+        .padding(.horizontal,20)
+        .background(index % 2 == 0 ? Color.grisLight : Color.white)
         .cornerRadius(10)
         .shadow(radius: 5)
         .foregroundColor(.gray)
@@ -194,18 +225,85 @@ struct LearnStrucCard: View {
         var body: some View {
             VStack{
                 Text(Title)
-                    .font(.footnote)
+                    .font(.system(size: 10))
                     .padding(.vertical,17)
                     .padding(.horizontal,10)
             }
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-            .background(IsSelected ? Color("azul") : Color("blanco"))
+            .background(IsSelected ? Color.azulMedium : Color("blanco"))
             .cornerRadius(8)
-            .border(IsSelected ? Color("blanco") : Color.blue , width: 1.5)
-            .foregroundColor(IsSelected ? Color("blanco") : Color("azul"))
+            .border(IsSelected ? Color("blanco") : Color.azulMedium , width: 1.5)
+            .foregroundColor(IsSelected ? Color("blanco") : Color.azulMedium)
             .bold()
             .clipShape(RoundedRectangle(cornerRadius: 5))
         }
+    }
+    
+    private struct dashedLines: View {
+        var body: some View {
+            HStack(spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/){
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+            }
+        }
+    }
+}
+
+//PREVIEW
+struct LearnStrucCard_Previews: PreviewProvider {
+    @State static var indexSeleccionado = 1
+    
+    static var previews: some View {
+        VStack{
+            LearnStrucCard(
+                IndexSeleccionado: $indexSeleccionado,  // Proporciona el Binding real aquí
+                ShowExpla: false,
+                BtnEjemplo: false,
+                BtnPracticar: false,
+                BtnExplicacion: false,
+                LearnStruc: LearnStrucTypes(
+                    title: "Present Simple",
+                    definition: "Qué pasa?",
+                    explanation: "Simple Present Definition",
+                    level: 1,
+                    lessonNumber: 1
+                ),
+                index: 10
+            )
+        }
+
     }
 }
 

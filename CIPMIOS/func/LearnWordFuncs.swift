@@ -1234,14 +1234,14 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         TxtSpa = gen.gens
         break
         
-    case "place":                                                              
+    case "place":
         nouns.nounGen(engNoun: "the place ", spNoun: "el lugar ");
         
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
-    case "again":                                                              
+    case "again":
         newVerb.GenPresSimpAdverbs2(adverb: "again ", adverbio: "otra vez ");
         
         TxtEng = newVerb.gene
@@ -1262,14 +1262,14 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         TxtSpa = nouns.gens
         break
         
-    case "few":                                                              
+    case "few":
         gen.adjmethodP(adjective: "most ");
         
         TxtEng = gen.gene
         TxtSpa = gen.gens
         break
         
-    case "system":                                                              
+    case "system":
         nouns.nounGen(engNoun: "the system ", spNoun: "el sistema ");
         
         TxtEng = nouns.gene
@@ -1283,42 +1283,42 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         TxtSpa = nouns.gens
         break
         
-    case "company":                                                              
+    case "company":
         newVerb.GenPresSimpAdverbs3(adverb: "where ", adverbio: "En donde ");
         
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
         
-    case "each":                                                              
+    case "each":
         gen.adjmethod(adjective: "each ");
         
         TxtEng = gen.gene
         TxtSpa = gen.gens
         break
         
-    case "percent":                                                              
+    case "percent":
         nouns.nounGen(engNoun: "the percent ", spNoun: "el porcentaje ");
         
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
-    case "hear":                                                              
+    case "hear":
         newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 36);
         
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
         
-    case "during":                                                              
+    case "during":
         nouns.genPreps(prep: "during");
         
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
-    case "question":                                                              
+    case "question":
         nouns.nounGen(engNoun: "the question ", spNoun: "la pregunta ");
         
         TxtEng = nouns.gene
@@ -1348,7 +1348,7 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         
     case "number":
         nouns.nounGen(engNoun: "the number ", spNoun: "el número ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
@@ -1362,7 +1362,7 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         
     case "government":
         nouns.nounGen(engNoun: "the government ", spNoun: "el gobierno ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
@@ -1376,7 +1376,7 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         
     case "off":
         newVerb.GenOff();
-
+        
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
@@ -1390,49 +1390,49 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         
     case "always":
         newVerb.GenPresSimpAdverbs(adverb: "always ", adverbio: "siempre ");
-
+        
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
         
     case "night":
         nouns.nounGen(engNoun: "the night ", spNoun: "la noche ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "believe":
         newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 41);
-
+        
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
         
     case "today":
         newVerb.GenPresSimpAdverbs2(adverb: "today ", adverbio: "hoy ");
-
+        
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
         
     case "hold":
         newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 42);
-
+        
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
         
     case "point":
         nouns.nounGen(engNoun: "the point ", spNoun: "el punto ");
-
+        
         TxtEng = gen.gene
         TxtSpa = gen.gens
         break
         
     case "live":
         newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 43);
-
+        
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
@@ -1446,105 +1446,105 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         
     case "bring":
         newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 44);
-
+        
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
         
     case "next":
         gen.adjmethod(adjective: "next ");
-
+        
         TxtEng = gen.gene
         TxtSpa = gen.gens
         break
         
     case "without":
         nouns.genPreps(prep: "without");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "before":
         nouns.genPreps(prep: "before");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "large":
         nouns.adjectiveGen2(adjParamEng: "large ", adjParamSpM: "grande ", adjParamSpF: "gran ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "must":
         newVerb.genPresSimpModals(modalEng: "must ", modalSp1: "debo ", modalSp2: "debes ", modalSp3: "debe ", modalSp4: "debemos ", modalSp5: "deben ");
-
+        
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
         
     case "war":
         nouns.nounGen(engNoun: "the war ", spNoun: "la guerra ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "home":
         nouns.nounGen(engNoun: "the home ", spNoun: "el hogar ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "under":
         nouns.genPreps(prep: "under");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "room":
         nouns.nounGen(engNoun: "the room ", spNoun: "el cuarto ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "fact":
         nouns.nounGen(engNoun: "the fact ", spNoun: "el hecho ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "area":
         nouns.nounGen(engNoun: "the area ", spNoun: "la zona ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "national":
         nouns.adjectiveGen2(adjParamEng: "national ", adjParamSpM: "nacional ", adjParamSpF: "nacional ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "write":
         newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 45);
-
+        
         TxtEng = newVerb.gene
         TxtSpa = newVerb.gens
         break
         
     case "money":
         nouns.nounGen(engNoun: "the money ", spNoun: "el dinero ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
@@ -1552,14 +1552,14 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         
     case "story":
         nouns.nounGen(engNoun: "the story ", spNoun: "la historia ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
         
     case "water":
         nouns.nounGen(engNoun: "the water ", spNoun: "el agua ");
-
+        
         TxtEng = nouns.gene
         TxtSpa = nouns.gens
         break
@@ -1573,6 +1573,670 @@ func ActivarPalabraVocab(_ functionName: String,TxtEng: inout String, TxtSpa: in
         
     case "different":
         nouns.adjectiveGen2(adjParamEng: "different ", adjParamSpM: "diferente ", adjParamSpF: "diferente ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+        
+    case "young":
+        nouns.adjectiveGen2(adjParamEng: "young ", adjParamSpM: "joven ", adjParamSpF: "joven ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "month":
+        nouns.nounGen(engNoun: "the month ", spNoun: "el mes ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "lot":
+        nouns.nounGen(engNoun: "the lot ", spNoun: "el lote ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "book":
+        nouns.nounGen(engNoun: "the book ", spNoun: "el libro ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "eye":
+        nouns.nounGen(engNoun: "the eye ", spNoun: "el ojo ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "study":
+        nouns.nounGen(engNoun: "the study ", spNoun: "el estudio ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "job":
+        nouns.nounGen(engNoun: "the job ", spNoun: "el trabajo ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "kind":
+        nouns.nounGen(engNoun: "the kind ", spNoun: "el tipo ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "word":
+        nouns.nounGen(engNoun: "the kind ", spNoun: "el tipo ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "issue":
+        nouns.nounGen(engNoun: "the issue ", spNoun: "el tema ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "side":
+        nouns.nounGen(engNoun: "the side ", spNoun: "el lado ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "four":
+        gen.adjmethodP(adjective: "four ");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "business":
+        nouns.nounGen(engNoun: "the business ", spNoun: "el negocio ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "though":
+        newVerb.genConjFuture(conjunction: "though", conector: "aún que");
+        newVerb2.GenPresSimpSubjunctive();
+        
+        complemento = newVerb2.gens;
+        complement = newVerb2.gene;
+        
+        TxtEng = newVerb.gene + " " + complement
+        TxtSpa = newVerb.gens + " " + complemento
+        break
+    case "head":
+        nouns.nounGen(engNoun: "the head ", spNoun: "la cabeza ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "far":
+        newVerb.GenPresSimpPrepasAdv(preposition: "far ", preposicion: "lejos ");
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "long":
+        nouns.adjectiveGen2(adjParamEng: "long ", adjParamSpM: "largo ", adjParamSpF: "larga ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "black":
+        nouns.adjectiveGen2(adjParamEng: "black ", adjParamSpM: "negro ", adjParamSpF: "negra ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "million":
+        gen.adjmethodP(adjective: "million");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "both":
+        gen.adjmethodP(adjective: "both ");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "little":
+        nouns.adjectiveGen2(adjParamEng: "little ", adjParamSpM: "chiquito ", adjParamSpF: "chiquita ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "yes":
+        TxtEng = "yes"
+        TxtSpa = "si "
+        break
+    case "since":
+        newVerb.genConj(conjunction: "since ", conector: "ya que ");
+        newVerb2.GenPresSimp();
+        
+        complemento = newVerb.gens;
+        complement = newVerb2.gene;
+        
+        TxtEng = newVerb.gene + " " + complement
+        TxtSpa = newVerb.gens + " " + complemento
+        break
+    case "around":
+        nouns.genPreps(prep: "around");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "provide":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 46);
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "service":
+        nouns.nounGen(engNoun: "the service ", spNoun: "el servicio ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "important":
+        nouns.adjectiveGen(adjParamEng: "important ", adjParamSpM: "importante ", adjParamSpF: "importante ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "sit":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 47);
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "away":
+        newVerb.GenPresSimpPrepasAdv(preposition: "away ", preposicion: "lejos ");
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "friend":
+        nouns.nounGen(engNoun: "the friend ", spNoun: "el amigo ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "however":
+        newVerb.GenPresSimpAdverbs3(adverb: "however ", adverbio: "como sea que ");
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "power":
+        nouns.nounGen(engNoun: "the power ", spNoun: "el poder ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "yet":
+        //TODO: FALTA FUNCION
+        //Nobles.genpresperf
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "father":
+        nouns.nounGen(engNoun: "the father ", spNoun: "el padre ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "hour":
+        nouns.nounGen(engNoun: "the hour ", spNoun: "la hora ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "often":
+        newVerb.GenPresSimpAdverbs2(adverb: "often ", adverbio: "seguido ");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "until":
+        newVerb.genConjFuture(conjunction: "until", conector: "hasta que");
+        newVerb2.GenPresSimpSubjunctive();
+        
+        complemento = newVerb2.gens;
+        complement = newVerb2.gene;
+        
+        TxtEng = newVerb.gene + " " + complement
+        TxtSpa = newVerb.gens + " " + complemento
+        break
+    case "political":
+        nouns.adjectiveGen(adjParamEng: "political ", adjParamSpM: "politico ", adjParamSpF: "politica ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "line":
+        nouns.nounGen(engNoun: "the line ", spNoun: "la linea ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "end":
+        nouns.nounGen(engNoun: "the end ", spNoun: "el fin ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "stand":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 48);
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "among":
+        nouns.genPreps(prep: "among");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "game":
+        nouns.nounGen(engNoun: "the game ", spNoun: "el juego ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "ever":
+        //TODO: FALTA FUNCION EN NOBLES
+        //nob2.GenPresPerfVocab("ever ", "nunca ");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "lose":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 49);
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "bad":
+        nouns.adjectiveGen2(adjParamEng: "bad ", adjParamSpM: "mal ", adjParamSpF: "mala ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "member":
+        nouns.nounGen(engNoun: "the member ", spNoun: "el miembro ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "meet":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 50);
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "pay":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 51);
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "law":
+        nouns.nounGen(engNoun: "the law ", spNoun: "la ley ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "almost":
+        newVerb.GenAlmost(almost: "almost ", casi: "casi ");
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "car":
+        nouns.nounGen(engNoun: "the car ", spNoun: "el carro ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "later":
+        newVerb.GenPresSimpAdverbs2(adverb: "later ", adverbio: "mas tarde ");
+        
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "name":
+        nouns.nounGen(engNoun: "the name ", spNoun: "el nombre ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "include":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 52);
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "five":
+        gen.adjmethodP(adjective: "five ");
+        
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "center":
+        nouns.nounGen(engNoun: "the center ", spNoun: "el centro ");
+        
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "once":
+        newVerb.GenPresSimpAdverbs2(adverb: "once ", adverbio: "una vez ");
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "university":
+        nouns.nounGen(engNoun: "the university ", spNoun: "la universidad ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "continue":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 53);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "least":
+        nouns.adjAdv(adverbEng: "the least ", adverbioEsp: "el menos ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "real":
+        nouns.adjectiveGen2(adjParamEng: "real ", adjParamSpM: "real ", adjParamSpF: "real ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "white":
+        nouns.adjectiveGen2(adjParamEng: "white ", adjParamSpM: "blanco ", adjParamSpF: "blanca ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "change":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 54);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "set":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 55);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "several":
+        gen.adjmethodP(adjective: "several ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "ago":
+        newVerb.genAgo();
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "information":
+        nouns.nounGen(engNoun: "the information ", spNoun: "la información ");
+
+        TxtEng = gen.gene
+        TxtSpa = gen.gens
+        break
+    case "nothing":
+        nouns.genPronoun(pronounParm: "nothing ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "community":
+        nouns.nounGen(engNoun: "the community ", spNoun: "la comunidad ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "best":
+        nouns.adjectiveGen(adjParamEng: "best ", adjParamSpM: "mejor ", adjParamSpF: "mejor ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "idea":
+        nouns.nounGen(engNoun: "the idea ", spNoun: "la idea ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "lead":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 56);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "body":
+        nouns.nounGen(engNoun: "the body ", spNoun: "el cuerpo ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "learn":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 57);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "kid":
+        nouns.nounGen(engNoun: "the kid ", spNoun: "el niño ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "minute":
+        nouns.nounGen(engNoun: "the minute ", spNoun: "el minuto ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "table":
+        nouns.nounGen(engNoun: "the table ", spNoun: "la mesa ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "whether":
+        newVerb.genConjFuture(conjunction: "whether", conector: "ya sea que");
+        newVerb2.GenPresSimpSubjunctive();
+        
+        complemento = newVerb2.gens;
+        complement = newVerb2.gene;
+        
+        TxtEng = newVerb.gene + " " + complement
+        TxtSpa = newVerb.gens + " " + complemento
+        break
+    case "understand":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 58);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "team":
+        nouns.nounGen(engNoun: "the team ", spNoun: "el equipo ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "watch":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 59);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "together":
+        newVerb.GenPresSimpAdverbs2(adverb: "together ", adverbio: "juntos ");
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "follow":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 60);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "stop":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 61);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "face":
+        nouns.nounGen(engNoun: "the face ", spNoun: "la cara ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "anything":
+        nouns.genPronoun(pronounParm: "anything ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "public":
+        nouns.adjectiveGen2(adjParamEng: "public ", adjParamSpM: "publico ", adjParamSpF: "publica ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "social":
+        nouns.adjectiveGen2(adjParamEng: "social ", adjParamSpM: "social ", adjParamSpF: "social ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "already":
+        gen1.GenPastSimp1();
+
+        TxtEng = gen1.gene
+        TxtSpa = gen1.gens
+        break
+    case "parent":
+        nouns.nounGen(engNoun: "the parent ", spNoun: "el padre ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "speak":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 62);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "create":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 63);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "office":
+        nouns.nounGen(engNoun: "the office ", spNoun: "la oficina ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "allow":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 64);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "level":
+        nouns.nounGen(engNoun: "the level ", spNoun: "el nivel ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "read":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 65);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "spend":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 66);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "person":
+        nouns.nounGen(engNoun: "the person ", spNoun: "la persona ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "door":
+        nouns.nounGen(engNoun: "the door ", spNoun: "la puerta ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "sure":
+        nouns.adjectiveGen(adjParamEng: "sure ", adjParamSpM: "seguro ", adjParamSpF: "segura ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "add":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 67);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "street":
+        nouns.nounGen(engNoun: "the street ", spNoun: "la calle ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "history":
+        nouns.nounGen(engNoun: "the history ", spNoun: "la historia ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "party":
+        nouns.nounGen(engNoun: "the party ", spNoun: "la fiesta ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "grow":
+        newVerb.GenPresSimp(pronounparm: pronoun, verbpos: 68);
+
+        TxtEng = newVerb.gene
+        TxtSpa = newVerb.gens
+        break
+    case "reason":
+        nouns.nounGen(engNoun: "the reason ", spNoun: "la razón ");
+
+        TxtEng = nouns.gene
+        TxtSpa = nouns.gens
+        break
+    case "morning":
+        nouns.nounGen(engNoun: "the morning ", spNoun: "la mañana ");
 
         TxtEng = nouns.gene
         TxtSpa = nouns.gens

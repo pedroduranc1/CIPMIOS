@@ -274,7 +274,6 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "water", definition: "agua", explanation: waterDef),
     LearnWordTypes(word: "mother", definition: "madre", explanation: motherDef),
     LearnWordTypes(word: "different", definition: "diferente", explanation: differentDef),
-    //CONTINUAR
     LearnWordTypes(word: "young", definition: "joven", explanation: youngDef),
     LearnWordTypes(word: "month", definition: "mes", explanation: monthDef),
     LearnWordTypes(word: "lot", definition: "mucho", explanation: lotDef),
@@ -393,6 +392,7 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "grow", definition: "crecer", explanation: growDef),
     LearnWordTypes(word: "reason", definition: "razón", explanation: reasonDef),
     LearnWordTypes(word: "morning", definition: "mañana", explanation: morningDef),
+    //CONTINUAR
     LearnWordTypes(word: "open", definition: "abrir", explanation: openDef),
     LearnWordTypes(word: "within", definition: "dentro de", explanation: withinDef),
     LearnWordTypes(word: "change", definition: "cambiar", explanation: changeDef),

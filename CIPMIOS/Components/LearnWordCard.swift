@@ -113,16 +113,14 @@ struct LearnWordCard: View {
                     }
                 
             }
+            .padding(.horizontal,20)
+            
             // Línea separadora
-            Rectangle()
-                .frame(height: 1)
-                .foregroundColor(.gray)
-                .padding(.horizontal)
+            dashedLines()
         }
-        .padding()
+        .padding(.vertical)
         .background(Color.white)
         .cornerRadius(10)
-        .shadow(radius: 5)
         .foregroundColor(.gray)
         .onTapGesture {
             BtnEjemplo = false
@@ -195,8 +193,58 @@ struct LearnWordCard: View {
             .clipShape(RoundedRectangle(cornerRadius: 5))
         }
     }
+    
+    private struct dashedLines: View {
+        var body: some View {
+            HStack(spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/){
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                
+                Rectangle()
+                    .frame(height: 1)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray)
+                    .padding(.horizontal)
+                
+                
+            }
+        }
+    }
 }
 
-#Preview {
-    ContentView()
+//PREVIEW
+struct LearnWordCard_Previews: PreviewProvider {
+    @State static var indexSeleccionado = 1
+    
+    static var previews: some View {
+        VStack{
+            LearnWordCard(LearnWord: LearnWordTypes(word: "morning", definition: "mañana", explanation: "morningDef"), index: 0)
+        }
+    }
 }
