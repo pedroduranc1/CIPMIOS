@@ -58,6 +58,9 @@ struct Routes: View {
             case 16:
                 //Aprende una palabra
                 LearnWord()
+                
+            case 17:
+                LearnToConect()
             case 99:
                 //VIEW DE PRUEBAS
                 SpeechView()

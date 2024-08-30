@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftSpeech
 import AVFoundation
 
-struct LearnWordCard: View {
+struct LearnToConectCard: View {
     
     @State private var TxtEng = ""
     @State private var TxtSpa = ""
@@ -19,7 +19,7 @@ struct LearnWordCard: View {
     
     private let synthesizer = AVSpeechSynthesizer()
     
-    var LearnWord: LearnWordTypes
+    var LearnWord: LearnToConectTypes
     var index: Int
     
     @State var BtnEjemplo = false
@@ -271,12 +271,12 @@ struct LearnWordCard: View {
 }
 
 //PREVIEW
-struct LearnWordCard_Previews: PreviewProvider {
+struct LearnToConect_Previews: PreviewProvider {
     @State static var indexSeleccionado = 1
     
     static var previews: some View {
         VStack{
-            LearnWordCard(LearnWord: LearnWordTypes(word: "morning", definition: "mañana", explanation: "morningDef"), index: 0)
+            LearnToConectCard(LearnWord: LearnToConectTypes(word: "And", definition: "y", explanation: "Esto es una explicacion de prueba para and"), index: 1)
         }
     }
 }

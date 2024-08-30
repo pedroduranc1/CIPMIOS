@@ -392,7 +392,6 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "grow", definition: "crecer", explanation: growDef),
     LearnWordTypes(word: "reason", definition: "razón", explanation: reasonDef),
     LearnWordTypes(word: "morning", definition: "mañana", explanation: morningDef),
-    //CONTINUAR
     LearnWordTypes(word: "open", definition: "abrir", explanation: openDef),
     LearnWordTypes(word: "within", definition: "dentro de", explanation: withinDef),
     LearnWordTypes(word: "change", definition: "cambiar", explanation: changeDef),
@@ -456,6 +455,7 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "oh", definition: "oh", explanation: ohDef), // May need context or specific use case for a definition.
     LearnWordTypes(word: "death", definition: "muerte", explanation: deathDef),
     
+    //CONTINUAR
     LearnWordTypes(word: "plan", definition: "plan", explanation: planNounDef),
     LearnWordTypes(word: "interest", definition: "interés", explanation: interestDef),
     LearnWordTypes(word: "someone", definition: "alguien", explanation: someoneDef),
