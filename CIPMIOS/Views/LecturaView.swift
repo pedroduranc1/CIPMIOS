@@ -10,7 +10,7 @@ struct LecturaView: View {
     @State private var StructureOptionsPremium = ["Black Fathers", "Is America Racist?", "Don't Compare Yourself to Others", "Fix Yourself", "Are Men and Women Different?", "Don't Waste Your Time", "How to Make Our Cities Safer", "How to End Systemic Racism", "Should Government Bail Out Big Banks?"]
     
     @State private var selectedOption: String? = "Black Fathers"
-    @State private var IsPremium: Bool = true
+    @State private var IsPremium: Bool = GlobalData.shared.isPremium
     @State private var videoURL: URL?
     @State private var isEmpezarClicked = false
     

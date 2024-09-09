@@ -139,3 +139,21 @@ let lessonsData: [LessonTypes] = [
     LessonTypes(title: "Aprende Frases Culturales En sutaciones reales", subtitle: "Cultura y Fonética", description: "Aprende la frase, asociala a significado y encuentrala en el video", lessonNumber: "Lesson 103", level: "Nivel Avanzado"),
     LessonTypes(title: "Aprende Frases Culturales En sutaciones reales", subtitle: "Kings of the Hills Drugs", description: "Aprende la frase, asociala a significado y encuentrala en el video", lessonNumber: "Lesson 104", level: "Nivel Avanzado"),
 ]
+
+let lessonsDataBasic: [LessonTypes] = [
+    LessonTypes(title: "Aprende a usar las palabras mas básicas de una oración", subtitle: "Function Words", description: "adescription: prende a usar las palabras mas frequentes y funcionales del inglés,relacionan ideas dentro de la oración", lessonNumber: "Lesson 1", level: "Nivel: el Muy Basico"),
+    
+    LessonTypes(title: "Responde a la pregunta: Que pasa?", subtitle: "Present Simple", description: "Aprende a hablar de habitos y rutinas en inglés", lessonNumber: "Lesson 2", level: "Nivel Basico"),
+    LessonTypes(title: "Que está pasando?", subtitle: "Present Continuous", description: "Aprende a hablar de cosas que estan sucediendo ahora mismo", lessonNumber: "Lesson 3", level: "Nivel Basico"),
+    LessonTypes(title: "Que ha pasado?", subtitle: "Present Perfect", description: "Aprende a hablar de cosas que sucedieron en pasado pero que aún tienen relevancia en el presente", lessonNumber: "Lesson 4", level: "Nivel Basico"),
+    LessonTypes(title: "Que ha estado pasado?", subtitle: "Present Perfect Continuous", description: "Aprende a hablar de lo que ha estado ocurriendo", lessonNumber: "Lesson 5", level: "Nivel Basico"),
+    LessonTypes(title: "Que pasó?", subtitle: "Past Simple", description: "Aprende a hablar de acciones que sucedieron y terminaron en el pasado", lessonNumber: "Lesson 6", level: "Nivel Basico"),
+    LessonTypes(title: "Que estaba pasando?", subtitle: "Past Continuous", description: "Aprende a hablar de acciones que estaban sucediendo en un momento específico del pasado", lessonNumber: "Lesson 7", level: "Nivel Basico"),
+    LessonTypes(title: "Que había pasado", subtitle: "Past Perfect", description: "Aprende a hablar de acciones que se completaron antes de otro evento en el pasado", lessonNumber: "Lesson 8", level: "Nivel Basico"),
+    LessonTypes(title: "Que había estado pasando", subtitle: "Past Perfect Continuous", description: "Aprende a hablar de acciones que habían estado ocurriendo durante un periodo antes de otro evento en el pasado", lessonNumber: "Lesson 9", level: "Nivel Basico"),
+    LessonTypes(title: "Que pasará", subtitle: "Future Simple", description: "Aprende a hablar de acciones futuras que ocurrirán en un momento específico", lessonNumber: "Lesson 10", level: "Not Complted"),
+    LessonTypes(title: "Que estará pasando", subtitle: "Future Continuous", description: "Aprende a hablar de acciones que estarán ocurriendo en un momento futuro específico", lessonNumber: "Lesson 11", level: "Nivel Basico"),
+    LessonTypes(title: "Que habrá pasado", subtitle: "Future Perfect", description: "Aprende a hablar de acciones que se habrán completado antes de un punto específico en el futuro", lessonNumber: "Lesson 12", level: "Not Complted"),
+    LessonTypes(title: "Que habrá estado pasando", subtitle: "Future Perfect Continuous", description: "Aprende a hablar de acciones que estarán ocurriendo durante un período antes de un evento futuro específico", lessonNumber: "Lesson 14", level: "Nivel Basico"),
+    LessonTypes(title: "Que pasaría", subtitle: "Would Simple", description: "Aprende a hablar de acciones hipotéticas en el futuro usando 'would'", lessonNumber: "Lesson 14", level: "Nivel Basico"),
+]

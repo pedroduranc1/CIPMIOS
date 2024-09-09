@@ -10,6 +10,7 @@ import URLImage
 
 struct Perfil: View {
     @ObservedObject var userManager = UserManager()
+    private var isPremium: Bool = GlobalData.shared.isPremium
     
     var body: some View {
         ScrollView{
@@ -62,6 +63,14 @@ struct Perfil: View {
                     
                 }
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight:100)
+                
+                VStack{
+                    if isPremium {
+                        Text("Eres Premium")
+                    }else{
+                        Text("Usuario Basico")
+                    }
+                }
                 
                 HStack{
                     VStack{

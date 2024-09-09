@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SwiftSpeech
+import AVFoundation
 
 struct ContentView: View {
-    
+    @StateObject private var globalData = GlobalData.shared
     @State private var showSplashScreen = true
     
     var body: some View {
@@ -25,9 +27,15 @@ struct ContentView: View {
                     showSplashScreen = false
                 }
             }
+            // Actualiza el estado premium cuando aparece la vista
+            SwiftSpeech.requestSpeechRecognitionAuthorization()
+            UserManager().checkPremiumStatus()
         }
+        .environmentObject(globalData) // Proveer el objeto global a las vistas
     }
+    
 }
+
 
 struct MainView: View {
     @State var IndexSeleccionado = 11

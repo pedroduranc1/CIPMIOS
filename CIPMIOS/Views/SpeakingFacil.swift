@@ -38,7 +38,7 @@ struct SpeakingFacil: View {
     @State private var StatusColor: String = "blanco"
     
     //VARIABLES DE FUNCIONABILIDAD
-    @State private var IsPremium: Bool = false
+    @State private var IsPremium: Bool = GlobalData.shared.isPremium
     @State private var BtnSelected: Float = 0
     @State private var currentTimeInSeconds: Double = 0 // Estado para el tiempo actual del vídeo
     @State private var seekTimeInSeconds: Double?
@@ -401,4 +401,15 @@ struct SpeakingFacil: View {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
     
+}
+
+//PREVIEW
+struct SPA_FACIL_Previews: PreviewProvider {
+    @State static var indexSeleccionado = 5
+    
+    static var previews: some View {
+        VStack{
+            SpeakingFacil(IndexSeleccionado: $indexSeleccionado)
+        }
+    }
 }

@@ -21,7 +21,7 @@ struct Listening: View {
     @State private var selectedOption: String? = "Moonlight"
     @State private var Explanation = 0
     @State private var Clip = 0
-    @State private var IsPremium: Bool = true
+    @State private var IsPremium: Bool = GlobalData.shared.isPremium
     @State private var ShowExpla = false
     @State private var ShowClip = false
     @State private var KeyWord = "Ain't no refund"

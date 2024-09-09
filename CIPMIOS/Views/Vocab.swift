@@ -28,7 +28,7 @@ struct Vocab: View {
     @State private var StructureOptionsPremium = ["0 a 50","50 a 100","100 a 150","150 a 200","200 a 250","250 a 300","300 a 350","350 a 400","400 a 450"]
     
     //VARIABLES DE FUNCIONABILIDAD
-    @State private var IsPremium: Bool = true
+    @State private var IsPremium: Bool = GlobalData.shared.isPremium
     
     //VARIABLES DE VOCABULARY
     @State private var videoURL: URL?

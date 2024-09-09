@@ -28,7 +28,7 @@ struct ListeningDif: View {
     @State private var userInput: String = ""
     
     //VARIABLES DE FUNCIONABILIDAD
-    @State private var IsPremium: Bool = true
+    @State private var IsPremium: Bool = GlobalData.shared.isPremium
     @State private var currentTimeInSeconds: Double = 0 // Estado para el tiempo actual del vídeo
     @State private var seekTimeInSeconds: Double?
     @State var isButtonPressed: Bool?

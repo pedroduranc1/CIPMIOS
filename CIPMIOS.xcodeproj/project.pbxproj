@@ -382,7 +382,6 @@
 				C15814FF2BA09ECF008883E1 /* SpeakingDificil.swift */,
 				C15B43E72BA36B6500D90883 /* ListeningDif.swift */,
 				C176FB8E2C0E47A500487F3B /* Lessons.swift */,
-				C195A8CF2C4AC064005E48C3 /* LessonsData.swift */,
 				C10FC59B2C174EFD0011F827 /* Toefl.swift */,
 				C10FC59D2C174FB80011F827 /* PlanPerzonalizado.swift */,
 				C16989322C18AB7D0059CE23 /* SpaInt.swift */,
@@ -463,6 +462,7 @@
 		44CBBAE72B712EB200C0F321 /* Db */ = {
 			isa = PBXGroup;
 			children = (
+				C195A8CF2C4AC064005E48C3 /* LessonsData.swift */,
 				C199B8492C7F6D7D0050FD94 /* LearnToConectData.swift */,
 				44CBBAE82B712F9000C0F321 /* UserManager.swift */,
 				44F620FF2B7283E000CAD21C /* AuthManager.swift */,

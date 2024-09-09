@@ -99,6 +99,35 @@ let LearnStrucArray: [LearnStrucTypes] = [
     //LearnStrucTypes("Want Agent To","El sujeto quiere que el objeto haga algo",wantToDef,1),
 ];
 
+let LearnStrucBasic: [LearnStrucTypes] = [
+    LearnStrucTypes(title: "Present Simple",definition: "Qué pasa?",explanation: simplePresentDefinition,level: 1,lessonNumber: 1),
+    LearnStrucTypes(title: "Present Continuous",definition: "Qué está pasando?",explanation: presentContinuousDef,level: 1, lessonNumber: 2),
+
+    LearnStrucTypes(title: "Past Simple",definition: "Qué pasó?",explanation: simplePastExplanation,level: 1, lessonNumber: 5),
+    LearnStrucTypes(title: "Past Continuous",definition: "Qué estaba pasando?",explanation: pastContinuousExplanation,level: 1, lessonNumber: 6),
+
+    LearnStrucTypes(title: "Future Simple",definition: "Qué pasará?",explanation: futureSimpleExplanation,level: 1, lessonNumber: 9),
+    LearnStrucTypes(title: "Future Continuous",definition: "Qué estará pasando?",explanation: futureContinuousExplanation,level: 1, lessonNumber: 10),
+
+    LearnStrucTypes(title: "Would Simple",definition: "Qué pasaría?",explanation: wouldVerbExplanation,level: 1, lessonNumber: 13),
+    LearnStrucTypes(title: "Would Continuous",definition: "Qué estaría pasando?",explanation: wouldContinuousExplanation,level: 1, lessonNumber: 14),
+
+    LearnStrucTypes(title: "Could Simple",definition: "Qué podría pasar?",explanation: couldVerbExplanation,level: 1, lessonNumber: 17),
+    LearnStrucTypes(title: "Could Continuous",definition: "Qué podría estar pasando?",explanation: couldContinuousExplanation,level: 1, lessonNumber: 18),
+    
+    LearnStrucTypes(title: "Should Simple",definition: "Qué debería pasar?",explanation: shouldVerbExplanation,level: 1, lessonNumber: 21),
+    LearnStrucTypes(title: "Should Continuous",definition: "Qué debería estar pasando?",explanation: shouldBeVerbingExplanation,level: 1, lessonNumber: 22),
+
+    LearnStrucTypes(title: "Might Simple",definition: "Qué quiza pase?",explanation: mightDef,level: 1, lessonNumber: 25),
+    LearnStrucTypes(title: "Might Continuous",definition: "Qué quiza esté pasando?",explanation: mightContinuousDef,level: 1, lessonNumber: 26),
+
+    LearnStrucTypes(title: "Can Simple",definition: "Qué puede pasar?",explanation: canVerbDef,level: 1, lessonNumber: 29),
+    LearnStrucTypes(title: "Can Continuous",definition: "Qué puede estar pasando?",explanation: canBeVerbingDef,level: 1, lessonNumber: 30),
+
+    LearnStrucTypes(title: "Must Simple",definition: "Qué debe pasar?",explanation: mustVerbDef,level: 1, lessonNumber: 31),
+    LearnStrucTypes(title: "Must Continuous",definition: "Qué debe estar pasando?",explanation: mustBeVerbingDef,level: 1, lessonNumber: 32),
+];
+
         
 
 let simplePresentDefinition = """

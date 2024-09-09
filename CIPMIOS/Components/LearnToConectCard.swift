@@ -16,6 +16,7 @@ struct LearnToConectCard: View {
     @State private var userInput: String = ""
     
     @State private var IntentosIncorrectos = 0
+    @State private var showModal = false
     
     private let synthesizer = AVSpeechSynthesizer()
     
@@ -149,6 +150,13 @@ struct LearnToConectCard: View {
             // Línea separadora
             dashedLines()
         }
+        .alert(isPresented: $showModal) {
+            Alert(
+                title: Text("Conexion '\(LearnWord.word)' en desarrollo"),
+                message: Text("Esta conexion pronto estara disponible."),
+                dismissButton: .default(Text("OK"))
+            )
+        }
         .padding(.vertical)
         .background(Color.white)
         .cornerRadius(10)
@@ -202,8 +210,15 @@ struct LearnToConectCard: View {
     }
     
     private func practice(){
-        ActivarPalabraVocab(LearnWord.word, TxtEng: &TxtEng, TxtSpa: &TxtSpa)
-        speak(text: "Como dirias?: \(TxtSpa)", lang: "es-ES")
+        ActivarPalabraToConect(LearnWord.word, TxtEng: &TxtEng, TxtSpa: &TxtSpa)
+        if(TxtSpa.isEmpty){
+            BtnEjemplo = false
+            BtnPracticar = false
+            BtnExplicacion = false
+            showModal = true
+        }else{
+            speak(text: "Como dirias?: \(TxtSpa)", lang: "es-ES")
+        }
     }
     
     private struct btnCard: View {
@@ -276,7 +291,7 @@ struct LearnToConect_Previews: PreviewProvider {
     
     static var previews: some View {
         VStack{
-            LearnToConectCard(LearnWord: LearnToConectTypes(word: "And", definition: "y", explanation: "Esto es una explicacion de prueba para and"), index: 1)
+            LearnToConectCard(LearnWord: LearnToConectTypes(word: "and", definition: "y", explanation: "Esto es una explicacion de prueba para and"), index: 1)
         }
     }
 }

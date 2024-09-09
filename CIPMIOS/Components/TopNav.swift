@@ -75,7 +75,3 @@ struct TopNav: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}

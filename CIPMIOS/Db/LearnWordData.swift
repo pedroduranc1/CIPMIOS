@@ -454,8 +454,6 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "fall", definition: "caer", explanation: fallVerbDef),
     LearnWordTypes(word: "oh", definition: "oh", explanation: ohDef), // May need context or specific use case for a definition.
     LearnWordTypes(word: "death", definition: "muerte", explanation: deathDef),
-    
-    //CONTINUAR
     LearnWordTypes(word: "plan", definition: "plan", explanation: planNounDef),
     LearnWordTypes(word: "interest", definition: "interés", explanation: interestDef),
     LearnWordTypes(word: "someone", definition: "alguien", explanation: someoneDef),
@@ -513,6 +511,7 @@ let LearnWordArray: [LearnWordTypes] = [
     LearnWordTypes(word: "economic", definition: "económico", explanation: economicDef),
     LearnWordTypes(word: "wife", definition: "esposa", explanation: wifeNounDef),
     LearnWordTypes(word: "show", definition: "mostrar", explanation: showVerb),
+    //CONTINUAR
     LearnWordTypes(word: "mind", definition: "mente", explanation: mindNounDef),
     LearnWordTypes(word: "report", definition: "reporte sustantivo", explanation: reportVerbDef),
     LearnWordTypes(word: "finally", definition: "finalmente", explanation: finallyDef),
@@ -543,7 +542,91 @@ let LearnWordArray: [LearnWordTypes] = [
 
 ]
 
-
+let LearnWordBasic: [LearnWordTypes] = [
+    LearnWordTypes(word: "the",definition: "El-La-Los-Las",explanation: theDef),
+    LearnWordTypes(word: "be",definition: "Ser o Estar",explanation: toBeDef),
+    LearnWordTypes(word: "and",definition: "Y",explanation: andDef),
+    LearnWordTypes(word: "of",definition: "de",explanation: ofDef),
+    LearnWordTypes(word: "a",definition: "un-una",explanation: aDef),
+    LearnWordTypes(word: "in",definition: "en-dentro",explanation: inDef),
+    LearnWordTypes(word: "to(infinitive)",definition: "parte de un verbo sin conjugar",explanation: toInfinitiveDef),
+    LearnWordTypes(word: "have",definition: "tener-haber-consumir",explanation: haveDef),
+    LearnWordTypes(word: "to",definition: "a-como preposición ",explanation: toPrepositionDef),
+    LearnWordTypes(word: "it",definition: "eso",explanation: itDef),
+    //10
+    LearnWordTypes(word: "I",definition: "Yo",explanation: iDef),
+    LearnWordTypes(word: "that",definition: "que-para conectar ideas",explanation: thatConnectorDef),
+    LearnWordTypes(word: "for",definition: "por o para",explanation: forDef),
+    LearnWordTypes(word: "you",definition: "tú",explanation: youDef),
+    LearnWordTypes(word: "he",definition: "él",explanation: heDef),
+    LearnWordTypes(word: "with",definition: "con",explanation: withDef),
+    LearnWordTypes(word: "on",definition: "sobre",explanation: onDef),
+    LearnWordTypes(word: "do",definition: "hacer",explanation: doDef),
+    LearnWordTypes(word: "´s",definition: "indica posesión",explanation: possessiveSDef),
+    LearnWordTypes(word: "say",definition: "Decir",explanation: sayDef),
+    //20
+    LearnWordTypes(word: "they",definition: "ellos",explanation: theyDef),
+    LearnWordTypes(word: "this",definition: "esto",explanation: thisDef),
+    LearnWordTypes(word: "but",definition: "pero",explanation: butDef),
+    LearnWordTypes(word: "at",definition: "en",explanation: atDef),
+    LearnWordTypes(word: "we",definition: "nosotros",explanation: weDef),
+    LearnWordTypes(word: "his",definition: "su de él",explanation: hisDef),
+    LearnWordTypes(word: "from",definition: "de-proveniencia",explanation: fromDef),
+    LearnWordTypes(word: "that (determiner)",definition: "eso",explanation: thatDeterminerDef),
+    LearnWordTypes(word: "not",definition: "negador",explanation: notDef),
+    LearnWordTypes(word: "n´t",definition: "negador contraido",explanation: nTDef),
+    //30
+    LearnWordTypes(word: "by",definition: "por",explanation: byDef),
+    LearnWordTypes(word: "or",definition: "o",explanation: orDef),
+    LearnWordTypes(word: "she",definition: "ella",explanation: sheDef),
+    LearnWordTypes(word: "as(conjunction)",definition: "en lo que",explanation: asConjunctionDef),
+    LearnWordTypes(word: "what(determiner)",definition: "que",explanation: whatDeterminerDef),
+    LearnWordTypes(word: "go",definition: "ir",explanation: goDef),
+    LearnWordTypes(word: "their",definition: "su de ellos",explanation: theirDef),
+    LearnWordTypes(word: "will",definition: "modal para futuro",explanation: willDef),
+    LearnWordTypes(word: "who",definition: "quien",explanation: whoDef),
+    LearnWordTypes(word: "can",definition: "poder",explanation: canDef),
+    //40
+    LearnWordTypes(word: "get",definition: "obtener",explanation: getDef),
+    LearnWordTypes(word:"if",definition:"si",explanation:ifDef),
+    LearnWordTypes(word: "all",definition: "todo",explanation: allDef),
+    LearnWordTypes(word: "would",definition: "modal hipotético",explanation: wouldDef),
+    LearnWordTypes(word: "her",definition: "su de ella",explanation: herDef),
+    LearnWordTypes(word: "make",definition: "hacer",explanation: makeDef),
+    LearnWordTypes(word: "about",definition: "acerca de",explanation: aboutDef),
+    LearnWordTypes(word: "my",definition: "mi-posesivo",explanation: myDef),
+    LearnWordTypes(word: "know",definition: "saber-conocer",explanation: knowDef),
+    LearnWordTypes(word: "as(preposition)",definition: "como",explanation: asPrepositionDef),
+    
+    //50
+    LearnWordTypes(word: "there", definition: "ahí", explanation: thereDef),
+    LearnWordTypes(word: "one", definition: "uno", explanation: oneDef),
+    LearnWordTypes(word: "up", definition: "arriba", explanation: upDef),
+    LearnWordTypes(word: "time", definition: "tiempo", explanation: timeDef),
+    LearnWordTypes(word: "year", definition: "año", explanation: yearDef),
+    LearnWordTypes(word: "so", definition: "tan-asi que", explanation: soDef),
+    LearnWordTypes(word: "think", definition: "pensar", explanation: thinkDef),
+    LearnWordTypes(word: "see", definition: "ver", explanation: seeDef),
+    LearnWordTypes(word: "which", definition: "cual", explanation: whichDef),
+    LearnWordTypes(word: "when", definition: "cuando", explanation: whenDef),
+    //60
+    LearnWordTypes(word: "some", definition: "unos-unas-algunos-algunas", explanation: someDef),
+    LearnWordTypes(word: "them", definition: "ellos(como objeto)", explanation: themDef),
+    LearnWordTypes(word: "people", definition: "gente", explanation: peopleDef),
+    LearnWordTypes(word: "take", definition: "tomar", explanation: takeDef),
+    LearnWordTypes(word: "me", definition: "mi", explanation: meDef),
+    LearnWordTypes(word: "out", definition: "fuera", explanation: outDef),
+    LearnWordTypes(word: "into", definition: "hacia dentro", explanation: intoDef),
+    LearnWordTypes(word: "just", definition: "solo-apenas-no mas que-justo", explanation: justDef),
+    LearnWordTypes(word: "him", definition: "él (como objeto)", explanation: himDef),
+    LearnWordTypes(word: "come", definition: "venir", explanation: comeDef),
+    //70
+    LearnWordTypes(word: "your", definition: "tu -posesivo", explanation: yourDef),
+    LearnWordTypes(word: "now", definition: "ahora", explanation: nowDef),
+    LearnWordTypes(word: "could", definition: "podría-podía", explanation: couldDef),
+    LearnWordTypes(word: "than", definition: "que(comparativo)", explanation: thanDef),
+    LearnWordTypes(word: "like", definition: "como-(preposición)", explanation: likeDef),
+]
 
 //DEFINICIONES DE LAS PALABRAS
 private let toBeDef = "El verbo \"to be\" es uno de los verbos más básicos y versátiles en inglés, funcionando como verbo principal para expresar existencia, identidad, características y estado. Se conjuga de forma única según el sujeto y el tiempo verbal. En presente, las formas son \"am\", \"is\", y \"are\"; en pasado, \"was\" y \"were\". No tiene un equivalente directo único en español, ya que se traduce como \"ser\" o \"estar\", dependiendo del contexto.";
