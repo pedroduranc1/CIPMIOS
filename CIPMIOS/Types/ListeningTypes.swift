@@ -245,7 +245,274 @@ let DatosPragger: [praggerTextInfo] = [
                     So, trust granny. Trust common sense. And remember the beach ball.
                     
                     I'm Sean McDowell, Associate Professor of Theology and Philosophy at Biola University, for Prager University.
-                    """)
+                    """),
+    praggerTextInfo(pragger: "Don't Waste Your Time", praggerWord: """
+                Women, here’s a revolutionary idea: Date with a purpose. What purpose? Getting married.
+                
+                Whoa! Am I moving too fast for you? Making you uncomfortable? Dating, you say, is just—well, dating. You know—hook ups, casual flings, having fun.
+                
+                Yeah? Who said so?
+                
+                Don’t get me wrong. I’m all for fun, but I’m interested in something deeper here—like happiness. I’m certainly not saying that marriage should be the first topic of conversation. At least wait until the pizza is served (just kidding). But I am saying that you need to ask yourself this question: Why do you want to go on a date with someone? Physical attraction? That’s important. Common interest in something? Also important. But what else?
+                
+                Let’s face it, most of the time, we—and by “we” here, I’m referring to women—have no idea. We have no plan. That’s okay as far it goes. But “as far as it goes” is not very far. And, frankly, not very smart.
+                
+                But let’s play out the scenario. We too often assume that relationships have levels of commitment, progressing—if they progress at all—like video games. A hookup is level one, dating is level two; level three—living together. And then, after we’ve had those, maybe we’re ready for marriage.
+                
+                But in fact, relationships usually don’t progress that way. Hookups arise out of whim, impulse, or simple attraction. Dating is often based on compatibility or convenience, and sometimes on the hope that something serious might develop. Living together may be based on real love and a tryout for marriage. But it can also be based on less serious considerations, like lack of other opportunities, desire for a roommate, or the inability to afford a single apartment.
+                
+                But marriage is a different enterprise entirely. Those looking for a good marriage are looking for someone who wants to build a shared life. They’re looking for someone who shares their values and beliefs―moral, political, and, where applicable, religious. They view each other not only as a “partner,” but as something even more profound: husband and wife.
+                
+                The problem with so many dating relationships is that people enter them with completely different understandings of what the ideal outcome should be. He wants X, and she wants Y.
+                
+                And it’s easy to get distracted and fooled by superficial compatibility. They’re thrilled they both like kombucha, kayaking and karaoke on the weekends. That’s all great, but when do you get down to the stuff that really matters over the long run? Stuff like marriage, family, faith, and values.
+                
+                I say: the sooner, the better. If a relationship looks like it has a future, talk about it early on. And if doesn’t look like it has a future, what are you doing in it?
+                
+                I have no doubt the reason so many women get stuck in dead-end relationships is that it has become taboo―or, to be precise, not politically correct―for a woman to articulate what she really wants.
+                
+                Which takes me back to marriage, and why women crave it. Here are three reasons:
+                
+                Protection.
+                
+                Commitment.
+                
+                Love.
+                
+                Nothing wrong with wanting those things. It is something women have wanted—and great societies have valued—for thousands of years. It is something men still want, too. Little wonder: Study after study shows that those in good marriages are happier, healthier, even wealthier, than those who are not. Like anything you want, you have to work toward it. And anything that isn’t moving you toward your goal is a waste of time.
+                
+                What’s the difference between living with someone and marriage? It’s the difference between referring to the man in your life as “my boyfriend,” “significant other,” or “partner” and referring to him as “my husband.” And him referring to you as “my wife,” as compared with “my girlfriend.”
+                
+                Ask anyone who has taken the plunge and they’ll tell you living together and marriage have little in common. It’s sort of like the difference between living in a country and being a citizen of that country.  The latter, with its commitment, obligations, and expectations, means a lot more.
+                
+                To someone who tells you that a marriage license is trivial, “just a piece of paper,” here’s a good response: If it’s just a piece of paper, why are you so reluctant to sign it? The answer, of course, is that no one believes that it’s trivial. Everyone knows it’s the most important decision you’ll ever make. So treat it that way.
+                
+                Here’s a good rule of thumb: Think about the kind of relationship you want as much as you think about what kind of career you want.
+                
+                I’m not anti-career. I’m just pro-relationship. Specifically, pro-marriage. Because when you get it right, that’s the best relationship there is.
+                
+                And it starts with the first date.
+                
+                I’m Lauren Chen, host of Pseudo-Intellectual on BlazeTV, for Prager University.
+"""),
+    praggerTextInfo(pragger: "How to Make Our Cities Safer", praggerWord: """
+            After two decades of relative peace, violent crime has again become a major issue in the United States.
+            
+            In 2020, homicides rose by 30 percent, a record for a one-year increase.
+            
+            In 2021 and 2022, homicides continued to climb, shattering records in several cities.
+            
+            We don’t have to live this way. Here are four practical solutions that will make our cities safer.
+            
+            None of these solutions are theoretical.
+            
+            They’re street-tested and backed by rigorous studies.
+            
+            They’re Constitutional and cost-effective.
+            
+            While each one will reduce crime on its own, taken together, they can transform a city—not in decades, but within a year or two.
+            
+            Here’s what we need to do.
+            
+            First: Target the Power Few
+            
+            Violent crime is highly concentrated.
+            
+            We know where violent crimes are likely to be committed: drug houses, gang hangouts, a problem bar. Crime “hot spots.”
+            
+            We know when violent crimes are likely to be committed: at night, on weekends, and during the hot summer months.
+            
+            But more importantly, we know who commits violent crimes: they’re called the Power Few.
+            
+            In any given city, just five percent of criminals are responsible for 50 percent of all violent crimes. I want to make this abundantly clear: it’s not five percent of the total population of a city that is driving the majority of violent crime; it’s five percent of the criminals—a subset of a subset. Targeting this small cohort of high-frequency offenders can substantially reduce violent crime rates throughout an entire city.
+            
+            Second: Go After the Drug Dealers and Gun-Toting Felons
+            
+            You don’t have to dig very deeply into crime statistics to discover that drug dealers and felons in possession of firearms are linked to many violent crimes, especially homicides.
+            
+            These are the people who are not only likely to kill but to be killed.
+            
+            So if law enforcement focuses on drug dealers and gun-toting felons, they’ll reduce the number of both potential killers and potential victims on the street.
+            
+            But targeting drug dealers has an added benefit, one that’s lost on the public, but well-known to law enforcement.
+            
+            Drug dealers, often part of drug gangs, have the best information about homicides and all sorts of other crimes.
+            
+            Any investigator who interrogates a drug-dealing gang member will likely soon discover that the defendant has witnessed or participated in multiple shootings, both fatal and non-fatal. In addition, that same defendant will know about a score of other crimes—everything from robberies to carjackings to organized retail theft rings. And if he is facing a long sentence, there’s a good chance he’ll give up that information.
+            
+            Third. Unite Cops and Prosecutors
+            
+            When police and prosecutors collaborate from the inception of an investigation, good things happen. This is a concept known as vertical prosecution.
+            
+            Working as a team, police and prosecutors discuss targets, timing of arrests, and legal issues like whether a search warrant is required. Once the investigation is completed, the police remain involved at the trial stage helping to determine the order of witnesses, trial themes, and even jury selection.
+            
+            This style of collaboration is resource and time intensive, but it pays big dividends. There’s no blaming each other for a poor investigation or bad trial strategy because everybody participated in all aspects of the case.
+            
+            When the prosecutors and police work together, particularly in major cases like homicides, the cases are better investigated, legal errors are minimized, the system works as intended. In short, justice is done.
+            
+            On the other hand, and this seems to be happening more and more in America today, when the prosecutors and police are actively hostile towards one another, the only people who win are the criminals.
+            
+            Fourth: Keep the Bad Actors in Jail
+            
+            Progressive politicians insist that the length of prison sentences plays no significant role in stopping crime. Most law enforcement officials strongly disagree.
+            
+            So, who’s right?
+            
+            In two separate studies, in 2020 and 2022, the United States Sentencing Commission, an independent federal agency, took up this question. Their analysis involved thousands of federal inmates over multiple decades.
+            
+            Their conclusion was clear: once prison sentences get to five years in length, the longer the prison sentence, the less likely the criminal will commit another crime.
+            
+            Your average citizen could tell you why incarceration matters.
+            
+            One, people don’t want to go back to prison. So criminals try not to commit more crimes.
+            
+            Two, the age-crime curve tells us that most violent criminals commit the majority of their crimes from their late teens into their 20s. Prison sentences of over five years simply take these violent criminals out of circulation when they are at their most dangerous.
+            
+            So, let’s review:
+            
+            Target the Power Few
+            
+            Go after the drug dealers and gun-toting felons
+            
+            Unite cops and prosecutors
+            
+            And keep the bad actors in jail
+            
+            That’s what separates safe cities from dangerous ones.
+            
+            It’s not rocket science just good law enforcement.
+            
+            I’m Tom Hogan, former federal and local prosecutor and criminal defense lawyer, for Prager University."
+"""),
+    praggerTextInfo(pragger: "How to End Systemic Racism", praggerWord: """
+            There is systemic racism in this country. 
+            
+            And people of color are paying a terrible price because of it.
+            
+            The elites who have instigated this moral crime deserve to be exposed for what they’ve done.
+            
+            The sooner we call attention to them…
+            
+            The sooner we expose their regressive ideas…
+            
+            The sooner we live in a more just society.
+            
+            No truth. No peace.
+            
+            Here’s how bad it is.
+            
+            At Columbia University black students have a separate graduation from white students. In many other colleges, black students are encouraged to live in their own separate dorms.
+        
+            Students in many New York City government schools are separated by color during the school year.
+            
+            State governments put regulations in place that make it harder for minorities to start businesses.
+            A national museum declares hard work and ambition to be white values.
+            
+            One of America’s two major political parties assumes that many black people are incapable of obtaining a driver’s license or an ID card.
+            
+            In Oregon, black students are told that math is a white construct—all but guaranteeing failure in this essential skill.
+            
+            In Baltimore less than 10% of minority students can read at grade level—all but guaranteeing failure in this essential skill.
+            
+            In Oakland, no student is allowed to get a D or an F. Instead, everyone is simply promoted to the next grade whether they know the material or not.
+            
+            City councils demonize their own police departments, then vote to cut police budgets. Crime and murder skyrocket. The victims are almost all minorities.
+            
+            Prosecutors refuse to prosecute hardened criminals. Instead, they let the criminals back on the streets to prey on law-abiding, hard-working citizens, again, mostly black people.
+            
+            That’s only a few of many examples.
+            
+            It's shocking but commonplace.
+            
+            Every day in every major city, people of color are living in this oppressive, patronizing environment. These prejudices—literally prejudgments—make it more and more difficult for black people and other minorities to improve their lives—the very opposite of what the goal should be.
+            
+            In other words, the very people claiming to have black people’s and minorities’ best interests at heart are instituting the very policies and attitudes that are holding them back.
+            
+            Sounds like systemic racism to me.
+            
+            And it makes you think that we’re not moving forward as a pluralistic, equal-opportunity nation, but backward into Jim Crow.
+            
+            Now, here’s the kicker.
+            
+            It’s not those horrible, nasty, bigoted, misogynistic, authoritarian nationalists on the right who are imposing these crushing rules and policy prescriptions; it’s the woke left.
+            
+            The side that I revered as a beacon of tolerance, the side that I thought was on the right side of history, up until a few years ago.
+            
+            In fact, I was so committed, I got a “Black Lives Matter” tattoo.
+            
+            I still have it.
+            
+            But then I had to face reality.
+            
+            It’s the ideology of the left that has set back young students of color with lower education standards. That calls for pulling cops out of high crime areas and replacing them with social workers… That states that skin color is more important than character—more important than anything.
+            
+            Yes, it is the woke left that is systemically racist.
+            
+            Not America.
+            
+            The race hoax epidemic is proof. There have been dozens of these hoaxes over the last few years.
+            
+            Nooses on garages, the N-word on dorm rooms, “this is MAGA country” taunts on cold city streets—virtually every one of them has been faked.
+            
+            The demand for racism exceeds the supply.
+            
+            If racism against black people or any other minority group was rampant, you wouldn’t have to fake it to convince people how “bad” things are.
+            
+            Did anyone fake racism in the South in the 1950s?
+            
+            But there’s so little now that the race-obsessed woke left has manufactured “unconscious racism” and “microaggressions” to fool people into believing America is “systemically racist.”
+            
+            That’s not to say racism doesn’t exist. Of course it does. There will always be small-minded people. But their numbers are as small as their minds.
+            
+            And in case you’re thinking of George Floyd, please know that even Minnesota’s leftist Attorney General admitted the incident had nothing to do with Floyd being black.
+            
+            My father and millions of Africans didn’t immigrate to America so that they could live in a racist society. They immigrated so that they could have opportunities that were only available to them here.
+            
+            So, to all the leftists out there, I understand why you believe what you believe—I was once one of you—but it’s time to ask yourself some questions.
+            
+            Is it really helping black people to tell them they’re not as responsible for their actions as anyone else?
+            
+            Isn’t it condescending, if not outright bigoted, to expect less from somebody purely based on their race?
+            
+            Isn’t it clear that we should judge each person on their merits, not their skin color?
+            
+            Wouldn’t that do more to create an equitable society than a hundred government programs?
+            
+            Yes, there really is systemic racism. And it’s hurting the country. But it’s not coming from the direction you think.
+            
+            Once you realize that, everything changes.
+            
+            I’m Amala Ekpunobi for Prager University.
+"""),
+    praggerTextInfo(pragger: "Should Government Bail Out Big Banks?", praggerWord: """
+            In 2008, America experienced the biggest meltdown of its financial sector since the Great Depression. The conventional wisdom is that this failure and subsequent government rescue, commonly known as \"the bailout\" was brought about by three decades of bank de-regulation. There were a lot of causes for the meltdown, but deregulation wasn't one of them. Ironically, it wasn't because the banks had become unmoored from government control that led them into the financial storm, it was because they had become too closely tied to government. For three decades Uncle Sam, like an enabling parent, had always \"been there\" when the big banks got into trouble. The shock in 2008 was that for one brief moment, Uncle Sam wasn't there. 
+            
+            In the wee hours of September 15, 2008, Lehman Brothers filed for bankruptcy. The financial industry waited for the Feds to step in and save Lehman bondholders like it saved those of Bear Stearns some months earlier. That didn't happen. Global financial markets seized up. As the Dow Jones Industrial average fell 498 points, or nearly 4.4 percent, financial institutions effectively went on strike. Banks wouldn't lend money to other banks and thus, indirectly, to the public because they had no idea which financial institution might go belly up next. The economy can withstand a stock-market crash, but a credit-market freeze -- essentially a cash freeze -- can cause a Depression, as credit underpins almost all business and personal activities. Indeed, some large companies, including General Electric, were so dependent on these short-term credit markets that they were in danger of not being able to pay their workers.
+            
+            The financial industry pleaded with the government to act. Later in the same day, September 15, it did. The Feds wouldn't save Lehman's but it would save AIG, the primary insurer of mortgage loans. A month later, the Troubled Asset Relief Program (TARP), a $700 billion plan to pump taxpayer cash into America's banks and financial institutions was approved by Congress.
+            
+            Public officials generally agreed that the free market had failed. In November 2008, President George W. Bush came to New York to explain why he, a Republican president, had signed TARP into law. \"I'm a market-oriented guy, but not when I'm faced with the prospect of a global meltdown,\" he said.
+            
+            But free-market capitalism had not melted down. Again, the problem was not that banks had been too free, but that they had grown too dependent on government over the last few decades. Here's a brief history.
+            
+            America's first post-Depression bailout of a big bank came in 1984 when the Republican administration of Ronald Reagan, with help from the Federal Reserve bailed out Continental Illinois, the eighth largest commercial bank in the nation. The bailout introduced the phrase \"too big to fail\" to the financial media's vocabulary.
+            
+            The premise for rescuing Continental was simple: the bank had many global bondholders, big investors, and the government feared that the bondholders might pull their money out of all American banks if they saw that a bank like Continental could fail. That might have stemmed a short-term panic, but it created a long-term monster. The government had effectively said to financial markets: if you lend money to a big bank, it's just like lending money to the U.S. Treasury -- only it's better because the banks will pay you more interest than you can get from your Treasury bonds.
+            
+            And so money poured in from investors. The banks got bigger... and more reckless.  And when the next crisis rippled through the financial industry, there was Uncle Sam, ready with his checkbook.
+            
+            In 1998 the government, this time under Democrat Bill Clinton bailed out Long-Term Capital Management, a hedge fund that teetered at the edge of bankruptcy and threatened to drag some big banks down with it. The message to the banks was clearer than ever: take bigger risks. Uncle Sam would be there, if any thing went wrong.
+            
+            Indeed, as I noted, early in the crisis, in March 2008, the government brokered the purchase of the Bear, Stearns investment bank (to JP Morgan) to save its bondholders and other creditors from suffering huge losses. And that summer, Washington rescued Fannie Mae and Freddie Mac, the giant government sponsored mortgage companies.
+            
+            It's the fact that the government didn't rescue Lehman Brothers that set off the 2008 panic because the financial world simply assumed that Uncle Sam would. Would we have been better off had the government saved Lehman's? Maybe in the short run. But it's likely that crisis would have occurred anyway. Because banks assumed that the government would always bail them out, their risk models by 2008 were all out of whack; conservative practices, like lending only to credit-worthy borrowers, a relic of the past.
+            
+            What's the solution? How do we bring sanity back to the financial industry? Not by passing thousands of new regulations. The banks' army of accountants, lawyers and lobbyists can always work their way around those. The solution is that the government must stop guaranteeing the big banks' losses. Only then will bondholders, the big investors like pension funds and insurance companies, who lend the financial sector the money they need to operate, have an incentive to police the industry.
+            
+            It's that simple.
+            
+            I'm Nicole Gelinas, a senior fellow at the Manhattan Institute, for Prager University.
+""")
 ]
 
 //PREGUNTAS TEST
@@ -1820,5 +2087,262 @@ let DatosInfoRachel: [CatPregSig] = [
         CatPregInd(keyWord: "acting out", significado: "representando"),
         CatPregInd(keyWord: "commonsense", significado: "sentido común"),
         CatPregInd(keyWord: "remember the beach ball", significado: "recuerda la pelota de playa"),
-    ])
+    ]),
+    CatPregSig(pragger: "Don't Waste Your Time", praggerWord: [
+        CatPregInd(keyWord: "date", significado: "Tener citas."),
+        CatPregInd(keyWord: "purpose", significado: "Proposito."),
+        CatPregInd(keyWord: "get married", significado: "Casarse."),
+        CatPregInd(keyWord: "too fast", significado: "Muy rápido."),
+        CatPregInd(keyWord: "uncomfortable", significado: "Incomodo."),
+        CatPregInd(keyWord: "hook up", significado: "Iniciar una relación romántica o sexual con alguien."),
+        CatPregInd(keyWord: "casual flings", significado: "Aventuras casuales."),
+        CatPregInd(keyWord: "have fun", significado: "Divertirse."),
+        CatPregInd(keyWord: "don't get me wrong", significado: "No me malinterpretes."),
+        CatPregInd(keyWord: "deeper", significado: "Mas profundo."),
+
+        CatPregInd(keyWord: "happiness", significado: "Felicidad."),
+        CatPregInd(keyWord: "certainly", significado: "Ciertamente."),
+        CatPregInd(keyWord: "marriage", significado: "Matrimonio."),
+        CatPregInd(keyWord: "topic", significado: "Tema."),
+        CatPregInd(keyWord: "at least", significado: "Al menos, por lo menos."),
+        CatPregInd(keyWord: "else", significado: "Más."),
+        CatPregInd(keyWord: "let's face it", significado: "Seamos realistas / Encaremoslo."),
+        CatPregInd(keyWord: "as far as it goes", significado: "Hasta donde llegue."),
+        CatPregInd(keyWord: "frankly", significado: "Francamente."),
+        CatPregInd(keyWord: "smart", significado: "Inteligente."),
+
+        CatPregInd(keyWord: "play out", significado: "Reproducir."),
+        CatPregInd(keyWord: "often", significado: "Seguido."),
+        CatPregInd(keyWord: "relationship", significado: "Relación."),
+        CatPregInd(keyWord: "commitment", significado: "Compromiso."),
+        CatPregInd(keyWord: "in fact", significado: "De hecho."),
+        CatPregInd(keyWord: "arise", significado: "Surgir."),
+        CatPregInd(keyWord: "whim", significado: "Capricho."),
+        CatPregInd(keyWord: "develop", significado: "Desarrollar."),
+        CatPregInd(keyWord: "try out", significado: "Prueba."),
+        CatPregInd(keyWord: "less", significado: "Menos."),
+
+        CatPregInd(keyWord: "lack", significado: "Falta de."),
+        CatPregInd(keyWord: "afford", significado: "Poder pagar."),
+        CatPregInd(keyWord: "enterprise", significado: "Empresa."),
+        CatPregInd(keyWord: "entirely", significado: "En su totalidad / Totalmente."),
+        CatPregInd(keyWord: "build", significado: "Construir."),
+        CatPregInd(keyWord: "shared", significado: "Compartido."),
+        CatPregInd(keyWord: "beliefs", significado: "Creencias."),
+        CatPregInd(keyWord: "partner", significado: "Pareja / Compañero."),
+        CatPregInd(keyWord: "profound", significado: "Profundo."),
+        CatPregInd(keyWord: "understandings", significado: "Entendimientos."),
+
+        CatPregInd(keyWord: "outcome", significado: "Resultados."),
+        CatPregInd(keyWord: "fool", significado: "Engañar."),
+        CatPregInd(keyWord: "thrilled", significado: "Emocionarse."),
+        CatPregInd(keyWord: "kombucha", significado: "Bebida alcohólica."),
+        CatPregInd(keyWord: "get down to", significado: "Llegar a."),
+        CatPregInd(keyWord: "over the long run", significado: "A largo plazo."),
+        CatPregInd(keyWord: "stuff", significado: "Cosas."),
+        CatPregInd(keyWord: "faith", significado: "Fe."),
+        CatPregInd(keyWord: "sooner", significado: "Más pronto."),
+        CatPregInd(keyWord: "doubt", significado: "Duda."),
+
+        CatPregInd(keyWord: "stuck", significado: "Atrapado."),
+        CatPregInd(keyWord: "dead-end relationships", significado: "Relaciones sin salida."),
+        CatPregInd(keyWord: "articulate", significado: "Articular / Expresar."),
+        CatPregInd(keyWord: "crave", significado: "Anhelar."),
+        CatPregInd(keyWord: "healthier", significado: "Más sano."),
+        CatPregInd(keyWord: "wealthier", significado: "Más rico."),
+        CatPregInd(keyWord: "towards", significado: "Hacia."),
+        CatPregInd(keyWord: "waste of time", significado: "Pérdida de tiempo."),
+        CatPregInd(keyWord: "between", significado: "Entre."),
+        CatPregInd(keyWord: "take the plunge", significado: "Que ha dado el paso / Que se ha casado."),
+
+        CatPregInd(keyWord: "country", significado: "País."),
+        CatPregInd(keyWord: "citizen", significado: "Ciudadano."),
+        CatPregInd(keyWord: "the latter", significado: "El último."),
+        CatPregInd(keyWord: "expectations", significado: "Expectativas."),
+        CatPregInd(keyWord: "mean", significado: "Significar."),
+        CatPregInd(keyWord: "reluctant", significado: "Reacios."),
+        CatPregInd(keyWord: "sign", significado: "Firmar."),
+        CatPregInd(keyWord: "rule of thumb", significado: "Una regla no escrita que todos seguimos."),
+        CatPregInd(keyWord: "the kind of", significado: "El tipo de."),
+        CatPregInd(keyWord: "career", significado: "Carrera."),
+
+        CatPregInd(keyWord: "get it right", significado: "Hacerlo bien.")
+
+    ]),
+    CatPregSig(pragger: "How to Make Our Cities Safer", praggerWord: [
+        CatPregInd(keyWord: "homicides", significado: "asesinatos"),
+        CatPregInd(keyWord: "constitutional", significado: "constitucional"),
+        CatPregInd(keyWord: "cohort", significado: "cohorte"),
+        CatPregInd(keyWord: "high frequency offenders", significado: "delincuentes de alta frecuencia"),
+        CatPregInd(keyWord: "felons", significado: "delincuentes"),
+        CatPregInd(keyWord: "vertical prosecution", significado: "prosecución vertical"),
+        CatPregInd(keyWord: "legal errors", significado: "errores legales"),
+        CatPregInd(keyWord: "hostile", significado: "hostil"),
+        CatPregInd(keyWord: "progressive politicians", significado: "políticos progresistas"),
+        CatPregInd(keyWord: "incarceration", significado: "encarcelamiento"),
+        CatPregInd(keyWord: "age crime curve", significado: "curva de edad-crimen"),
+        CatPregInd(keyWord: "circulation", significado: "circulación"),
+        CatPregInd(keyWord: "rocket science", significado: "ciencia espacial"),
+        CatPregInd(keyWord: "street tested", significado: "probado en la calle"),
+        CatPregInd(keyWord: "crime hotspots", significado: "zonas calientes del crimen"),
+        CatPregInd(keyWord: "potential killers", significado: "asesinos potenciales"),
+        CatPregInd(keyWord: "potential victims", significado: "víctimas potenciales"),
+        CatPregInd(keyWord: "interrogates", significado: "interroga"),
+        CatPregInd(keyWord: "nonfatal", significado: "no mortal"),
+        CatPregInd(keyWord: "organized retail theft rings", significado: "anillos de robo organizado en el comercio minorista"),
+        CatPregInd(keyWord: "law enforcement officials", significado: "funcionarios encargados de hacer cumplir la ley"),
+        CatPregInd(keyWord: "United States Sentencing Commission", significado: "Comisión de Sentencias de los Estados Unidos"),
+        CatPregInd(keyWord: "shattering records", significado: "rompiendo récords"),
+        CatPregInd(keyWord: "resource and time intensive", significado: "intensivo en recursos y tiempo"),
+        CatPregInd(keyWord: "trial stage", significado: "etapa del juicio"),
+        CatPregInd(keyWord: "blaming each other", significado: "culparse mutuamente"),
+        CatPregInd(keyWord: "hostile towards one another", significado: "hostiles entre sí"),
+        CatPregInd(keyWord: "sentencing guidelines", significado: "directrices de sentencia"),
+        CatPregInd(keyWord: "violent crime rates", significado: "tasas de delitos violentos")
+
+    ]),
+    CatPregSig(pragger: "How to End Systemic Racism", praggerWord: [
+        CatPregInd(keyWord: "racism", significado: "Racismo."),
+        CatPregInd(keyWord: "deserve", significado: "Merecer."),
+        CatPregInd(keyWord: "exposed", significado: "Expuesto / expuesta."),
+        CatPregInd(keyWord: "sooner", significado: "Más pronto."),
+        CatPregInd(keyWord: "just", significado: "Justo."),
+        CatPregInd(keyWord: "truth", significado: "Verdad."),
+        CatPregInd(keyWord: "college", significado: "Universidad."),
+        CatPregInd(keyWord: "encouraged", significado: "Motivado."),
+        CatPregInd(keyWord: "many", significado: "Algunos."),
+        CatPregInd(keyWord: "government", significado: "Gobierno."),
+
+        CatPregInd(keyWord: "harder", significado: "Más difícil."),
+        CatPregInd(keyWord: "businesses", significado: "Empresas."),
+        CatPregInd(keyWord: "museum", significado: "Museo."),
+        CatPregInd(keyWord: "hard work", significado: "Trabajo duro."),
+        CatPregInd(keyWord: "major", significado: "Principal."),
+        CatPregInd(keyWord: "parties", significado: "Partidos."),
+        CatPregInd(keyWord: "obtaining", significado: "Obtención."),
+        CatPregInd(keyWord: "drivers license", significado: "Licencia de conducir."),
+        CatPregInd(keyWord: "construct", significado: "Constructo."),
+        CatPregInd(keyWord: "guaranteeing", significado: "Garantizando."),
+
+        CatPregInd(keyWord: "essential skill", significado: "Habilidad esencial."),
+        CatPregInd(keyWord: "failure", significado: "Fracaso."),
+        CatPregInd(keyWord: "allowed", significado: "Permitido."),
+        CatPregInd(keyWord: "promoted", significado: "Promovido."),
+        CatPregInd(keyWord: "the next grade", significado: "El siguiente grado."),
+        CatPregInd(keyWord: "council", significado: "Consulado."),
+        CatPregInd(keyWord: "demonize", significado: "Demonizar."),
+        CatPregInd(keyWord: "budget", significado: "Presupuesto."),
+        CatPregInd(keyWord: "murder", significado: "Asesinato."),
+        CatPregInd(keyWord: "skyrocket", significado: "Se disparan / sube."),
+
+        CatPregInd(keyWord: "prosecutors refuse", significado: "Los fiscales se rehúsan."),
+        CatPregInd(keyWord: "prosecute", significado: "Enjuiciar."),
+        CatPregInd(keyWord: "hardened criminals", significado: "Criminales endurecidos."),
+        CatPregInd(keyWord: "instead", significado: "En cambio."),
+        CatPregInd(keyWord: "prey", significado: "Aprovecharse de."),
+        CatPregInd(keyWord: "law abiding", significado: "Seguidores de la ley."),
+        CatPregInd(keyWord: "hardworking citizens", significado: "Ciudadanos trabajadores."),
+        CatPregInd(keyWord: "again", significado: "De nuevo."),
+        CatPregInd(keyWord: "few", significado: "Pocos."),
+        CatPregInd(keyWord: "commonplace", significado: "Común."),
+
+        CatPregInd(keyWord: "oppressive", significado: "Opresivo."),
+        CatPregInd(keyWord: "patronizing", significado: "Patronizante."),
+        CatPregInd(keyWord: "environment", significado: "Ambiente."),
+        CatPregInd(keyWord: "prejudices", significado: "Prejuicios."),
+        CatPregInd(keyWord: "prejudgments", significado: "Prejuicios."),
+        CatPregInd(keyWord: "goal", significado: "Meta."),
+        CatPregInd(keyWord: "claiming", significado: "Reclamando."),
+        CatPregInd(keyWord: "instituting", significado: "Instituyendo."),
+        CatPregInd(keyWord: "policies", significado: "Políticas."),
+        CatPregInd(keyWord: "holding back", significado: "Contener / retener."),
+
+        CatPregInd(keyWord: "systemic racism", significado: "Racismo sistemático."),
+        CatPregInd(keyWord: "moving forward", significado: "Ir hacia adelante."),
+        CatPregInd(keyWord: "pluralistic", significado: "Pluralista."),
+        CatPregInd(keyWord: "equal opportunity nation", significado: "Nación con igualdad de oportunidades."),
+        CatPregInd(keyWord: "backward", significado: "Hacia atrás."),
+        CatPregInd(keyWord: "here's the kicker", significado: "He aquí la parte irónica."),
+        CatPregInd(keyWord: "nasty", significado: "Asqueroso."),
+        CatPregInd(keyWord: "bigoted", significado: "Intolerante."),
+        CatPregInd(keyWord: "misogynistic", significado: "Misóginos."),
+        CatPregInd(keyWord: "authoritarian nationalists", significado: "Nacionalistas autoritarios."),
+
+        CatPregInd(keyWord: "imposing these crushing rules", significado: "Imponiendo estas reglas aplastantes."),
+        CatPregInd(keyWord: "the woke left", significado: "El despertar se fue."),
+        CatPregInd(keyWord: "side", significado: "Lado."),
+        CatPregInd(keyWord: "revered", significado: "Venerado."),
+        CatPregInd(keyWord: "up until", significado: "Hasta."),
+        CatPregInd(keyWord: "committed", significado: "Comprometido."),
+        CatPregInd(keyWord: "proof", significado: "Prueba."),
+        CatPregInd(keyWord: "dozens", significado: "Docenas."),
+        CatPregInd(keyWord: "over the last few years", significado: "En los últimos años."),
+        CatPregInd(keyWord: "nooses", significado: "Sogas."),
+
+        CatPregInd(keyWord: "n-word", significado: "Palabra para insultar a la gente de color."),
+        CatPregInd(keyWord: "taunts", significado: "Burlar."),
+        CatPregInd(keyWord: "faked", significado: "Falsificado."),
+        CatPregInd(keyWord: "supply", significado: "Suministro."),
+        CatPregInd(keyWord: "against", significado: "En contra de."),
+        CatPregInd(keyWord: "rampant", significado: "Desenfrenada."),
+        CatPregInd(keyWord: "race obsessed", significado: "Obsesionado con la raza."),
+        CatPregInd(keyWord: "unconscious", significado: "Inconsciente."),
+        CatPregInd(keyWord: "small minded", significado: "De mente pequeña."),
+        CatPregInd(keyWord: "attorney", significado: "Abogado."),
+
+        CatPregInd(keyWord: "had nothing to do", significado: "No tiene nada que ver."),
+        CatPregInd(keyWord: "available", significado: "Disponible."),
+        CatPregInd(keyWord: "understand", significado: "Entender."),
+        CatPregInd(keyWord: "once", significado: "Una vez."),
+        CatPregInd(keyWord: "condescending", significado: "Condescendiente."),
+        CatPregInd(keyWord: "outright", significado: "Total."),
+        CatPregInd(keyWord: "expect", significado: "Esperar."),
+        CatPregInd(keyWord: "purely", significado: "Puramente."),
+        CatPregInd(keyWord: "based on", significado: "Basado en."),
+        CatPregInd(keyWord: "merits", significado: "Méritos."),
+
+        CatPregInd(keyWord: "equitable", significado: "Equitativo."),
+        CatPregInd(keyWord: "hundred", significado: "Cientos."),
+        CatPregInd(keyWord: "realize", significado: "Darse cuenta.")
+
+    ]),
+    CatPregSig(pragger: "Should Government Bail Out Big Banks?", praggerWord: [
+        CatPregInd(keyWord: "financial sector", significado: "sector financiero"),
+        CatPregInd(keyWord: "government rescue", significado: "rescate gubernamental"),
+        CatPregInd(keyWord: "conventional wisdom", significado: "sabiduría convencional"),
+        CatPregInd(keyWord: "short term panic", significado: "pánico a corto plazo"),
+        CatPregInd(keyWord: "credit market freeze", significado: "congelación del mercado de crédito"),
+        CatPregInd(keyWord: "troubled asset relief program", significado: "Programa de Alivio de Activos Problemáticos"),
+        CatPregInd(keyWord: "post depression bailout", significado: "rescate post-Depresión"),
+        CatPregInd(keyWord: "commercial bank", significado: "banco comercial"),
+        CatPregInd(keyWord: "global bondholders", significado: "titulares globales de bonos"),
+        CatPregInd(keyWord: "short term credit markets", significado: "mercados de crédito a corto plazo"),
+
+        CatPregInd(keyWord: "bondholders", significado: "titulares de bonos"),
+        CatPregInd(keyWord: "hedge fund", significado: "fondo de cobertura"),
+        CatPregInd(keyWord: "government sponsored mortgage companies", significado: "empresas hipotecarias patrocinadas por el gobierno"),
+        CatPregInd(keyWord: "financial storm", significado: "tormenta financiera"),
+        CatPregInd(keyWord: "global meltdown", significado: "colapso global"),
+        CatPregInd(keyWord: "government control", significado: "control gubernamental"),
+        CatPregInd(keyWord: "financial institutions", significado: "instituciones financieras"),
+        CatPregInd(keyWord: "credit underpins", significado: "el crédito respalda"),
+        CatPregInd(keyWord: "stock market crash", significado: "colapso del mercado de valores"),
+        CatPregInd(keyWord: "federal reserve", significado: "Reserva Federal"),
+
+        CatPregInd(keyWord: "risk models", significado: "modelos de riesgo"),
+        CatPregInd(keyWord: "meltdown", significado: "colapso total"),
+        CatPregInd(keyWord: "deregulation", significado: "desregulación"),
+        CatPregInd(keyWord: "unmoored", significado: "sin anclaje"),
+        CatPregInd(keyWord: "dependent", significado: "dependiente"),
+        CatPregInd(keyWord: "enabling parent", significado: "padre permisivo"),
+        CatPregInd(keyWord: "belly up", significado: "en bancarrota"),
+        CatPregInd(keyWord: "reckless", significado: "imprudente"),
+        CatPregInd(keyWord: "teetered", significado: "tambaleado"),
+        CatPregInd(keyWord: "whack", significado: "desorden"),
+
+        CatPregInd(keyWord: "lobbyists", significado: "grupos de presión"),
+        CatPregInd(keyWord: "policing", significado: "supervisión, regulación"),
+        CatPregInd(keyWord: "depressions", significado: "Depresiones económicas, periodos prolongados de declive económico")
+
+    ]),
 ];

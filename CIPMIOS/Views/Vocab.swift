@@ -61,18 +61,10 @@ struct Vocab: View {
                     }
                     
                     // VIDEO VIEW
-                    VideoPlayerView(videoURL: videoURL,
-                                    currentTimeInSeconds: $currentTimeInSeconds,
-                                    seekTimeInSeconds: $seekTimeInSeconds,
-                                    onStop: {
-                        // Aquí manejas lo que sucede cuando el video se detiene
-                        print("El video ha terminado.")
-                    }, isButtonPressed: $isButtonPressed)
-                    .frame(height: 220)
-                    .padding(.horizontal, 20)
-                    .onDisappear {
-                        // Detener el video cuando la vista desaparece
-                        videoURL = getVideoURL(for: "", currentPage: "Vocabulary")
+                    if let url = videoURL {
+                        NormalVideoPlayer(videoURL: url)
+                            .frame(height: 220)
+                            .padding(.horizontal, 20)
                     }
                     
                     //Separador

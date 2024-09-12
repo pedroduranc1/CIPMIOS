@@ -1267,12 +1267,12 @@ class NewNounClass {
 //                verbsObject.GenWould()
 //                gens = "ojalá " + verbsObject.gens2
 //                gene = "I wish " + verbsObject.gene
-//                gene2 = "I wish " + AuxModalNegator.negateFirstAuxOrModalContracted(sentence: verbsObject.gene)
+//                gene2 = "I wish " + AuxModalNegator.negateFirstAuxOrModalContracted(input: verbsObject.gene)
 //            case 2:
 //                verbsObject.GenPerfectTenses(had: "had ", hubiera: "hubiera ", hubieras: "hubieras ", hubieramos: "hubiéramos ", hubieran: "hubieran ")
 //                gens = "ojalá " + verbsObject.gens
 //                gene = "I wish " + verbsObject.gene
-//                gene2 = "I wish " + AuxModalNegator.negateFirstAuxOrModalContracted(sentence: verbsObject.gene)
+//                gene2 = "I wish " + AuxModalNegator.negateFirstAuxOrModalContracted(input: verbsObject.gene)
 //            default:
 //                gens = "no such number"
 //            }

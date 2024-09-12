@@ -102,6 +102,7 @@
 		C192A5A12C457660005DD008 /* NewVerbClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C192A5A02C457660005DD008 /* NewVerbClass.swift */; };
 		C195A8D02C4AC064005E48C3 /* LessonsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C195A8CF2C4AC064005E48C3 /* LessonsData.swift */; };
 		C195A8D22C4AC3FD005E48C3 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C195A8D12C4AC3FD005E48C3 /* SplashScreenView.swift */; };
+		C1961A442C9330C5008C0205 /* NormalVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1961A432C9330C5008C0205 /* NormalVideoPlayer.swift */; };
 		C199B8462C7F6C690050FD94 /* LearnToConect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199B8452C7F6C690050FD94 /* LearnToConect.swift */; };
 		C199B8482C7F6D6A0050FD94 /* LearnToConectFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199B8472C7F6D6A0050FD94 /* LearnToConectFuncs.swift */; };
 		C199B84A2C7F6D7D0050FD94 /* LearnToConectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199B8492C7F6D7D0050FD94 /* LearnToConectData.swift */; };
@@ -224,6 +225,7 @@
 		C192A5A02C457660005DD008 /* NewVerbClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVerbClass.swift; sourceTree = "<group>"; };
 		C195A8CF2C4AC064005E48C3 /* LessonsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsData.swift; sourceTree = "<group>"; };
 		C195A8D12C4AC3FD005E48C3 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		C1961A432C9330C5008C0205 /* NormalVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalVideoPlayer.swift; sourceTree = "<group>"; };
 		C199B8452C7F6C690050FD94 /* LearnToConect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnToConect.swift; sourceTree = "<group>"; };
 		C199B8472C7F6D6A0050FD94 /* LearnToConectFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnToConectFuncs.swift; sourceTree = "<group>"; };
 		C199B8492C7F6D7D0050FD94 /* LearnToConectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnToConectData.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 		444E80182B1E3D1B004AC6BF = {
 			isa = PBXGroup;
 			children = (
+				C1961A432C9330C5008C0205 /* NormalVideoPlayer.swift */,
 				444E80232B1E3D1B004AC6BF /* CIPMIOS */,
 				444E80342B1E3D1C004AC6BF /* CIPMIOSTests */,
 				444E803E2B1E3D1C004AC6BF /* CIPMIOSUITests */,
@@ -657,6 +660,7 @@
 				44F7D5002B1F7DA200EAAC8B /* VideoPlayerView.swift in Sources */,
 				C183539B2BA9DE8100CBE367 /* RachelTypes.swift in Sources */,
 				4475F8C62B23817800307D02 /* People.swift in Sources */,
+				C1961A442C9330C5008C0205 /* NormalVideoPlayer.swift in Sources */,
 				4475F8BA2B23807B00307D02 /* Nobles.swift in Sources */,
 				C18CA23B2C36F49A00309ACF /* LearnStrucFuncs.swift in Sources */,
 				440F49012B73DD880082CE34 /* AuthRoutes.swift in Sources */,
